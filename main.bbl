@@ -1,0 +1,194 @@
+\begin{thebibliography}{30}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bray et~al.(2024)Bray, Laversanne, Sung, Ferlay, Siegel, Soerjomataram, and Jemal]{bray_global_2024}
+Freddie Bray, Mathieu Laversanne, Hyuna Sung, Jacques Ferlay, Rebecca~L. Siegel, Isabelle Soerjomataram, and Ahmedin Jemal.
+\newblock Global cancer statistics 2022: {{GLOBOCAN}} estimates of incidence and mortality worldwide for 36 cancers in 185 countries.
+\newblock \emph{CA: A Cancer Journal for Clinicians}, 74\penalty0 (3):\penalty0 229--263, 2024.
+\newblock ISSN 1542-4863.
+\newblock \doi{10.3322/caac.21834}.
+
+\bibitem[Fischer et~al.(2008)Fischer, Jacobson, Rose, and Zeller]{fischer_hematoxylin_2008}
+Andrew~H. Fischer, Kenneth~A. Jacobson, Jack Rose, and Rolf Zeller.
+\newblock Hematoxylin and eosin staining of tissue and cell sections.
+\newblock \emph{CSH protocols}, 2008:\penalty0 pdb.prot4986, May 2008.
+\newblock \doi{10.1101/pdb.prot4986}.
+
+\bibitem[Hollon et~al.(2020)Hollon, Pandian, Adapa, Urias, Save, Khalsa, Eichberg, D'Amico, Farooq, Lewis, Petridis, Marie, Shah, Garton, Maher, Heth, McKean, Sullivan, {Hervey-Jumper}, Patil, Thompson, Sagher, McKhann, Komotar, Ivan, Snuderl, Otten, Johnson, Sisti, Bruce, Muraszko, Trautman, Freudiger, Canoll, Lee, {Camelo-Piragua}, and Orringer]{hollon_near_2020}
+Todd~C. Hollon, Balaji Pandian, Arjun~R. Adapa, Esteban Urias, Akshay~V. Save, Siri Sahib~S. Khalsa, Daniel~G. Eichberg, Randy~S. D'Amico, Zia~U. Farooq, Spencer Lewis, Petros~D. Petridis, Tamara Marie, Ashish~H. Shah, Hugh J.~L. Garton, Cormac~O. Maher, Jason~A. Heth, Erin~L. McKean, Stephen~E. Sullivan, Shawn~L. {Hervey-Jumper}, Parag~G. Patil, B.~Gregory Thompson, Oren Sagher, Guy~M. McKhann, Ricardo~J. Komotar, Michael~E. Ivan, Matija Snuderl, Marc~L. Otten, Timothy~D. Johnson, Michael~B. Sisti, Jeffrey~N. Bruce, Karin~M. Muraszko, Jay Trautman, Christian~W. Freudiger, Peter Canoll, Honglak Lee, Sandra {Camelo-Piragua}, and Daniel~A. Orringer.
+\newblock Near real-time intraoperative brain tumor diagnosis using stimulated {{Raman}} histology and deep neural networks.
+\newblock \emph{Nature Medicine}, 26\penalty0 (1):\penalty0 52--58, January 2020.
+\newblock ISSN 1078-8956, 1546-170X.
+\newblock \doi{10.1038/s41591-019-0715-9}.
+
+\bibitem[Novis and Zarbo(1997)]{novis_interinstitutional_1997}
+D.~A. Novis and R.~J. Zarbo.
+\newblock Interinstitutional comparison of frozen section turnaround time. {{A College}} of {{American Pathologists Q-Probes}} study of 32868 frozen sections in 700 hospitals.
+\newblock \emph{Archives of Pathology \& Laboratory Medicine}, 121\penalty0 (6):\penalty0 559--567, June 1997.
+\newblock ISSN 0003-9985.
+
+\bibitem[Sarri et~al.(2019)Sarri, Canonge, Audier, Simon, Wojak, Caillol, Cador, Marguet, Poizat, Giovannini, and Rigneault]{sarri_fast_2019}
+Barbara Sarri, Rafa{\"e}l Canonge, Xavier Audier, Emma Simon, Julien Wojak, Fabrice Caillol, C{\'e}cile Cador, Didier Marguet, Flora Poizat, Marc Giovannini, and Herv{\'e} Rigneault.
+\newblock Fast stimulated {{Raman}} and second harmonic generation imaging for intraoperative gastro-intestinal cancer detection.
+\newblock \emph{Scientific Reports}, 9\penalty0 (1):\penalty0 10052, July 2019.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-019-46489-x}.
+
+\bibitem[Kondepudi et~al.(2024)Kondepudi, Pekmezci, Hou, Scotford, Jiang, Rao, Harake, Chowdury, {Al-Holou}, Wang, Pandey, Lowenstein, Castro, Koerner, {Roetzer-Pejrimovsky}, Widhalm, {Camelo-Piragua}, {Movahed-Ezazi}, Orringer, Lee, Freudiger, Berger, {Hervey-Jumper}, and Hollon]{kondepudi_foundation_2024}
+Akhil Kondepudi, Melike Pekmezci, Xinhai Hou, Katie Scotford, Cheng Jiang, Akshay Rao, Edward~S. Harake, Asadur Chowdury, Wajd {Al-Holou}, Lin Wang, Aditya Pandey, Pedro~R. Lowenstein, Maria~G. Castro, Lisa~Irina Koerner, Thomas {Roetzer-Pejrimovsky}, Georg Widhalm, Sandra {Camelo-Piragua}, Misha {Movahed-Ezazi}, Daniel~A. Orringer, Honglak Lee, Christian Freudiger, Mitchel Berger, Shawn {Hervey-Jumper}, and Todd Hollon.
+\newblock Foundation models for fast, label-free detection of glioma infiltration.
+\newblock \emph{Nature}, pages 1--7, November 2024.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/s41586-024-08169-3}.
+
+\bibitem[Jiang et~al.(2022)Jiang, Chowdury, Hou, Kondepudi, Freudiger, Conway, {Camelo-Piragua}, Orringer, Lee, and Hollon]{jiang_opensrh_2022}
+Cheng Jiang, Asadur Chowdury, Xinhai Hou, Akhil Kondepudi, Christian~W. Freudiger, Kyle Conway, Sandra {Camelo-Piragua}, Daniel~A. Orringer, Honglak Lee, and Todd~C. Hollon.
+\newblock {{OpenSRH}}: Optimizing brain tumor surgery using intraoperative stimulated {{Raman}} histology.
+\newblock \emph{Advances in neural information processing systems}, 35\penalty0 (DB):\penalty0 28502--28516, December 2022.
+\newblock ISSN 1049-5258.
+
+\bibitem[Tomas et~al.(2022)Tomas, Sayat, Atienza, Danganan, Ramos, Fellizar, Notarte, Angeles, Bangaoil, Santillan, and Albano]{tomas_detection_2022}
+Rock~Christian Tomas, Anthony~Jay Sayat, Andrea~Nicole Atienza, Jannah~Lianne Danganan, Ma~Rollene Ramos, Allan Fellizar, Kin~Israel Notarte, Lara~Mae Angeles, Ruth Bangaoil, Abegail Santillan, and Pia~Marie Albano.
+\newblock Detection of breast cancer by {{ATR-FTIR}} spectroscopy using artificial neural networks.
+\newblock \emph{PLOS ONE}, 17\penalty0 (1):\penalty0 e0262489, January 2022.
+\newblock ISSN 1932-6203.
+\newblock \doi{10.1371/journal.pone.0262489}.
+
+\bibitem[Berisha et~al.(2019)Berisha, Lotfollahi, Jahanipour, Gurcan, Walsh, Bhargava, Nguyen, and Mayerich]{berisha_deep_2019}
+Sebastian Berisha, Mahsa Lotfollahi, Jahandar Jahanipour, Ilker Gurcan, Michael Walsh, Rohit Bhargava, Hien~Van Nguyen, and David Mayerich.
+\newblock Deep learning for {{FTIR}} histology: Leveraging spatial and spectral features with convolutional neural networks.
+\newblock \emph{Analyst}, 144\penalty0 (5):\penalty0 1642--1653, February 2019.
+\newblock ISSN 1364-5528.
+\newblock \doi{10.1039/C8AN01495G}.
+
+\bibitem[noa(2022{\natexlab{a}})]{noauthor_home_2022}
+Home - {{CHARM}}.
+\newblock https://charm-eic.eu/, June 2022{\natexlab{a}}.
+
+\bibitem[noa(2022{\natexlab{b}})]{noauthor_ultrafast_2022}
+{{ulTRafast hOlograPHic FTIR microscopY}}.
+\newblock https://www.trophy-project.eu/, June 2022{\natexlab{b}}.
+
+\bibitem[Nallala et~al.(2016)Nallala, Lloyd, Shepherd, and Stone]{nallala_high-resolution_2016}
+Jayakrupakar Nallala, Gavin~Rhys Lloyd, Neil Shepherd, and Nick Stone.
+\newblock High-resolution {{FTIR}} imaging of colon tissues for elucidation of individual cellular and histopathological features.
+\newblock \emph{Analyst}, 141\penalty0 (2):\penalty0 630--639, January 2016.
+\newblock ISSN 1364-5528.
+\newblock \doi{10.1039/C5AN01871D}.
+
+\bibitem[Vali(2024)]{vali_deep_2024}
+Moe Vali.
+\newblock Deep {{Learning Approaches}} using {{Raman Spectroscopy}} for {{Label Free Tumour Image Segmentation}}.
+\newblock 2024.
+
+\bibitem[Petrov(2024)]{petrov_diagnosing_2024}
+Ivo~Vladislavov Petrov.
+\newblock Diagnosing cancer using {{AI}} on {{Raman Spectroscopic Signals}}.
+\newblock 2024.
+
+\bibitem[Smith and Dent(2019)]{smith_modern_2019}
+Ewen Smith and Geoffrey Dent.
+\newblock \emph{Modern {{Raman}} Spectroscopy: A Practical Approach}.
+\newblock John Wiley \& Sons Ltd, Hoboken, NJ, second ed edition, 2019.
+\newblock ISBN 978-1-119-44058-1 978-1-119-44059-8 978-1-119-44054-3.
+
+\bibitem[Shen et~al.(2021)Shen, Yue, Xu, and Xu]{shen_recent_2021}
+Yanting Shen, Jing Yue, Weiqing Xu, and Shuping Xu.
+\newblock Recent progress of surface-enhanced {{Raman}} spectroscopy for subcellular compartment analysis.
+\newblock \emph{Theranostics}, 11\penalty0 (10):\penalty0 4872--4893, March 2021.
+\newblock ISSN 1838-7640.
+\newblock \doi{10.7150/thno.56409}.
+
+\bibitem[Xu et~al.(2025)Xu, Zhu, Xia, Hu, Liao, Xu, Shen, and Hu]{xu_raman_2025}
+Wenjing Xu, Wei Zhu, Yukang Xia, Shun Hu, Guangfu Liao, Zushun Xu, Aiguo Shen, and Jiming Hu.
+\newblock Raman spectroscopy for cell analysis: {{Retrospect}} and prospect.
+\newblock \emph{Talanta}, 285:\penalty0 127283, April 2025.
+\newblock ISSN 0039-9140.
+\newblock \doi{10.1016/j.talanta.2024.127283}.
+
+\bibitem[Prince et~al.(2017)Prince, Frontiera, and Potma]{prince_stimulated_2017}
+Richard~C. Prince, Renee~R. Frontiera, and Eric~O. Potma.
+\newblock Stimulated {{Raman Scattering}}: {{From Bulk}} to {{Nano}}.
+\newblock \emph{Chemical Reviews}, 117\penalty0 (7):\penalty0 5070--5094, April 2017.
+\newblock ISSN 0009-2665.
+\newblock \doi{10.1021/acs.chemrev.6b00545}.
+
+\bibitem[Shen(2003)]{shen_principles_2003}
+Yuen~R. Shen.
+\newblock \emph{Principles of Nonlinear Optics}.
+\newblock Wiley Classics Library. Wiley-Interscience, Hoboken, NJ, wiley classics library ed edition, 2003.
+\newblock ISBN 978-0-471-43080-3.
+
+\bibitem[PERRY et~al.(2012)PERRY, BURKE, and BROWN]{perry_two-photon_2012}
+SETH~W. PERRY, RYAN~M. BURKE, and EDWARD~B. BROWN.
+\newblock Two-{{Photon}} and {{Second Harmonic Microscopy}} in {{Clinical}} and {{Translational Cancer Research}}.
+\newblock \emph{Annals of Biomedical Engineering}, 40\penalty0 (2):\penalty0 277--291, February 2012.
+\newblock ISSN 0090-6964.
+\newblock \doi{10.1007/s10439-012-0512-9}.
+
+\bibitem[Chen et~al.(2012)Chen, Nadiarynkh, Plotnikov, and Campagnola]{chen_second_2012}
+Xiyi Chen, Oleg Nadiarynkh, Sergey Plotnikov, and Paul~J. Campagnola.
+\newblock Second harmonic generation microscopy for quantitative analysis of collagen fibrillar structure.
+\newblock \emph{Nature Protocols}, 7\penalty0 (4):\penalty0 654--669, April 2012.
+\newblock ISSN 1750-2799.
+\newblock \doi{10.1038/nprot.2012.009}.
+
+\bibitem[Denk et~al.(1990)Denk, Strickler, and Webb]{denk_two-photon_1990}
+W.~Denk, J.~H. Strickler, and W.~W. Webb.
+\newblock Two-photon laser scanning fluorescence microscopy.
+\newblock \emph{Science (New York, N.Y.)}, 248\penalty0 (4951):\penalty0 73--76, April 1990.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.2321027}.
+
+\bibitem[Su and Lee(2020)]{su_fourier_2020}
+Kar-Yan Su and Wai-Leng Lee.
+\newblock Fourier {{Transform Infrared Spectroscopy}} as a {{Cancer Screening}} and {{Diagnostic Tool}}: {{A Review}} and {{Prospects}}.
+\newblock \emph{Cancers}, 12\penalty0 (1):\penalty0 115, January 2020.
+\newblock ISSN 2072-6694.
+\newblock \doi{10.3390/cancers12010115}.
+
+\bibitem[Griffiths(1983)]{griffiths_fourier_1983}
+Peter~R. Griffiths.
+\newblock Fourier {{Transform Infrared Spectrometry}}.
+\newblock \emph{Science}, 222\penalty0 (4621):\penalty0 297--302, October 1983.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.6623077}.
+
+\bibitem[Brussee et~al.(2024)Brussee, Buzzanca, Schrader, and Kers]{brussee_graph_2024}
+Siemen Brussee, Giorgio Buzzanca, Anne M.~R. Schrader, and Jesper Kers.
+\newblock Graph {{Neural Networks}} in {{Histopathology}}: {{Emerging Trends}} and {{Future Directions}}, June 2024.
+
+\bibitem[Broadwater(2025)]{broadwater_graph_2025}
+Keita Broadwater.
+\newblock Graph {{Neural Networks}} in {{Action}}.
+\newblock \emph{Manning}, 2025.
+
+\bibitem[{Sanchez-Gonzalez} et~al.(2018){Sanchez-Gonzalez}, Heess, Springenberg, Merel, Riedmiller, Hadsell, and Battaglia]{sanchez-gonzalez_graph_2018}
+Alvaro {Sanchez-Gonzalez}, Nicolas Heess, Jost~Tobias Springenberg, Josh Merel, Martin Riedmiller, Raia Hadsell, and Peter Battaglia.
+\newblock Graph {{Networks}} as {{Learnable Physics Engines}} for {{Inference}} and {{Control}}.
+\newblock In \emph{Proceedings of the 35th {{International Conference}} on {{Machine Learning}}}, pages 4470--4479. PMLR, July 2018.
+
+\bibitem[{Sanchez-Gonzalez} et~al.(2020){Sanchez-Gonzalez}, Godwin, Pfaff, Ying, Leskovec, and Battaglia]{sanchez-gonzalez_learning_2020}
+Alvaro {Sanchez-Gonzalez}, Jonathan Godwin, Tobias Pfaff, Rex Ying, Jure Leskovec, and Peter Battaglia.
+\newblock Learning to {{Simulate Complex Physics}} with {{Graph Networks}}.
+\newblock In \emph{Proceedings of the 37th {{International Conference}} on {{Machine Learning}}}, pages 8459--8468. PMLR, November 2020.
+
+\bibitem[Tendle and Hasan(2021)]{tendle_study_2021}
+Atharva Tendle and Mohammad~Rashedul Hasan.
+\newblock A study of the generalizability of self-supervised representations.
+\newblock \emph{Machine Learning with Applications}, 6:\penalty0 100124, December 2021.
+\newblock ISSN 2666-8270.
+\newblock \doi{10.1016/j.mlwa.2021.100124}.
+
+\bibitem[Jiang et~al.(2024)Jiang, Ding, Wang, Li{\`o}, and Zhang]{jiang_vision_2024}
+Yuanhong Jiang, Qiaoqiao Ding, Yu~Guang Wang, Pietro Li{\`o}, and Xiaoqun Zhang.
+\newblock Vision graph {{U-Net}}: {{Geometric}} learning enhanced encoder for medical image segmentation and restoration.
+\newblock \emph{Inverse Problems and Imaging}, 18\penalty0 (3):\penalty0 672--689, 2024.
+\newblock ISSN 1930-8337, 1930-8345.
+\newblock \doi{10.3934/ipi.2023049}.
+
+\end{thebibliography}
