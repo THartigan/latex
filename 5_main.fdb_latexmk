@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex 5_main"] 1747503490.21768 "5_main.aux" "5_main.bbl" "5_main" 1747503491.0331 0
+["bibtex 5_main"] 1747571927.0326 "5_main.aux" "5_main.bbl" "5_main" 1747571927.89513 0
   "./TROPHY.bib" 1747501456.10456 159046 520c6efe641c2a43e28406a043f0c52a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "5_main.aux" 1747503490.83367 13347 96cb8419b08a510fbe61b2b868618f41 "pdflatex"
+  "5_main.aux" 1747571927.69253 13760 c625d05f9dd56e5b7118dc202a083517 "pdflatex"
   (generated)
   "5_main.bbl"
   "5_main.blg"
   (rewritten before read)
-["pdflatex"] 1747503490.30435 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1747503491.03323 0
+["pdflatex"] 1747571927.13464 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1747571927.89527 0
   "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" 1747503223.58113 712 b1bf081817b70ae5e957ead36b7bc5db ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -104,13 +104,13 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1747492213 3345732 6d12076f5f56aad4716ba4cefe1a1fa2 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "0_Introduction.tex" 1747503489.3708 1776 6dc8cbce8ef3e8b5ec83abcddf745884 ""
-  "1_Methods.tex" 1747502703.81588 795 bcd2629c758268f8b4e2d4ead199c2de ""
+  "1_Methods.tex" 1747571925.98878 950 106e5c5d5ea881b09da70cfda5af419e ""
   "2_Results.tex" 1747502746.80908 17 e5aa29df4c37f93cdad04a47e60f71d0 ""
   "3_Discussion.tex" 1747502752.47513 20 0e9daa63e73e84f4a684b671b2ca76db ""
   "4_Conclusions.tex" 1747502760.34084 21 962245b29278b6028e8e709db79a2139 ""
-  "5_main.aux" 1747503490.83367 13347 96cb8419b08a510fbe61b2b868618f41 "pdflatex"
-  "5_main.bbl" 1747503490.30261 12873 9ed048cef1de52a310c548144e0252fa "bibtex 5_main"
-  "5_main.out" 1747503490.83445 5285 ae57327447f038168089389c43951c35 "pdflatex"
+  "5_main.aux" 1747571927.69253 13760 c625d05f9dd56e5b7118dc202a083517 "pdflatex"
+  "5_main.bbl" 1747571927.13261 12873 9ed048cef1de52a310c548144e0252fa "bibtex 5_main"
+  "5_main.out" 1747571927.69342 5857 dc9859a8986cd860443e19db4c31a442 "pdflatex"
   "5_main.tex" 1747503223.58113 712 b1bf081817b70ae5e957ead36b7bc5db ""
   "Images/Part3ProjectPlanPDF.pdf" 1747500491.5456 17412 448912b945c4c56c6c83792f1ce14cf9 ""
   "Images/cri_raman.png" 1747500491.56118 116197 c059011b7aadb9c861447d89f3b20d1f ""

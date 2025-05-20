@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  17 MAY 2025 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  18 MAY 2025 13:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -389,7 +389,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<Images/raman_energy_levels.png, id=257, 757.83125pt x 446.66875pt>
+<Images/raman_energy_levels.png, id=269, 757.83125pt x 446.66875pt>
 File: Images/raman_energy_levels.png Graphic file (type png)
 <use Images/raman_energy_levels.png>
 Package pdftex.def Info: Images/raman_energy_levels.png  used on input line 42.
@@ -397,7 +397,7 @@ Package pdftex.def Info: Images/raman_energy_levels.png  used on input line 42.
 
 
 [4]
-<Images/cri_raman.png, id=278, 922.44624pt x 341.275pt>
+<Images/cri_raman.png, id=290, 922.44624pt x 341.275pt>
 File: Images/cri_raman.png Graphic file (type png)
 <use Images/cri_raman.png>
 Package pdftex.def Info: Images/cri_raman.png  used on input line 51.
@@ -415,7 +415,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
 
 [5 <./Images/raman_energy_levels.png>]
-<Images/nihms-365614-f0001.jpg, id=306, 289.08pt x 178.7478pt>
+<Images/nihms-365614-f0001.jpg, id=318, 289.08pt x 178.7478pt>
 File: Images/nihms-365614-f0001.jpg Graphic file (type jpg)
 <use Images/nihms-365614-f0001.jpg>
 Package pdftex.def Info: Images/nihms-365614-f0001.jpg  used on input line 76.
@@ -428,7 +428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/gnn_features.png, id=316, 487.8225pt x 579.16376pt>
+<Images/gnn_features.png, id=328, 487.8225pt x 579.16376pt>
 File: Images/gnn_features.png Graphic file (type png)
 <use Images/gnn_features.png>
 Package pdftex.def Info: Images/gnn_features.png  used on input line 110.
@@ -436,7 +436,7 @@ Package pdftex.def Info: Images/gnn_features.png  used on input line 110.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/Part3ProjectPlanPDF.pdf, id=321, 962.15227pt x 200.97705pt>
+<Images/Part3ProjectPlanPDF.pdf, id=333, 962.15227pt x 200.97705pt>
 File: Images/Part3ProjectPlanPDF.pdf Graphic file (type pdf)
 <use Images/Part3ProjectPlanPDF.pdf>
 Package pdftex.def Info: Images/Part3ProjectPlanPDF.pdf  used on input line 117.
@@ -457,7 +457,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
 
 [6 <./Images/cri_raman.png>]
-<Images/different_processing_compare.png, id=352, 827.09pt x 1093.08376pt>
+<Images/different_processing_compare.png, id=364, 827.09pt x 1093.08376pt>
 File: Images/different_processing_compare.png Graphic file (type png)
 <use Images/different_processing_compare.png>
 Package pdftex.def Info: Images/different_processing_compare.png  used on input line 135.
@@ -497,21 +497,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `5_main.out' has not changed.
-(rerunfilecheck)             Checksum: AE57327447F038168089389C43951C35;5285.
+(rerunfilecheck)             Checksum: DC9859A8986CD860443E19DB4C31A442;5857.
  ) 
 Here is how much of TeX's memory you used:
- 10446 strings out of 473190
- 162509 string characters out of 5715800
- 577429 words of memory out of 5000000
- 33475 multiletter control sequences out of 15000+600000
+ 10452 strings out of 473190
+ 162619 string characters out of 5715800
+ 577432 words of memory out of 5000000
+ 33478 multiletter control sequences out of 15000+600000
  566127 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,1291b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on 5_main.pdf (12 pages, 1739041 bytes).
+Output written on 5_main.pdf (12 pages, 1739810 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 427 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
