@@ -5,45 +5,45 @@ The style file: unsrtnat.bst
 Database file #1: TROPHY.bib
 Warning--empty journal in vali_deep_2024
 Warning--empty journal in petrov_diagnosing_2024
-You've used 30 entries,
+You've used 33 entries,
             2481 wiz_defined-function locations,
-            777 strings with 12856 characters,
-and the built_in function-call counts, 14695 in all, are:
-= -- 1114
-> -- 1130
-< -- 12
-+ -- 413
-- -- 352
-* -- 1410
-:= -- 2500
-add.period$ -- 129
-call.type$ -- 30
-change.case$ -- 60
-chr.to.int$ -- 29
-cite$ -- 34
-duplicate$ -- 585
-empty$ -- 1107
-format.name$ -- 388
-if$ -- 2988
+            804 strings with 13622 characters,
+and the built_in function-call counts, 16007 in all, are:
+= -- 1234
+> -- 1199
+< -- 14
++ -- 439
+- -- 372
+* -- 1531
+:= -- 2714
+add.period$ -- 144
+call.type$ -- 33
+change.case$ -- 66
+chr.to.int$ -- 32
+cite$ -- 37
+duplicate$ -- 642
+empty$ -- 1217
+format.name$ -- 415
+if$ -- 3262
 int.to.chr$ -- 2
-int.to.str$ -- 31
-missing$ -- 29
-newline$ -- 194
-num.names$ -- 84
-pop$ -- 213
+int.to.str$ -- 34
+missing$ -- 32
+newline$ -- 215
+num.names$ -- 93
+pop$ -- 228
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 33
 quote$ -- 0
-skip$ -- 325
+skip$ -- 356
 stack$ -- 0
-substring$ -- 621
-swap$ -- 112
+substring$ -- 686
+swap$ -- 121
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
+type$ -- 225
 warning$ -- 2
-while$ -- 97
+while$ -- 108
 width$ -- 0
-write$ -- 466
+write$ -- 517
 (There were 2 warnings)

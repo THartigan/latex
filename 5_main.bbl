@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -30,6 +30,13 @@ D.~A. Novis and R.~J. Zarbo.
 \newblock Interinstitutional comparison of frozen section turnaround time. {{A College}} of {{American Pathologists Q-Probes}} study of 32868 frozen sections in 700 hospitals.
 \newblock \emph{Archives of Pathology \& Laboratory Medicine}, 121\penalty0 (6):\penalty0 559--567, June 1997.
 \newblock ISSN 0003-9985.
+
+\bibitem[Bai et~al.(2023)Bai, Yang, Li, Zhang, Pillar, and Ozcan]{bai_deep_2023}
+Bijie Bai, Xilin Yang, Yuzhu Li, Yijie Zhang, Nir Pillar, and Aydogan Ozcan.
+\newblock Deep learning-enabled virtual histological staining of biological samples.
+\newblock \emph{Light: Science \& Applications}, 12\penalty0 (1):\penalty0 57, March 2023.
+\newblock ISSN 2047-7538.
+\newblock \doi{10.1038/s41377-023-01104-7}.
 
 \bibitem[Sarri et~al.(2019)Sarri, Canonge, Audier, Simon, Wojak, Caillol, Cador, Marguet, Poizat, Giovannini, and Rigneault]{sarri_fast_2019}
 Barbara Sarri, Rafa{\"e}l Canonge, Xavier Audier, Emma Simon, Julien Wojak, Fabrice Caillol, C{\'e}cile Cador, Didier Marguet, Flora Poizat, Marc Giovannini, and Herv{\'e} Rigneault.
@@ -64,6 +71,20 @@ Sebastian Berisha, Mahsa Lotfollahi, Jahandar Jahanipour, Ilker Gurcan, Michael 
 \newblock \emph{Analyst}, 144\penalty0 (5):\penalty0 1642--1653, February 2019.
 \newblock ISSN 1364-5528.
 \newblock \doi{10.1039/C8AN01495G}.
+
+\bibitem[Berthomieu and Hienerwadel(2009)]{berthomieu_fourier_2009}
+Catherine Berthomieu and Rainer Hienerwadel.
+\newblock Fourier transform infrared ({{FTIR}}) spectroscopy.
+\newblock \emph{Photosynthesis Research}, 101\penalty0 (2-3):\penalty0 157--170, September 2009.
+\newblock ISSN 0166-8595, 1573-5079.
+\newblock \doi{10.1007/s11120-009-9439-x}.
+
+\bibitem[Wolpert and Hellwig(2006)]{wolpert_infrared_2006}
+Martina Wolpert and Petra Hellwig.
+\newblock Infrared spectra and molar absorption coefficients of the 20 alpha amino acids in aqueous solutions in the spectral range from 1800 to 500cm-1.
+\newblock \emph{Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy}, 64\penalty0 (4):\penalty0 987--1001, July 2006.
+\newblock ISSN 13861425.
+\newblock \doi{10.1016/j.saa.2005.08.025}.
 
 \bibitem[noa(2022{\natexlab{a}})]{noauthor_home_2022}
 Home - {{CHARM}}.

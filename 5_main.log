@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  18 MAY 2025 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  21 MAY 2025 00:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -229,60 +229,110 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count295
+\@cmidlb=\count296
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count297
+\@lastruleclass=\count298
+\@thisrulewidth=\dimen171
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count299
+\multirow@dima=\skip60
+\bigstrutjot=\dimen172
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count295
-\Gm@cntv=\count296
-\c@Gm@tempcnt=\count297
-\Gm@bindingoffset=\dimen159
-\Gm@wd@mp=\dimen160
-\Gm@odd@mp=\dimen161
-\Gm@even@mp=\dimen162
-\Gm@layoutwidth=\dimen163
-\Gm@layoutheight=\dimen164
-\Gm@layouthoffset=\dimen165
-\Gm@layoutvoffset=\dimen166
+\Gm@cnth=\count300
+\Gm@cntv=\count301
+\c@Gm@tempcnt=\count302
+\Gm@bindingoffset=\dimen173
+\Gm@wd@mp=\dimen174
+\Gm@odd@mp=\dimen175
+\Gm@even@mp=\dimen176
+\Gm@layoutwidth=\dimen177
+\Gm@layoutheight=\dimen178
+\Gm@layouthoffset=\dimen179
+\Gm@layoutvoffset=\dimen180
 \Gm@dimlist=\toks24
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count298
+\l__color_backend_stack_int=\count303
 \l__pdf_internal_box=\box56
-) (./5_main.aux)
+) (./5_main.aux
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+)
 \openout1 = `5_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen167
+\scratchcounter=\count304
+\scratchdimen=\dimen181
 \scratchbox=\box57
-\nofMPsegments=\count300
-\nofMParguments=\count301
+\nofMPsegments=\count305
+\nofMParguments=\count306
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen168
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
+\MPscratchCnt=\count307
+\MPscratchDim=\dimen182
+\MPnumerator=\count308
+\makeMPintoPDFobject=\count309
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -296,7 +346,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 18.
+Package hyperref Info: Link coloring ON on input line 19.
  (./5_main.out) (./5_main.out)
 \@outlinefile=\write3
 \openout3 = `5_main.out'.
@@ -337,17 +387,79 @@ Package hyperref Info: Link coloring ON on input line 18.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./0_Introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
-
- []
-
+<Images/Histology_Summary.png, id=173, 1157.32375pt x 255.95625pt>
+File: Images/Histology_Summary.png Graphic file (type png)
+<use Images/Histology_Summary.png>
+Package pdftex.def Info: Images/Histology_Summary.png  used on input line 8.
+(pdftex.def)             Requested size: 472.03123pt x 104.39595pt.
 ) (./1_Methods.tex
+<Images/IR_Basics.png, id=191, 598.235pt x 727.71875pt>
+File: Images/IR_Basics.png Graphic file (type png)
+<use Images/IR_Basics.png>
+Package pdftex.def Info: Images/IR_Basics.png  used on input line 7.
+(pdftex.def)             Requested size: 377.62642pt x 459.36467pt.
+<Images/Cystine_IR_pH_dep.png, id=194, 344.28625pt x 275.0275pt>
+File: Images/Cystine_IR_pH_dep.png Graphic file (type png)
+<use Images/Cystine_IR_pH_dep.png>
+Package pdftex.def Info: Images/Cystine_IR_pH_dep.png  used on input line 14.
+(pdftex.def)             Requested size: 377.62642pt x 301.66249pt.
+<Images/False_Colour_IR_17.png, id=197, 315.1775pt x 315.1775pt>
+File: Images/False_Colour_IR_17.png Graphic file (type png)
+<use Images/False_Colour_IR_17.png>
+Package pdftex.def Info: Images/False_Colour_IR_17.png  used on input line 21.
+(pdftex.def)             Requested size: 377.62642pt x 377.64842pt.
+<Images/he_17_scale.png, id=198, 1389.19pt x 1393.205pt>
+File: Images/he_17_scale.png Graphic file (type png)
+<use Images/he_17_scale.png>
+Package pdftex.def Info: Images/he_17_scale.png  used on input line 28.
+(pdftex.def)             Requested size: 377.62642pt x 378.7214pt.
+<Images/Predicton_17.png, id=199, 435.6275pt x 356.33125pt>
+File: Images/Predicton_17.png Graphic file (type png)
+<use Images/Predicton_17.png>
+Package pdftex.def Info: Images/Predicton_17.png  used on input line 35.
+(pdftex.def)             Requested size: 377.62642pt x 308.88562pt.
+
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./2_Results.tex) (./3_Discussion.tex) (./4_Conclusions.tex)
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/Histology_Summary.png>]
 
-[2] (./christmas.tex
+[2 <./Images/IR_Basics.png>]
+<Images/Dataset_Class_Differences.png, id=233, 1165.35374pt x 694.595pt>
+File: Images/Dataset_Class_Differences.png Graphic file (type png)
+<use Images/Dataset_Class_Differences.png>
+Package pdftex.def Info: Images/Dataset_Class_Differences.png  used on input line 69.
+(pdftex.def)             Requested size: 377.62642pt x 225.07298pt.
+<Images/SCNN_TPL_Arch.png, id=234, 4457.65375pt x 1770.615pt>
+File: Images/SCNN_TPL_Arch.png Graphic file (type png)
+<use Images/SCNN_TPL_Arch.png>
+Package pdftex.def Info: Images/SCNN_TPL_Arch.png  used on input line 80.
+(pdftex.def)             Requested size: 377.62642pt x 149.97345pt.
+<Images/Tanh_Relu_Demo.png, id=235, 917.4275pt x 199.74625pt>
+File: Images/Tanh_Relu_Demo.png Graphic file (type png)
+<use Images/Tanh_Relu_Demo.png>
+Package pdftex.def Info: Images/Tanh_Relu_Demo.png  used on input line 87.
+(pdftex.def)             Requested size: 377.62642pt x 82.21956pt.
+<Images/Ensemble_rough.png, id=236, 480.705pt x 373.395pt>
+File: Images/Ensemble_rough.png Graphic file (type png)
+<use Images/Ensemble_rough.png>
+Package pdftex.def Info: Images/Ensemble_rough.png  used on input line 95.
+(pdftex.def)             Requested size: 377.62642pt x 293.33223pt.
+
+
+[3 <./Images/Cystine_IR_pH_dep.png>]
+
+[4 <./Images/False_Colour_IR_17.png>]
+
+[5 <./Images/he_17_scale.png>]
+
+[6 <./Images/Predicton_17.png> <./Images/Dataset_Class_Differences.png>]
+
+[7 <./Images/SCNN_TPL_Arch.png> <./Images/Tanh_Relu_Demo.png> <./Images/Ensemble_rough.png>]) (./2_Results.tex) (./3_Discussion.tex) (./4_Conclusions.tex)
+
+[8{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+[9] (./christmas.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
@@ -364,7 +476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
 
 
-[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
@@ -389,15 +501,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<Images/raman_energy_levels.png, id=269, 757.83125pt x 446.66875pt>
+<Images/raman_energy_levels.png, id=348, 757.83125pt x 446.66875pt>
 File: Images/raman_energy_levels.png Graphic file (type png)
 <use Images/raman_energy_levels.png>
 Package pdftex.def Info: Images/raman_energy_levels.png  used on input line 42.
 (pdftex.def)             Requested size: 472.03123pt x 278.21991pt.
 
 
-[4]
-<Images/cri_raman.png, id=290, 922.44624pt x 341.275pt>
+[11]
+<Images/cri_raman.png, id=367, 922.44624pt x 341.275pt>
 File: Images/cri_raman.png Graphic file (type png)
 <use Images/cri_raman.png>
 Package pdftex.def Info: Images/cri_raman.png  used on input line 51.
@@ -414,8 +526,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
 
 
-[5 <./Images/raman_energy_levels.png>]
-<Images/nihms-365614-f0001.jpg, id=318, 289.08pt x 178.7478pt>
+[12 <./Images/raman_energy_levels.png>]
+<Images/nihms-365614-f0001.jpg, id=394, 289.08pt x 178.7478pt>
 File: Images/nihms-365614-f0001.jpg Graphic file (type jpg)
 <use Images/nihms-365614-f0001.jpg>
 Package pdftex.def Info: Images/nihms-365614-f0001.jpg  used on input line 76.
@@ -428,7 +540,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/gnn_features.png, id=328, 487.8225pt x 579.16376pt>
+<Images/gnn_features.png, id=404, 487.8225pt x 579.16376pt>
 File: Images/gnn_features.png Graphic file (type png)
 <use Images/gnn_features.png>
 Package pdftex.def Info: Images/gnn_features.png  used on input line 110.
@@ -436,7 +548,7 @@ Package pdftex.def Info: Images/gnn_features.png  used on input line 110.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/Part3ProjectPlanPDF.pdf, id=333, 962.15227pt x 200.97705pt>
+<Images/Part3ProjectPlanPDF.pdf, id=409, 962.15227pt x 200.97705pt>
 File: Images/Part3ProjectPlanPDF.pdf Graphic file (type pdf)
 <use Images/Part3ProjectPlanPDF.pdf>
 Package pdftex.def Info: Images/Part3ProjectPlanPDF.pdf  used on input line 117.
@@ -456,8 +568,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
 
 
-[6 <./Images/cri_raman.png>]
-<Images/different_processing_compare.png, id=364, 827.09pt x 1093.08376pt>
+[13 <./Images/cri_raman.png>]
+<Images/different_processing_compare.png, id=441, 827.09pt x 1093.08376pt>
 File: Images/different_processing_compare.png Graphic file (type png)
 <use Images/different_processing_compare.png>
 Package pdftex.def Info: Images/different_processing_compare.png  used on input line 135.
@@ -471,7 +583,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[7 <./Images/nihms-365614-f0001.jpg>]
+[14 <./Images/nihms-365614-f0001.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
@@ -483,35 +595,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
 
 
-[8]) (./5_main.bbl
+[15]) (./5_main.bbl
 
-[9 <./Images/gnn_features.png> <./Images/Part3ProjectPlanPDF.pdf>]
+[16 <./Images/gnn_features.png> <./Images/Part3ProjectPlanPDF.pdf>]
 
-[10])
+[17]
 
-[11]
+[18])
 
-[12 <./Images/different_processing_compare.png>] (./5_main.aux)
+[19]
+
+[20 <./Images/different_processing_compare.png>] (./5_main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `5_main.out' has not changed.
-(rerunfilecheck)             Checksum: DC9859A8986CD860443E19DB4C31A442;5857.
+(rerunfilecheck)             Checksum: 21AFCA848C77928308FA8C1429BF97B6;6018.
  ) 
 Here is how much of TeX's memory you used:
- 10452 strings out of 473190
- 162619 string characters out of 5715800
- 577432 words of memory out of 5000000
- 33478 multiletter control sequences out of 15000+600000
+ 10699 strings out of 473190
+ 167867 string characters out of 5715800
+ 580317 words of memory out of 5000000
+ 33693 multiletter control sequences out of 15000+600000
  566127 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1291b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1286b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on 5_main.pdf (12 pages, 1739810 bytes).
+Output written on 5_main.pdf (20 pages, 9192407 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 497 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 
