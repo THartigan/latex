@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -85,6 +85,10 @@ Martina Wolpert and Petra Hellwig.
 \newblock \emph{Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy}, 64\penalty0 (4):\penalty0 987--1001, July 2006.
 \newblock ISSN 13861425.
 \newblock \doi{10.1016/j.saa.2005.08.025}.
+
+\bibitem[Ribeiro et~al.(2016)Ribeiro, Singh, and Guestrin]{ribeiro_why_2016}
+Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
+\newblock "{{Why Should I Trust You}}?": {{Explaining}} the {{Predictions}} of {{Any Classifier}}, August 2016.
 
 \bibitem[noa(2022{\natexlab{a}})]{noauthor_home_2022}
 Home - {{CHARM}}.

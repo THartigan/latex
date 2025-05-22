@@ -16,12 +16,6 @@
   \label{fig:my-label}
 \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{Images/False_Colour_IR_17.png}
-  \caption{Caption}
-  \label{fig:my-label}
-\end{figure}
 
 \begin{figure}[htbp]
   \centering
@@ -35,6 +29,30 @@
   \includegraphics[width=0.8\textwidth]{Images/Predicton_17.png}
   \caption{Caption}
   \label{fig:my-label}
+\end{figure}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=0.8\textwidth]{Images/sample_17_False_IR.png} 
+    \caption{Caption} \label{fig:my-label}
+\end{figure}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=0.8\textwidth]{Images/sample_20_False_IR.png} 
+    \caption{Caption} \label{fig:my-label} 
+\end{figure}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=0.8\textwidth]{Images/sample_35_False_IR.png} 
+    \caption{Caption} \label{fig:my-label} 
+\end{figure}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=0.9\textwidth]{Images/IR_and_HE_categories.png} 
+    \caption{Caption} \label{fig:my-label} 
 \end{figure}
 
 \subsubsection{Raman Spectroscopy}
@@ -52,9 +70,7 @@ Accuracy \\ \midrule \multirow{2}{*}{PCA~$>$~LDA} & Sensitivity & 42 (20.4) & 84
 & 58 (11.9) & 80 (14.4) & 41 (14.7) & 62 (33.6) & 68 (10.0) \\ & Specificity &
 88 (6.6) & 77 (10.2) & 91 (2.6) & 96 (6.2) & — \\ \midrule \multirow{2}{*}{PCA~$>$~XGBoost} & Sensitivity & 43 (11.5) & 55 (11.9) & 28 (11.9) & 75 (20.9) & 51 (9.
 2) \\ & Specificity & 88 (10.3) & 79 (7.7) & 90 (6.7) & 77 (10.5) & — \\
-\bottomrule \end{tabular} 
-\caption{By Tiago and Pietro}
-\end{table} 
+\bottomrule \end{tabular} \end{table}
 
 
 % Include the other methods here
@@ -92,14 +108,56 @@ Accuracy \\ \midrule \multirow{2}{*}{PCA~$>$~LDA} & Sensitivity & 42 (20.4) & 84
 
 \begin{figure}[htbp] 
     \centering 
-    \includegraphics[width=0.8\textwidth]{Images/Ensemble_rough.png} 
+    \includegraphics[width=0.8\textwidth]{Images/best_val_accuracy.png} 
     \caption{Caption} \label{fig:my-label}
 \end{figure}
+
+\subsubsection{Model Performance}
+\begin{table}[ht] \centering \caption{XGBoost} \label{tab:xgboost}
+\begin{tabular}{lcccc} \toprule & \textbf{Normal} & \textbf{Adenoma} &
+\textbf{Hyperplastic} & \textbf{Cancer} \\ \midrule \textbf{Acc} & $0.809\pm0.
+026$ & $0.749\pm0.073$ & $0.826\pm0.011$ & $0.888\pm0.055$ \\ \textbf{Sens} & $0.
+490\pm0.115$ & $0.781\pm0.055$ & $0.386\pm0.133$ & $0.603\pm0.091$ \\
+\textbf{Spec} & $0.886\pm0.029$ & $0.711\pm0.104$ & $0.911\pm0.036$ & $0.937\pm0.
+057$ \\ \textbf{FPR} & $0.115\pm0.029$ & $0.289\pm0.104$ & $0.090\pm0.036$ & $0.
+063\pm0.057$ \\ \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:}
+$0.565\pm0.058$} \\ \bottomrule \end{tabular} \end{table}
+
+\begin{table}[ht] \centering \caption{SCNN\_TPL3} \label{tab:scnn_tpl3}
+\begin{tabular}{lcccc} \toprule & \textbf{Normal} & \textbf{Adenoma} &
+\textbf{Hyperplastic} & \textbf{Cancer} \\ \midrule \textbf{Acc} & $0.756\pm0.
+071$ & $0.707\pm0.017$ & $0.801\pm0.083$ & $0.881\pm0.070$ \\ \textbf{Sens} & $0.
+739\pm0.111$ & $0.527\pm0.071$ & $0.323\pm0.069$ & $0.777\pm0.082$ \\
+\textbf{Spec} & $0.760\pm0.101$ & $0.883\pm0.089$ & $0.894\pm0.095$ & $0.899\pm0.
+072$ \\ \textbf{FPR} & $0.240\pm0.102$ & $0.118\pm0.089$ & $0.107\pm0.095$ & $0.
+102\pm0.072$ \\ \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:}
+$0.591\pm0.003$} \\ \bottomrule \end{tabular} \end{table}
+
 
 \subsection{Explainability}
 % A bit of background on why explainability is important and why it must be used in medical contexts
 \subsubsection{Local Interpretable Model-Agnostic Explanations}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/lime_explanation.png}
+  \caption{From \cite{ribeiro_why_2016}}
+  \label{fig:my-label}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/lime_demo.png}
+  \caption{Caption}
+  \label{fig:my-label}
+\end{figure}
+
 \subsubsection{CRIME}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/crime_umap.png}
+  \caption{Caption}
+  \label{fig:my-label}
+\end{figure}
 \subsubsection{VAE Methods}
 \paragraph{Clustering VAE Approaches}
 \paragraph{Logic Explained Networks}
