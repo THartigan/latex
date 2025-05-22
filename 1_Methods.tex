@@ -17,37 +17,37 @@
 \end{figure}
 
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{Images/he_17_scale.png}
-  \caption{Caption}
-  \label{fig:my-label}
-\end{figure}
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{Images/he_17_scale.png}
+%   \caption{Caption}
+%   \label{fig:my-label}
+% \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{Images/Predicton_17.png}
-  \caption{Caption}
-  \label{fig:my-label}
-\end{figure}
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{Images/Predicton_17.png}
+%   \caption{Caption}
+%   \label{fig:my-label}
+% \end{figure}
 
-\begin{figure}[htbp] 
-    \centering 
-    \includegraphics[width=0.8\textwidth]{Images/sample_17_False_IR.png} 
-    \caption{Caption} \label{fig:my-label}
-\end{figure}
+% \begin{figure}[htbp] 
+%     \centering 
+%     \includegraphics[width=0.8\textwidth]{Images/sample_17_False_IR.png} 
+%     \caption{Caption} \label{fig:my-label}
+% \end{figure}
 
-\begin{figure}[htbp] 
-    \centering 
-    \includegraphics[width=0.8\textwidth]{Images/sample_20_False_IR.png} 
-    \caption{Caption} \label{fig:my-label} 
-\end{figure}
+% \begin{figure}[htbp] 
+%     \centering 
+%     \includegraphics[width=0.8\textwidth]{Images/sample_20_False_IR.png} 
+%     \caption{Caption} \label{fig:my-label} 
+% \end{figure}
 
-\begin{figure}[htbp] 
-    \centering 
-    \includegraphics[width=0.8\textwidth]{Images/sample_35_False_IR.png} 
-    \caption{Caption} \label{fig:my-label} 
-\end{figure}
+% \begin{figure}[htbp] 
+%     \centering 
+%     \includegraphics[width=0.8\textwidth]{Images/sample_35_False_IR.png} 
+%     \caption{Caption} \label{fig:my-label} 
+% \end{figure}
 
 \begin{figure}[htbp] 
     \centering 
@@ -112,7 +112,43 @@ Accuracy \\ \midrule \multirow{2}{*}{PCA~$>$~LDA} & Sensitivity & 42 (20.4) & 84
     \caption{Caption} \label{fig:my-label}
 \end{figure}
 
+\begin{table}[ht] \centering \caption{Metrics for single fold test set
+with 50\% voting threshold and no label smoothing} \begin{tabular}{lcccc} \toprule Metric & Normal &
+Adenoma & Hyperplastic & Cancer \\ \midrule Accuracy & 0.699 & 0.699 & 0.680 & 0.945
+\\ Sensitivity & 0.662 & 0.452 & 0.258 & 0.783 \\ Specificity & 0.708 & 0.936 &
+0.762 & 0.972 \\ False positive rate & 0.292 & 0.064 & 0.238 & 0.028 \\ \midrule
+Overall Accuracy & \multicolumn{4}{c}{0.5387} \\ \bottomrule \end{tabular}
+\label{tab:voting05_results} \end{table}
+
+\begin{table}[ht] \centering \caption{Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing} \begin{tabular}{lcccc} \toprule Metric & Normal
+& Adenoma & Hyperplastic & Cancer \\ \midrule Accuracy & 0.702 & 0.700 & 0.674 & 0.
+944 \\ Sensitivity & 0.643 & 0.458 & 0.257 & 0.782 \\ Specificity & 0.716 & 0.
+933 & 0.755 & 0.971 \\ False positive rate & 0.284 & 0.067 & 0.245 & 0.029 \\
+\midrule Overall Accuracy & \multicolumn{4}{c}{0.5349} \\ \bottomrule
+\end{tabular} \label{tab:ls01_results} \end{table}
+
+\begin{table}[ht] \centering \caption{Metrics for single fold test set with 50\% voting threshold and 20\% label smoothing} \begin{tabular}{lcccc} \toprule Metric & Normal
+& Adenoma & Hyperplastic & Cancer \\ \midrule Accuracy & 0.700 & 0.692 & 0.672 & 0.
+941 \\ Sensitivity & 0.650 & 0.436 & 0.266 & 0.786 \\ Specificity & 0.713 & 0.
+937 & 0.751 & 0.967 \\ False positive rate & 0.287 & 0.063 & 0.249 & 0.033 \\
+\midrule Overall Accuracy & \multicolumn{4}{c}{0.5345} \\ \bottomrule
+\end{tabular} \label{tab:ls02_results} \end{table}
+
+
 \subsubsection{Model Performance}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=0.8\textwidth]{Images/Categorisation_train_test.png} 
+    \caption{Caption} \label{fig:my-label} 
+\end{figure}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=0.8\textwidth]{Images/Confidence.png} 
+    \caption{Caption} \label{fig:my-label}
+\end{figure}
+
 \begin{table}[ht] \centering \caption{XGBoost} \label{tab:xgboost}
 \begin{tabular}{lcccc} \toprule & \textbf{Normal} & \textbf{Adenoma} &
 \textbf{Hyperplastic} & \textbf{Cancer} \\ \midrule \textbf{Acc} & $0.809\pm0.
@@ -123,7 +159,7 @@ Accuracy \\ \midrule \multirow{2}{*}{PCA~$>$~LDA} & Sensitivity & 42 (20.4) & 84
 063\pm0.057$ \\ \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:}
 $0.565\pm0.058$} \\ \bottomrule \end{tabular} \end{table}
 
-\begin{table}[ht] \centering \caption{SCNN\_TPL3} \label{tab:scnn_tpl3}
+\begin{table}[ht] \centering \caption{SCNN} \label{tab:scnn_tpl3}
 \begin{tabular}{lcccc} \toprule & \textbf{Normal} & \textbf{Adenoma} &
 \textbf{Hyperplastic} & \textbf{Cancer} \\ \midrule \textbf{Acc} & $0.756\pm0.
 071$ & $0.707\pm0.017$ & $0.801\pm0.083$ & $0.881\pm0.070$ \\ \textbf{Sens} & $0.
@@ -154,10 +190,30 @@ $0.591\pm0.003$} \\ \bottomrule \end{tabular} \end{table}
 \subsubsection{CRIME}
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{Images/crime_umap.png}
+  \includegraphics[width=1\textwidth]{Images/crime_umap.png}
   \caption{Caption}
   \label{fig:my-label}
 \end{figure}
 \subsubsection{VAE Methods}
 \paragraph{Clustering VAE Approaches}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{Images/crime_groupings_by_category_100.png}
+  \caption{Caption}
+  \label{fig:my-label}
+\end{figure}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=1\textwidth]{Images/crime_lime_plots.png} 
+    \caption{Caption}
+\label{fig:my-label} \end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Images/context_model_metrics.png}
+    \caption{Caption} \label{fig:my-label} 
+\end{figure}
+
 \paragraph{Logic Explained Networks}
