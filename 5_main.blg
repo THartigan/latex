@@ -3,47 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 5_main.aux
 The style file: unsrtnat.bst
 Database file #1: TROPHY.bib
+Warning--empty journal in kingma_introduction_nodate
+Warning--empty year in kingma_introduction_nodate
+Warning--empty year in kingma_introduction_nodate
 Warning--empty journal in vali_deep_2024
 Warning--empty journal in petrov_diagnosing_2024
-You've used 34 entries,
+You've used 35 entries,
             2481 wiz_defined-function locations,
-            809 strings with 13825 characters,
-and the built_in function-call counts, 16313 in all, are:
-= -- 1255
-> -- 1220
-< -- 14
-+ -- 447
-- -- 378
-* -- 1554
-:= -- 2762
-add.period$ -- 146
-call.type$ -- 34
-change.case$ -- 68
-chr.to.int$ -- 33
-cite$ -- 38
-duplicate$ -- 656
-empty$ -- 1247
-format.name$ -- 422
-if$ -- 3327
+            812 strings with 13937 characters,
+and the built_in function-call counts, 16610 in all, are:
+= -- 1277
+> -- 1235
+< -- 15
++ -- 453
+- -- 382
+* -- 1575
+:= -- 2808
+add.period$ -- 148
+call.type$ -- 35
+change.case$ -- 70
+chr.to.int$ -- 34
+cite$ -- 42
+duplicate$ -- 674
+empty$ -- 1275
+format.name$ -- 429
+if$ -- 3388
 int.to.chr$ -- 2
-int.to.str$ -- 35
-missing$ -- 32
-newline$ -- 219
-num.names$ -- 96
-pop$ -- 241
+int.to.str$ -- 36
+missing$ -- 33
+newline$ -- 223
+num.names$ -- 99
+pop$ -- 255
 preamble$ -- 1
-purify$ -- 34
+purify$ -- 35
 quote$ -- 0
-skip$ -- 366
+skip$ -- 376
 stack$ -- 0
-substring$ -- 688
-swap$ -- 124
+substring$ -- 690
+swap$ -- 125
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 232
-warning$ -- 2
-while$ -- 110
+type$ -- 239
+warning$ -- 5
+while$ -- 112
 width$ -- 0
-write$ -- 527
-(There were 2 warnings)
+write$ -- 536
+(There were 5 warnings)

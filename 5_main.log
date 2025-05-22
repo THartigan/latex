@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  22 MAY 2025 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  22 MAY 2025 22:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -318,6 +318,9 @@ LaTeX Warning: Label `fig:my-label' multiply defined.
 
 LaTeX Warning: Label `fig:my-label' multiply defined.
 
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
 )
 \openout1 = `5_main.aux'.
 
@@ -421,11 +424,11 @@ File: Images/Cystine_IR_pH_dep.png Graphic file (type png)
 <use Images/Cystine_IR_pH_dep.png>
 Package pdftex.def Info: Images/Cystine_IR_pH_dep.png  used on input line 14.
 (pdftex.def)             Requested size: 377.62642pt x 301.66249pt.
-<Images/IR_and_HE_categories.png, id=201, 486.73845pt x 734.9859pt>
+<Images/IR_and_HE_categories.png, id=201, 476.71504pt x 727.84853pt>
 File: Images/IR_and_HE_categories.png Graphic file (type png)
 <use Images/IR_and_HE_categories.png>
 Package pdftex.def Info: Images/IR_and_HE_categories.png  used on input line 54.
-(pdftex.def)             Requested size: 424.82523pt x 641.51855pt.
+(pdftex.def)             Requested size: 424.82523pt x 648.64943pt.
 
 
 [1
@@ -433,11 +436,11 @@ Package pdftex.def Info: Images/IR_and_HE_categories.png  used on input line 54.
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/Histology_Summary.png>]
 
 [2 <./Images/IR_Basics.png>]
-<Images/Dataset_Class_Differences.png, id=235, 1165.35374pt x 694.595pt>
+<Images/Dataset_Class_Differences.png, id=235, 449.28546pt x 361.35pt>
 File: Images/Dataset_Class_Differences.png Graphic file (type png)
 <use Images/Dataset_Class_Differences.png>
 Package pdftex.def Info: Images/Dataset_Class_Differences.png  used on input line 85.
-(pdftex.def)             Requested size: 377.62642pt x 225.07298pt.
+(pdftex.def)             Requested size: 472.03123pt x 379.64374pt.
 
 
 [3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/Cystine_IR_pH_dep.png>]
@@ -447,73 +450,85 @@ Package pdftex.def Info: Images/Dataset_Class_Differences.png  used on input lin
 File: Images/SCNN_TPL_Arch.png Graphic file (type png)
 <use Images/SCNN_TPL_Arch.png>
 Package pdftex.def Info: Images/SCNN_TPL_Arch.png  used on input line 96.
-(pdftex.def)             Requested size: 377.62642pt x 149.97345pt.
-<Images/Tanh_Relu_Demo.png, id=254, 917.4275pt x 199.74625pt>
+(pdftex.def)             Requested size: 472.03123pt x 187.47356pt.
+<Images/Tanh_Relu_Demo.png, id=254, 471.7363pt x 378.14381pt>
 File: Images/Tanh_Relu_Demo.png Graphic file (type png)
 <use Images/Tanh_Relu_Demo.png>
 Package pdftex.def Info: Images/Tanh_Relu_Demo.png  used on input line 103.
-(pdftex.def)             Requested size: 377.62642pt x 82.21956pt.
+(pdftex.def)             Requested size: 472.03123pt x 378.39099pt.
 <Images/best_val_accuracy.png, id=255, 571.47502pt x 426.93503pt>
 File: Images/best_val_accuracy.png Graphic file (type png)
 <use Images/best_val_accuracy.png>
 Package pdftex.def Info: Images/best_val_accuracy.png  used on input line 111.
-(pdftex.def)             Requested size: 377.62642pt x 282.11673pt.
-<Images/Categorisation_train_test.png, id=256, 497.9403pt x 768.9528pt>
+(pdftex.def)             Requested size: 472.03123pt x 352.64265pt.
+<Images/Categorisation_train_test.png, id=256, 476.71504pt x 761.21858pt>
 File: Images/Categorisation_train_test.png Graphic file (type png)
 <use Images/Categorisation_train_test.png>
 Package pdftex.def Info: Images/Categorisation_train_test.png  used on input line 142.
-(pdftex.def)             Requested size: 377.62642pt x 583.15475pt.
-<Images/Confidence.png, id=257, 497.9403pt x 812.49547pt>
+(pdftex.def)             Requested size: 377.62642pt x 603.01707pt.
+<Images/Confidence.png, id=257, 477.9762pt x 816.57452pt>
 File: Images/Confidence.png Graphic file (type png)
 <use Images/Confidence.png>
 Package pdftex.def Info: Images/Confidence.png  used on input line 148.
-(pdftex.def)             Requested size: 377.62642pt x 616.17642pt.
+(pdftex.def)             Requested size: 377.62642pt x 645.13666pt.
 <Images/lime_explanation.png, id=258, 513.92pt x 317.185pt>
 File: Images/lime_explanation.png Graphic file (type png)
 <use Images/lime_explanation.png>
 Package pdftex.def Info: Images/lime_explanation.png  used on input line 178.
 (pdftex.def)             Requested size: 377.62642pt x 233.06766pt.
-
-
-[5 <./Images/Dataset_Class_Differences.png> <./Images/SCNN_TPL_Arch.png>]
-
-[6 <./Images/Tanh_Relu_Demo.png> <./Images/best_val_accuracy.png>]
-
-[7 <./Images/Categorisation_train_test.png>]
-
-[8 <./Images/Confidence.png>]
-<Images/lime_demo.png, id=290, 426.59375pt x 233.87375pt>
-File: Images/lime_demo.png Graphic file (type png)
-<use Images/lime_demo.png>
-Package pdftex.def Info: Images/lime_demo.png  used on input line 185.
-(pdftex.def)             Requested size: 377.62642pt x 207.04068pt.
-<Images/crime_umap.png, id=291, 852.18375pt x 315.1775pt>
+<Images/lime_weights_example.png, id=261, 877.71915pt x 566.5968pt>
+File: Images/lime_weights_example.png Graphic file (type png)
+<use Images/lime_weights_example.png>
+Package pdftex.def Info: Images/lime_weights_example.png  used on input line 185.
+(pdftex.def)             Requested size: 377.62642pt x 243.7702pt.
+<Images/crime_umap.png, id=262, 436.33012pt x 624.95482pt>
 File: Images/crime_umap.png Graphic file (type png)
 <use Images/crime_umap.png>
 Package pdftex.def Info: Images/crime_umap.png  used on input line 193.
-(pdftex.def)             Requested size: 472.03123pt x 174.58412pt.
-<Images/crime_groupings_by_category_100.png, id=292, 703.62875pt x 407.5225pt>
+(pdftex.def)             Requested size: 472.03123pt x 676.11409pt.
+
+
+LaTeX Warning: Float too large for page by 18.89955pt on input line 196.
+
+<Images/VAE_overview.png, id=263, 733.74126pt x 908.39375pt>
+File: Images/VAE_overview.png Graphic file (type png)
+<use Images/VAE_overview.png>
+Package pdftex.def Info: Images/VAE_overview.png  used on input line 201.
+(pdftex.def)             Requested size: 377.62642pt x 467.51614pt.
+<Images/crime_groupings_by_category_100.png, id=264, 703.62875pt x 407.5225pt>
 File: Images/crime_groupings_by_category_100.png Graphic file (type png)
 <use Images/crime_groupings_by_category_100.png>
-Package pdftex.def Info: Images/crime_groupings_by_category_100.png  used on input line 202.
+Package pdftex.def Info: Images/crime_groupings_by_category_100.png  used on input line 210.
 (pdftex.def)             Requested size: 472.03123pt x 273.38687pt.
-<Images/crime_lime_plots.png, id=293, 538.59218pt x 689.81715pt>
+<Images/crime_lime_plots.png, id=266, 538.59218pt x 689.81715pt>
 File: Images/crime_lime_plots.png Graphic file (type png)
 <use Images/crime_lime_plots.png>
-Package pdftex.def Info: Images/crime_lime_plots.png  used on input line 209.
+Package pdftex.def Info: Images/crime_lime_plots.png  used on input line 217.
 (pdftex.def)             Requested size: 472.03123pt x 604.599pt.
-<Images/context_model_metrics.png, id=294, 615.92108pt x 659.46375pt>
+<Images/context_model_metrics.png, id=267, 615.92108pt x 659.46375pt>
 File: Images/context_model_metrics.png Graphic file (type png)
 <use Images/context_model_metrics.png>
-Package pdftex.def Info: Images/context_model_metrics.png  used on input line 215.
+Package pdftex.def Info: Images/context_model_metrics.png  used on input line 223.
 (pdftex.def)             Requested size: 472.03123pt x 505.40381pt.
-) (./2_Results.tex
 
-[9 <./Images/lime_explanation.png>]
 
-[10 <./Images/lime_demo.png> <./Images/crime_umap.png>]) (./3_Discussion.tex) (./4_Conclusions.tex)
+[5 <./Images/Dataset_Class_Differences.png>]
 
-[11] (./christmas.tex
+[6 <./Images/SCNN_TPL_Arch.png> <./Images/Tanh_Relu_Demo.png>]
+
+[7 <./Images/best_val_accuracy.png>]
+
+[8 <./Images/Categorisation_train_test.png>]
+
+[9 <./Images/Confidence.png>]
+
+[10 <./Images/lime_explanation.png> <./Images/lime_weights_example.png>]
+
+[11 <./Images/crime_umap.png>]
+
+[12 <./Images/VAE_overview.png>]) (./2_Results.tex) (./3_Discussion.tex) (./4_Conclusions.tex)
+
+[13] (./christmas.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
@@ -525,16 +540,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
 
 
-[12 <./Images/crime_groupings_by_category_100.png>]
-
-[13 <./Images/crime_lime_plots.png>]
-
-[14 <./Images/context_model_metrics.png>]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
 
+
+[15 <./Images/crime_groupings_by_category_100.png>]
+
+[16 <./Images/crime_lime_plots.png>]
+
+[17 <./Images/context_model_metrics.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
@@ -545,8 +562,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
  []
 
 
-
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
@@ -561,12 +576,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<Images/raman_energy_levels.png, id=399, 757.83125pt x 446.66875pt>
+<Images/raman_energy_levels.png, id=411, 757.83125pt x 446.66875pt>
 File: Images/raman_energy_levels.png Graphic file (type png)
 <use Images/raman_energy_levels.png>
 Package pdftex.def Info: Images/raman_energy_levels.png  used on input line 42.
 (pdftex.def)             Requested size: 472.03123pt x 278.21991pt.
-<Images/cri_raman.png, id=407, 922.44624pt x 341.275pt>
+
+
+[18]
+<Images/cri_raman.png, id=430, 922.44624pt x 341.275pt>
 File: Images/cri_raman.png Graphic file (type png)
 <use Images/cri_raman.png>
 Package pdftex.def Info: Images/cri_raman.png  used on input line 51.
@@ -577,15 +595,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
  []
 
 
-
-[16]
-
-[17 <./Images/raman_energy_levels.png> <./Images/cri_raman.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<Images/nihms-365614-f0001.jpg, id=443, 289.08pt x 178.7478pt>
+
+
+[19 <./Images/raman_energy_levels.png>]
+<Images/nihms-365614-f0001.jpg, id=458, 289.08pt x 178.7478pt>
 File: Images/nihms-365614-f0001.jpg Graphic file (type jpg)
 <use Images/nihms-365614-f0001.jpg>
 Package pdftex.def Info: Images/nihms-365614-f0001.jpg  used on input line 76.
@@ -596,18 +613,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./Images/nihms-365614-f0001.jpg>]
-<Images/gnn_features.png, id=464, 487.8225pt x 579.16376pt>
+<Images/gnn_features.png, id=468, 487.8225pt x 579.16376pt>
 File: Images/gnn_features.png Graphic file (type png)
 <use Images/gnn_features.png>
 Package pdftex.def Info: Images/gnn_features.png  used on input line 110.
 (pdftex.def)             Requested size: 236.01561pt x 280.20477pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/Part3ProjectPlanPDF.pdf, id=469, 962.15227pt x 200.97705pt>
+<Images/Part3ProjectPlanPDF.pdf, id=473, 962.15227pt x 200.97705pt>
 File: Images/Part3ProjectPlanPDF.pdf Graphic file (type pdf)
 <use Images/Part3ProjectPlanPDF.pdf>
 Package pdftex.def Info: Images/Part3ProjectPlanPDF.pdf  used on input line 117.
@@ -627,8 +643,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
 
 
-[19]
-<Images/different_processing_compare.png, id=502, 827.09pt x 1093.08376pt>
+[20 <./Images/cri_raman.png>]
+<Images/different_processing_compare.png, id=505, 827.09pt x 1093.08376pt>
 File: Images/different_processing_compare.png Graphic file (type png)
 <use Images/different_processing_compare.png>
 Package pdftex.def Info: Images/different_processing_compare.png  used on input line 135.
@@ -642,7 +658,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[20 <./Images/gnn_features.png> <./Images/Part3ProjectPlanPDF.pdf>]
+[21 <./Images/nihms-365614-f0001.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
@@ -652,15 +668,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-) (./5_main.bbl
 
-[21]
 
-[22])
+[22]) (./5_main.bbl
 
-[23]
+[23 <./Images/gnn_features.png> <./Images/Part3ProjectPlanPDF.pdf>]
 
-[24 <./Images/different_processing_compare.png>] (./5_main.aux)
+[24]
+
+[25])
+
+[26]
+
+[27 <./Images/different_processing_compare.png>] (./5_main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -673,18 +693,18 @@ Package rerunfilecheck Info: File `5_main.out' has not changed.
 (rerunfilecheck)             Checksum: B887EC882F6157F38F497465B3D330B4;6174.
  ) 
 Here is how much of TeX's memory you used:
- 10766 strings out of 473190
- 169786 string characters out of 5715800
- 580744 words of memory out of 5000000
- 33744 multiletter control sequences out of 15000+600000
+ 10781 strings out of 473190
+ 170235 string characters out of 5715800
+ 582780 words of memory out of 5000000
+ 33754 multiletter control sequences out of 15000+600000
  566127 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1286b,592s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1286b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on 5_main.pdf (24 pages, 18506980 bytes).
+Output written on 5_main.pdf (27 pages, 19562782 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 529 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
- 439 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 543 compressed objects within 6 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 444 words of extra memory for PDF output out of 10000 (max. 10000000)
 
