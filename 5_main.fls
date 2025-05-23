@@ -182,7 +182,6 @@ INPUT ./Images/IR_and_HE_categories.png
 INPUT ./Images/IR_and_HE_categories.png
 INPUT ./Images/IR_and_HE_categories.png
 INPUT ./Images/IR_and_HE_categories.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -191,7 +190,6 @@ INPUT ./Images/Dataset_Class_Differences.png
 INPUT ./Images/Dataset_Class_Differences.png
 INPUT ./Images/Dataset_Class_Differences.png
 INPUT ./Images/Dataset_Class_Differences.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Images/SCNN_TPL_Arch.png
 INPUT ./Images/SCNN_TPL_Arch.png
 INPUT ./Images/SCNN_TPL_Arch.png
@@ -272,6 +270,8 @@ INPUT ./christmas.tex
 INPUT ./christmas.tex
 INPUT ./christmas.tex
 INPUT christmas.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Images/raman_energy_levels.png
 INPUT ./Images/raman_energy_levels.png
 INPUT ./Images/raman_energy_levels.png
