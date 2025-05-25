@@ -1,7 +1,30 @@
 \section{Methods and Results}
-\subsection{Spectroscopy}
+\subsection{FTIR Spectroscopy}
 %Check which of the CHARM methods are actually needed here and potentially don't bother with them all
-\subsubsection{IR Spectroscopy}
+
+Infrared spectroscopy works by directing a broadband spectrum with wavenumbers ranging from around $400-4000 \text{ cm}^{-1}$ (for mid-IR spectroscopy) \cite{su_fourier_2020} onto a sample. This coherent spectrum then excites resonant vibrational modes within molecular bonds inside the sample, causing absorption of specific frequencies depending on the composition of the incident sample. This decreases the intensity relative to the baseline in the absorbed frequencies, therefore allowing a characteristic spectrum for each bond to be established. Modern devices use a Fourier transform-based (FTIR) interferogram approach \cite{griffiths_fourier_1983}, enabling high signal-to-noise (SNR) ratios to be achieved.\\
+
+FTIR can detect biochemical compositions including nucleic acids, proteins, lipids and carbohydrates within biological samples by matching the observed spectra with known forms for different bonding types, functional groups and intermolecular interactions \cite{su_fourier_2020}. Typical absorption groups within biological samples are detailed in Table \ref{table:functional_groups}.
+
+% Requires: \usepackage{array} \begin{table}[h] \centering
+\begin{table}[h] 
+    \centering 
+    \begin{tabular}{|>{\centering}m{3.3cm}|>{\centering\arraybackslash}m{4cm}|} 
+    \hline \textbf{Wavenumber(cm\textsuperscript{-1})} & \textbf{Assignment} \\ 
+    \hline 3080--2800 &
+    Anti-symmetric and symmetric C--H stretches from proteins and lipids \\ 
+    \hline
+    1745--1725 & Ester carbonyl of lipids \\ \hline 1700--1500 & Amide I and II groups in peptide linkages of proteins \\ 
+    \hline 
+    1270--1080 & Anti-symmetric and symmetric C--O and P--O areas in DNA, RNA and phospholipids \\ 
+    \hline 
+    1200--900 & Carbohydrate vibrations of glucose, fructose and glycogen \\ 
+    \hline
+    \end{tabular} 
+    \caption{\centering Assignments of Various Functional Groups Based on Wavenumber} 
+    \label{table:functional_groups} 
+\end{table}
+
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{Images/IR_Basics.png}
