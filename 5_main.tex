@@ -1,7 +1,8 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=red]{hyperref}
-\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib}
+\setcitestyle{square}
 \usepackage{array}
 \usepackage{amsmath}
 \usepackage{booktabs,multirow}
@@ -25,10 +26,11 @@
 
 \input{0_Introduction}
 \input{1_Methods}
-\input{2_Results}
-\input{3_Discussion}
-\input{4_Conclusions}
-% \input{appendix_CHARM.tex}
+% \input{2_Methods}
+\input{3_Results}
+\input{4_Discussion}
+\input{5_Conclusions}
+
 
 
 
@@ -37,5 +39,8 @@
 
 \bibliographystyle{unsrtnat}
 \bibliography{TROPHY.bib}
+\newpage
+% \input{appendix_CHARM.tex}
 \end{document}
+
 

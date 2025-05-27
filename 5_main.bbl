@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -72,6 +72,10 @@ Sebastian Berisha, Mahsa Lotfollahi, Jahandar Jahanipour, Ilker Gurcan, Michael 
 \newblock ISSN 1364-5528.
 \newblock \doi{10.1039/C8AN01495G}.
 
+\bibitem[noa()]{noauthor_minerva_nodate}
+Minerva {\textbar} {{MId-}} to {{NEaR}} infrared spectroscopy for {{improVed}} medical {{diAgnostics}}.
+\newblock http://minerva-project.eu/.
+
 \bibitem[Eic()]{eic_trophy_nodate}
 He~Eic.
 \newblock [{{TROPHY}}] {{HORIZON-EIC-2021-PATHFINDEROPEN-0}}.
@@ -104,12 +108,18 @@ Martina Wolpert and Petra Hellwig.
 \newblock ISSN 13861425.
 \newblock \doi{10.1016/j.saa.2005.08.025}.
 
-\bibitem[Ribeiro et~al.(2016)Ribeiro, Singh, and Guestrin]{ribeiro_why_2016}
-Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
-\newblock "{{Why Should I Trust You}}?": {{Explaining}} the {{Predictions}} of {{Any Classifier}}, August 2016.
+\bibitem[Nallala et~al.(2016)Nallala, Lloyd, Shepherd, and Stone]{nallala_high-resolution_2016}
+Jayakrupakar Nallala, Gavin~Rhys Lloyd, Neil Shepherd, and Nick Stone.
+\newblock High-resolution {{FTIR}} imaging of colon tissues for elucidation of individual cellular and histopathological features.
+\newblock \emph{Analyst}, 141\penalty0 (2):\penalty0 630--639, January 2016.
+\newblock ISSN 1364-5528.
+\newblock \doi{10.1039/C5AN01871D}.
 
-\bibitem[Kingma and Welling()]{kingma_introduction_nodate}
-Diederik~P Kingma and Max Welling.
-\newblock An {{Introduction}} to {{Variational Autoencoders}}.
+\bibitem[Villazon et~al.(2025)Villazon, Dela~Cruz, and Shi]{villazon_cancer_2025}
+Jorge Villazon, Nathaniel Dela~Cruz, and Lingyan Shi.
+\newblock Cancer {{Cell Line Classification Using Raman Spectroscopy}} of {{Cancer-Derived Exosomes}} and {{Machine Learning}}.
+\newblock \emph{Analytical Chemistry}, 97\penalty0 (13):\penalty0 7289--7298, March 2025.
+\newblock ISSN 0003-2700.
+\newblock \doi{10.1021/acs.analchem.4c06966}.
 
 \end{thebibliography}

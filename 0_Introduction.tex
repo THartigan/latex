@@ -10,7 +10,20 @@ Cancer is one of the leading causes of death worldwide with around 20 million ca
   \label{fig:hist-summary}
 \end{figure}
 
-New methods are being developed to expedite the cancer diagnosis process by using machine learning in conjunction with a range of imaging technologies including stimulated Raman spectroscopy (SRS) \cite{hollon_near_2020, sarri_fast_2019, kondepudi_foundation_2024, jiang_opensrh_2022}, second harmonic generation microscopy (SHG) \cite{sarri_fast_2019}, and Fourier transform infrared spectroscopy (FTIR) \cite{tomas_detection_2022, berisha_deep_2019}. Within this work, I focus on the application of FTIR spectroscopy to cancer diagnosis within colon cancer samples provided by collaborators at the University of Exeter, which were collected and had FTIR spectral images produced as part of the MINERVA project \cite{Minerva}.
+New methods are being developed to expedite the cancer diagnosis process by using machine learning in conjunction with a range of imaging technologies including stimulated Raman spectroscopy (SRS) \cite{hollon_near_2020, sarri_fast_2019, kondepudi_foundation_2024, jiang_opensrh_2022}, second harmonic generation microscopy (SHG) \cite{sarri_fast_2019}, and Fourier transform infrared spectroscopy (FTIR) \cite{tomas_detection_2022, berisha_deep_2019}. Within this work, I focus on the application of FTIR spectroscopy to cancer diagnosis within colon cancer samples provided by collaborators at the University of Exeter, which were collected and had FTIR spectral images produced as part of the MINERVA project \cite{noauthor_minerva_nodate}.
+
+\subsection{Previous Works}
+% maybe move the Tomas reference to where I am describing the MINERVA data class differences in Background
+Work by Tomas et al. \cite{tomas_detection_2022} utilised attenuated total reflection Fourier transform infrared (ATR-FTIR) spectroscopy and feed-forward full-connected neural networks to classify breast cancer samples into benign and malignant classifications with $96.06\% \pm 7.07 \%$ accuracy, corresponding to the large differences in spectral characteristics between classes as can be seen in figure \ref{fig:breast-tomas-benign-malignant-diff}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/breast_tomas_benign_malignant_diff.png}
+  \caption{From \cite{tomas_detection_2022}}
+  \label{fig:breast-tomas-benign-malignant-diff}
+\end{figure}
+
+
 \subsection{Future Vision}
 The TROPHY project \cite{Trophy} is aiming to develop a new vibrational spectroscopic imaging microscope exploiting photo-thermal infrared (PTIR), FTIR and digital holography microscopy (DMH) to evaluate cell-type topologies, identify mutant cell clusters, and provide biochemical analyses to determine tumour types, grading and staging \cite{Trophy_proposal}. The MINERVA and TROPHY datasets are expected to be similar, so the models and methods developed in this work constitute a basis for future work towards the TROPHY goals. This is particularly apparent given that TROPHY will focus primarily on the same fingerprint $1000$-$1800$ cm$^{-1}$ region of the IR spectrum as MINERVA.
 

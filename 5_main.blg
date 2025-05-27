@@ -3,56 +3,53 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 5_main.aux
 The style file: unsrtnat.bst
 Database file #1: TROPHY.bib
-Warning--I didn't find a database entry for "Minerva"
 Warning--I didn't find a database entry for "Trophy"
 Warning--I didn't find a database entry for "Trophy_proposal"
 Warning--I didn't find a database entry for "things"
 Warning--I didn't find a database entry for "crine"
+Warning--empty year in noauthor_minerva_nodate
 Warning--empty journal in eic_trophy_nodate
 Warning--empty year in eic_trophy_nodate
 Warning--empty year in eic_trophy_nodate
-Warning--empty journal in kingma_introduction_nodate
-Warning--empty year in kingma_introduction_nodate
-Warning--empty year in kingma_introduction_nodate
-You've used 17 entries,
+You've used 18 entries,
             2481 wiz_defined-function locations,
-            696 strings with 10169 characters,
-and the built_in function-call counts, 9194 in all, are:
-= -- 625
-> -- 845
-< -- 8
-+ -- 300
-- -- 266
-* -- 955
-:= -- 1635
-add.period$ -- 73
-call.type$ -- 17
-change.case$ -- 34
-chr.to.int$ -- 17
+            704 strings with 10508 characters,
+and the built_in function-call counts, 9728 in all, are:
+= -- 687
+> -- 857
+< -- 7
++ -- 306
+- -- 270
+* -- 1011
+:= -- 1711
+add.period$ -- 81
+call.type$ -- 18
+change.case$ -- 36
+chr.to.int$ -- 18
 cite$ -- 23
-duplicate$ -- 321
-empty$ -- 617
-format.name$ -- 293
-if$ -- 1801
+duplicate$ -- 341
+empty$ -- 669
+format.name$ -- 295
+if$ -- 1919
 int.to.chr$ -- 1
-int.to.str$ -- 18
-missing$ -- 16
-newline$ -- 115
+int.to.str$ -- 19
+missing$ -- 17
+newline$ -- 125
 num.names$ -- 51
-pop$ -- 116
+pop$ -- 113
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 18
 quote$ -- 0
-skip$ -- 172
+skip$ -- 181
 stack$ -- 0
-substring$ -- 355
-swap$ -- 51
+substring$ -- 414
+swap$ -- 55
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 119
-warning$ -- 6
-while$ -- 58
+type$ -- 126
+warning$ -- 4
+while$ -- 62
 width$ -- 0
-write$ -- 267
-(There were 11 warnings)
+write$ -- 291
+(There were 8 warnings)
