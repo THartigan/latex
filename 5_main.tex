@@ -5,6 +5,7 @@
 \setcitestyle{square}
 \usepackage{array}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage{booktabs,multirow}
 % \usepackage[pdfauthor={Thomas Hartigan}]
 \usepackage[%
@@ -24,12 +25,19 @@
     This is some stuff
 \end{abstract}
 
+\tableofcontents
+\newpage
+
 \input{0_Introduction}
+\newpage
 \input{1_Methods}
-% \input{2_Methods}
+
 \input{3_Results}
 \input{4_Discussion}
 \input{5_Conclusions}
+
+\newpage
+\input{2_Methods}
 
 
 
@@ -40,7 +48,9 @@
 \bibliographystyle{unsrtnat}
 \bibliography{TROPHY.bib}
 \newpage
+\appendix
 % \input{appendix_CHARM.tex}
+\input{appendix_Tiago.tex}
 \end{document}
 
 

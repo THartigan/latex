@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -115,11 +115,143 @@ Jayakrupakar Nallala, Gavin~Rhys Lloyd, Neil Shepherd, and Nick Stone.
 \newblock ISSN 1364-5528.
 \newblock \doi{10.1039/C5AN01871D}.
 
+\bibitem[Kohavi(2001)]{kohavi_study_2001}
+Ron Kohavi.
+\newblock A {{Study}} of {{Cross-Validation}} and {{Bootstrap}} for {{Accuracy Estimation}} and {{Model Selection}}.
+\newblock 14, March 2001.
+
+\bibitem[T~R et~al.(2023)T~R, V, V, Geman, Margala, and Guduri]{t_r_stratified_2023}
+Mahesh T~R, Vinoth~Kumar V, Dhilip~Kumar V, Oana Geman, Martin Margala, and Manisha Guduri.
+\newblock The stratified {{K-folds}} cross-validation and class-balancing methods with high-performance ensemble classifiers for breast cancer classification.
+\newblock \emph{Healthcare Analytics}, 4:\penalty0 100247, December 2023.
+\newblock ISSN 27724425.
+\newblock \doi{10.1016/j.health.2023.100247}.
+
+\bibitem[Sechidis et~al.(2011)Sechidis, Tsoumakas, and Vlahavas]{gunopulos_stratification_2011}
+Konstantinos Sechidis, Grigorios Tsoumakas, and Ioannis Vlahavas.
+\newblock On the {{Stratification}} of {{Multi-label Data}}.
+\newblock In Dimitrios Gunopulos, Thomas Hofmann, Donato Malerba, and Michalis Vazirgiannis, editors, \emph{Machine {{Learning}} and {{Knowledge Discovery}} in {{Databases}}}, volume 6913, pages 145--158. Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
+\newblock ISBN 978-3-642-23807-9 978-3-642-23808-6.
+\newblock \doi{10.1007/978-3-642-23808-6_10}.
+
+\bibitem[Szyma{\'n}ski and Kajdanowicz(2017)]{szymanski_network_2017}
+Piotr Szyma{\'n}ski and Tomasz Kajdanowicz.
+\newblock A {{Network Perspective}} on {{Stratification}} of {{Multi-Label Data}}.
+\newblock In \emph{Proceedings of the {{First International Workshop}} on {{Learning}} with {{Imbalanced Domains}}: {{Theory}} and {{Applications}}}, pages 22--35. PMLR, October 2017.
+
+\bibitem[Wold and Geladi()]{wold_principal_nodate}
+Svante Wold and KIM ESBENSENand~PAUL Geladi.
+\newblock Principal {{Component Analysis}}.
+
+\bibitem[Shlens(2014)]{shlens_tutorial_2014}
+Jonathon Shlens.
+\newblock A {{Tutorial}} on {{Principal Component Analysis}}, April 2014.
+
+\bibitem[Fisher(1936)]{fisher_use_1936}
+R.~A. Fisher.
+\newblock The {{Use}} of {{Multiple Measurements}} in {{Taxonomic Problems}}.
+\newblock \emph{Annals of Eugenics}, 7\penalty0 (2):\penalty0 179--188, 1936.
+\newblock ISSN 2050-1439.
+\newblock \doi{10.1111/j.1469-1809.1936.tb02137.x}.
+
+\bibitem[Tharwat et~al.(2017)Tharwat, Gaber, Ibrahim, and Hassanien]{tharwat_linear_2017}
+Alaa Tharwat, Tarek Gaber, Abdelhameed Ibrahim, and Aboul~Ella Hassanien.
+\newblock Linear discriminant analysis: {{A}} detailed tutorial.
+\newblock \emph{AI Communications}, 30\penalty0 (2):\penalty0 169--190, May 2017.
+\newblock ISSN 0921-7126.
+\newblock \doi{10.3233/AIC-170729}.
+
+\bibitem[Ghojogh and Crowley(2019)]{ghojogh_linear_2019}
+Benyamin Ghojogh and Mark Crowley.
+\newblock Linear and {{Quadratic Discriminant Analysis}}: {{Tutorial}}, June 2019.
+
+\bibitem[Haynes(2013)]{haynes_maximum_2013}
+Winston Haynes.
+\newblock Maximum {{Likelihood Estimation}}.
+\newblock In Werner Dubitzky, Olaf Wolkenhauer, Kwang-Hyun Cho, and Hiroki Yokota, editors, \emph{Encyclopedia of {{Systems Biology}}}, pages 1190--1191. Springer, New York, NY, 2013.
+\newblock ISBN 978-1-4419-9863-7.
+\newblock \doi{10.1007/978-1-4419-9863-7_1235}.
+
+\bibitem[Mika et~al.(1999)Mika, Ratsch, Weston, Scholkopf, and Mullers]{mika_fisher_1999}
+S.~Mika, G.~Ratsch, J.~Weston, B.~Scholkopf, and K.R. Mullers.
+\newblock Fisher discriminant analysis with kernels.
+\newblock In \emph{Neural {{Networks}} for {{Signal Processing IX}}: {{Proceedings}} of the 1999 {{IEEE Signal Processing Society Workshop}} ({{Cat}}. {{No}}.{{98TH8468}})}, pages 41--48, Madison, WI, USA, 1999. IEEE.
+\newblock ISBN 978-0-7803-5673-3.
+\newblock \doi{10.1109/NNSP.1999.788121}.
+
+\bibitem[Chen and Guestrin(2016)]{chen_xgboost_2016}
+Tianqi Chen and Carlos Guestrin.
+\newblock {{XGBoost}}: {{A Scalable Tree Boosting System}}.
+\newblock In \emph{Proceedings of the 22nd {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} and {{Data Mining}}}, pages 785--794, August 2016.
+\newblock \doi{10.1145/2939672.2939785}.
+
+\bibitem[Friedman et~al.(2000)Friedman, Hastie, and Tibshirani]{friedman_additive_2000}
+Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
+\newblock Additive logistic regression: A statistical view of boosting ({{With}} discussion and a rejoinder by the authors).
+\newblock \emph{The Annals of Statistics}, 28\penalty0 (2):\penalty0 337--407, April 2000.
+\newblock ISSN 0090-5364, 2168-8966.
+\newblock \doi{10.1214/aos/1016218223}.
+
+\bibitem[Bridle(1990)]{bridle_probabilistic_1990}
+John~S. Bridle.
+\newblock Probabilistic {{Interpretation}} of {{Feedforward Classification Network Outputs}}, with {{Relationships}} to {{Statistical Pattern Recognition}}.
+\newblock In Fran{\c c}oise~Fogelman Souli{\'e} and Jeanny H{\'e}rault, editors, \emph{Neurocomputing}, pages 227--236, Berlin, Heidelberg, 1990. Springer.
+\newblock ISBN 978-3-642-76153-9.
+\newblock \doi{10.1007/978-3-642-76153-9_28}.
+
+\bibitem[Schmidhuber(2015)]{schmidhuber_deep_2015}
+J{\"u}rgen Schmidhuber.
+\newblock Deep learning in neural networks: {{An}} overview.
+\newblock \emph{Neural Networks}, 61:\penalty0 85--117, January 2015.
+\newblock ISSN 0893-6080.
+\newblock \doi{10.1016/j.neunet.2014.09.003}.
+
+\bibitem[Goodfellow and Courville(2016)]{goodfellow_deep_2016}
+Ian Goodfellow and Aaron Courville.
+\newblock \emph{Deep {{Learning}}}.
+\newblock MIT Press, 2016.
+
+\bibitem[Lussier et~al.(2020)Lussier, Thibault, Charron, Wallace, and Masson]{lussier_deep_2020}
+F{\'e}lix Lussier, Vincent Thibault, Benjamin Charron, Gregory~Q. Wallace, and Jean-Francois Masson.
+\newblock Deep learning and artificial intelligence methods for {{Raman}} and surface-enhanced {{Raman}} scattering.
+\newblock \emph{TrAC Trends in Analytical Chemistry}, 124:\penalty0 115796, March 2020.
+\newblock ISSN 0165-9936.
+\newblock \doi{10.1016/j.trac.2019.115796}.
+
+\bibitem[Rumelhart et~al.(1986)Rumelhart, Hintont, and Williams]{rumelhart_learning_1986}
+David~E Rumelhart, Geoffrey~E Hintont, and Ronald~J Williams.
+\newblock Learning representations by back-propagating errors.
+\newblock 1986.
+
+\bibitem[Ruder(2017)]{ruder_overview_2017}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms, June 2017.
+
+\bibitem[Kuka{\v c}ka et~al.(2017)Kuka{\v c}ka, Golkov, and Cremers]{kukacka_regularization_2017}
+Jan Kuka{\v c}ka, Vladimir Golkov, and Daniel Cremers.
+\newblock Regularization for {{Deep Learning}}: {{A Taxonomy}}, October 2017.
+
+\bibitem[Kingma and Ba(2017)]{kingma_adam_2017}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: {{A Method}} for {{Stochastic Optimization}}, January 2017.
+
+\bibitem[Biewald(2020)]{biewald_experiment_2020}
+Lucas Biewald.
+\newblock Experiment {{Tracking}} with {{Weights}} and {{Biases}}, 2020.
+
 \bibitem[Villazon et~al.(2025)Villazon, Dela~Cruz, and Shi]{villazon_cancer_2025}
 Jorge Villazon, Nathaniel Dela~Cruz, and Lingyan Shi.
 \newblock Cancer {{Cell Line Classification Using Raman Spectroscopy}} of {{Cancer-Derived Exosomes}} and {{Machine Learning}}.
 \newblock \emph{Analytical Chemistry}, 97\penalty0 (13):\penalty0 7289--7298, March 2025.
 \newblock ISSN 0003-2700.
 \newblock \doi{10.1021/acs.analchem.4c06966}.
+
+\bibitem[Ribeiro et~al.(2016)Ribeiro, Singh, and Guestrin]{ribeiro_why_2016}
+Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
+\newblock "{{Why Should I Trust You}}?": {{Explaining}} the {{Predictions}} of {{Any Classifier}}, August 2016.
+
+\bibitem[Kingma and Welling()]{kingma_introduction_nodate}
+Diederik~P Kingma and Max Welling.
+\newblock An {{Introduction}} to {{Variational Autoencoders}}.
 
 \end{thebibliography}

@@ -1,0 +1,26 @@
+\section{Traditional ML Classification Performance With 10-Fold Cross-Validation}
+\label{appendix:Tiago}
+\begin{table}[ht]
+  \centering
+  
+  \label{tab:model_performance}
+  \begin{tabular}{@{}l l c c c c c@{}}
+    \toprule
+    Model & Metric & Normal & Hyperplastic & Adenoma & Cancer & Accuracy \\
+    \midrule
+    \multirow{2}{*}{PCA~$>$~LDA}
+      & Sensitivity & $42\pm20.4$ & $31\pm17.7$ & $84\pm14.3$ & $39\pm26.3$ & $61\pm7.6$ \\
+      & Specificity & $90\pm11.1$ & $94\pm5.4$  & $57\pm19.9$ & $95\pm6.2$  & — \\
+    \midrule
+    \multirow{2}{*}{XGBoost}
+      & Sensitivity & $58\pm11.9$ & $41\pm14.7$ & $80\pm14.4$ & $62\pm33.6$ & $68\pm10.0$ \\
+      & Specificity & $88\pm6.6$  & $91\pm2.6$  & $77\pm10.2$ & $96\pm6.2$  & — \\
+    \midrule
+    \multirow{2}{*}{PCA~$>$~XGBoost}
+      & Sensitivity & $43\pm11.5$ & $28\pm11.9$ & $55\pm11.9$ & $75\pm20.9$ & $51\pm9.2$ \\
+      & Specificity & $88\pm10.3$ & $90\pm6.7$  & $79\pm7.7$  & $77\pm10.5$ & — \\
+    \bottomrule
+  \end{tabular}
+  \label{table:traditional_ml_performance_4_class_Tiago}
+  \caption{Performance characteristics (mean $\pm$ SD) for PCA fed LDA, PCA fed XGBoost and raw data into XGBoost methods for four-classification prediction with 10-fold cross-validation as found by Azevedo et. al. (unpublished).}
+\end{table}

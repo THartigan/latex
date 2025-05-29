@@ -1,0 +1,46 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Previous Works}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Future Vision}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Novelty of This Work}{5}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Methods}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}FTIR Spectroscopy}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}FTIR Dataset Collection}{6}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Cross-Validation Approach}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Machine Learning (ML)}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Principal Component Analysis (PCA)}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Linear Discriminant Analysis (LDA)}{8}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Extreme Gradient Boosting (XGBoost or XGB)}{9}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Neural Networks}{11}{subsubsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.4}Explainability}{11}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Local Interpretable Model-Agnostic Explanations (LIME)}{11}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{11}{subsubsection.2.4.2}%
+\contentsline {section}{\numberline {3}Results}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Spectral Matching Methods}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Traditional Machine Learning Approaches}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}A Scanning Convolutional Neural Network Approach}{15}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}LIME Explanations}{15}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{15}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}VAE Method}{15}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}M-VAE Method}{15}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{15}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Discussion}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Applications to Physics}{15}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusions}{15}{section.5}%
+\contentsline {section}{\numberline {6}Methods and Results}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Classical ML Methods for Spectral Classification}{16}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}XGBoost}{16}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Spectral Matching}{16}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Deep Learning Methods for Spectral Classification}{16}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}De-noising Methods}{16}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Evaluation Metrics}{16}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Model Architecture}{16}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Regularisation Techniques}{16}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Model Performance}{19}{subsubsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.3}Explainability}{19}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Local Interpretable Model-Agnostic Explanations}{19}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}CRIME}{19}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}VAE Methods}{19}{subsubsection.6.3.3}%
+\contentsline {paragraph}{Clustering VAE Approaches}{19}{figure.21}%
+\contentsline {paragraph}{Logic Explained Networks}{19}{section*.3}%
+\contentsline {section}{\numberline {A}Traditional ML Classification Performance With 10-Fold Cross-Validation}{31}{appendix.A}%
