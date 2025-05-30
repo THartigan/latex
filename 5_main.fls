@@ -342,6 +342,8 @@ INPUT appendix_Tiago.tex
 INPUT 5_main.aux
 INPUT ./5_main.out
 INPUT ./5_main.out
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb

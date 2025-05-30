@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex 5_main"] 1748621779.36295 "5_main.aux" "5_main.bbl" "5_main" 1748621790.48897 0
+["bibtex 5_main"] 1748648283.28153 "5_main.aux" "5_main.bbl" "5_main" 1748648292.71591 0
   "./TROPHY.bib" 1748616046.27721 246058 f38252c3275b2914924c513fbf774876 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "5_main.aux" 1748621790.19105 28421 472ed5d47b3b98de44da0cac675ff06a "pdflatex"
+  "5_main.aux" 1748648292.46413 29588 7566f177a24a46d60b7ee04c60ee3b7c "pdflatex"
   (generated)
   "5_main.bbl"
   "5_main.blg"
   (rewritten before read)
-["pdflatex"] 1748621779.5247 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748621790.48911 0
+["pdflatex"] 1748648283.36723 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748648292.71614 0
   "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" 1748512908.77152 987 4fb93242da1570200c2ea79ef7bbc8e4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -63,6 +63,8 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb" 1248133631 33824 dc5c48f8ca3a731023ab6c276bedeb6a ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb" 1248133631 30068 eae4ba75635647d82fb0b7d7bccc4748 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb" 1248133631 39386 0bb525d495ceab21fe797301a586e0d7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
@@ -129,16 +131,16 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1747492213 3345732 6d12076f5f56aad4716ba4cefe1a1fa2 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "0_Introduction.tex" 1748279249.41587 5844 8679e93c0e427f1a5a17de4daf373ae8 ""
-  "1_Methods.tex" 1748621768.0536 21495 e5f26b9dc405bc718ba8a24d797f656d ""
+  "1_Methods.tex" 1748648273.89952 24251 df81b97fe799bf9462e9dd0a65f4da85 ""
   "2_Methods.tex" 1748605132.82948 6177 003a019abc0b6c79cb966c207fe6bc6e ""
   "3_Results.tex" 1748462414.96367 11319 8c57108080424933be1f599e59ce94eb ""
   "4_Discussion.tex" 1748443304.4185 58 b5415fe539f38183cab8464c3aa3dd0a ""
   "5_Conclusions.tex" 1747502760.34084 21 962245b29278b6028e8e709db79a2139 ""
-  "5_main.aux" 1748621790.19105 28421 472ed5d47b3b98de44da0cac675ff06a "pdflatex"
-  "5_main.bbl" 1748621779.52196 21558 42786387586d304bd22ea948d7fc29f7 "bibtex 5_main"
-  "5_main.out" 1748621790.19295 9195 101a1f1a0f7745007935f4af70b7be2e "pdflatex"
+  "5_main.aux" 1748648292.46413 29588 7566f177a24a46d60b7ee04c60ee3b7c "pdflatex"
+  "5_main.bbl" 1748648283.3648 21558 42786387586d304bd22ea948d7fc29f7 "bibtex 5_main"
+  "5_main.out" 1748648292.4656 9195 101a1f1a0f7745007935f4af70b7be2e "pdflatex"
   "5_main.tex" 1748512908.77152 987 4fb93242da1570200c2ea79ef7bbc8e4 ""
-  "5_main.toc" 1748621790.19335 4941 230f5650ccd1a3a89f7efdb521722254 "pdflatex"
+  "5_main.toc" 1748648292.46585 4941 5bd76699333538ba6a48ebf6b4b1208c "pdflatex"
   "Images/Categorisation_train_test.png" 1747943291 931719 5c5a4f714c4dcc2c5022b8dc07755f73 ""
   "Images/Confidence.png" 1747942403 1456073 31958d98310ffac4771318dc36a4abd8 ""
   "Images/Cystine_IR_pH_dep.png" 1747781622.38141 138908 c0574d8651dd198c80a5b17f28026a75 ""
