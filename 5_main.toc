@@ -16,39 +16,39 @@
 \contentsline {paragraph}{Fully Connected Layers}{11}{section*.2}%
 \contentsline {paragraph}{Convolutional Layers}{11}{section*.3}%
 \contentsline {paragraph}{Transformer Layers}{12}{section*.4}%
-\contentsline {subsubsection}{\numberline {2.4.3}Scanning Convolutional Neural Networks (SCNN)}{12}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.3}Scale-Adjusting Convolutional Neural Networks (SCNN)}{12}{subsubsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.5}Explainability}{12}{subsection.2.5}%
 \contentsline {subsubsection}{\numberline {2.5.1}Local Interpretable Model-Agnostic Explanations (LIME)}{12}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{12}{subsubsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2.5.3}Variational Autoencoders (VAE)}{12}{subsubsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.6}Evaluation Metrics}{12}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Results}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Spectral Matching Methods}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Traditional Machine Learning Approaches}{17}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}A Scanning Convolutional Neural Network Approach}{17}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}LIME Explanations}{17}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{17}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}VAE Method}{17}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}M-VAE Method}{17}{subsubsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{17}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Discussion}{17}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Applications to Physics}{17}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusions}{17}{section.5}%
-\contentsline {section}{\numberline {6}Methods and Results}{18}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Classical ML Methods for Spectral Classification}{18}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}XGBoost}{18}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Spectral Matching}{18}{subsubsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.2}Deep Learning Methods for Spectral Classification}{18}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}De-noising Methods}{18}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Evaluation Metrics}{18}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Model Architecture}{18}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Regularisation Techniques}{18}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}Model Performance}{18}{subsubsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.3}Explainability}{18}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Local Interpretable Model-Agnostic Explanations}{18}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}CRIME}{18}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}VAE Methods}{18}{subsubsection.6.3.3}%
-\contentsline {paragraph}{Clustering VAE Approaches}{29}{figure.22}%
-\contentsline {paragraph}{Logic Explained Networks}{29}{section*.6}%
+\contentsline {subsubsection}{\numberline {2.5.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{15}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Variational Autoencoders (VAE)}{15}{subsubsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.6}Evaluation Metrics}{15}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Results}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Spectral Matching Methods}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Traditional Machine Learning Approaches}{18}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}A Scanning Convolutional Neural Network Approach}{19}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}LIME Explanations}{19}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{19}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}VAE Method}{19}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}M-VAE Method}{19}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{19}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Discussion}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Applications to Physics}{19}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusions}{19}{section.5}%
+\contentsline {section}{\numberline {6}Methods and Results}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Classical ML Methods for Spectral Classification}{20}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}XGBoost}{20}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Spectral Matching}{20}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Deep Learning Methods for Spectral Classification}{20}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}De-noising Methods}{20}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Evaluation Metrics}{20}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Model Architecture}{20}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Regularisation Techniques}{24}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Model Performance}{24}{subsubsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.3}Explainability}{24}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Local Interpretable Model-Agnostic Explanations}{24}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}CRIME}{24}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}VAE Methods}{24}{subsubsection.6.3.3}%
+\contentsline {paragraph}{Clustering VAE Approaches}{24}{figure.22}%
+\contentsline {paragraph}{Logic Explained Networks}{24}{section*.6}%
 \contentsline {section}{\numberline {A}Traditional ML Classification Performance With 10-Fold Cross-Validation}{34}{appendix.A}%

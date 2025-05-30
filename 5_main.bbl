@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -320,16 +320,23 @@ Lin Song, Yanwei Li, Zhengkai Jiang, Zeming Li, Hongbin Sun, Jian Sun, and Nanni
 Yanwei Li, Lin Song, Yukang Chen, Zeming Li, Xiangyu Zhang, Xingang Wang, and Jian Sun.
 \newblock Learning {{Dynamic Routing}} for {{Semantic Segmentation}}, March 2020.
 
+\bibitem[Yu et~al.(2021)Yu, ~, and {and Chen}]{yu_three-parameter_2021}
+Xiaoli Yu, Li~, Shaoting, and Jiahua {and Chen}.
+\newblock A three-parameter logistic regression model.
+\newblock \emph{Statistical Theory and Related Fields}, 5\penalty0 (3):\penalty0 265--274, July 2021.
+\newblock ISSN 2475-4269.
+\newblock \doi{10.1080/24754269.2020.1796098}.
+
+\bibitem[Ribeiro et~al.(2016)Ribeiro, Singh, and Guestrin]{ribeiro_why_2016}
+Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
+\newblock "{{Why Should I Trust You}}?": {{Explaining}} the {{Predictions}} of {{Any Classifier}}, August 2016.
+
 \bibitem[Villazon et~al.(2025)Villazon, Dela~Cruz, and Shi]{villazon_cancer_2025}
 Jorge Villazon, Nathaniel Dela~Cruz, and Lingyan Shi.
 \newblock Cancer {{Cell Line Classification Using Raman Spectroscopy}} of {{Cancer-Derived Exosomes}} and {{Machine Learning}}.
 \newblock \emph{Analytical Chemistry}, 97\penalty0 (13):\penalty0 7289--7298, March 2025.
 \newblock ISSN 0003-2700.
 \newblock \doi{10.1021/acs.analchem.4c06966}.
-
-\bibitem[Ribeiro et~al.(2016)Ribeiro, Singh, and Guestrin]{ribeiro_why_2016}
-Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
-\newblock "{{Why Should I Trust You}}?": {{Explaining}} the {{Predictions}} of {{Any Classifier}}, August 2016.
 
 \bibitem[Kingma and Welling()]{kingma_introduction_nodate}
 Diederik~P Kingma and Max Welling.

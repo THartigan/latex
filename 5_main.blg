@@ -7,6 +7,7 @@ Warning--I didn't find a database entry for "Trophy"
 Warning--I didn't find a database entry for "Trophy_proposal"
 Warning--I didn't find a database entry for "things"
 Warning--I didn't find a database entry for "crine"
+Warning--I didn't find a database entry for ""
 Warning--empty year in noauthor_minerva_nodate
 Warning--empty journal in eic_trophy_nodate
 Warning--empty year in eic_trophy_nodate
@@ -25,45 +26,45 @@ Warning--empty year in song_fine-grained_nodate
 Warning--empty journal in kingma_introduction_nodate
 Warning--empty year in kingma_introduction_nodate
 Warning--empty year in kingma_introduction_nodate
-You've used 57 entries,
+You've used 58 entries,
             2481 wiz_defined-function locations,
-            956 strings with 18898 characters,
-and the built_in function-call counts, 25306 in all, are:
-= -- 1953
-> -- 1782
+            964 strings with 19116 characters,
+and the built_in function-call counts, 25747 in all, are:
+= -- 1995
+> -- 1803
 < -- 34
-+ -- 658
-- -- 544
-* -- 2259
-:= -- 4209
-add.period$ -- 221
-call.type$ -- 57
-change.case$ -- 112
-chr.to.int$ -- 57
-cite$ -- 76
-duplicate$ -- 1083
-empty$ -- 2033
-format.name$ -- 628
-if$ -- 5223
++ -- 666
+- -- 550
+* -- 2301
+:= -- 4280
+add.period$ -- 226
+call.type$ -- 58
+change.case$ -- 114
+chr.to.int$ -- 58
+cite$ -- 77
+duplicate$ -- 1102
+empty$ -- 2071
+format.name$ -- 635
+if$ -- 5315
 int.to.chr$ -- 1
-int.to.str$ -- 58
-missing$ -- 45
-newline$ -- 338
-num.names$ -- 174
-pop$ -- 497
+int.to.str$ -- 59
+missing$ -- 46
+newline$ -- 345
+num.names$ -- 177
+pop$ -- 502
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 58
 quote$ -- 0
-skip$ -- 646
+skip$ -- 655
 stack$ -- 0
-substring$ -- 933
-swap$ -- 209
+substring$ -- 960
+swap$ -- 212
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 393
+type$ -- 400
 warning$ -- 18
-while$ -- 181
+while$ -- 185
 width$ -- 0
-write$ -- 818
-(There were 22 warnings)
+write$ -- 835
+(There were 23 warnings)

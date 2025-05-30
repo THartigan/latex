@@ -42,7 +42,9 @@
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \centering  Assignments of Various Functional Groups Based on Wavenumber}}{6}{table.1}\protected@file@percent }
 \newlabel{table:functional_groups}{{1}{6}{\centering Assignments of Various Functional Groups Based on Wavenumber}{table.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}FTIR Dataset Collection}{6}{subsubsection.2.1.1}\protected@file@percent }
+\newlabel{sec:mdethods:data_collection}{{2.1.1}{6}{FTIR Dataset Collection}{subsubsection.2.1.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Cross-Validation Approach}{6}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:methods:data_split}{{2.2}{6}{Cross-Validation Approach}{subsection.2.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces From \cite  {berthomieu_fourier_2009}}}{7}{figure.4}\protected@file@percent }
 \newlabel{fig:my-label}{{4}{7}{From \cite {berthomieu_fourier_2009}}{figure.4}{}}
 \citation{shlens_tutorial_2014}
@@ -100,82 +102,70 @@
 \citation{dosovitskiy_image_2021}
 \citation{zaki_explainable_2024}
 \citation{song_fine-grained_nodate,li_learning_2020,zaki_explainable_2024}
+\citation{yu_three-parameter_2021}
+\citation{ribeiro_why_2016}
+\citation{}
 \@writefile{toc}{\contentsline {paragraph}{Transformer Layers}{12}{section*.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Scanning Convolutional Neural Networks (SCNN)}{12}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Scale-Adjusting Convolutional Neural Networks (SCNN)}{12}{subsubsection.2.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Explainability}{12}{subsection.2.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}Local Interpretable Model-Agnostic Explanations (LIME)}{12}{subsubsection.2.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{12}{subsubsection.2.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}Variational Autoencoders (VAE)}{12}{subsubsection.2.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Evaluation Metrics}{12}{subsection.2.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite  {alzubaidi_review_2021}. b) shows the action of 1D and 2D CNN kernels. From \cite  {shenfield_novel_2020} and \cite  {dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, from \cite  {vaswani_attention_2023} and the transformer encoder block \cite  {dosovitskiy_image_2021}.}}{13}{figure.8}\protected@file@percent }
-\newlabel{fig:connection_methods}{{8}{13}{Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite {alzubaidi_review_2021}. b) shows the action of 1D and 2D CNN kernels. From \cite {shenfield_novel_2020} and \cite {dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, from \cite {vaswani_attention_2023} and the transformer encoder block \cite {dosovitskiy_image_2021}}{figure.8}{}}
-\citation{nallala_high-resolution_2016}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The SCNN architecture implemented in this work.}}{14}{figure.9}\protected@file@percent }
-\newlabel{fig:scnn_arch}{{9}{14}{The SCNN architecture implemented in this work}{figure.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{14}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{14}{subsection.3.1}\protected@file@percent }
-\citation{villazon_cancer_2025}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes.}}{15}{figure.10}\protected@file@percent }
-\newlabel{fig:dataset_differences}{{10}{15}{Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes}{figure.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Spectral Matching Methods}{15}{subsection.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked.}}{16}{figure.11}\protected@file@percent }
-\newlabel{fig:IR_and_HE_categories}{{11}{16}{Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked}{figure.11}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown.}}{17}{table.2}\protected@file@percent }
-\newlabel{table:spectral_mathching_1}{{2}{17}{The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown}{table.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown.}}{17}{table.3}\protected@file@percent }
-\newlabel{table:spectral_matching_2}{{3}{17}{The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown}{table.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Traditional Machine Learning Approaches}{17}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}A Scanning Convolutional Neural Network Approach}{17}{subsection.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}LIME Explanations}{17}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{17}{subsection.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}VAE Method}{17}{subsubsection.3.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}M-VAE Method}{17}{subsubsection.3.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{17}{subsection.3.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{17}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Applications to Physics}{17}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{17}{section.5}\protected@file@percent }
+\newlabel{eq:explanation}{{17}{12}{Local Interpretable Model-Agnostic Explanations (LIME)}{equation.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite  {alzubaidi_review_2021}. b) shows the action of 1D and 2D CNN kernels. From \cite  {shenfield_novel_2020} and \cite  {dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, both from \cite  {vaswani_attention_2023}, and the transformer encoder block, from \cite  {dosovitskiy_image_2021}.}}{13}{figure.8}\protected@file@percent }
+\newlabel{fig:connection_methods}{{8}{13}{Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite {alzubaidi_review_2021}. b) shows the action of 1D and 2D CNN kernels. From \cite {shenfield_novel_2020} and \cite {dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, both from \cite {vaswani_attention_2023}, and the transformer encoder block, from \cite {dosovitskiy_image_2021}}{figure.8}{}}
+\citation{}
+\citation{}
 \citation{ribeiro_why_2016}
-\citation{kingma_introduction_nodate}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost.}}{18}{table.4}\protected@file@percent }
-\newlabel{table:combined_4class_performance}{{4}{18}{Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost}{table.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Methods and Results}{18}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Classical ML Methods for Spectral Classification}{18}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}XGBoost}{18}{subsubsection.6.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Spectral Matching}{18}{subsubsection.6.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Deep Learning Methods for Spectral Classification}{18}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}De-noising Methods}{18}{subsubsection.6.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Evaluation Metrics}{18}{subsubsection.6.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Model Architecture}{18}{subsubsection.6.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Regularisation Techniques}{18}{subsubsection.6.2.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and no label smoothing}}{18}{table.5}\protected@file@percent }
-\newlabel{tab:voting05_results}{{5}{18}{Metrics for single fold test set with 50\% voting threshold and no label smoothing}{table.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.5}Model Performance}{18}{subsubsection.6.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Explainability}{18}{subsection.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Local Interpretable Model-Agnostic Explanations}{18}{subsubsection.6.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}CRIME}{18}{subsubsection.6.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}VAE Methods}{18}{subsubsection.6.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Caption}}{19}{figure.12}\protected@file@percent }
-\newlabel{fig:my-label}{{12}{19}{Caption}{figure.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Caption}}{20}{figure.13}\protected@file@percent }
-\newlabel{fig:my-label}{{13}{20}{Caption}{figure.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Caption}}{21}{figure.14}\protected@file@percent }
-\newlabel{fig:my-label}{{14}{21}{Caption}{figure.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Caption}}{22}{figure.15}\protected@file@percent }
-\newlabel{fig:my-label}{{15}{22}{Caption}{figure.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces From \cite  {ribeiro_why_2016}}}{23}{figure.16}\protected@file@percent }
-\newlabel{fig:my-label}{{16}{23}{From \cite {ribeiro_why_2016}}{figure.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The SCNN architecture implemented in this work. 1D convolutional layers are represented by C1D(input channels, output channels, kernel size, stride) and fully connected layers are denoted by FC.}}{14}{figure.9}\protected@file@percent }
+\newlabel{fig:scnn_arch}{{9}{14}{The SCNN architecture implemented in this work. 1D convolutional layers are represented by C1D(input channels, output channels, kernel size, stride) and fully connected layers are denoted by FC}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces From \cite  {ribeiro_why_2016}}}{14}{figure.10}\protected@file@percent }
+\newlabel{fig:lime_illustration}{{10}{14}{From \cite {ribeiro_why_2016}}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Caption}}{15}{figure.11}\protected@file@percent }
+\newlabel{fig:my-label}{{11}{15}{Caption}{figure.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{15}{subsubsection.2.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}Variational Autoencoders (VAE)}{15}{subsubsection.2.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Evaluation Metrics}{15}{subsection.2.6}\protected@file@percent }
+\citation{nallala_high-resolution_2016}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{16}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{16}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes.}}{16}{figure.12}\protected@file@percent }
+\newlabel{fig:dataset_differences}{{12}{16}{Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes}{figure.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked.}}{17}{figure.13}\protected@file@percent }
+\newlabel{fig:IR_and_HE_categories}{{13}{17}{Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked}{figure.13}{}}
+\citation{villazon_cancer_2025}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Spectral Matching Methods}{18}{subsection.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown.}}{18}{table.2}\protected@file@percent }
+\newlabel{table:spectral_mathching_1}{{2}{18}{The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown.}}{18}{table.3}\protected@file@percent }
+\newlabel{table:spectral_matching_2}{{3}{18}{The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performance is identical to 3 s.f. for both methods, so only one table is shown}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Traditional Machine Learning Approaches}{18}{subsection.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost.}}{19}{table.4}\protected@file@percent }
+\newlabel{table:combined_4class_performance}{{4}{19}{Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}A Scanning Convolutional Neural Network Approach}{19}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}LIME Explanations}{19}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{19}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}VAE Method}{19}{subsubsection.3.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}M-VAE Method}{19}{subsubsection.3.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{19}{subsection.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{19}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Applications to Physics}{19}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{19}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Methods and Results}{20}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Classical ML Methods for Spectral Classification}{20}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}XGBoost}{20}{subsubsection.6.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Spectral Matching}{20}{subsubsection.6.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Deep Learning Methods for Spectral Classification}{20}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}De-noising Methods}{20}{subsubsection.6.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Evaluation Metrics}{20}{subsubsection.6.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Model Architecture}{20}{subsubsection.6.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Caption}}{20}{figure.14}\protected@file@percent }
+\newlabel{fig:my-label}{{14}{20}{Caption}{figure.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Caption}}{21}{figure.15}\protected@file@percent }
+\newlabel{fig:my-label}{{15}{21}{Caption}{figure.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Caption}}{22}{figure.16}\protected@file@percent }
+\newlabel{fig:my-label}{{16}{22}{Caption}{figure.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Caption}}{23}{figure.17}\protected@file@percent }
 \newlabel{fig:my-label}{{17}{23}{Caption}{figure.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Caption}}{24}{figure.18}\protected@file@percent }
-\newlabel{fig:my-label}{{18}{24}{Caption}{figure.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces From \cite  {kingma_introduction_nodate}}}{25}{figure.19}\protected@file@percent }
-\newlabel{fig:my-label}{{19}{25}{From \cite {kingma_introduction_nodate}}{figure.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Caption}}{26}{figure.20}\protected@file@percent }
-\newlabel{fig:my-label}{{20}{26}{Caption}{figure.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Caption}}{27}{figure.21}\protected@file@percent }
-\newlabel{fig:my-label}{{21}{27}{Caption}{figure.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Caption}}{28}{figure.22}\protected@file@percent }
-\newlabel{fig:my-label}{{22}{28}{Caption}{figure.22}{}}
+\citation{kingma_introduction_nodate}
 \bibstyle{unsrtnat}
 \bibdata{TROPHY.bib}
 \bibcite{bray_global_2024}{{1}{2024}{{Bray et~al.}}{{Bray, Laversanne, Sung, Ferlay, Siegel, Soerjomataram, and Jemal}}}
@@ -183,14 +173,30 @@
 \bibcite{hollon_near_2020}{{3}{2020}{{Hollon et~al.}}{{Hollon, Pandian, Adapa, Urias, Save, Khalsa, Eichberg, D'Amico, Farooq, Lewis, Petridis, Marie, Shah, Garton, Maher, Heth, McKean, Sullivan, {Hervey-Jumper}, Patil, Thompson, Sagher, McKhann, Komotar, Ivan, Snuderl, Otten, Johnson, Sisti, Bruce, Muraszko, Trautman, Freudiger, Canoll, Lee, {Camelo-Piragua}, and Orringer}}}
 \bibcite{novis_interinstitutional_1997}{{4}{1997}{{Novis and Zarbo}}{{}}}
 \bibcite{bai_deep_2023}{{5}{2023}{{Bai et~al.}}{{Bai, Yang, Li, Zhang, Pillar, and Ozcan}}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and no label smoothing}}{24}{table.5}\protected@file@percent }
+\newlabel{tab:voting05_results}{{5}{24}{Metrics for single fold test set with 50\% voting threshold and no label smoothing}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}}{24}{table.6}\protected@file@percent }
+\newlabel{tab:ls01_results}{{6}{24}{Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}{table.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Regularisation Techniques}{24}{subsubsection.6.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.5}Model Performance}{24}{subsubsection.6.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Explainability}{24}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Local Interpretable Model-Agnostic Explanations}{24}{subsubsection.6.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}CRIME}{24}{subsubsection.6.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}VAE Methods}{24}{subsubsection.6.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Clustering VAE Approaches}{24}{figure.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Logic Explained Networks}{24}{section*.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Caption}}{25}{figure.18}\protected@file@percent }
+\newlabel{fig:my-label}{{18}{25}{Caption}{figure.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces From \cite  {kingma_introduction_nodate}}}{26}{figure.19}\protected@file@percent }
+\newlabel{fig:my-label}{{19}{26}{From \cite {kingma_introduction_nodate}}{figure.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Caption}}{27}{figure.20}\protected@file@percent }
+\newlabel{fig:my-label}{{20}{27}{Caption}{figure.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Caption}}{28}{figure.21}\protected@file@percent }
+\newlabel{fig:my-label}{{21}{28}{Caption}{figure.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Caption}}{29}{figure.22}\protected@file@percent }
+\newlabel{fig:my-label}{{22}{29}{Caption}{figure.22}{}}
 \bibcite{sarri_fast_2019}{{6}{2019}{{Sarri et~al.}}{{Sarri, Canonge, Audier, Simon, Wojak, Caillol, Cador, Marguet, Poizat, Giovannini, and Rigneault}}}
 \bibcite{kondepudi_foundation_2024}{{7}{2024}{{Kondepudi et~al.}}{{Kondepudi, Pekmezci, Hou, Scotford, Jiang, Rao, Harake, Chowdury, {Al-Holou}, Wang, Pandey, Lowenstein, Castro, Koerner, {Roetzer-Pejrimovsky}, Widhalm, {Camelo-Piragua}, {Movahed-Ezazi}, Orringer, Lee, Freudiger, Berger, {Hervey-Jumper}, and Hollon}}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}}{29}{table.6}\protected@file@percent }
-\newlabel{tab:ls01_results}{{6}{29}{Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}{table.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and 20\% label smoothing}}{29}{table.7}\protected@file@percent }
-\newlabel{tab:ls02_results}{{7}{29}{Metrics for single fold test set with 50\% voting threshold and 20\% label smoothing}{table.7}{}}
-\@writefile{toc}{\contentsline {paragraph}{Clustering VAE Approaches}{29}{figure.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Logic Explained Networks}{29}{section*.6}\protected@file@percent }
 \bibcite{jiang_opensrh_2022}{{8}{2022}{{Jiang et~al.}}{{Jiang, Chowdury, Hou, Kondepudi, Freudiger, Conway, {Camelo-Piragua}, Orringer, Lee, and Hollon}}}
 \bibcite{tomas_detection_2022}{{9}{2022}{{Tomas et~al.}}{{Tomas, Sayat, Atienza, Danganan, Ramos, Fellizar, Notarte, Angeles, Bangaoil, Santillan, and Albano}}}
 \bibcite{berisha_deep_2019}{{10}{2019}{{Berisha et~al.}}{{Berisha, Lotfollahi, Jahanipour, Gurcan, Walsh, Bhargava, Nguyen, and Mayerich}}}
@@ -198,12 +204,12 @@
 \bibcite{eic_trophy_nodate}{{12}{}{{Eic}}{{}}}
 \bibcite{su_fourier_2020}{{13}{2020}{{Su and Lee}}{{}}}
 \bibcite{griffiths_fourier_1983}{{14}{1983}{{Griffiths}}{{}}}
-\bibcite{berthomieu_fourier_2009}{{15}{2009}{{Berthomieu and Hienerwadel}}{{}}}
-\bibcite{wolpert_infrared_2006}{{16}{2006}{{Wolpert and Hellwig}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and 20\% label smoothing}}{30}{table.7}\protected@file@percent }
+\newlabel{tab:ls02_results}{{7}{30}{Metrics for single fold test set with 50\% voting threshold and 20\% label smoothing}{table.7}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces XGBoost}}{30}{table.8}\protected@file@percent }
 \newlabel{tab:xgboost}{{8}{30}{XGBoost}{table.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces SCNN}}{30}{table.9}\protected@file@percent }
-\newlabel{tab:scnn_tpl3}{{9}{30}{SCNN}{table.9}{}}
+\bibcite{berthomieu_fourier_2009}{{15}{2009}{{Berthomieu and Hienerwadel}}{{}}}
+\bibcite{wolpert_infrared_2006}{{16}{2006}{{Wolpert and Hellwig}}{{}}}
 \bibcite{nallala_high-resolution_2016}{{17}{2016}{{Nallala et~al.}}{{Nallala, Lloyd, Shepherd, and Stone}}}
 \bibcite{kohavi_study_2001}{{18}{2001}{{Kohavi}}{{}}}
 \bibcite{t_r_stratified_2023}{{19}{2023}{{T~R et~al.}}{{T~R, V, V, Geman, Margala, and Guduri}}}
@@ -216,6 +222,8 @@
 \bibcite{ghojogh_linear_2019}{{26}{2019}{{Ghojogh and Crowley}}{{}}}
 \bibcite{haynes_maximum_2013}{{27}{2013}{{Haynes}}{{}}}
 \bibcite{mika_fisher_1999}{{28}{1999}{{Mika et~al.}}{{Mika, Ratsch, Weston, Scholkopf, and Mullers}}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces SCNN}}{31}{table.9}\protected@file@percent }
+\newlabel{tab:scnn_tpl3}{{9}{31}{SCNN}{table.9}{}}
 \bibcite{chen_xgboost_2016}{{29}{2016}{{Chen and Guestrin}}{{}}}
 \bibcite{friedman_additive_2000}{{30}{2000}{{Friedman et~al.}}{{Friedman, Hastie, and Tibshirani}}}
 \bibcite{bridle_probabilistic_1990}{{31}{1990}{{Bridle}}{{}}}
@@ -242,9 +250,10 @@
 \bibcite{zaki_explainable_2024}{{52}{2024}{{Zaki et~al.}}{{Zaki, Tomasik, McCune, Bahn, Li{\`o}, and Scherman}}}
 \bibcite{song_fine-grained_nodate}{{53}{}{{Song et~al.}}{{Song, Li, Jiang, Li, Sun, Sun, and Zheng}}}
 \bibcite{li_learning_2020}{{54}{2020}{{Li et~al.}}{{Li, Song, Chen, Li, Zhang, Wang, and Sun}}}
-\bibcite{villazon_cancer_2025}{{55}{2025}{{Villazon et~al.}}{{Villazon, Dela~Cruz, and Shi}}}
+\bibcite{yu_three-parameter_2021}{{55}{2021}{{Yu et~al.}}{{Yu, ~, and {and Chen}}}}
 \bibcite{ribeiro_why_2016}{{56}{2016}{{Ribeiro et~al.}}{{Ribeiro, Singh, and Guestrin}}}
-\bibcite{kingma_introduction_nodate}{{57}{}{{Kingma and Welling}}{{}}}
+\bibcite{villazon_cancer_2025}{{57}{2025}{{Villazon et~al.}}{{Villazon, Dela~Cruz, and Shi}}}
+\bibcite{kingma_introduction_nodate}{{58}{}{{Kingma and Welling}}{{}}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Traditional ML Classification Performance With 10-Fold Cross-Validation}{34}{appendix.A}\protected@file@percent }
 \newlabel{appendix:Tiago}{{A}{34}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.A}{}}
 \newlabel{tab:model_performance}{{A}{34}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.A}{}}

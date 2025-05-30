@@ -40,9 +40,11 @@ FTIR can detect biochemical features including nucleic acids, proteins, lipids a
 \end{figure}
 
 \subsubsection{FTIR Dataset Collection}
+\label{sec:mdethods:data_collection}
 The MINERVA dataset used in this work contains FTIR spectral images of 90 colon cancer tissue samples. These images were produced by collaborators at the University of Exeter using an Agilent 620 FTIR microscope, an Agilent 670 FTIR spectrometer with a Globar light source, and a liquid-nitrogen cooled 128x128 FPA detector \cite{nallala_high-resolution_2016}
 
 \subsection{Cross-Validation Approach}
+\label{sec:methods:data_split}
 FTIR data was produced for 90 samples, of which 31 were classified as normal, 17 as
 hyperplastic, 27 as adenomatous, and 15 as cancerous. Due to the desire to accurately predict performance in four-category prediction tasks, a 4-fold cross-validation approach was used \cite{kohavi_study_2001}. This involved splitting the dataset into four parts using the stratified group K-fold method, which produces splits subject to the constraints of both preserving the proportion of samples (pixels) for each class within each split to the maximum extent possible whilst also enforcing the requirement for non-overlapping groups between splits \cite{t_r_stratified_2023,gunopulos_stratification_2011, szymanski_network_2017}. When training ML models, an approach was adopted where for each set of four folds, two were used for training, one for validation and one for testing. For methods which did not require validation, the validation set was discarded, enabling maximal comparability between methods.
 
@@ -147,7 +149,7 @@ In practice, we also perform layer normalisation after the multi-head attention 
 \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{Images/connection_methods.png}
-    \caption{Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite{alzubaidi_review_2021}. b) shows the action of 1D and 2D CNN kernels. From \cite{shenfield_novel_2020} and \cite{dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, from \cite{vaswani_attention_2023} and the transformer encoder block \cite{dosovitskiy_image_2021}.}
+    \caption{Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite{alzubaidi_review_2021}. b) shows the action of 1D and 2D CNN kernels. From \cite{shenfield_novel_2020} and \cite{dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, both from \cite{vaswani_attention_2023}, and the transformer encoder block, from \cite{dosovitskiy_image_2021}.}
     \label{fig:connection_methods}
 \end{figure}
 
@@ -156,21 +158,51 @@ In practice, we also perform layer normalisation after the multi-head attention 
 % Within this work, a scanning convolutional neural network (SCNN) was used to 
 % 1D Convolutional neural networks \cite{} are used throughout this work to best extract spectral peaks. They work by
 % Transformers
-\subsubsection{Scanning Convolutional Neural Networks (SCNN)}
+\subsubsection{Scale-Adjusting Convolutional Neural Networks (SCNN)}
 
-In this work, a SCNN similar to that presented by Zaki et. al. \cite{zaki_explainable_2024} is implemented for feature extraction from 801 dimensional FTIR spectra. The model architecture is summarised in Figure \ref{fig:scnn_arch}. Notable features include the use of three scanning convolutional heads to extract information at different spectral scales, which is important for capturing the variable-width peaks in FTIR spectra. Furthermore, the use of $\tanh$ followed by ReLU activation functions reduces the effect of unphysically large convolutional outputs, which could otherwise produce exploding gradients \cite{song_fine-grained_nodate,li_learning_2020,zaki_explainable_2024}.
+In this work, a SCNN similar to that presented by Zaki et. al. \cite{zaki_explainable_2024} is implemented for feature extraction from 801 dimensional FTIR spectra. The model architecture is summarised in Figure \ref{fig:scnn_arch}. Notable features include the use of three scanning convolutional heads to extract information at different spectral scales, which is important for capturing the variable-width peaks in FTIR spectra. Furthermore, the use of $\tanh$ followed by ReLU activation functions reduces the effect of unphysically large convolutional outputs, which could otherwise produce exploding gradients \cite{song_fine-grained_nodate,li_learning_2020,zaki_explainable_2024}. Finally, the last layers in the network learn a three parameter logistic output \cite{yu_three-parameter_2021};
+\begin{equation} %Px = c+(1-c)/(1+torch.exp(-a*(x-b)))
+    \boldsymbol{\hat y} = c+ \frac{(1-c)}{1+\exp(-a(\boldsymbol{x}-b))},
+\end{equation}
+where $c$ is a guess parameter, $b$ denotes difficulty and $a$ denotes the discrimination. This allows the model to find a baseline offset for categorisation probability corresponding to the how it could sometimes be impossible to distinguish between classes using only FTIR data.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=1\textwidth]{Images/SCNN_TPL_Arch.png}
-  \caption{The SCNN architecture implemented in this work.}
+  \includegraphics[width=1\textwidth]{Images/SCNN_Final.png}
+  \caption{The SCNN architecture implemented in this work. 1D convolutional layers are represented by C1D(input channels, output channels, kernel size, stride) and fully connected layers are denoted by FC.}
   \label{fig:scnn_arch}
 \end{figure}
 
-
-
 \subsection{Explainability}
 \subsubsection{Local Interpretable Model-Agnostic Explanations (LIME)}
+LIME \cite{ribeiro_why_2016} is a model-agnostic explainability technique which works by producing $N$ perturbations, $\boldsymbol{z}$ around an input vector, $\boldsymbol{x}$. In this work, an approach is adopted where each input feature (wavelength intensity) is one-hot encoded \cite{} into a vector of length 10, with the encoded value corresponding to the training-set decile in which that feature value lies.    according to a gaussian distribution, and then training a local linear model $g\in \mathcal G$ to approximate the behaviour of original model $f$ around $\boldsymbol{x}$. Here, $\mathcal G$ is a class of potentially interpretable models. The selected LIME explanation is then given by:
+\begin{equation}
+    \xi(x)=\underset{g\in \mathcal G}{\text{argmin}} \left[ \mathcal L(f,g,\pi_x)+\Omega(g)\right],
+    \label{eq:explanation}
+\end{equation}
+where the locality-aware loss $\mathcal L(f,g,\pi_x)$ encodes the faithfulness of $g$ to $f$ in the locality $\pi_x$ and $\Omega(g)$ is an explanation-complexity penality term. This process is illustrated in Figure \ref{fig:lime_illustration}. In this work we are considering classification tasks, so the locality-aware loss is calculated using a square loss between the predicted probability for each class as given by $f$ and $g$ (the LIME process is repeated for each class). This takes the form:
+\begin{equation}
+    \mathcal L(f,g,\pi_x)=\sum_{z\in Z}\pi_x(z)\left(f(z)-g(z)\right)^2,
+\end{equation}
+where $\pi_x(z)=\exp(-D(x,z)^2/\sigma^2)$ encodes locality through an L2 \cite{} distance function $D$ and $\sigma$ is generally set as the median of all $D$ values. We then solve \ref{eq:explanation} as the weighted LASSO (least absolute shrinkage and selection operator) problem \cite{} to give 
+\begin{equation}
+    (\boldsymbol{w},b) = \underset{w, b}{\text{argmin}} \sum_{\boldsymbol{z}\in Z} \pi_x(\boldsymbol{z})\left[f(\boldsymbol{z})-\left(\boldsymbol{w}^T \boldsymbol{z}+b\right)\right]^2+\lambda |\boldsymbol{w}|,
+\end{equation}
+where the weights $w$ and biases $b$ are those of the linear model $g$.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Images/lime_explanation.png}
+  \caption{From \cite{ribeiro_why_2016}}
+  \label{fig:lime_illustration}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/lime_weights_example.png}
+  \caption{Caption}
+  \label{fig:my-label}
+\end{figure}
 
 \subsubsection{Context Representative Interpretable Model-Agnostic Explanations (CRIME)}
 

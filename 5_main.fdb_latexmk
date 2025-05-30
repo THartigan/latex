@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex 5_main"] 1748569163.84946 "5_main.aux" "5_main.bbl" "5_main" 1748569173.95477 0
-  "./TROPHY.bib" 1748568503.79776 244265 6de01bd600500a15e6af18b3311d6a7d ""
+["bibtex 5_main"] 1748621779.36295 "5_main.aux" "5_main.bbl" "5_main" 1748621790.48897 0
+  "./TROPHY.bib" 1748616046.27721 246058 f38252c3275b2914924c513fbf774876 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "5_main.aux" 1748569173.656 27608 de9ee65b62a5a8618f9b1cd48477c2a7 "pdflatex"
+  "5_main.aux" 1748621790.19105 28421 472ed5d47b3b98de44da0cac675ff06a "pdflatex"
   (generated)
   "5_main.bbl"
   "5_main.blg"
   (rewritten before read)
-["pdflatex"] 1748569163.9488 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748569173.95492 0
+["pdflatex"] 1748621779.5247 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748621790.48911 0
   "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" 1748512908.77152 987 4fb93242da1570200c2ea79ef7bbc8e4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -129,16 +129,16 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1747492213 3345732 6d12076f5f56aad4716ba4cefe1a1fa2 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "0_Introduction.tex" 1748279249.41587 5844 8679e93c0e427f1a5a17de4daf373ae8 ""
-  "1_Methods.tex" 1748569153.45464 18296 76b595da6453555fa1e5bd8e480a7a03 ""
-  "2_Methods.tex" 1748567396.3761 6520 301b71e46b474dd77497b88f7f70ec5b ""
+  "1_Methods.tex" 1748621768.0536 21495 e5f26b9dc405bc718ba8a24d797f656d ""
+  "2_Methods.tex" 1748605132.82948 6177 003a019abc0b6c79cb966c207fe6bc6e ""
   "3_Results.tex" 1748462414.96367 11319 8c57108080424933be1f599e59ce94eb ""
   "4_Discussion.tex" 1748443304.4185 58 b5415fe539f38183cab8464c3aa3dd0a ""
   "5_Conclusions.tex" 1747502760.34084 21 962245b29278b6028e8e709db79a2139 ""
-  "5_main.aux" 1748569173.656 27608 de9ee65b62a5a8618f9b1cd48477c2a7 "pdflatex"
-  "5_main.bbl" 1748569163.94598 21206 96c43b32aea9fe0802fc4e24557c3fd9 "bibtex 5_main"
-  "5_main.out" 1748569173.65802 9160 214f93560aaf67a36d71a0246f9d059a "pdflatex"
+  "5_main.aux" 1748621790.19105 28421 472ed5d47b3b98de44da0cac675ff06a "pdflatex"
+  "5_main.bbl" 1748621779.52196 21558 42786387586d304bd22ea948d7fc29f7 "bibtex 5_main"
+  "5_main.out" 1748621790.19295 9195 101a1f1a0f7745007935f4af70b7be2e "pdflatex"
   "5_main.tex" 1748512908.77152 987 4fb93242da1570200c2ea79ef7bbc8e4 ""
-  "5_main.toc" 1748569173.65833 4934 33083a49209e4a7b917057e245b8282b "pdflatex"
+  "5_main.toc" 1748621790.19335 4941 230f5650ccd1a3a89f7efdb521722254 "pdflatex"
   "Images/Categorisation_train_test.png" 1747943291 931719 5c5a4f714c4dcc2c5022b8dc07755f73 ""
   "Images/Confidence.png" 1747942403 1456073 31958d98310ffac4771318dc36a4abd8 ""
   "Images/Cystine_IR_pH_dep.png" 1747781622.38141 138908 c0574d8651dd198c80a5b17f28026a75 ""
@@ -147,7 +147,7 @@
   "Images/IR_Basics.png" 1747781557.33262 264531 1c2f435a0843a40a1d7bcfabc918f993 ""
   "Images/IR_and_HE_categories.png" 1748303003 7459913 b7b319c04502e206f57e25dc9a74e790 ""
   "Images/LDA.png" 1748452070 814087 1a7c93ace6f5b9e4b29fe43eac2b07e5 ""
-  "Images/SCNN_TPL_Arch.png" 1747784649.39582 280062 672b4852f8eb07d480e48516672034ae ""
+  "Images/SCNN_Final.png" 1748613450.78142 397247 65620dcf049a802d0989e5f6352f6032 ""
   "Images/Tanh_Relu_Demo.png" 1747944748 531099 7cf1df9cd1945e557053eba0e5b41400 ""
   "Images/Trophy_pipeline.png" 1748193103.49689 2462695 a3dde1f4c8825f871fe976b91bfc46e4 ""
   "Images/VAE_overview.png" 1747941080.66874 204407 f64f93de89a233d401ffcd48fab91723 ""
