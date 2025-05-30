@@ -7,7 +7,6 @@ Warning--I didn't find a database entry for "Trophy"
 Warning--I didn't find a database entry for "Trophy_proposal"
 Warning--I didn't find a database entry for "things"
 Warning--I didn't find a database entry for "crine"
-Warning--I didn't find a database entry for ""
 Warning--empty year in noauthor_minerva_nodate
 Warning--empty journal in eic_trophy_nodate
 Warning--empty year in eic_trophy_nodate
@@ -17,48 +16,54 @@ Warning--empty journal in wold_principal_nodate
 Warning--empty year in wold_principal_nodate
 Warning--empty year in wold_principal_nodate
 Warning--empty journal in rumelhart_learning_1986
+Warning--empty journal in rosenblatt_principles_nodate
+Warning--empty year in rosenblatt_principles_nodate
+Warning--empty year in rosenblatt_principles_nodate
+Warning--empty journal in song_fine-grained_nodate
+Warning--empty year in song_fine-grained_nodate
+Warning--empty year in song_fine-grained_nodate
 Warning--empty journal in kingma_introduction_nodate
 Warning--empty year in kingma_introduction_nodate
 Warning--empty year in kingma_introduction_nodate
-You've used 42 entries,
+You've used 57 entries,
             2481 wiz_defined-function locations,
-            866 strings with 15498 characters,
-and the built_in function-call counts, 19142 in all, are:
-= -- 1520
-> -- 1291
-< -- 29
-+ -- 478
-- -- 394
-* -- 1689
-:= -- 3159
-add.period$ -- 170
-call.type$ -- 42
-change.case$ -- 83
-chr.to.int$ -- 42
-cite$ -- 55
-duplicate$ -- 830
-empty$ -- 1545
-format.name$ -- 457
-if$ -- 3978
+            956 strings with 18898 characters,
+and the built_in function-call counts, 25306 in all, are:
+= -- 1953
+> -- 1782
+< -- 34
++ -- 658
+- -- 544
+* -- 2259
+:= -- 4209
+add.period$ -- 221
+call.type$ -- 57
+change.case$ -- 112
+chr.to.int$ -- 57
+cite$ -- 76
+duplicate$ -- 1083
+empty$ -- 2033
+format.name$ -- 628
+if$ -- 5223
 int.to.chr$ -- 1
-int.to.str$ -- 43
-missing$ -- 35
-newline$ -- 257
-num.names$ -- 129
-pop$ -- 351
+int.to.str$ -- 58
+missing$ -- 45
+newline$ -- 338
+num.names$ -- 174
+pop$ -- 497
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 57
 quote$ -- 0
-skip$ -- 500
+skip$ -- 646
 stack$ -- 0
-substring$ -- 779
-swap$ -- 168
+substring$ -- 933
+swap$ -- 209
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 291
-warning$ -- 12
-while$ -- 141
+type$ -- 393
+warning$ -- 18
+while$ -- 181
 width$ -- 0
-write$ -- 622
-(There were 17 warnings)
+write$ -- 818
+(There were 22 warnings)

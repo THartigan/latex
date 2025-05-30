@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -238,6 +238,87 @@ Diederik~P. Kingma and Jimmy Ba.
 \bibitem[Biewald(2020)]{biewald_experiment_2020}
 Lucas Biewald.
 \newblock Experiment {{Tracking}} with {{Weights}} and {{Biases}}, 2020.
+
+\bibitem[Minsky and Papert(2017)]{minsky_perceptrons_2017}
+Marvin Minsky and Seymour~A. Papert.
+\newblock \emph{Perceptrons: {{An Introduction}} to {{Computational Geometry}}}.
+\newblock The MIT Press, September 2017.
+\newblock ISBN 978-0-262-34393-0.
+\newblock \doi{10.7551/mitpress/11301.001.0001}.
+
+\bibitem[Rosenblatt()]{rosenblatt_principles_nodate}
+Frank Rosenblatt.
+\newblock Principles of {{Neurodynamics}}: {{Perceptrons}} and the {{Theory}} of {{Brain Mechanisms}}.
+
+\bibitem[Cybenko(1989)]{cybenko_approximation_1989}
+G.~Cybenko.
+\newblock Approximation by superpositions of a sigmoidal function.
+\newblock \emph{Mathematics of Control, Signals and Systems}, 2\penalty0 (4):\penalty0 303--314, December 1989.
+\newblock ISSN 1435-568X.
+\newblock \doi{10.1007/BF02551274}.
+
+\bibitem[Leshno et~al.(1993)Leshno, Lin, Pinkus, and Schocken]{leshno_multilayer_1993}
+Moshe Leshno, Vladimir~Ya. Lin, Allan Pinkus, and Shimon Schocken.
+\newblock Multilayer feedforward networks with a nonpolynomial activation function can approximate any function.
+\newblock \emph{Neural Networks}, 6\penalty0 (6):\penalty0 861--867, January 1993.
+\newblock ISSN 0893-6080.
+\newblock \doi{10.1016/S0893-6080(05)80131-5}.
+
+\bibitem[Hornik et~al.(1989)Hornik, Stinchcombe, and White]{hornik_multilayer_1989}
+Kurt Hornik, Maxwell Stinchcombe, and Halbert White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock \emph{Neural Networks}, 2\penalty0 (5):\penalty0 359--366, January 1989.
+\newblock ISSN 0893-6080.
+\newblock \doi{10.1016/0893-6080(89)90020-8}.
+
+\bibitem[Kiranyaz et~al.(2019)Kiranyaz, Avci, Abdeljaber, Ince, Gabbouj, and Inman]{kiranyaz_1d_2019}
+Serkan Kiranyaz, Onur Avci, Osama Abdeljaber, Turker Ince, Moncef Gabbouj, and Daniel~J. Inman.
+\newblock {{1D Convolutional Neural Networks}} and {{Applications}}: {{A Survey}}, May 2019.
+
+\bibitem[Lecun et~al.(1998)Lecun, Bottou, Bengio, and Haffner]{lecun_gradient-based_1998}
+Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock \emph{Proceedings of the IEEE}, 86\penalty0 (11):\penalty0 2278--2324, November 1998.
+\newblock ISSN 1558-2256.
+\newblock \doi{10.1109/5.726791}.
+
+\bibitem[Dumoulin and Visin(2018)]{dumoulin_guide_2018}
+Vincent Dumoulin and Francesco Visin.
+\newblock A guide to convolution arithmetic for deep learning, January 2018.
+
+\bibitem[Vaswani et~al.(2023)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani_attention_2023}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention {{Is All You Need}}, August 2023.
+
+\bibitem[Alzubaidi et~al.(2021)Alzubaidi, Zhang, Humaidi, {Al-Dujaili}, Duan, {Al-Shamma}, Santamar{\'i}a, Fadhel, {Al-Amidie}, and Farhan]{alzubaidi_review_2021}
+Laith Alzubaidi, Jinglan Zhang, Amjad~J. Humaidi, Ayad {Al-Dujaili}, Ye~Duan, Omran {Al-Shamma}, J.~Santamar{\'i}a, Mohammed~A. Fadhel, Muthana {Al-Amidie}, and Laith Farhan.
+\newblock Review of deep learning: Concepts, {{CNN}} architectures, challenges, applications, future directions.
+\newblock \emph{Journal of Big Data}, 8\penalty0 (1):\penalty0 53, March 2021.
+\newblock ISSN 2196-1115.
+\newblock \doi{10.1186/s40537-021-00444-8}.
+
+\bibitem[Shenfield and Howarth(2020)]{shenfield_novel_2020}
+Alex Shenfield and Martin Howarth.
+\newblock A {{Novel Deep Learning Model}} for the {{Detection}} and {{Identification}} of {{Rolling Element-Bearing Faults}}.
+\newblock \emph{Sensors}, 20\penalty0 (18):\penalty0 5112, September 2020.
+\newblock ISSN 1424-8220.
+\newblock \doi{10.3390/s20185112}.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov, Weissenborn, Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and Houlsby]{dosovitskiy_image_2021}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An {{Image}} is {{Worth}} 16x16 {{Words}}: {{Transformers}} for {{Image Recognition}} at {{Scale}}, June 2021.
+
+\bibitem[Zaki et~al.(2024)Zaki, Tomasik, McCune, Bahn, Li{\`o}, and Scherman]{zaki_explainable_2024}
+Jihan~K. Zaki, Jakub Tomasik, Jade~A. McCune, Sabine Bahn, Pietro Li{\`o}, and Oren~A. Scherman.
+\newblock Explainable {{Deep Learning Framework}} for {{SERS Bio-quantification}}, November 2024.
+
+\bibitem[Song et~al.()Song, Li, Jiang, Li, Sun, Sun, and Zheng]{song_fine-grained_nodate}
+Lin Song, Yanwei Li, Zhengkai Jiang, Zeming Li, Hongbin Sun, Jian Sun, and Nanning Zheng.
+\newblock Fine-{{Grained Dynamic Head}} for {{Object Detection}}.
+
+\bibitem[Li et~al.(2020)Li, Song, Chen, Li, Zhang, Wang, and Sun]{li_learning_2020}
+Yanwei Li, Lin Song, Yukang Chen, Zeming Li, Xiangyu Zhang, Xingang Wang, and Jian Sun.
+\newblock Learning {{Dynamic Routing}} for {{Semantic Segmentation}}, March 2020.
 
 \bibitem[Villazon et~al.(2025)Villazon, Dela~Cruz, and Shi]{villazon_cancer_2025}
 Jorge Villazon, Nathaniel Dela~Cruz, and Lingyan Shi.
