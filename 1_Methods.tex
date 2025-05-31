@@ -192,7 +192,7 @@ where the weights $\boldsymbol{w}\in\mathbb{R}^{dx10}$ and biases $\boldsymbol{b
 \begin{equation}
     \boldsymbol{s} = \sum_k p_k(\boldsymbol x) \boldsymbol s_k.
 \end{equation}
-An example of the LIME weighting this process produces is shown in Figure \ref{fig:lime_weights_example}.
+An example of the LIME weightings this process produces is shown in Figure \ref{fig:lime_weights_example}.
 
 \begin{figure}[htbp]
   \centering
@@ -209,15 +209,67 @@ An example of the LIME weighting this process produces is shown in Figure \ref{f
 \end{figure}
 
 \subsubsection{Context Representative Interpretable Model-Agnostic Explanations (CRIME)}
-The CRIME method \cite{zaki_explainable_2024} aims to expand on the LIME method by finding contexts which have similar classification explanations. This is achieved by passing the LIME results through a variational eutoencoder (VAE) \cite{} to learn a low-dimensional latent space representation of the explanations. This latent space is then clustered using $K$-means clustering \cite{} to produce $K$ clusters, each of which can be investigated. In their original paper, Zaki et. al. \cite{zaki_explainable_2024} used a VAE similar to that described in §\ref{sec:vae_zaki}, and were able to form six contexts from surface enhanced Raman (SER) urine spectra, of which three were found to be associated with serotonin. Here, I expand on this work by investigating the use of different VAE architectures as described in §\ref{sec:methods:vae}, and by using the clusters themselves perform explainable linear classifications.
+The CRIME method \cite{zaki_explainable_2024} aims to expand on the LIME method by finding contexts which have similar classification explanations. This is achieved by passing the LIME results through a variational eutoencoder (VAE) \cite{} to learn a low-dimensional latent space representation of the explanations. This latent space is then clustered using $K$-means clustering \cite{} to produce $K$ clusters, each of which can be investigated. In their original paper, Zaki et. al. \cite{zaki_explainable_2024} used a VAE similar to that described in §\ref{sec:vae_zaki}, and were able to form six contexts from surface enhanced Raman (SER) urine spectra, of which three were found to be associated with serotonin. Here, I expand on this work by investigating the use of different VAE architectures as described in §\ref{sec:methods:vae}, and by using the clusters themselves perform explainable linear classification.
 
 \subsubsection{Variational Autoencoders (VAE)}
 \label{sec:vae}
-General information about VAEs and how they work
 
-Brief descriptions of the used VAE architectures
+Attempting to find clusters of the explanations produced by LIME can be viewed as either an unsupervised learning problem - clustering the LIME spectra with no additional information, or as a semi-supervised learning problem, where known training labels can be used to inform clustering. In this work, I implemented both approaches by noting that the semi-supervised approach reduces to the unsupervised approach when the supervision level is zero. This is implemented using a VAE, which attempts to learn a generative model with parameters $\theta$ such as to enable mapping from the data $\boldsymbol{x}$ to a latent representation $\boldsymbol{z}$ and back again - as illustrated in Figure \ref{fig:VAE}. 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Images/VAE_overview.png}
+  \caption{An illustration of the mapping from input values to a latent space and back to prediction values within a VAE. From \cite{kingma_introduction_nodate}}
+  \label{fig:VAE}
+\end{figure}
+
+\noindent
+An unsupervised VAE must learn a joint distribution $p_\theta(\boldsymbol{x}, \boldsymbol{z})$ such as to maximise the marginal likelihood of the data:
+\begin{align}
+    p_\theta(\boldsymbol{x}) &= \int_{\boldsymbol z} p_\theta(\boldsymbol{x}, \boldsymbol{z})d\boldsymbol{z} \\
+    & = \int_{\boldsymbol z} p_\theta(\boldsymbol{z}) p_\theta(\boldsymbol{x}|\boldsymbol{z})d\boldsymbol{z} \label{eq:intractable}
+\end{align}
+Equation (\ref{eq:intractable}), however is normally intractable. To overcome this, we use Bayes' theorem to rewrite the marginal likelihood as:
+\begin{equation}
+    p_\theta(\boldsymbol{x}) = \frac{p_\theta(\boldsymbol {z})p_\theta(\boldsymbol{x} | \boldsymbol{z})}{p_\theta(\boldsymbol{z}|\boldsymbol{x})}=\frac{p_\theta(\boldsymbol{x}, \boldsymbol{z})}{p_\theta(\boldsymbol{z}|\boldsymbol{x})}.
+\end{equation}
+Therefore, we can also approach the problem by attempting to approximate the posterior $p(\boldsymbol{z}|\boldsymbol{x})$ by an amortised variational distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ with parameters $\phi$. By then expanding the Kullback-Leibler (KL) divergence \cite{}: 
+\begin{equation}
+    D_\text{KL}(q|p)=\int q(\boldsymbol{z})\log\left(\frac{q(\boldsymbol{z})}{p(\boldsymbol{z})}\right)d\boldsymbol{z}\ge 0,
+    \label{eq:kl_div}
+\end{equation}
+which measures the information entropy of $q_\phi$ relative to $p_\theta$, we can write the marginal likelihood as:
+\begin{align}
+    \log p_\theta(\boldsymbol{x}) &= D_\text{KL}(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z}|\boldsymbol{x}))+\mathbb{E}_{q_{\phi(\boldsymbol{z}|\boldsymbol{x})}}[\log p_\theta(\boldsymbol{z},\boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})] \\
+    \implies \log p_\theta(\boldsymbol{x}) & \ge \mathbb{E}_{q_\phi(\boldsymbol{z}|\boldsymbol{x})}\left[\log p_\theta(\boldsymbol{z},\boldsymbol{x}) - \log q_\phi(\boldsymbol {z}|\boldsymbol{x})\right]=\text{ELBO},
+\end{align}
+where the term on the RHS of the inequality is the evidence lower bound (ELBO) \cite{}. The ELBO gives a lower bound on the marginal likelihood, so maximising it also minimises the KL divergence. This maximisation, however is non-trivial because the $\phi$ derivative of the ELBO is intractable and non-estimable. To overcome this, we employ the reparameterisation trick \cite{}, where we deterministically re-express $\boldsymbol{z}$ as:
+\begin{equation}
+    \boldsymbol{z} = g(\phi, \boldsymbol{x},\boldsymbol{\epsilon}),
+\end{equation}
+where $\boldsymbol{\epsilon}$ is a random variable generated through a Gaussian distribution with mean $\boldsymbol{0}$ and unit variance \cite{SGVB_gradient_variational_bayes}. Finally, we can estimate the gradient of the negative $-\text{ELBO}=\mathcal L(\boldsymbol{x})$ (to perform gradient descent) as:
+\begin{align}
+    \mathcal L(\boldsymbol{x}) &= -\mathbb{E}_{p(\epsilon)}\left[\log p_\theta(\boldsymbol{z}, \boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})\right]\\
+    \implies \nabla_{\theta, \phi}\mathcal L(\boldsymbol{x})&=-\frac{1}{N}\sum_{i=1}^N\nabla_{\theta,\phi}\left[\log p_\theta(\boldsymbol{z}, \boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})\right],
+\end{align}
+where $N$ is the number of samples in a batch. This formulation allows us to approximate the posterior by gradient descent. The ELBO can now be expanded to give: 
+\begin{equation}
+    \text{ELBO} = \mathbb{E}_{p(\epsilon)}\left[\log p_\theta(\boldsymbol{x}|\boldsymbol{z})\right]-D_\text{KL}\left(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z})\right).
+\end{equation}
+If we then assume the prior $p_\theta(\boldsymbol{z})=\mathcal{N}(\boldsymbol{0},\boldsymbol{I})$, and that the distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ is a multivariate Gaussian with mean $\boldsymbol{\mu}$ and variance $\boldsymbol{\sigma}$ where $\boldsymbol{\mu}, \boldsymbol{\sigma}=f(\boldsymbol{x})$, we can rewrite the KL divergence \ref{eq:kl_div} as: 
+\begin{equation}
+    D_\text{KL}(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z}))=-\frac{1}{2} \left(1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right).
+\end{equation}
+Furthermore, we use single-sample monte carlo estimation \cite{} to find the expectation of the log-likelihood term subject to the assumption that $p_\theta(\boldsymbol{x}|\boldsymbol{z})=\mathcal N(\boldsymbol{y}_\mu, 1)$, which reduces to the form:
+\begin{equation}
+    \log p_{\theta}(\boldsymbol{x}|\boldsymbol{z})=-\frac{1}{2}\left(\boldsymbol{x}-\boldsymbol{y}_\mu\right)^2=-\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu).
+\end{equation}
+Hence, we can optimise such a VAE by minimising the negative ELBO:
+\begin{equation}
+    \mathcal L(\boldsymbol{x}) = -\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu)+\frac{1}{2}\left[1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right],
+\end{equation}
+which is adopted as the unsupervised VAE loss function throughout this work. When using a semi-supervised VAE approach, we follow the M2 approach described by Kingma et. al. \cite{}, so modify this loss function to include a classification term by adding a cross-entropy loss \cite{} assessing the difference between predicted and true class probabilities. These predicted class probabilities are given by softmax over the output from a two-layer ($64\rightarrow128\rightarrow4$ node) fully-connected layer at the end of the VAE encoder, prior to $\mu$ and $\sigma$ projection. These implementations of these ELBOs and the reparameterisation trick can be found in \ref{sec:code:ELBOs} and \ref{sec:code:reparam} respectively. The VAE architectures used in this work are summarised in Table \ref{tab:VAE_architectures}, and their full implementations can be found in \ref{appendix:code:VAEs}.
 
 
-A complete overview of the VAE architectures used can be found in \ref{appendix:VAEs}.
 
 \subsection{Evaluation Metrics}

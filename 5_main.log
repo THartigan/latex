@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  31 MAY 2025 01:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  31 MAY 2025 20:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -417,9 +417,6 @@ LaTeX Warning: Label `fig:my-label' multiply defined.
 
 LaTeX Warning: Label `fig:my-label' multiply defined.
 
-
-LaTeX Warning: Label `fig:my-label' multiply defined.
-
 )
 \openout1 = `5_main.aux'.
 
@@ -518,36 +515,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 [2] (./0_Introduction.tex
-<Images/Histology_Summary.png, id=307, 1157.32375pt x 255.95625pt>
+<Images/Histology_Summary.png, id=267, 1157.32375pt x 255.95625pt>
 File: Images/Histology_Summary.png Graphic file (type png)
 <use Images/Histology_Summary.png>
-Package pdftex.def Info: Images/Histology_Summary.png  used on input line 8.
+Package pdftex.def Info: Images/Histology_Summary.png  used on input line 9.
 (pdftex.def)             Requested size: 472.03123pt x 104.39595pt.
-<Images/breast_tomas_benign_malignant_diff.png, id=319, 542.025pt x 307.1475pt>
+<Images/breast_tomas_benign_malignant_diff.png, id=279, 542.025pt x 307.1475pt>
 File: Images/breast_tomas_benign_malignant_diff.png Graphic file (type png)
 <use Images/breast_tomas_benign_malignant_diff.png>
-Package pdftex.def Info: Images/breast_tomas_benign_malignant_diff.png  used on input line 21.
+Package pdftex.def Info: Images/breast_tomas_benign_malignant_diff.png  used on input line 22.
 (pdftex.def)             Requested size: 377.62642pt x 213.99414pt.
 
 
-Package natbib Warning: Citation `Trophy' on page 3 undefined on input line 28.
+Package natbib Warning: Citation `Trophy' on page 3 undefined on input line 29.
 
 
-Package natbib Warning: Citation `Trophy_proposal' on page 3 undefined on input line 28.
+Package natbib Warning: Citation `Trophy_proposal' on page 3 undefined on input line 29.
 
 
-Package natbib Warning: Citation `things' on page 3 undefined on input line 30.
+Package natbib Warning: Citation `things' on page 3 undefined on input line 31.
 
 
-LaTeX Warning: Reference `sec:charm' on page 3 undefined on input line 30.
+LaTeX Warning: Reference `sec:charm' on page 3 undefined on input line 31.
 
-<Images/Trophy_pipeline.png, id=321, 1434.35875pt x 722.7pt>
+<Images/Trophy_pipeline.png, id=281, 1434.35875pt x 722.7pt>
 File: Images/Trophy_pipeline.png Graphic file (type png)
 <use Images/Trophy_pipeline.png>
-Package pdftex.def Info: Images/Trophy_pipeline.png  used on input line 34.
+Package pdftex.def Info: Images/Trophy_pipeline.png  used on input line 35.
 (pdftex.def)             Requested size: 377.62642pt x 190.25745pt.
 
-Package natbib Warning: Citation `crine' on page 3 undefined on input line 39.
+Package natbib Warning: Citation `crine' on page 3 undefined on input line 40.
 
 
 
@@ -555,19 +552,19 @@ Package natbib Warning: Citation `crine' on page 3 undefined on input line 39.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.40 
+l.41 
       <./Images/Histology_Summary.png>]
 
 [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.40 
+l.41 
      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.40 
+l.41 
       <./Images/breast_tomas_benign_malignant_diff.png> <./Images/Trophy_pipeline.png>])
 
 [5] (./1_Methods.tex
@@ -580,12 +577,12 @@ Overfull \hbox (3.47339pt too wide) in paragraph at lines 13--13
  []|\OT1/cmr/bx/n/10 Wavenumber(cm$[]$)| 
  []
 
-<Images/IR_Basics.png, id=360, 598.235pt x 727.71875pt>
+<Images/IR_Basics.png, id=319, 598.235pt x 727.71875pt>
 File: Images/IR_Basics.png Graphic file (type png)
 <use Images/IR_Basics.png>
 Package pdftex.def Info: Images/IR_Basics.png  used on input line 30.
 (pdftex.def)             Requested size: 377.62642pt x 459.36467pt.
-<Images/Cystine_IR_pH_dep.png, id=362, 344.28625pt x 275.0275pt>
+<Images/Cystine_IR_pH_dep.png, id=321, 344.28625pt x 275.0275pt>
 File: Images/Cystine_IR_pH_dep.png Graphic file (type png)
 <use Images/Cystine_IR_pH_dep.png>
 Package pdftex.def Info: Images/Cystine_IR_pH_dep.png  used on input line 37.
@@ -612,12 +609,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has
                                                   \__shipout_drop_firstpage_...
 l.72 \end{equation}
                     <./Images/Cystine_IR_pH_dep.png>]
-<Images/LDA.png, id=415, 480.51862pt x 510.88739pt>
+<Images/LDA.png, id=375, 480.51862pt x 510.88739pt>
 File: Images/LDA.png Graphic file (type png)
 <use Images/LDA.png>
 Package pdftex.def Info: Images/LDA.png  used on input line 89.
 (pdftex.def)             Requested size: 472.03123pt x 501.87453pt.
-<Images/tree_ensemble.png, id=423, 1275.76625pt x 609.27625pt>
+<Images/tree_ensemble.png, id=383, 1275.76625pt x 609.27625pt>
 File: Images/tree_ensemble.png Graphic file (type png)
 <use Images/tree_ensemble.png>
 Package pdftex.def Info: Images/tree_ensemble.png  used on input line 115.
@@ -658,7 +655,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has
                                                   \__shipout_drop_firstpage_...
 l.136 \begin{equation}
                       {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/tree_ensemble.png>]
-<Images/connection_methods.png, id=504, 432.18417pt x 677.95003pt>
+<Images/connection_methods.png, id=463, 432.18417pt x 677.95003pt>
 File: Images/connection_methods.png Graphic file (type png)
 <use Images/connection_methods.png>
 Package pdftex.def Info: Images/connection_methods.png  used on input line 151.
@@ -667,7 +664,7 @@ Package pdftex.def Info: Images/connection_methods.png  used on input line 151.
 
 LaTeX Warning: Float too large for page by 8.76254pt on input line 154.
 
-<Images/SCNN_Final.png, id=520, 984.624pt x 452.673pt>
+<Images/SCNN_Final.png, id=479, 984.624pt x 452.673pt>
 File: Images/SCNN_Final.png Graphic file (type png)
 <use Images/SCNN_Final.png>
 Package pdftex.def Info: Images/SCNN_Final.png  used on input line 171.
@@ -682,12 +679,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has
                                                   \__shipout_drop_firstpage_...
 l.184 \begin{equation}
                        <./Images/connection_methods.png>]
-<Images/lime_explanation.png, id=551, 513.92pt x 317.185pt>
+<Images/lime_explanation.png, id=511, 513.92pt x 317.185pt>
 File: Images/lime_explanation.png Graphic file (type png)
 <use Images/lime_explanation.png>
 Package pdftex.def Info: Images/lime_explanation.png  used on input line 199.
 (pdftex.def)             Requested size: 283.22162pt x 174.80074pt.
-<Images/lime_weights_example.png, id=554, 877.71915pt x 566.5968pt>
+<Images/lime_weights_example.png, id=514, 877.71915pt x 566.5968pt>
 File: Images/lime_weights_example.png Graphic file (type png)
 <use Images/lime_weights_example.png>
 Package pdftex.def Info: Images/lime_weights_example.png  used on input line 206.
@@ -705,70 +702,98 @@ LaTeX Warning: Reference `sec:methods:vae' on page 14 undefined on input line 21
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 B
-       rief descriptions of the used VAE architectures <./Images/SCNN_Final.png>]
+l.218 
+       <./Images/SCNN_Final.png>]
 
 [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 B
-       rief descriptions of the used VAE architectures
+l.218 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 B
-       rief descriptions of the used VAE architectures <./Images/lime_explanation.png> <./Images/lime_weights_example.png>]
+l.218 
+       <./Images/lime_explanation.png> <./Images/lime_weights_example.png>]
+<Images/VAE_overview.png, id=535, 733.74126pt x 908.39375pt>
+File: Images/VAE_overview.png Graphic file (type png)
+<use Images/VAE_overview.png>
+Package pdftex.def Info: Images/VAE_overview.png  used on input line 221.
+(pdftex.def)             Requested size: 283.22162pt x 350.64056pt.
 
-LaTeX Warning: Reference `appendix:VAEs' on page 16 undefined on input line 221.
+
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.240 \end{equation}
+                     <./Images/VAE_overview.png>]
+
+Package natbib Warning: Citation `SGVB_gradient_variational_bayes' on page 17 undefined on input line 250.
+
+
+LaTeX Warning: Reference `sec:code:ELBOs' on page 17 undefined on input line 271.
+
+
+LaTeX Warning: Reference `sec:code:reparam' on page 17 undefined on input line 271.
+
+
+LaTeX Warning: Reference `tab:VAE_architectures' on page 17 undefined on input line 271.
+
+
+LaTeX Warning: Reference `appendix:code:VAEs' on page 17 undefined on input line 271.
 
 ) (./3_Results.tex
 
-[16]
+[17]
 
-LaTeX Warning: Reference `sec:methods:dataset' on page 17 undefined on input line 4.
+LaTeX Warning: Reference `sec:methods:dataset' on page 18 undefined on input line 4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<Images/Dataset_Class_Differences.png, id=581, 540.94312pt x 405.70734pt>
+<Images/Dataset_Class_Differences.png, id=568, 540.94312pt x 405.70734pt>
 File: Images/Dataset_Class_Differences.png Graphic file (type png)
 <use Images/Dataset_Class_Differences.png>
 Package pdftex.def Info: Images/Dataset_Class_Differences.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 354.0211pt.
-<Images/IR_and_HE_categories.png, id=582, 476.43997pt x 727.0362pt>
+<Images/IR_and_HE_categories.png, id=569, 476.43997pt x 727.0362pt>
 File: Images/IR_and_HE_categories.png Graphic file (type png)
 <use Images/IR_and_HE_categories.png>
 Package pdftex.def Info: Images/IR_and_HE_categories.png  used on input line 18.
 (pdftex.def)             Requested size: 401.22942pt x 612.25935pt.
 
 
-[17
-pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.24 \newpage
-              <./Images/Dataset_Class_Differences.png>]
-
 [18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.24 \newpage
+              <./Images/Dataset_Class_Differences.png>]
+
+[19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.24 \newpage
               <./Images/IR_and_HE_categories.png>]
 
-LaTeX Warning: Reference `sec:methods:lda' on page 19 undefined on input line 77.
+LaTeX Warning: Reference `sec:methods:lda' on page 20 undefined on input line 77.
 
 
-LaTeX Warning: Reference `sec:methods:xgb' on page 19 undefined on input line 77.
+LaTeX Warning: Reference `sec:methods:xgb' on page 20 undefined on input line 77.
 
 
-LaTeX Warning: Reference `sec:methods:cross' on page 19 undefined on input line 77.
+LaTeX Warning: Reference `sec:methods:cross' on page 20 undefined on input line 77.
 
 
-LaTeX Warning: Reference `tab:trad_ml_performance' on page 19 undefined on input line 78.
+LaTeX Warning: Reference `tab:trad_ml_performance' on page 20 undefined on input line 78.
+
+
+LaTeX Warning: Reference `appendix:Tiago' on page 20 undefined on input line 78.
 
 
 Overfull \hbox (11.20547pt too wide) in paragraph at lines 138--161
@@ -777,7 +802,7 @@ Overfull \hbox (11.20547pt too wide) in paragraph at lines 138--161
 
 ) (./4_Discussion.tex) (./5_Conclusions.tex)
 
-[19
+[20
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -789,33 +814,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has 
 l.49 \newpage
              ]
 
-[20
+[21
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.49 \newpage
              ] (./2_Methods.tex
-<Images/Tanh_Relu_Demo.png, id=615, 471.7363pt x 378.14381pt>
+<Images/Tanh_Relu_Demo.png, id=601, 471.7363pt x 378.14381pt>
 File: Images/Tanh_Relu_Demo.png Graphic file (type png)
 <use Images/Tanh_Relu_Demo.png>
 Package pdftex.def Info: Images/Tanh_Relu_Demo.png  used on input line 60.
 (pdftex.def)             Requested size: 472.03123pt x 378.39099pt.
-<Images/best_val_accuracy.png, id=616, 571.47502pt x 426.93503pt>
+<Images/best_val_accuracy.png, id=602, 571.47502pt x 426.93503pt>
 File: Images/best_val_accuracy.png Graphic file (type png)
 <use Images/best_val_accuracy.png>
 Package pdftex.def Info: Images/best_val_accuracy.png  used on input line 68.
 (pdftex.def)             Requested size: 472.03123pt x 352.64265pt.
-<Images/Categorisation_train_test.png, id=617, 476.71504pt x 761.21858pt>
+<Images/Categorisation_train_test.png, id=603, 476.71504pt x 761.21858pt>
 File: Images/Categorisation_train_test.png Graphic file (type png)
 <use Images/Categorisation_train_test.png>
 Package pdftex.def Info: Images/Categorisation_train_test.png  used on input line 108.
 (pdftex.def)             Requested size: 377.62642pt x 603.01707pt.
-<Images/Confidence.png, id=618, 477.9762pt x 816.57452pt>
+<Images/Confidence.png, id=604, 477.9762pt x 816.57452pt>
 File: Images/Confidence.png Graphic file (type png)
 <use Images/Confidence.png>
 Package pdftex.def Info: Images/Confidence.png  used on input line 114.
 (pdftex.def)             Requested size: 377.62642pt x 645.13666pt.
-<Images/crime_umap.png, id=619, 436.33012pt x 624.95482pt>
+<Images/crime_umap.png, id=605, 436.33012pt x 624.95482pt>
 File: Images/crime_umap.png Graphic file (type png)
 <use Images/crime_umap.png>
 Package pdftex.def Info: Images/crime_umap.png  used on input line 142.
@@ -826,56 +851,51 @@ LaTeX Warning: Float too large for page by 30.89955pt on input line 145.
 
 
 
-[21
-pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.145 \end{figure}
-                   <./Images/Tanh_Relu_Demo.png>]
-
 [22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.145 \end{figure}
-                   <./Images/best_val_accuracy.png>]
+                   <./Images/Tanh_Relu_Demo.png>]
 
 [23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.145 \end{figure}
-                   <./Images/Categorisation_train_test.png>]
+                   <./Images/best_val_accuracy.png>]
 
 [24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.145 \end{figure}
+                   <./Images/Categorisation_train_test.png>]
+
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 \end{figure}
                    <./Images/Confidence.png>]
-<Images/VAE_overview.png, id=645, 733.74126pt x 908.39375pt>
-File: Images/VAE_overview.png Graphic file (type png)
-<use Images/VAE_overview.png>
-Package pdftex.def Info: Images/VAE_overview.png  used on input line 150.
-(pdftex.def)             Requested size: 377.62642pt x 467.51614pt.
-<Images/crime_groupings_by_category_100.png, id=647, 557.63889pt x 463.50945pt>
+<Images/crime_groupings_by_category_100.png, id=632, 557.63889pt x 463.50945pt>
 File: Images/crime_groupings_by_category_100.png Graphic file (type png)
 <use Images/crime_groupings_by_category_100.png>
-Package pdftex.def Info: Images/crime_groupings_by_category_100.png  used on input line 159.
+Package pdftex.def Info: Images/crime_groupings_by_category_100.png  used on input line 154.
 (pdftex.def)             Requested size: 472.03123pt x 392.3582pt.
-<Images/crime_lime_plots.png, id=648, 525.21802pt x 632.3625pt>
+<Images/crime_lime_plots.png, id=633, 525.21802pt x 632.3625pt>
 File: Images/crime_lime_plots.png Graphic file (type png)
 <use Images/crime_lime_plots.png>
-Package pdftex.def Info: Images/crime_lime_plots.png  used on input line 166.
+Package pdftex.def Info: Images/crime_lime_plots.png  used on input line 161.
 (pdftex.def)             Requested size: 472.03123pt x 568.34908pt.
-<Images/context_model_metrics.png, id=649, 615.92108pt x 659.46375pt>
+<Images/context_model_metrics.png, id=634, 615.92108pt x 659.46375pt>
 File: Images/context_model_metrics.png Graphic file (type png)
 <use Images/context_model_metrics.png>
-Package pdftex.def Info: Images/context_model_metrics.png  used on input line 172.
+Package pdftex.def Info: Images/context_model_metrics.png  used on input line 167.
 (pdftex.def)             Requested size: 472.03123pt x 505.40381pt.
 ) (./5_main.bbl
 
-[25
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -887,19 +907,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has 
 l.40 
      ]
 
-[26
-pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.40 
-      <./Images/crime_umap.png>]
-
 [27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.40 
-      <./Images/VAE_overview.png>]
+      <./Images/crime_umap.png>]
 
 [28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
@@ -950,45 +963,13 @@ l.181
 
 [33])
 
-[34] (./appendix_Tiago.tex) (./appendix_code.tex
-\pydata@fh@_05B9C9A9EA5561975F8C880219EDE7A6.data.minted=\write6
-\openout6 = `_05B9C9A9EA5561975F8C880219EDE7A6.data.minted'.
-
-runsystem(latexminted config  --timestamp 20250531015325 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
-
- (./_05B9C9A9EA5561975F8C880219EDE7A6.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250531015325 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
-
- (./_minted/xcode.style.minted) (./_minted/497480B91507A524F112B98B99A15BA7.highlight.minted
-
-[35
-pdfTeX warning (ext4): destination with the same identifier (name{table.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.41 
-     ]
-
-[36]) (./_minted/285C9D795969DF9C2BD62618FB489D21.highlight.minted) (./_minted/00E573342F378766699780EC9112C8AA.highlight.minted
-
-[37]) (./_minted/2077A1373DDD1CA24E6FBE7D5704FACE.highlight.minted
-
-[38]) (./_minted/4FCA03C07DB620881A944742FE054D38.highlight.minted
-
-[39]
-
-[40]) (./_minted/8C2A5FBDB8BAA286D320DA259BE2776E.highlight.minted
-
-[41]
-
-[42]
-
-[43]))
+[34]
 
 Package natbib Warning: There were undefined citations.
 
+runsystem(latexminted cleantemp  --timestamp 20250531201148 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
 
-
-[44] (./5_main.aux)
+(./5_main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1001,21 +982,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `5_main.out' has not changed.
-(rerunfilecheck)             Checksum: 646050D0FB0D1E005CDE59040712133A;10873.
+(rerunfilecheck)             Checksum: 05A3F71879278899BD30303A71DAE46E;8858.
  ) 
 Here is how much of TeX's memory you used:
- 16259 strings out of 473190
- 315545 string characters out of 5715800
- 847191 words of memory out of 5000000
- 39032 multiletter control sequences out of 15000+600000
- 570901 words of font info for 81 fonts, out of 8000000 for 9000
+ 15688 strings out of 473190
+ 300916 string characters out of 5715800
+ 827438 words of memory out of 5000000
+ 38502 multiletter control sequences out of 15000+600000
+ 570437 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1275b,1222s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on 5_main.pdf (44 pages, 23898104 bytes).
+ 75i,14n,79p,1275b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on 5_main.pdf (34 pages, 23873435 bytes).
 PDF statistics:
- 923 PDF objects out of 1000 (max. 8388607)
- 767 compressed objects within 8 object streams
- 220 named destinations out of 1000 (max. 500000)
- 559 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 844 PDF objects out of 1000 (max. 8388607)
+ 700 compressed objects within 7 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 495 words of extra memory for PDF output out of 10000 (max. 10000000)
 

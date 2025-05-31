@@ -8,6 +8,7 @@ Warning--I didn't find a database entry for "Trophy_proposal"
 Warning--I didn't find a database entry for "things"
 Warning--I didn't find a database entry for "crine"
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "SGVB_gradient_variational_bayes"
 Warning--empty year in noauthor_minerva_nodate
 Warning--empty journal in eic_trophy_nodate
 Warning--empty year in eic_trophy_nodate
@@ -28,7 +29,7 @@ Warning--empty year in kingma_introduction_nodate
 Warning--empty year in kingma_introduction_nodate
 You've used 58 entries,
             2481 wiz_defined-function locations,
-            964 strings with 19116 characters,
+            966 strings with 19178 characters,
 and the built_in function-call counts, 25747 in all, are:
 = -- 1995
 > -- 1803
@@ -67,4 +68,4 @@ warning$ -- 18
 while$ -- 185
 width$ -- 0
 write$ -- 835
-(There were 23 warnings)
+(There were 24 warnings)

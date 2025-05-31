@@ -128,51 +128,63 @@
 \newlabel{fig:lime_illustration}{{10}{15}{A demonstration of how LIME constructs a local linear classification model, applying greater weighting to nearby perturbations than distant ones as indicated by dot / cross sizes. From \cite {ribeiro_why_2016}}{figure.10}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces An example of the LIME weights produced for a single sample. The upper portion shows the original spectrum and the lower portion shows the relative importance of each feature for classification. Note how the weightings can be negative, indicating the feature acts against positive classification.}}{15}{figure.11}\protected@file@percent }
 \newlabel{fig:lime_weights_example}{{11}{15}{An example of the LIME weights produced for a single sample. The upper portion shows the original spectrum and the lower portion shows the relative importance of each feature for classification. Note how the weightings can be negative, indicating the feature acts against positive classification}{figure.11}{}}
+\citation{kingma_introduction_nodate}
+\citation{kingma_introduction_nodate}
+\citation{}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}Variational Autoencoders (VAE)}{16}{subsubsection.2.5.3}\protected@file@percent }
 \newlabel{sec:vae}{{2.5.3}{16}{Variational Autoencoders (VAE)}{subsubsection.2.5.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Evaluation Metrics}{16}{subsection.2.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces An illustration of the mapping from input values to a latent space and back to prediction values within a VAE. From \cite  {kingma_introduction_nodate}}}{16}{figure.12}\protected@file@percent }
+\newlabel{fig:VAE}{{12}{16}{An illustration of the mapping from input values to a latent space and back to prediction values within a VAE. From \cite {kingma_introduction_nodate}}{figure.12}{}}
+\newlabel{eq:intractable}{{22}{16}{Variational Autoencoders (VAE)}{equation.22}{}}
+\citation{}
+\citation{}
+\citation{SGVB_gradient_variational_bayes}
+\citation{}
+\citation{}
+\citation{}
+\newlabel{eq:kl_div}{{24}{17}{Variational Autoencoders (VAE)}{equation.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Evaluation Metrics}{17}{subsection.2.6}\protected@file@percent }
 \citation{nallala_high-resolution_2016}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{17}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{17}{subsection.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes.}}{17}{figure.12}\protected@file@percent }
-\newlabel{fig:dataset_differences}{{12}{17}{Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes}{figure.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked.}}{18}{figure.13}\protected@file@percent }
-\newlabel{fig:IR_and_HE_categories}{{13}{18}{Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked}{figure.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results and Discussion}{18}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{18}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes.}}{18}{figure.13}\protected@file@percent }
+\newlabel{fig:dataset_differences}{{13}{18}{Plots showing the mean and standard deviation of the FTIR spectral intensities across each class. The cancerous sample spectra are seen to have slightly smaller standard deviations than other classifications. The only visually discernable difference between the mean spectra is around 1120 cm$^{-1}$, where the cancerous spectra does not show a small peak which can be observed in the spectra associated with the other classes}{figure.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked.}}{19}{figure.14}\protected@file@percent }
+\newlabel{fig:IR_and_HE_categories}{{14}{19}{Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked}{figure.14}{}}
 \citation{villazon_cancer_2025}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Spectral Matching Methods}{19}{subsection.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, performances of both methods are identical to 3 s.f. so only one table is shown.}}{19}{table.2}\protected@file@percent }
-\newlabel{table:spectral_mathching_1}{{2}{19}{The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, performances of both methods are identical to 3 s.f. so only one table is shown}{table.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performances of both methods are identical to 3 s.f. so only one table is shown.}}{19}{table.3}\protected@file@percent }
-\newlabel{table:spectral_matching_2}{{3}{19}{The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performances of both methods are identical to 3 s.f. so only one table is shown}{table.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Traditional Machine Learning Approaches}{19}{subsection.3.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost.}}{20}{table.4}\protected@file@percent }
-\newlabel{table:combined_4class_performance}{{4}{20}{Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost}{table.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}A Scanning Convolutional Neural Network Approach}{20}{subsection.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}LIME Explanations}{20}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{20}{subsection.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}VAE Method}{20}{subsubsection.3.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}M-VAE Method}{20}{subsubsection.3.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{20}{subsection.3.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{20}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Applications to Physics}{20}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{20}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Methods and Results}{21}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Classical ML Methods for Spectral Classification}{21}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}XGBoost}{21}{subsubsection.6.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Spectral Matching}{21}{subsubsection.6.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Deep Learning Methods for Spectral Classification}{21}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}De-noising Methods}{21}{subsubsection.6.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Evaluation Metrics}{21}{subsubsection.6.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Model Architecture}{21}{subsubsection.6.2.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Caption}}{21}{figure.14}\protected@file@percent }
-\newlabel{fig:my-label}{{14}{21}{Caption}{figure.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Spectral Matching Methods}{20}{subsection.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, performances of both methods are identical to 3 s.f. so only one table is shown.}}{20}{table.2}\protected@file@percent }
+\newlabel{table:spectral_mathching_1}{{2}{20}{The 4-classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, performances of both methods are identical to 3 s.f. so only one table is shown}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performances of both methods are identical to 3 s.f. so only one table is shown.}}{20}{table.3}\protected@file@percent }
+\newlabel{table:spectral_matching_2}{{3}{20}{The binary classification performance (mean $\pm $ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performances of both methods are identical to 3 s.f. so only one table is shown}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Traditional Machine Learning Approaches}{20}{subsection.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost.}}{21}{table.4}\protected@file@percent }
+\newlabel{table:combined_4class_performance}{{4}{21}{Comparison of 4-classification performance (mean $\pm $ std) across folds for PCA $\to $ LDA, PCA $\to $ XGBoost, and XGBoost}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}A Scanning Convolutional Neural Network Approach}{21}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}LIME Explanations}{21}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{21}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}VAE Method}{21}{subsubsection.3.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}M-VAE Method}{21}{subsubsection.3.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{21}{subsection.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{21}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Applications to Physics}{21}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{21}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Methods and Results}{22}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Classical ML Methods for Spectral Classification}{22}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}XGBoost}{22}{subsubsection.6.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Spectral Matching}{22}{subsubsection.6.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Deep Learning Methods for Spectral Classification}{22}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}De-noising Methods}{22}{subsubsection.6.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Evaluation Metrics}{22}{subsubsection.6.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}Model Architecture}{22}{subsubsection.6.2.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Caption}}{22}{figure.15}\protected@file@percent }
 \newlabel{fig:my-label}{{15}{22}{Caption}{figure.15}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Caption}}{23}{figure.16}\protected@file@percent }
 \newlabel{fig:my-label}{{16}{23}{Caption}{figure.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Caption}}{24}{figure.17}\protected@file@percent }
 \newlabel{fig:my-label}{{17}{24}{Caption}{figure.17}{}}
-\citation{kingma_introduction_nodate}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Caption}}{25}{figure.18}\protected@file@percent }
+\newlabel{fig:my-label}{{18}{25}{Caption}{figure.18}{}}
 \bibstyle{unsrtnat}
 \bibdata{TROPHY.bib}
 \bibcite{bray_global_2024}{{1}{2024}{{Bray et~al.}}{{Bray, Laversanne, Sung, Ferlay, Siegel, Soerjomataram, and Jemal}}}
@@ -180,22 +192,20 @@
 \bibcite{hollon_near_2020}{{3}{2020}{{Hollon et~al.}}{{Hollon, Pandian, Adapa, Urias, Save, Khalsa, Eichberg, D'Amico, Farooq, Lewis, Petridis, Marie, Shah, Garton, Maher, Heth, McKean, Sullivan, {Hervey-Jumper}, Patil, Thompson, Sagher, McKhann, Komotar, Ivan, Snuderl, Otten, Johnson, Sisti, Bruce, Muraszko, Trautman, Freudiger, Canoll, Lee, {Camelo-Piragua}, and Orringer}}}
 \bibcite{novis_interinstitutional_1997}{{4}{1997}{{Novis and Zarbo}}{{}}}
 \bibcite{bai_deep_2023}{{5}{2023}{{Bai et~al.}}{{Bai, Yang, Li, Zhang, Pillar, and Ozcan}}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and no label smoothing}}{25}{table.5}\protected@file@percent }
-\newlabel{tab:voting05_results}{{5}{25}{Metrics for single fold test set with 50\% voting threshold and no label smoothing}{table.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}}{25}{table.6}\protected@file@percent }
-\newlabel{tab:ls01_results}{{6}{25}{Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}{table.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Regularisation Techniques}{25}{subsubsection.6.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.5}Model Performance}{25}{subsubsection.6.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Explainability}{25}{subsection.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Local Interpretable Model-Agnostic Explanations}{25}{subsubsection.6.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}CRIME}{25}{subsubsection.6.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}VAE Methods}{25}{subsubsection.6.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Clustering VAE Approaches}{25}{figure.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Logic Explained Networks}{25}{section*.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Caption}}{26}{figure.18}\protected@file@percent }
-\newlabel{fig:my-label}{{18}{26}{Caption}{figure.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces From \cite  {kingma_introduction_nodate}}}{27}{figure.19}\protected@file@percent }
-\newlabel{fig:my-label}{{19}{27}{From \cite {kingma_introduction_nodate}}{figure.19}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and no label smoothing}}{26}{table.5}\protected@file@percent }
+\newlabel{tab:voting05_results}{{5}{26}{Metrics for single fold test set with 50\% voting threshold and no label smoothing}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}}{26}{table.6}\protected@file@percent }
+\newlabel{tab:ls01_results}{{6}{26}{Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing}{table.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Regularisation Techniques}{26}{subsubsection.6.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.5}Model Performance}{26}{subsubsection.6.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Explainability}{26}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Local Interpretable Model-Agnostic Explanations}{26}{subsubsection.6.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}CRIME}{26}{subsubsection.6.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}VAE Methods}{26}{subsubsection.6.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Clustering VAE Approaches}{26}{figure.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Logic Explained Networks}{26}{section*.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Caption}}{27}{figure.19}\protected@file@percent }
+\newlabel{fig:my-label}{{19}{27}{Caption}{figure.19}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Caption}}{28}{figure.20}\protected@file@percent }
 \newlabel{fig:my-label}{{20}{28}{Caption}{figure.20}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Caption}}{29}{figure.21}\protected@file@percent }
@@ -259,19 +269,7 @@
 \bibcite{li_learning_2020}{{54}{2020}{{Li et~al.}}{{Li, Song, Chen, Li, Zhang, Wang, and Sun}}}
 \bibcite{yu_three-parameter_2021}{{55}{2021}{{Yu et~al.}}{{Yu, ~, and {and Chen}}}}
 \bibcite{ribeiro_why_2016}{{56}{2016}{{Ribeiro et~al.}}{{Ribeiro, Singh, and Guestrin}}}
-\bibcite{villazon_cancer_2025}{{57}{2025}{{Villazon et~al.}}{{Villazon, Dela~Cruz, and Shi}}}
-\bibcite{kingma_introduction_nodate}{{58}{}{{Kingma and Welling}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Traditional ML Classification Performance With 10-Fold Cross-Validation}{35}{appendix.A}\protected@file@percent }
-\newlabel{appendix:Tiago}{{A}{35}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.A}{}}
-\newlabel{tab:model_performance}{{A}{35}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.A}{}}
-\newlabel{table:traditional_ml_performance_4_class_Tiago}{{A}{35}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.A}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Performance characteristics (mean $\pm $ SD) for PCA fed LDA, PCA fed XGBoost and raw data into XGBoost methods for four-classification prediction with 10-fold cross-validation as found by Azevedo et. al. (unpublished).}}{35}{table.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {B}Relevant Code}{35}{appendix.B}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Scale-Adjusting Convolutional Neural Network}{35}{subsection.B.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}VAE Loss Functions}{37}{subsection.B.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}Reparamaterisaiton Trick}{38}{subsection.B.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.4}Convolutional Encoder - Fully Connected Decoder VAE}{38}{subsection.B.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.5}Convolutional Encoder - Transformer Decoder VAE}{39}{subsection.B.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.6}Transformer Encoder - Transformer Decoder VAE}{41}{subsection.B.6}\protected@file@percent }
-\xdef \mintedoldcachechecksum{\detokenize{49F8C224D6CE9C1AE2F3682A882D7A3F:7}}
-\gdef \@abspage@last{44}
+\bibcite{kingma_introduction_nodate}{{57}{}{{Kingma and Welling}}{{}}}
+\bibcite{villazon_cancer_2025}{{58}{2025}{{Villazon et~al.}}{{Villazon, Dela~Cruz, and Shi}}}
+\xdef \mintedoldcachechecksum{\detokenize{\minted@cachechecksum }}
+\gdef \@abspage@last{34}
