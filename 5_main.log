@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  31 MAY 2025 00:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  31 MAY 2025 01:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -278,10 +278,114 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen179
 \Gm@layoutvoffset=\dimen180
 \Gm@dimlist=\toks24
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2025/03/06 v3.6.0 Yet another Pygments shim for LaTeX
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2025/03/04 v1.12.0 fvextra - extensions and patches for fancyvrb
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count303
+\FV@InFile=\read2
+\FV@TabBox=\box56
+\c@FancyVerbLine=\count304
+\FV@StepNumber=\count305
+\FV@OutFile=\write3
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2025/01/29 line numbers on paragraphs v5.4
+\linenopenalty=\count306
+\output=\toks25
+\linenoprevgraf=\count307
+\linenumbersep=\dimen181
+\linenumberwidth=\dimen182
+\c@linenumber=\count308
+\c@pagewiselinenumber=\count309
+\c@LN@truepage=\count310
+\c@internallinenumber=\count311
+\c@internallinenumbers=\count312
+\quotelinenumbersep=\dimen183
+\bframerule=\dimen184
+\bframesep=\dimen185
+\bframebox=\box57
+\@LN@amsmath@ams@eqpen=\count313
+LaTeX Info: Redefining \\ on input line 3187.
+)
+\c@FancyVerbWriteLine=\count314
+\c@FancyVerbBufferLine=\count315
+\c@FV@TrueTabGroupLevel=\count316
+\c@FV@TrueTabCounter=\count317
+\FV@TabBox@Group=\box58
+\FV@bgcolorstructbox=\box59
+\FV@TmpLength=\skip61
+\c@FV@HighlightLinesStart=\count318
+\c@FV@HighlightLinesStop=\count319
+\FV@LoopCount=\count320
+\FV@NCharsBox=\box60
+\FV@BreakIndent=\dimen186
+\FV@BreakIndentNChars=\count321
+\FV@BreakSymbolSepLeft=\dimen187
+\FV@BreakSymbolSepLeftNChars=\count322
+\FV@BreakSymbolSepRight=\dimen188
+\FV@BreakSymbolSepRightNChars=\count323
+\FV@BreakSymbolIndentLeft=\dimen189
+\FV@BreakSymbolIndentLeftNChars=\count324
+\FV@BreakSymbolIndentRight=\dimen190
+\FV@BreakSymbolIndentRightNChars=\count325
+\c@FancyVerbLineBreakLast=\count326
+\FV@LineBox=\box61
+\FV@LineIndentBox=\box62
+\c@FV@BreakBufferDepth=\count327
+\FV@LineWidth=\dimen191
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
+Package: latex2pydata 2025/03/03 v0.5.0 latex2pydata - write data to file in Python literal format
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks28
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks29
+\pgfopts@list@add@b@toks=\toks30
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count328
+\float@exts=\toks31
+\float@box=\box63
+\@float@everytoks=\toks32
+\@floatcapt=\box64
+)
+\c@minted@FancyVerbLineTemp=\count329
+\@float@every@listing=\toks33
+\c@listing=\count330
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count331
+\l__pdf_internal_box=\box65
 ) (./5_main.aux
 
 LaTeX Warning: Label `fig:my-label' multiply defined.
@@ -319,53 +423,47 @@ LaTeX Warning: Label `fig:my-label' multiply defined.
 )
 \openout1 = `5_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
-\scratchdimen=\dimen181
-\scratchbox=\box57
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count307
-\MPscratchDim=\dimen182
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count332
+\scratchdimen=\dimen192
+\scratchbox=\box66
+\nofMPsegments=\count333
+\nofMParguments=\count334
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count335
+\MPscratchDim=\dimen193
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
+\everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 21.
+))
+Package hyperref Info: Link coloring ON on input line 31.
  (./5_main.out) (./5_main.out)
-\@outlinefile=\write3
-\openout3 = `5_main.out'.
+\@outlinefile=\write4
+\openout4 = `5_main.out'.
 
 
 *geometry* driver: auto-detecting
@@ -402,11 +500,11 @@ Package hyperref Info: Link coloring ON on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./5_main.toc
@@ -414,18 +512,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-\tf@toc=\write4
-\openout4 = `5_main.toc'.
+\tf@toc=\write5
+\openout5 = `5_main.toc'.
 
 
 
 [2] (./0_Introduction.tex
-<Images/Histology_Summary.png, id=272, 1157.32375pt x 255.95625pt>
+<Images/Histology_Summary.png, id=307, 1157.32375pt x 255.95625pt>
 File: Images/Histology_Summary.png Graphic file (type png)
 <use Images/Histology_Summary.png>
 Package pdftex.def Info: Images/Histology_Summary.png  used on input line 8.
 (pdftex.def)             Requested size: 472.03123pt x 104.39595pt.
-<Images/breast_tomas_benign_malignant_diff.png, id=284, 542.025pt x 307.1475pt>
+<Images/breast_tomas_benign_malignant_diff.png, id=319, 542.025pt x 307.1475pt>
 File: Images/breast_tomas_benign_malignant_diff.png Graphic file (type png)
 <use Images/breast_tomas_benign_malignant_diff.png>
 Package pdftex.def Info: Images/breast_tomas_benign_malignant_diff.png  used on input line 21.
@@ -443,7 +541,7 @@ Package natbib Warning: Citation `things' on page 3 undefined on input line 30.
 
 LaTeX Warning: Reference `sec:charm' on page 3 undefined on input line 30.
 
-<Images/Trophy_pipeline.png, id=286, 1434.35875pt x 722.7pt>
+<Images/Trophy_pipeline.png, id=321, 1434.35875pt x 722.7pt>
 File: Images/Trophy_pipeline.png Graphic file (type png)
 <use Images/Trophy_pipeline.png>
 Package pdftex.def Info: Images/Trophy_pipeline.png  used on input line 34.
@@ -453,9 +551,24 @@ Package natbib Warning: Citation `crine' on page 3 undefined on input line 39.
 
 
 
-[3 <./Images/Histology_Summary.png>]
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./Images/Histology_Summary.png>]
 
-[4 <./Images/breast_tomas_benign_malignant_diff.png> <./Images/Trophy_pipeline.png>])
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./Images/breast_tomas_benign_malignant_diff.png> <./Images/Trophy_pipeline.png>])
 
 [5] (./1_Methods.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -467,29 +580,44 @@ Overfull \hbox (3.47339pt too wide) in paragraph at lines 13--13
  []|\OT1/cmr/bx/n/10 Wavenumber(cm$[]$)| 
  []
 
-<Images/IR_Basics.png, id=324, 598.235pt x 727.71875pt>
+<Images/IR_Basics.png, id=360, 598.235pt x 727.71875pt>
 File: Images/IR_Basics.png Graphic file (type png)
 <use Images/IR_Basics.png>
 Package pdftex.def Info: Images/IR_Basics.png  used on input line 30.
 (pdftex.def)             Requested size: 377.62642pt x 459.36467pt.
-<Images/Cystine_IR_pH_dep.png, id=326, 344.28625pt x 275.0275pt>
+<Images/Cystine_IR_pH_dep.png, id=362, 344.28625pt x 275.0275pt>
 File: Images/Cystine_IR_pH_dep.png Graphic file (type png)
 <use Images/Cystine_IR_pH_dep.png>
 Package pdftex.def Info: Images/Cystine_IR_pH_dep.png  used on input line 37.
 (pdftex.def)             Requested size: 377.62642pt x 301.66249pt.
 
 
-[6]
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.55 \begin{equation}
+                     ]
 
-[7 <./Images/IR_Basics.png>]
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.55 \begin{equation}
+                      <./Images/IR_Basics.png>]
 
-[8 <./Images/Cystine_IR_pH_dep.png>]
-<Images/LDA.png, id=380, 480.51862pt x 510.88739pt>
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.72 \end{equation}
+                    <./Images/Cystine_IR_pH_dep.png>]
+<Images/LDA.png, id=415, 480.51862pt x 510.88739pt>
 File: Images/LDA.png Graphic file (type png)
 <use Images/LDA.png>
 Package pdftex.def Info: Images/LDA.png  used on input line 89.
 (pdftex.def)             Requested size: 472.03123pt x 501.87453pt.
-<Images/tree_ensemble.png, id=388, 1275.76625pt x 609.27625pt>
+<Images/tree_ensemble.png, id=423, 1275.76625pt x 609.27625pt>
 File: Images/tree_ensemble.png Graphic file (type png)
 <use Images/tree_ensemble.png>
 Package pdftex.def Info: Images/tree_ensemble.png  used on input line 115.
@@ -507,7 +635,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
 [9]
 
-[10 <./Images/LDA.png>]
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.123 
+       <./Images/LDA.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
@@ -519,8 +652,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
 
 
-[11{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/tree_ensemble.png>]
-<Images/connection_methods.png, id=468, 432.18417pt x 677.95003pt>
+[11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.136 \begin{equation}
+                      {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/tree_ensemble.png>]
+<Images/connection_methods.png, id=504, 432.18417pt x 677.95003pt>
 File: Images/connection_methods.png Graphic file (type png)
 <use Images/connection_methods.png>
 Package pdftex.def Info: Images/connection_methods.png  used on input line 151.
@@ -529,7 +667,7 @@ Package pdftex.def Info: Images/connection_methods.png  used on input line 151.
 
 LaTeX Warning: Float too large for page by 8.76254pt on input line 154.
 
-<Images/SCNN_Final.png, id=484, 984.624pt x 452.673pt>
+<Images/SCNN_Final.png, id=520, 984.624pt x 452.673pt>
 File: Images/SCNN_Final.png Graphic file (type png)
 <use Images/SCNN_Final.png>
 Package pdftex.def Info: Images/SCNN_Final.png  used on input line 171.
@@ -538,13 +676,18 @@ Package pdftex.def Info: Images/SCNN_Final.png  used on input line 171.
 
 [12]
 
-[13 <./Images/connection_methods.png>]
-<Images/lime_explanation.png, id=516, 513.92pt x 317.185pt>
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.184 \begin{equation}
+                       <./Images/connection_methods.png>]
+<Images/lime_explanation.png, id=551, 513.92pt x 317.185pt>
 File: Images/lime_explanation.png Graphic file (type png)
 <use Images/lime_explanation.png>
 Package pdftex.def Info: Images/lime_explanation.png  used on input line 199.
 (pdftex.def)             Requested size: 283.22162pt x 174.80074pt.
-<Images/lime_weights_example.png, id=519, 877.71915pt x 566.5968pt>
+<Images/lime_weights_example.png, id=554, 877.71915pt x 566.5968pt>
 File: Images/lime_weights_example.png Graphic file (type png)
 <use Images/lime_weights_example.png>
 Package pdftex.def Info: Images/lime_weights_example.png  used on input line 206.
@@ -558,9 +701,24 @@ LaTeX Warning: Reference `sec:methods:vae' on page 14 undefined on input line 21
 
 
 
-[14 <./Images/SCNN_Final.png>]
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.218 B
+       rief descriptions of the used VAE architectures <./Images/SCNN_Final.png>]
 
-[15 <./Images/lime_explanation.png> <./Images/lime_weights_example.png>]
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.218 B
+       rief descriptions of the used VAE architectures
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.218 B
+       rief descriptions of the used VAE architectures <./Images/lime_explanation.png> <./Images/lime_weights_example.png>]
 
 LaTeX Warning: Reference `appendix:VAEs' on page 16 undefined on input line 221.
 
@@ -575,21 +733,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<Images/Dataset_Class_Differences.png, id=546, 540.94312pt x 405.70734pt>
+<Images/Dataset_Class_Differences.png, id=581, 540.94312pt x 405.70734pt>
 File: Images/Dataset_Class_Differences.png Graphic file (type png)
 <use Images/Dataset_Class_Differences.png>
 Package pdftex.def Info: Images/Dataset_Class_Differences.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 354.0211pt.
-<Images/IR_and_HE_categories.png, id=547, 476.43997pt x 727.0362pt>
+<Images/IR_and_HE_categories.png, id=582, 476.43997pt x 727.0362pt>
 File: Images/IR_and_HE_categories.png Graphic file (type png)
 <use Images/IR_and_HE_categories.png>
 Package pdftex.def Info: Images/IR_and_HE_categories.png  used on input line 18.
 (pdftex.def)             Requested size: 401.22942pt x 612.25935pt.
 
 
-[17 <./Images/Dataset_Class_Differences.png>]
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.24 \newpage
+              <./Images/Dataset_Class_Differences.png>]
 
-[18 <./Images/IR_and_HE_categories.png>]
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.24 \newpage
+              <./Images/IR_and_HE_categories.png>]
 
 LaTeX Warning: Reference `sec:methods:lda' on page 19 undefined on input line 77.
 
@@ -609,80 +777,150 @@ Overfull \hbox (11.20547pt too wide) in paragraph at lines 138--161
 
 ) (./4_Discussion.tex) (./5_Conclusions.tex)
 
-[19]
+[19
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.49 \newpage
+             
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.49 \newpage
+             ]
 
-[20] (./2_Methods.tex
-<Images/Tanh_Relu_Demo.png, id=580, 471.7363pt x 378.14381pt>
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.49 \newpage
+             ] (./2_Methods.tex
+<Images/Tanh_Relu_Demo.png, id=615, 471.7363pt x 378.14381pt>
 File: Images/Tanh_Relu_Demo.png Graphic file (type png)
 <use Images/Tanh_Relu_Demo.png>
 Package pdftex.def Info: Images/Tanh_Relu_Demo.png  used on input line 60.
 (pdftex.def)             Requested size: 472.03123pt x 378.39099pt.
-<Images/best_val_accuracy.png, id=581, 571.47502pt x 426.93503pt>
+<Images/best_val_accuracy.png, id=616, 571.47502pt x 426.93503pt>
 File: Images/best_val_accuracy.png Graphic file (type png)
 <use Images/best_val_accuracy.png>
 Package pdftex.def Info: Images/best_val_accuracy.png  used on input line 68.
 (pdftex.def)             Requested size: 472.03123pt x 352.64265pt.
-<Images/Categorisation_train_test.png, id=582, 476.71504pt x 761.21858pt>
+<Images/Categorisation_train_test.png, id=617, 476.71504pt x 761.21858pt>
 File: Images/Categorisation_train_test.png Graphic file (type png)
 <use Images/Categorisation_train_test.png>
 Package pdftex.def Info: Images/Categorisation_train_test.png  used on input line 108.
 (pdftex.def)             Requested size: 377.62642pt x 603.01707pt.
-<Images/Confidence.png, id=583, 477.9762pt x 816.57452pt>
+<Images/Confidence.png, id=618, 477.9762pt x 816.57452pt>
 File: Images/Confidence.png Graphic file (type png)
 <use Images/Confidence.png>
 Package pdftex.def Info: Images/Confidence.png  used on input line 114.
 (pdftex.def)             Requested size: 377.62642pt x 645.13666pt.
-<Images/crime_umap.png, id=584, 436.33012pt x 624.95482pt>
+<Images/crime_umap.png, id=619, 436.33012pt x 624.95482pt>
 File: Images/crime_umap.png Graphic file (type png)
 <use Images/crime_umap.png>
 Package pdftex.def Info: Images/crime_umap.png  used on input line 142.
 (pdftex.def)             Requested size: 472.03123pt x 676.11409pt.
 
 
-LaTeX Warning: Float too large for page by 18.89955pt on input line 145.
+LaTeX Warning: Float too large for page by 30.89955pt on input line 145.
 
 
 
-[21 <./Images/Tanh_Relu_Demo.png>]
+[21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 \end{figure}
+                   <./Images/Tanh_Relu_Demo.png>]
 
-[22 <./Images/best_val_accuracy.png>]
+[22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 \end{figure}
+                   <./Images/best_val_accuracy.png>]
 
-[23 <./Images/Categorisation_train_test.png>]
+[23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 \end{figure}
+                   <./Images/Categorisation_train_test.png>]
 
-[24 <./Images/Confidence.png>]
-<Images/VAE_overview.png, id=610, 733.74126pt x 908.39375pt>
+[24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 \end{figure}
+                   <./Images/Confidence.png>]
+<Images/VAE_overview.png, id=645, 733.74126pt x 908.39375pt>
 File: Images/VAE_overview.png Graphic file (type png)
 <use Images/VAE_overview.png>
 Package pdftex.def Info: Images/VAE_overview.png  used on input line 150.
 (pdftex.def)             Requested size: 377.62642pt x 467.51614pt.
-<Images/crime_groupings_by_category_100.png, id=612, 557.63889pt x 463.50945pt>
+<Images/crime_groupings_by_category_100.png, id=647, 557.63889pt x 463.50945pt>
 File: Images/crime_groupings_by_category_100.png Graphic file (type png)
 <use Images/crime_groupings_by_category_100.png>
 Package pdftex.def Info: Images/crime_groupings_by_category_100.png  used on input line 159.
 (pdftex.def)             Requested size: 472.03123pt x 392.3582pt.
-<Images/crime_lime_plots.png, id=613, 525.21802pt x 632.3625pt>
+<Images/crime_lime_plots.png, id=648, 525.21802pt x 632.3625pt>
 File: Images/crime_lime_plots.png Graphic file (type png)
 <use Images/crime_lime_plots.png>
 Package pdftex.def Info: Images/crime_lime_plots.png  used on input line 166.
 (pdftex.def)             Requested size: 472.03123pt x 568.34908pt.
-<Images/context_model_metrics.png, id=614, 615.92108pt x 659.46375pt>
+<Images/context_model_metrics.png, id=649, 615.92108pt x 659.46375pt>
 File: Images/context_model_metrics.png Graphic file (type png)
 <use Images/context_model_metrics.png>
 Package pdftex.def Info: Images/context_model_metrics.png  used on input line 172.
 (pdftex.def)             Requested size: 472.03123pt x 505.40381pt.
 ) (./5_main.bbl
 
-[25]
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+     ]
 
-[26 <./Images/crime_umap.png>]
+[26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./Images/crime_umap.png>]
 
-[27 <./Images/VAE_overview.png>]
+[27
+pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./Images/VAE_overview.png>]
 
-[28 <./Images/crime_groupings_by_category_100.png>]
+[28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./Images/crime_groupings_by_category_100.png>]
 
-[29 <./Images/crime_lime_plots.png>]
+[29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./Images/crime_lime_plots.png>]
 
-[30 <./Images/context_model_metrics.png>]
+[30
+pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./Images/context_model_metrics.png>]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 76.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
@@ -691,19 +929,66 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
 
 
-[31]
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.96 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.96 
+     ]
 
-[32]
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.181 
+      ]
 
 [33])
 
-[34] (./appendix_Tiago.tex)
+[34] (./appendix_Tiago.tex) (./appendix_code.tex
+\pydata@fh@_05B9C9A9EA5561975F8C880219EDE7A6.data.minted=\write6
+\openout6 = `_05B9C9A9EA5561975F8C880219EDE7A6.data.minted'.
+
+runsystem(latexminted config  --timestamp 20250531015325 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
+
+ (./_05B9C9A9EA5561975F8C880219EDE7A6.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20250531015325 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
+
+ (./_minted/xcode.style.minted) (./_minted/497480B91507A524F112B98B99A15BA7.highlight.minted
+
+[35
+pdfTeX warning (ext4): destination with the same identifier (name{table.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.41 
+     ]
+
+[36]) (./_minted/285C9D795969DF9C2BD62618FB489D21.highlight.minted) (./_minted/00E573342F378766699780EC9112C8AA.highlight.minted
+
+[37]) (./_minted/2077A1373DDD1CA24E6FBE7D5704FACE.highlight.minted
+
+[38]) (./_minted/4FCA03C07DB620881A944742FE054D38.highlight.minted
+
+[39]
+
+[40]) (./_minted/8C2A5FBDB8BAA286D320DA259BE2776E.highlight.minted
+
+[41]
+
+[42]
+
+[43]))
 
 Package natbib Warning: There were undefined citations.
 
 
 
-[35] (./5_main.aux)
+[44] (./5_main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -716,21 +1001,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `5_main.out' has not changed.
-(rerunfilecheck)             Checksum: 101A1F1A0F7745007935F4AF70B7BE2E;9195.
+(rerunfilecheck)             Checksum: 646050D0FB0D1E005CDE59040712133A;10873.
  ) 
 Here is how much of TeX's memory you used:
- 11095 strings out of 473190
- 176124 string characters out of 5715800
- 592196 words of memory out of 5000000
- 33972 multiletter control sequences out of 15000+600000
- 570437 words of font info for 79 fonts, out of 8000000 for 9000
+ 16259 strings out of 473190
+ 315545 string characters out of 5715800
+ 847191 words of memory out of 5000000
+ 39032 multiletter control sequences out of 15000+600000
+ 570901 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1275b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on 5_main.pdf (35 pages, 23855602 bytes).
+ 75i,14n,79p,1275b,1222s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on 5_main.pdf (44 pages, 23898104 bytes).
 PDF statistics:
- 831 PDF objects out of 1000 (max. 8388607)
- 689 compressed objects within 7 object streams
- 204 named destinations out of 1000 (max. 500000)
- 503 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 767 compressed objects within 8 object streams
+ 220 named destinations out of 1000 (max. 500000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
 

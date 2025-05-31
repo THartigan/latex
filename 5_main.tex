@@ -12,6 +12,16 @@
   top=2cm, bottom=2cm,
   left=2.5cm, right=2.5cm
 ]{geometry}
+\usepackage{minted}          % syntax highlighting
+
+% global minted settings
+\setminted{
+    linenos,
+    fontsize=\small,
+    frame=lines,
+    baselinestretch=1.0,
+    style=xcode          % any Pygments style
+}
 
 \title{Deep Learning for Explainable Cancer Identification Spectroscopy}
 \author{Thomas Hartigan}
@@ -49,8 +59,10 @@
 \bibliography{TROPHY.bib}
 \newpage
 \appendix
-% \input{appendix_CHARM.tex}
+
 \input{appendix_Tiago.tex}
+% \input{appendix_CHARM.tex}
+\input{appendix_code.tex}
 \end{document}
 
 

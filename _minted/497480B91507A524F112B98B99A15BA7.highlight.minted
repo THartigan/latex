@@ -1,0 +1,127 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{TPL}\PYG{p}{(}\PYG{n}{nn}\PYG{o}{.}\PYG{n}{Module}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{TPL}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{p}{)}
+
+    \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{forward}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{c}\PYG{p}{,} \PYG{n}{x}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{Px} \PYG{o}{=} \PYG{n}{c}\PYG{o}{+}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{c}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{n}{torch}\PYG{o}{.}\PYG{n}{exp}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{o}{*}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+        \PYG{k}{return} \PYG{n}{Px}
+
+\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{SCNN\PYGZus{}TPL3}\PYG{p}{(}\PYG{n}{nn}\PYG{o}{.}\PYG{n}{Module}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{name} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SCNN\PYGZus{}TPL3}\PYG{l+s+s2}{\PYGZdq{}}
+
+    \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{apriori\PYGZus{}relevance}\PYG{p}{,} \PYG{n}{leak\PYGZus{}rate}\PYG{p}{,} \PYG{n}{dropout\PYGZus{}rate}\PYG{p}{,} \PYG{n}{input\PYGZus{}channels}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{SCNN\PYGZus{}TPL3}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Multi\PYGZhy{}scale Assessing Layers}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal8} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Conv1d}\PYG{p}{(}\PYG{n}{in\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{out\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{n}{kernel\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{n}{stride}\PYG{o}{=}\PYG{l+m+mi}{4}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}8} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal25} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Conv1d}\PYG{p}{(}\PYG{n}{in\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{out\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{n}{kernel\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{n}{stride}\PYG{o}{=}\PYG{l+m+mi}{12}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}25} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal50} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Conv1d}\PYG{p}{(}\PYG{n}{in\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{out\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{n}{kernel\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{stride}\PYG{o}{=}\PYG{l+m+mi}{25}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}50} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}801} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} An array of length 801 denoting an apriori understanding of the imporance of each channel}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{apriori\PYGZus{}relevace} \PYG{o}{=} \PYG{n}{apriori\PYGZus{}relevance}
+
+        \PYG{c+c1}{\PYGZsh{} Core CNN Layers}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{reLU} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{LeakyReLU}\PYG{p}{(}\PYG{n}{leak\PYGZus{}rate}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tanh} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Tanh}\PYG{p}{(}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dropout} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Dropout}\PYG{p}{(}\PYG{n}{p}\PYG{o}{=}\PYG{n}{dropout\PYGZus{}rate}\PYG{p}{)}
+
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core1} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Conv1d}\PYG{p}{(}\PYG{n}{in\PYGZus{}channels}\PYG{o}{=}\PYG{n}{input\PYGZus{}channels}\PYG{p}{,} \PYG{n}{out\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{n}{kernel\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{15}\PYG{p}{,} \PYG{n}{stride}\PYG{o}{=}\PYG{l+m+mi}{7}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm1} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{)}
+
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core2\PYGZus{}1} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Conv1d}\PYG{p}{(}\PYG{n}{in\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{n}{out\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{16}\PYG{p}{,} \PYG{n}{kernel\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{9}\PYG{p}{,} \PYG{n}{stride}\PYG{o}{=}\PYG{l+m+mi}{4}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm2\PYGZus{}1} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{)}
+
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core3\PYGZus{}1} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Conv1d}\PYG{p}{(}\PYG{n}{in\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{16}\PYG{p}{,} \PYG{n}{out\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{32}\PYG{p}{,} \PYG{n}{kernel\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{9}\PYG{p}{,} \PYG{n}{stride}\PYG{o}{=}\PYG{l+m+mi}{4}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm3\PYGZus{}1} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{32}\PYG{p}{)}
+
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core4} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Conv1d}\PYG{p}{(}\PYG{n}{in\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{32}\PYG{p}{,} \PYG{n}{out\PYGZus{}channels}\PYG{o}{=}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{n}{kernel\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm4} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{)}
+
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core5} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{1600}\PYG{p}{,} \PYG{l+m+mi}{32}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm5} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{32}\PYG{p}{)}
+
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core6} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{32}\PYG{p}{,}\PYG{l+m+mi}{16}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm6} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{BatchNorm1d}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{}\PYGZsh{}\PYGZsh{} Output Layers}
+        \PYG{c+c1}{\PYGZsh{} Determine a,b,c parameters for TPL}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outa} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outb} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outc} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outx} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Determine output values for each class}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tpl} \PYG{o}{=} \PYG{n}{TPL}\PYG{p}{(}\PYG{p}{)}
+
+    \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{forward}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{x}\PYG{p}{)}\PYG{p}{:}
+
+        \PYG{c+c1}{\PYGZsh{} Multi\PYGZhy{}Scale assessing Layer}
+        \PYG{n}{x\PYGZus{}msal8} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal8}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal8} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}8}\PYG{p}{(}\PYG{n}{x\PYGZus{}msal8}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal25} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal25}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal25} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}25}\PYG{p}{(}\PYG{n}{x\PYGZus{}msal25}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal50} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal50}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal50} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}50}\PYG{p}{(}\PYG{n}{x\PYGZus{}msal50}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal\PYGZus{}apriori} \PYG{o}{=} \PYG{n}{x} \PYG{o}{*} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{apriori\PYGZus{}relevace}
+        \PYG{n}{x\PYGZus{}msal\PYGZus{}apriori} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{msal\PYGZus{}norm\PYGZus{}801}\PYG{p}{(}\PYG{n}{x\PYGZus{}msal\PYGZus{}apriori}\PYG{p}{)}
+
+        \PYG{n}{x\PYGZus{}msal\PYGZus{}convs} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{concat}\PYG{p}{(}\PYG{p}{[}\PYG{n}{x\PYGZus{}msal8}\PYG{p}{,} \PYG{n}{x\PYGZus{}msal25}\PYG{p}{,} \PYG{n}{x\PYGZus{}msal50}\PYG{p}{]}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal\PYGZus{}convs\PYGZus{}flat} \PYG{o}{=} \PYG{n}{x\PYGZus{}msal\PYGZus{}convs}\PYG{o}{.}\PYG{n}{view}\PYG{p}{(}\PYG{n}{x\PYGZus{}msal\PYGZus{}convs}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}msal\PYGZus{}apriori\PYGZus{}flat} \PYG{o}{=} \PYG{n}{x\PYGZus{}msal\PYGZus{}apriori}\PYG{o}{.}\PYG{n}{view}\PYG{p}{(}\PYG{n}{x\PYGZus{}msal\PYGZus{}apriori}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{concat}\PYG{p}{(}\PYG{p}{[}\PYG{n}{x\PYGZus{}msal\PYGZus{}convs\PYGZus{}flat}\PYG{p}{,} \PYG{n}{x\PYGZus{}msal\PYGZus{}apriori\PYGZus{}flat}\PYG{p}{]}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n}{x\PYGZus{}core}\PYG{o}{.}\PYG{n}{view}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{x\PYGZus{}core}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Core CNN Layers}
+        \PYG{c+c1}{\PYGZsh{} First Convolution Layer}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core1}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm1}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dropout}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{reLU}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} First tanh\PYGZhy{}relu bock}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core2\PYGZus{}1}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm2\PYGZus{}1}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dropout}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tanh}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{reLU}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Second tanh\PYGZhy{}relu block}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core3\PYGZus{}1}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm3\PYGZus{}1}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dropout}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tanh}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{reLU}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Fine convolution layer}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core4}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm4}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dropout}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n}{x\PYGZus{}core}\PYG{o}{.}\PYG{n}{view}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{}\PYGZsh{} Linear Layers}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core5}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm5}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dropout}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tanh}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{reLU}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core6}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{core\PYGZus{}norm6}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dropout}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tanh}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}core} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{reLU}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Output Layers}
+        \PYG{n}{a} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outa}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{b} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outb}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{c} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outc}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}out} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{outx}\PYG{p}{(}\PYG{n}{x\PYGZus{}core}\PYG{p}{)}
+        \PYG{n}{x\PYGZus{}out} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{tpl}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{b}\PYG{p}{,}\PYG{n}{c}\PYG{p}{,}\PYG{n}{x\PYGZus{}out}\PYG{p}{)}
+
+        \PYG{k}{return} \PYG{n}{x\PYGZus{}out}
+\end{MintedVerbatim}

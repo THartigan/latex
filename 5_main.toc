@@ -52,3 +52,10 @@
 \contentsline {paragraph}{Clustering VAE Approaches}{25}{figure.22}%
 \contentsline {paragraph}{Logic Explained Networks}{25}{section*.6}%
 \contentsline {section}{\numberline {A}Traditional ML Classification Performance With 10-Fold Cross-Validation}{35}{appendix.A}%
+\contentsline {section}{\numberline {B}Relevant Code}{35}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Scale-Adjusting Convolutional Neural Network}{35}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}VAE Loss Functions}{37}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Reparamaterisaiton Trick}{38}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}Convolutional Encoder - Fully Connected Decoder VAE}{38}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}Convolutional Encoder - Transformer Decoder VAE}{39}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}Transformer Encoder - Transformer Decoder VAE}{41}{subsection.B.6}%

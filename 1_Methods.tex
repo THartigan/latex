@@ -94,21 +94,21 @@ where $\mathbb{I}$ is the indicator function \cite{ghojogh_linear_2019}. As we a
 
 
 \subsubsection{Extreme Gradient Boosting (XGBoost or XGB)}
-XGBoost uses an ensemble of regression T-trees (trees with T leaves) which produce $K$ additive functions $f_k$, which can be used to find a continuous output value:
+XGBoost generates an ensemble of regression T-trees (trees with T leaves) - producing $K$ additive functions $f_k$, which combined, learn to map inputs to continuous values
 \begin{equation}
     \hat y_i = \sum_{k=1}^K f_k(\boldsymbol{x}_i),
 \end{equation}
-and subject to a regulaised objective
+subject to the regularisation objective
 \begin{equation}
     \mathcal L (\phi)= \sum_i l(\hat y_i, y_i)+\sum_k\Omega(f_k).
 \end{equation}
-Here, $l$ is a differentiable loss between the prediction $\hat y_i$ and target value $y_i$, and $\Omega(f)$ is a complexity punishing regulaisation term \cite{chen_xgboost_2016}. To assemble the ensemble of trees, at each iteration $t$, we add $f_t$ to minimise
+Here, $l$ is a differentiable loss between the prediction $\hat y_i$ and target value $y_i$, and $\Omega(f)$ is a complexity penalising regulaisation term \cite{chen_xgboost_2016}. We assemble the ensemble of trees iteratively. At each iteration $t$, we add $f_t$ to the prediction at the previous iteration and minimise
 \begin{align}
     \mathcal L^{(t)}&=\sum_{i=1}^nl(y_i, \hat y_i^{(t-1)}+f_t(\boldsymbol{x}_i))+\Omega(f_t)\\
     &\approx \sum_{i=1}^n \left[l(y_i, \hat y^{(t-1)})+g_i f_t (\boldsymbol{x}_i)+\frac{1}{2} h_if_t^2(\boldsymbol{x}_i)\right])+\Omega(f_t),
 \end{align}
-where $g_i=\partial_{\hat y^{(t-1)}} l(y_i, \hat y^{(t-1)})$ and $h_u=\partial^2_{\hat y^{(t-1)}}l(y_i, \hat y^{(t-1)})$ are first and second order gradients of the loss function \cite{friedman_additive_2000}. Minimising this loss over a leaf then gives the optimal tree weighting 
-$w_j$ for that leaf. Many further optimisation techniques are used to improve the performance of XGBoost, the details of which can be found in \cite{chen_xgboost_2016}. A final prediction is then made by summing contributions from each tree, as shown in Figure \ref{fig:tree_ensemble}. Note that for $N$-classification tasks, $N$ trees - corresponding to positive and negative classification for each class - are built for each iteration, with softmax \cite{bridle_probabilistic_1990} over the outputs from these trees used to selected the best classification.
+where $g_i=\partial_{\hat y^{(t-1)}} l(y_i, \hat y^{(t-1)})$ and $h_i=\partial^2_{\hat y^{(t-1)}}l(y_i, \hat y^{(t-1)})$ are first and second order gradients of the loss function \cite{friedman_additive_2000}. Minimising this loss over a leaf then gives the optimal tree weighting 
+$w_j$ for that leaf. Many further optimisation techniques are used to improve the performance of XGBoost, the details of which can be found in \cite{chen_xgboost_2016}. A final prediction is then made by summing contributions from each tree, as shown in Figure \ref{fig:tree_ensemble}. Note that for $N$-classification tasks, $N$ trees - corresponding to positive and negative classification for each class - are built for each iteration, with softmax \cite{bridle_probabilistic_1990} over the summed outputs from these trees used to selected the best classification.
 
 \begin{figure}[htbp]
   \centering
