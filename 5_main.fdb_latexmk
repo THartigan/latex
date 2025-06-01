@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex 5_main"] 1748783706.45064 "5_main.aux" "5_main.bbl" "5_main" 1748783716.30373 0
+["bibtex 5_main"] 1748784141.34118 "5_main.aux" "5_main.bbl" "5_main" 1748784151.13623 0
   "./TROPHY.bib" 1748739381.99437 258273 78c89dd6b09232f880e2788c60201614 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "5_main.aux" 1748783716.03015 34981 07d81b780b405146809374a1c7167ef6 "pdflatex"
+  "5_main.aux" 1748784150.86586 34973 b18d05523dfc4bb0e51f19acad797df2 "pdflatex"
   (generated)
   "5_main.bbl"
   "5_main.blg"
   (rewritten before read)
-["pdflatex"] 1748783706.55166 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748783716.30391 0
+["pdflatex"] 1748784141.46774 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748784151.13641 0
   "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" 1748782491.5903 1323 7ce4cb23f470efd23c6270284ec4d139 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -153,13 +153,13 @@
   "0_Introduction.tex" 1748706826.81549 6075 928dbf422eea4ed91956225b21f63ace ""
   "1_Methods.tex" 1748778891.85372 40819 474ac88b8b89c0ddb522484eb8ea759f ""
   "2_Methods.tex" 1748775512.8331 5066 de3e98ec3a337ad51eeb522d30d1f554 ""
-  "3_Results.tex" 1748783696.00476 25679 73f476a3c071ad0457cbd2175679dfd7 ""
+  "3_Results.tex" 1748784131.26497 25675 e350151d8e50b7d475806ebf4d76c2e6 ""
   "5_Conclusions.tex" 1747502760.34084 21 962245b29278b6028e8e709db79a2139 ""
-  "5_main.aux" 1748783716.03015 34981 07d81b780b405146809374a1c7167ef6 "pdflatex"
-  "5_main.bbl" 1748783706.54913 23337 a718217277254bf2c9823105f0960155 "bibtex 5_main"
-  "5_main.out" 1748783716.03186 10958 df2259a56555f92b37657e5bcadaff1c "pdflatex"
+  "5_main.aux" 1748784150.86586 34973 b18d05523dfc4bb0e51f19acad797df2 "pdflatex"
+  "5_main.bbl" 1748784141.46481 23337 a718217277254bf2c9823105f0960155 "bibtex 5_main"
+  "5_main.out" 1748784150.86814 10958 df2259a56555f92b37657e5bcadaff1c "pdflatex"
   "5_main.tex" 1748782491.5903 1323 7ce4cb23f470efd23c6270284ec4d139 ""
-  "5_main.toc" 1748783716.03208 5669 2547d8b04152d23843d9d5c7b6bd6594 "pdflatex"
+  "5_main.toc" 1748784150.86846 5669 2547d8b04152d23843d9d5c7b6bd6594 "pdflatex"
   "Images/Categorisation_train_test.png" 1747943291 931719 5c5a4f714c4dcc2c5022b8dc07755f73 ""
   "Images/Confidence.png" 1747942403 1456073 31958d98310ffac4771318dc36a4abd8 ""
   "Images/Cystine_IR_pH_dep.png" 1747781622.38141 138908 c0574d8651dd198c80a5b17f28026a75 ""
