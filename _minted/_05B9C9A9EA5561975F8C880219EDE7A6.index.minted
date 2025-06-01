@@ -1,14 +1,11 @@
 {
   "jobname": "5_main",
   "md5": "05B9C9A9EA5561975F8C880219EDE7A6",
-  "timestamp": "20250531015315",
+  "timestamp": "20250601112027",
   "cachefiles": [
     "00E573342F378766699780EC9112C8AA.highlight.minted",
-    "2077A1373DDD1CA24E6FBE7D5704FACE.highlight.minted",
     "285C9D795969DF9C2BD62618FB489D21.highlight.minted",
     "497480B91507A524F112B98B99A15BA7.highlight.minted",
-    "4FCA03C07DB620881A944742FE054D38.highlight.minted",
-    "8C2A5FBDB8BAA286D320DA259BE2776E.highlight.minted",
     "_05B9C9A9EA5561975F8C880219EDE7A6.index.minted",
     "xcode.style.minted"
   ]

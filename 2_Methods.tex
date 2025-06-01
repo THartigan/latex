@@ -55,50 +55,46 @@
 \subsubsection{Model Architecture}
 
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=1\textwidth]{Images/Tanh_Relu_Demo.png}
-  \caption{Caption}
-  \label{fig:my-label}
-\end{figure}
-\subsubsection{Regularisation Techniques}
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=1\textwidth]{Images/Tanh_Relu_Demo.png}
+%   \caption{Caption}
+%   \label{fig:my-label}
+% \end{figure}
+% \subsubsection{Regularisation Techniques}
 
-\begin{figure}[htbp] 
-    \centering 
-    \includegraphics[width=1\textwidth]{Images/best_val_accuracy.png} 
-    \caption{Caption} \label{fig:my-label}
-\end{figure}
 
-\begin{table}[ht] \centering \caption{Metrics for single fold test set
-with 50\% voting threshold and no label smoothing} \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
-\midrule
-Accuracy & $0.699$ & $0.680$ & $0.699$ & $0.945$ \\
-Sensitivity & $0.662$ & $0.258$ & $0.452$ & $0.783$ \\
-Specificity & $0.708$ & $0.762$ & $0.936$ & $0.972$ \\
-False Positive Rate & $0.292$ & $0.238$ & $0.064$ & $0.028$ \\
-\midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.5387$} \\
-\bottomrule \end{tabular}
-\label{tab:voting05_results} \end{table}
 
-\begin{table}[ht] \centering \caption{Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing} \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
-\midrule
-Accuracy & $0.702$ & $0.674$ & $0.700$ & $0.944$ \\
-Sensitivity & $0.643$ & $0.257$ & $0.458$ & $0.782$ \\
-Specificity & $0.716$ & $0.755$ & $0.933$ & $0.971$ \\
-False Positive Rate & $0.284$ & $0.245$ & $0.067$ & $0.029$ \\
-\midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.5349$} \\
-\bottomrule
-\end{tabular} \label{tab:ls01_results} \end{table}
+% \begin{table}[ht] \centering \caption{Metrics for single fold test set
+% with 50\% voting threshold and no label smoothing} \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
+% \midrule
+% Accuracy & $0.699$ & $0.680$ & $0.699$ & $0.945$ \\
+% Sensitivity & $0.662$ & $0.258$ & $0.452$ & $0.783$ \\
+% Specificity & $0.708$ & $0.762$ & $0.936$ & $0.972$ \\
+% False Positive Rate & $0.292$ & $0.238$ & $0.064$ & $0.028$ \\
+% \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.5387$} \\
+% \bottomrule \end{tabular}
+% \label{tab:voting05_results} \end{table}
 
-\begin{table}[ht] \centering \caption{Metrics for single fold test set with 50\% voting threshold and 20\% label smoothing} \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
-\midrule
-Accuracy & $0.700$ & $0.672$ & $0.692$ & $0.941$ \\
-Sensitivity & $0.650$ & $0.266$ & $0.436$ & $0.786$ \\
-Specificity & $0.713$ & $0.751$ & $0.937$ & $0.967$ \\
-False Positive Rate & $0.287$ & $0.249$ & $0.063$ & $0.033$ \\
-\midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.5345$} \\
-\bottomrule
-\end{tabular} \label{tab:ls02_results} \end{table}
+% \begin{table}[ht] \centering \caption{Metrics for single fold test set with 50\% voting threshold and 10\% label smoothing} \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
+% \midrule
+% Accuracy & $0.702$ & $0.674$ & $0.700$ & $0.944$ \\
+% Sensitivity & $0.643$ & $0.257$ & $0.458$ & $0.782$ \\
+% Specificity & $0.716$ & $0.755$ & $0.933$ & $0.971$ \\
+% False Positive Rate & $0.284$ & $0.245$ & $0.067$ & $0.029$ \\
+% \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.5349$} \\
+% \bottomrule
+% \end{tabular} \label{tab:ls01_results} \end{table}
+
+% \begin{table}[ht] \centering \caption{Metrics for single fold test set with 50\% voting threshold and 20\% label smoothing} \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
+% \midrule
+% Accuracy & $0.700$ & $0.672$ & $0.692$ & $0.941$ \\
+% Sensitivity & $0.650$ & $0.266$ & $0.436$ & $0.786$ \\
+% Specificity & $0.713$ & $0.751$ & $0.937$ & $0.967$ \\
+% False Positive Rate & $0.287$ & $0.249$ & $0.063$ & $0.033$ \\
+% \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.5345$} \\
+% \bottomrule
+% \end{tabular} \label{tab:ls02_results} \end{table}
 
 
 \subsubsection{Model Performance}
@@ -115,20 +111,22 @@ False Positive Rate & $0.287$ & $0.249$ & $0.063$ & $0.033$ \\
     \caption{Caption} \label{fig:my-label}
 \end{figure}
 
-\begin{table}[ht] \centering \caption{XGBoost} \label{tab:xgboost}
-\begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\ \midrule Accuracy & $0.809\pm0.026$ & $0.826\pm0.011$ & $0.749\pm0.073$ & $0.888\pm0.055$ \\ Sensitivity & $0.490\pm0.115$ & $0.386\pm0.133$ & $0.781\pm0.055$ & $0.603\pm0.091$ \\
-Specificity & $0.886\pm0.029$ & $0.911\pm0.036$ & $0.711\pm0.104$ & $0.937\pm0.057$ \\ False Positive Rate & $0.115\pm0.029$ & $0.090\pm0.036$ & $0.289\pm0.104$ & $0.063\pm0.057$ \\ \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:}
-$0.565\pm0.058$} \\ \bottomrule \end{tabular} \end{table}
+% \begin{table}[ht] \centering \caption{XGBoost} \label{tab:xgboost}
+% \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\ \midrule Accuracy & $0.809\pm0.026$ & $0.826\pm0.011$ & $0.749\pm0.073$ & $0.888\pm0.055$ \\ Sensitivity & $0.490\pm0.115$ & $0.386\pm0.133$ & $0.781\pm0.055$ & $0.603\pm0.091$ \\
+% Specificity & $0.886\pm0.029$ & $0.911\pm0.036$ & $0.711\pm0.104$ & $0.937\pm0.057$ \\ False Positive Rate & $0.115\pm0.029$ & $0.090\pm0.036$ & $0.289\pm0.104$ & $0.063\pm0.057$ \\ \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:}
+% $0.565\pm0.058$} \\ \bottomrule \end{tabular} \end{table}
 
-\begin{table}[ht] \centering \caption{SCNN} \label{tab:scnn_tpl3}
-\begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
-\midrule
-Accuracy & $0.756\pm0.071$ & $0.801\pm0.083$ & $0.707\pm0.017$ & $0.881\pm0.070$ \\
-Sensitivity & $0.739\pm0.111$ & $0.323\pm0.069$ & $0.527\pm0.071$ & $0.777\pm0.082$ \\
-Specificity & $0.760\pm0.101$ & $0.894\pm0.095$ & $0.883\pm0.089$ & $0.899\pm0.072$ \\
-False Positive Rate & $0.240\pm0.102$ & $0.107\pm0.095$ & $0.118\pm0.089$ & $0.102\pm0.072$ \\
-\midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.591\pm0.003$} \\
-\bottomrule \end{tabular} \end{table}
+% \begin{table}[ht] \centering \caption{SCNN} \label{tab:scnn_tpl3}
+% \begin{tabular}{lcccc} \toprule Metrics & Normal & Hyperplastic & Adenoma & Cancer \\
+% \midrule
+% Accuracy & $0.756\pm0.071$ & $0.801\pm0.083$ & $0.707\pm0.017$ & $0.881\pm0.070$ \\
+% Sensitivity & $0.739\pm0.111$ & $0.323\pm0.069$ & $0.527\pm0.071$ & $0.777\pm0.082$ \\
+% Specificity & $0.760\pm0.101$ & $0.894\pm0.095$ & $0.883\pm0.089$ & $0.899\pm0.072$ \\
+% False Positive Rate & $0.240\pm0.102$ & $0.107\pm0.095$ & $0.118\pm0.089$ & $0.102\pm0.072$ \\
+% \midrule \multicolumn{5}{c}{\textbf{Overall Weighted Accuracy:} $0.591\pm0.003$} \\
+% \bottomrule \end{tabular} \end{table}
+
+
 
 
 \subsection{Explainability}

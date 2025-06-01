@@ -32,49 +32,49 @@ where $\vec x$ and $\vec y$ are the spectra being compared, and $n$ is the numbe
 \begin{equation}
     \text{Cosine Similarity}(\vec x, \vec y) = \frac{\vec x \cdot \vec y}{|\vec x| |\vec y|}. 
 \end{equation}
-By then adding $1$ to the cosine similarity and dividing by $2$, it is scaled to lie between $0$ and $1$ with $0$ denoting complete orthogonality and $1$ denoting complete similarity between the two spectra. The classification of each test spectrum is then set as that which corresponds to the mean spectrum which minimises the MSE or maximises the cosine similarity. The performance of these methods are shown in Tables \ref{table:spectral_mathching_1} and \ref{table:spectral_matching_2}. These methods provide a baseline to compare against the more advanced methods applied in this work.
+By then adding $1$ to the cosine similarity and dividing by $2$, it is scaled to lie between $0$ and $1$ with $0$ denoting complete orthogonality and $1$ denoting complete similarity between the two spectra. The classification of each test spectrum is then set as that which corresponds to the mean spectrum which minimises the MSE or maximises the cosine similarity. The performance of these methods for four-class and binary classification tasks are shown in Tables \ref{table:spectral_mathching_1} and \ref{table:spectral_matching_2}. These methods provide a baseline to compare against the more advanced methods applied in this work.
 
-\begin{table}[ht]
-\centering
-\begin{tabular}{lcccc}
-\toprule
-Metric & Normal & Hyperplastic & Adenoma & Cancer \\
-\midrule
-Sensitivity       & $0.238\pm0.032$ & $0.396\pm0.138$ & $0.310\pm0.056$ & $0.829\pm0.114$ \\
-Specificity       & $0.853\pm0.040$ & $0.823\pm0.098$ & $0.812\pm0.088$ & $0.703\pm0.067$ \\
-Accuracy          & $0.733\pm0.030$ & $0.755\pm0.073$ & $0.562\pm0.047$ & $0.722\pm0.068$ \\
-False Positive Rate & $0.147\pm0.040$ & $0.177\pm0.098$ & $0.188\pm0.088$ & $0.297\pm0.067$ \\
-\midrule
-Overall Weighted Accuracy  & \multicolumn{4}{c}{$0.443\pm0.062$} \\
-\bottomrule
-\end{tabular}
-\caption{The 4-classification performance (mean $\pm$ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, performances of both methods are identical to 3 s.f. so only one table is shown.}
-\label{table:spectral_mathching_1}
-\end{table}
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{lcccc}
+% \toprule
+% Metric & Normal & Hyperplastic & Adenoma & Cancer \\
+% \midrule
+% Sensitivity       & $0.238\pm0.032$ & $0.396\pm0.138$ & $0.310\pm0.056$ & $0.829\pm0.114$ \\
+% Specificity       & $0.853\pm0.040$ & $0.823\pm0.098$ & $0.812\pm0.088$ & $0.703\pm0.067$ \\
+% Accuracy          & $0.733\pm0.030$ & $0.755\pm0.073$ & $0.562\pm0.047$ & $0.722\pm0.068$ \\
+% False Positive Rate & $0.147\pm0.040$ & $0.177\pm0.098$ & $0.188\pm0.088$ & $0.297\pm0.067$ \\
+% \midrule
+% Overall Weighted Accuracy  & \multicolumn{4}{c}{$0.443\pm0.062$} \\
+% \bottomrule
+% \end{tabular}
+% \caption{The 4-classification performance (mean $\pm$ std) across folds achieved by both the MSE and cosine similarity spectral matching methods. Note, performances of both methods are identical to 3 s.f. so only one table is shown.}
+% \label{table:spectral_mathching_1}
+% \end{table}
 
-\begin{table}[ht]
-\centering
-\begin{tabular}{lcc}
-\toprule
-Metric & Non-Cancer& Cancer \\
-\midrule
-Sensitivity         & $0.703\pm0.067$ & $0.829\pm0.114$ \\
-Specificity         & $0.829\pm0.114$ & $0.703\pm0.067$ \\
-Accuracy            & $0.722\pm0.068$ & $0.722\pm0.068$ \\
-False Positive Rate & $0.171\pm0.114$ & $0.297\pm0.067$ \\
-\midrule
-Overall Weighted Accuracy    & \multicolumn{2}{c}{$0.766\pm0.080$} \\
-\bottomrule
-\end{tabular}
-\caption{The binary classification performance (mean $\pm$ std)
-across folds achieved by both the MSE and cosine similarity spectral matching
-methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performances of both methods are identical to 3 s.f. so only one table
-is shown.}
-\label{table:spectral_matching_2}
-\end{table}
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{lcc}
+% \toprule
+% Metric & Non-Cancer& Cancer \\
+% \midrule
+% Sensitivity         & $0.703\pm0.067$ & $0.829\pm0.114$ \\
+% Specificity         & $0.829\pm0.114$ & $0.703\pm0.067$ \\
+% Accuracy            & $0.722\pm0.068$ & $0.722\pm0.068$ \\
+% False Positive Rate & $0.171\pm0.114$ & $0.297\pm0.067$ \\
+% \midrule
+% Overall Weighted Accuracy    & \multicolumn{2}{c}{$0.766\pm0.080$} \\
+% \bottomrule
+% \end{tabular}
+% \caption{The binary classification performance (mean $\pm$ std)
+% across folds achieved by both the MSE and cosine similarity spectral matching
+% methods. These results follow from mapping 4-classification predictions into cancer / non-cancer classifications. Note, the performances of both methods are identical to 3 s.f. so only one table
+% is shown.}
+% \label{table:spectral_matching_2}
+% \end{table}
 
 \subsection{Traditional Machine Learning Approaches}
-Previous, unpublished work on this dataset by Azevedo et. al. explored the application of traditional machine learning methods to achieve spectral classifications. Azevedo et. al. used PCA (§\ref{sec:methods:pca}) to extract 25-dimensional representations of the dataset before applying LDA (§\ref{sec:methods:lda}) and XGBoost (§\ref{sec:methods:xgb}) to categorise test set samples. Azevedo et. al. used 10-fold cross-validation for their testing, so for comparability, their results were reproduced using the same 4-fold cross-validation method outlined in §\ref{sec:methods:cross}, and the results of this analysis are presented in 
+Previous, unpublished work on this dataset by Tiago Azevedo explored the application of traditional machine learning methods to achieve spectral classifications. Azevedo used PCA (§\ref{sec:methods:pca}) to extract 25-dimensional representations of the dataset before applying LDA (§\ref{sec:methods:lda}) and XGBoost (§\ref{sec:methods:xgboost}) to categorise test set samples. Azevedo used 10-fold cross-validation for their testing, so for comparability, their results were reproduced for this work using the 4-fold cross-validation method outlined in §\ref{sec:methods:data_split}, and the results of this analysis are presented in 
 Table \ref{tab:trad_ml_performance}. The original 10-fold performance results can be found in appendix \ref{appendix:Tiago}.
 
 
@@ -133,41 +133,221 @@ Table \ref{tab:trad_ml_performance}. The original 10-fold performance results ca
 % \label{table:xgb_4class_performance}
 % \end{table}
 
-\begin{table}[ht]
-\centering
-\begin{tabular}{llcccc}
-\toprule
-Method & Metric & Normal & Hyperplastic & Adenoma & Cancer \\
-\midrule
-PCA $\to$ LDA & Sensitivity         & $0.430\pm0.043$ & $0.230\pm0.099$ & $0.800\pm0.075$ & $0.440\pm0.294$ \\
- & Specificity         & $0.890\pm0.062$ & $0.950\pm0.041$ & $0.550\pm0.174$ & $0.930\pm0.042$ \\
- & Accuracy            & $0.800\pm0.052$ & $0.830\pm0.044$ & $0.670\pm0.090$ & $0.860\pm0.071$ \\
- & False Positive Rate & $0.110\pm0.062$ & $0.050\pm0.041$ & $0.450\pm0.174$ & $0.070\pm0.042$ \\
- & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.476\pm0.079$} \\
-\midrule
-PCA $\to$ XGB & Sensitivity         & $0.470\pm0.096$ & $0.350\pm0.090$ & $0.770\pm0.051$ & $0.590\pm0.075$ \\
- & Specificity         & $0.880\pm0.030$ & $0.900\pm0.047$ & $0.710\pm0.094$ & $0.940\pm0.054$ \\
- & Accuracy            & $0.800\pm0.028$ & $0.810\pm0.034$ & $0.740\pm0.066$ & $0.880\pm0.050$ \\
- & False Positive Rate & $0.120\pm0.030$ & $0.100\pm0.047$ & $0.290\pm0.094$ & $0.060\pm0.054$ \\
- & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.544\pm0.053$} \\
-\midrule
-XGBoost & Sensitivity         & $0.50\pm0.093$ & $0.38\pm0.115$ & $0.78\pm0.048$ & $0.61\pm0.079$ \\
- & Specificity         & $0.89\pm0.025$ & $0.91\pm0.031$ & $0.71\pm0.089$ & $0.94\pm0.048$ \\
- & Accuracy            & $0.81\pm0.022$ & $0.83\pm0.009$ & $0.75\pm0.064$ & $0.89\pm0.048$ \\
- & False Positive Rate & $0.11\pm0.025$ & $0.09\pm0.031$ & $0.29\pm0.089$ & $0.06\pm0.048$ \\
- & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.568\pm0.058$} \\
-\bottomrule
-\end{tabular}
-\caption{Comparison of 4-classification performance (mean $\pm$ std) across folds for PCA $\to$ LDA, PCA $\to$ XGBoost, and XGBoost.}
-\label{table:combined_4class_performance}
-\end{table}
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{llcccc}
+% \toprule
+% Method & Metric & Normal & Hyperplastic & Adenoma & Cancer \\
+% \midrule
+% PCA $\to$ LDA & Sensitivity         & $0.430\pm0.043$ & $0.230\pm0.099$ & $0.800\pm0.075$ & $0.440\pm0.294$ \\
+%  & Specificity         & $0.890\pm0.062$ & $0.950\pm0.041$ & $0.550\pm0.174$ & $0.930\pm0.042$ \\
+%  & Accuracy            & $0.800\pm0.052$ & $0.830\pm0.044$ & $0.670\pm0.090$ & $0.860\pm0.071$ \\
+%  & False Positive Rate & $0.110\pm0.062$ & $0.050\pm0.041$ & $0.450\pm0.174$ & $0.070\pm0.042$ \\
+%  & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.476\pm0.079$} \\
+% \midrule
+% PCA $\to$ XGB & Sensitivity         & $0.470\pm0.096$ & $0.350\pm0.090$ & $0.770\pm0.051$ & $0.590\pm0.075$ \\
+%  & Specificity         & $0.880\pm0.030$ & $0.900\pm0.047$ & $0.710\pm0.094$ & $0.940\pm0.054$ \\
+%  & Accuracy            & $0.800\pm0.028$ & $0.810\pm0.034$ & $0.740\pm0.066$ & $0.880\pm0.050$ \\
+%  & False Positive Rate & $0.120\pm0.030$ & $0.100\pm0.047$ & $0.290\pm0.094$ & $0.060\pm0.054$ \\
+%  & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.544\pm0.053$} \\
+% \midrule
+% XGBoost & Sensitivity         & $0.50\pm0.093$ & $0.38\pm0.115$ & $0.78\pm0.048$ & $0.61\pm0.079$ \\
+%  & Specificity         & $0.89\pm0.025$ & $0.91\pm0.031$ & $0.71\pm0.089$ & $0.94\pm0.048$ \\
+%  & Accuracy            & $0.81\pm0.022$ & $0.83\pm0.009$ & $0.75\pm0.064$ & $0.89\pm0.048$ \\
+%  & False Positive Rate & $0.11\pm0.025$ & $0.09\pm0.031$ & $0.29\pm0.089$ & $0.06\pm0.048$ \\
+%  & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.568\pm0.058$} \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparison of 4-classification performance (mean $\pm$ std) across folds for PCA $\to$ LDA, PCA $\to$ XGBoost, and XGBoost.}
+% \label{table:tab:trad_ml_performance}
+% \end{table}
 
-\noindent
+% \begin{table}[ht]
+%     \centering
+%     \begin{tabular}{llcc}
+%         \toprule
+%         Method                & Metric               & Non‐Cancer           & Cancer              \\
+%         \midrule
+%         \multirow{5}{*}{PCA $\rightarrow$ LDA} 
+%                               & Sensitivity          & $0.93 \pm 0.042$     & $0.44 \pm 0.294$    \\
+%                               & Specificity          & $0.44 \pm 0.294$     & $0.93 \pm 0.042$    \\
+%                               & Accuracy             & $0.86 \pm 0.071$     & $0.86 \pm 0.071$    \\
+%                               & False Positive Rate  & $0.56 \pm 0.294$     & $0.07 \pm 0.042$    \\
+%                               & Overall Accuracy     & \multicolumn{2}{c}{$0.687 \pm 0.162$}           \\
+%         \midrule
+%         \multirow{5}{*}{PCA $\rightarrow$ XGB} 
+%                               & Sensitivity          & $0.93 \pm 0.055$     & $0.60 \pm 0.075$    \\
+%                               & Specificity          & $0.60 \pm 0.075$     & $0.93 \pm 0.055$    \\
+%                               & Accuracy             & $0.89 \pm 0.049$     & $0.89 \pm 0.049$    \\
+%                               & False Positive Rate  & $0.40 \pm 0.075$     & $0.07 \pm 0.055$    \\
+%                               & Overall Accuracy     & \multicolumn{2}{c}{$0.769 \pm 0.049$}           \\
+%         \midrule
+%         \multirow{5}{*}{XGB} 
+%                               & Sensitivity          & $0.94 \pm 0.047$     & $0.61 \pm 0.084$    \\
+%                               & Specificity          & $0.61 \pm 0.084$     & $0.94 \pm 0.047$    \\
+%                               & Accuracy             & $0.89 \pm 0.049$     & $0.89 \pm 0.049$    \\
+%                               & False Positive Rate  & $0.39 \pm 0.084$     & $0.06 \pm 0.047$    \\
+%                               & Overall Accuracy     & \multicolumn{2}{c}{$0.773 \pm 0.060$}           \\
+%         \bottomrule
+%     \end{tabular}
+%     \caption{Comparison of binary classification performance (mean $\pm$ std) for PCA $\rightarrow$ LDA, PCA $\rightarrow$ XGB, and XGB.}
+%     \label{tab:binary_perf}
+% \end{table}
+
+% \noindent
+
+
 
 
 
 
 \subsection{A Scanning Convolutional Neural Network Approach}
+
+\begin{figure}[htbp] 
+    \centering 
+    \includegraphics[width=1\textwidth]{Images/best_val_accuracy.png} 
+    \caption{Caption} \label{fig:my-label}
+\end{figure}
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{llcccc}
+        \toprule
+        Smoothing & Metric & Normal & Hyperplastic & Adenoma & Cancer \\
+        \midrule
+        \multirow{5}{*}{0\%} 
+            & Sensitivity          & 0.662 & 0.258 & 0.452 & 0.783 \\
+            & Specificity          & 0.708 & 0.762 & 0.936 & 0.972 \\
+            & Accuracy             & 0.699 & 0.680 & 0.699 & 0.945 \\
+            & False Positive Rate  & 0.292 & 0.238 & 0.064 & 0.028 \\
+            & Overall Weighted Accuracy & \multicolumn{4}{c}{0.5387} \\
+        \midrule
+        \multirow{5}{*}{10\%} 
+            & Sensitivity          & 0.643 & 0.257 & 0.458 & 0.782 \\
+            & Specificity          & 0.716 & 0.755 & 0.933 & 0.971 \\
+            & Accuracy             & 0.702 & 0.674 & 0.700 & 0.944 \\
+            & False Positive Rate  & 0.284 & 0.245 & 0.067 & 0.029 \\
+            & Overall Weighted Accuracy & \multicolumn{4}{c}{0.5349} \\
+        \midrule
+        \multirow{5}{*}{20\%} 
+            & Sensitivity          & 0.650 & 0.266 & 0.436 & 0.786 \\
+            & Specificity          & 0.713 & 0.751 & 0.937 & 0.967 \\
+            & Accuracy             & 0.700 & 0.672 & 0.692 & 0.941 \\
+            & False Positive Rate  & 0.287 & 0.249 & 0.063 & 0.033 \\
+            & Overall Weighted Accuracy & \multicolumn{4}{c}{0.5345} \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:voting_ls_comparison}
+    \caption{Worst single-fold test-set SCNN performance with a 55 \% voting threshold
+    and different label-smoothing levels.}
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/combined_accuracy.pdf}
+    \caption{}
+    \label{fig:scnn_training_validation}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llcccc}
+\toprule
+Method & Metric & Normal & Hyperplastic & Adenoma & Cancer \\
+\midrule
+MSE & Sensitivity         & $0.238\pm0.032$ & $0.396\pm0.138$ & $0.310\pm0.056$ & $0.829\pm0.114$ \\
+    & Specificity         & $0.853\pm0.040$ & $0.823\pm0.098$ & $0.812\pm0.088$ & $0.703\pm0.067$ \\
+    & Accuracy            & $0.733\pm0.030$ & $0.755\pm0.073$ & $0.562\pm0.047$ & $0.722\pm0.068$ \\
+    & False Positive Rate & $0.147\pm0.040$ & $0.177\pm0.098$ & $0.188\pm0.088$ & $0.297\pm0.067$ \\
+    & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.443\pm0.062$} \\
+\midrule
+Cosine Similarity & Sensitivity         & $0.238\pm0.032$ & $0.396\pm0.138$ & $0.310\pm0.056$ & $0.829\pm0.114$ \\
+                  & Specificity         & $0.853\pm0.040$ & $0.823\pm0.098$ & $0.812\pm0.088$ & $0.703\pm0.067$ \\
+                  & Accuracy            & $0.733\pm0.030$ & $0.755\pm0.073$ & $0.562\pm0.047$ & $0.722\pm0.068$ \\
+                  & False Positive Rate & $0.147\pm0.040$ & $0.177\pm0.098$ & $0.188\pm0.088$ & $0.297\pm0.067$ \\
+                  & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.443\pm0.062$} \\
+\midrule
+PCA $\to$ LDA & Sensitivity         & $0.430\pm0.043$ & $0.230\pm0.099$ & $0.800\pm0.075$ & $0.440\pm0.294$ \\
+              & Specificity         & $0.890\pm0.062$ & $0.950\pm0.041$ & $0.550\pm0.174$ & $0.930\pm0.042$ \\
+              & Accuracy            & $0.800\pm0.052$ & $0.830\pm0.044$ & $0.670\pm0.090$ & $0.860\pm0.071$ \\
+              & False Positive Rate & $0.110\pm0.062$ & $0.050\pm0.041$ & $0.450\pm0.174$ & $0.070\pm0.042$ \\
+              & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.476\pm0.079$} \\
+\midrule
+PCA $\to$ XGB & Sensitivity         & $0.470\pm0.096$ & $0.350\pm0.090$ & $0.770\pm0.051$ & $0.590\pm0.075$ \\
+              & Specificity         & $0.880\pm0.030$ & $0.900\pm0.047$ & $0.710\pm0.094$ & $0.940\pm0.054$ \\
+              & Accuracy            & $0.800\pm0.028$ & $0.810\pm0.034$ & $0.740\pm0.066$ & $0.880\pm0.050$ \\
+              & False Positive Rate & $0.120\pm0.030$ & $0.100\pm0.047$ & $0.290\pm0.094$ & $0.060\pm0.054$ \\
+              & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.544\pm0.053$} \\
+\midrule
+XGBoost       & Sensitivity         & $0.50\pm0.093$  & $0.38\pm0.115$  & $0.78\pm0.048$  & $0.61\pm0.079$  \\
+              & Specificity         & $0.89\pm0.025$  & $0.91\pm0.031$  & $0.71\pm0.089$  & $0.94\pm0.048$  \\
+              & Accuracy            & $0.81\pm0.022$  & $0.83\pm0.009$  & $0.75\pm0.064$  & $0.89\pm0.048$  \\
+              & False Positive Rate & $0.11\pm0.025$  & $0.09\pm0.031$  & $0.29\pm0.089$  & $0.06\pm0.048$  \\
+              & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.568\pm0.058$} \\
+\midrule
+Ensemble SCNN & Sensitivity         & $0.739\pm0.111$ & $0.323\pm0.069$ & $0.527\pm0.071$ & $0.777\pm0.082$ \\
+              & Specificity         & $0.760\pm0.101$ & $0.894\pm0.095$ & $0.883\pm0.089$ & $0.899\pm0.072$ \\
+              & Accuracy            & $0.756\pm0.071$ & $0.801\pm0.083$ & $0.707\pm0.017$ & $0.881\pm0.070$ \\
+              & False Positive Rate & $0.240\pm0.102$ & $0.107\pm0.095$ & $0.118\pm0.089$ & $0.102\pm0.072$ \\
+              & Overall Weighted Accuracy & \multicolumn{4}{c}{$0.591\pm0.003$} \\
+\bottomrule
+\end{tabular}
+\caption{Combined 4‐class classification performance (mean $\pm$ std) across folds for MSE, Cosine Similarity, PCA$\to$LDA, PCA$\to$XGBoost, XGBoost, and SCNN. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures.}
+\label{table:combined_performance}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llcc}
+\toprule
+Method & Metric & Non‐Cancer & Cancer \\
+\midrule
+\multirow{5}{*}{MSE} 
+       & Sensitivity           & $0.703\pm0.067$     & $0.829\pm0.114$    \\
+       & Specificity           & $0.829\pm0.114$     & $0.703\pm0.067$    \\
+       & Accuracy              & $0.722\pm0.068$     & $0.722\pm0.068$    \\
+       & False Positive Rate   & $0.171\pm0.114$     & $0.297\pm0.067$    \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.766\pm0.080$} \\
+\midrule
+\multirow{5}{*}{Cosine Similarity} 
+       & Sensitivity           & $0.703\pm0.067$     & $0.829\pm0.114$    \\
+       & Specificity           & $0.829\pm0.114$     & $0.703\pm0.067$    \\
+       & Accuracy              & $0.722\pm0.068$     & $0.722\pm0.068$    \\
+       & False Positive Rate   & $0.171\pm0.114$     & $0.297\pm0.067$    \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.766\pm0.080$} \\
+\midrule
+\multirow{5}{*}{PCA $\rightarrow$ LDA} 
+       & Sensitivity           & $0.93\pm0.042$      & $0.44\pm0.294$     \\
+       & Specificity           & $0.44\pm0.294$      & $0.93\pm0.042$     \\
+       & Accuracy              & $0.86\pm0.071$      & $0.86\pm0.071$     \\
+       & False Positive Rate   & $0.56\pm0.294$      & $0.07\pm0.042$     \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.687\pm0.162$} \\
+\midrule
+\multirow{5}{*}{PCA $\rightarrow$ XGB} 
+       & Sensitivity           & $0.93\pm0.055$      & $0.60\pm0.075$     \\
+       & Specificity           & $0.60\pm0.075$      & $0.93\pm0.055$     \\
+       & Accuracy              & $0.89\pm0.049$      & $0.89\pm0.049$     \\
+       & False Positive Rate   & $0.40\pm0.075$      & $0.07\pm0.055$     \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.769\pm0.049$} \\
+\midrule
+\multirow{5}{*}{XGB} 
+       & Sensitivity           & $0.94\pm0.047$      & $0.61\pm0.084$     \\
+       & Specificity           & $0.61\pm0.084$      & $0.94\pm0.047$     \\
+       & Accuracy              & $0.89\pm0.049$      & $0.89\pm0.049$     \\
+       & False Positive Rate   & $0.39\pm0.084$      & $0.06\pm0.047$     \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.773\pm0.060$} \\
+\midrule
+\multirow{5}{*}{Ensemble SCNN} 
+       & Sensitivity           & $0.903\pm0.062$     & $0.761\pm0.069$    \\
+       & Specificity           & $0.761\pm0.069$     & $0.903\pm0.062$    \\
+       & Accuracy              & $0.882\pm0.060$     & $0.882\pm0.060$    \\
+       & False Positive Rate   & $0.239\pm0.069$     & $0.098\pm0.062$    \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.832\pm0.059$} \\
+\bottomrule
+\end{tabular}
+\caption{Combined binary classification performance (mean $\pm$ std) across folds for MSE, Cosine Similarity, PCA$\rightarrow$LDA, PCA$\rightarrow$XGB, XGB, and SCNN. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures.}
+\label{table:combined_binary_performance}
+\end{table}
 
 \subsection{LIME Explanations}
 \subsection{CRIME Explanations}

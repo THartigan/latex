@@ -2,56 +2,64 @@
 \subsection{FTIR Spectroscopy}
 %Check which of the CHARM methods are actually needed here and potentially don't bother with them all
 
-Infrared spectroscopy generally works by directing a broadband spectrum with wavenumbers ranging from around $400-4000 \text{ cm}^{-1}$ (for mid-IR spectroscopy) \cite{su_fourier_2020} onto a sample. This coherent spectrum then excites resonant vibrational modes within molecular bonds inside the sample, causing absorption of specific frequencies depending on the composition of the incident sample. This decreases the intensity relative to the baseline in the absorbed frequencies, therefore allowing a characteristic spectrum for each bond to be established. Modern devices use a Fourier transform-based (FTIR) interferogram approach \cite{griffiths_fourier_1983}, enabling high signal-to-noise (SNR) ratios to be achieved.\\
+Infrared (IR) spectroscopy works by directing a broadband spectrum with wavenumbers ranging from around $400-4000 \text{ cm}^{-1}$ (for mid-IR spectroscopy) \cite{su_fourier_2020} onto a sample. This coherent spectrum then excites resonant vibrational modes within molecular bonds inside the sample, causing absorption of specific frequencies depending on the composition of the incident sample. This decreases the intensity at the absorbed frequencies relative to the broadband baseline, generating a characteristic spectrum for each vibrational mode. The frequencies at which these vibrations occur are ultimately determined by quantum electron density effects \cite{}. However, they are often well modelled by a simple harmonic oscillator approach \cite{} subject to the requirement that the molecular dipole moment $\mu$ can change \cite{}. For the bond demonstrated in Figure \ref{fig:ir_bond}, we therefore expect IR absorption at frequency:
+\begin{equation}
+    \nu = \frac{1}{2\pi c} \sqrt{\frac{k(m_1+m_2)}{m_1 m_2}}.
+\end{equation}
+The requirement for molecules to be polar results in FTIR being particularly sensitive to functional groups with high electronegativity differences like those depicted in Figure \ref{fig:ir_bond}. \\
 
-FTIR can detect biochemical features including nucleic acids, proteins, lipids and carbohydrates within biological samples by matching the observed spectra with known forms for different bonding types, functional groups and intermolecular interactions \cite{su_fourier_2020}. Typical absorption groups within biological samples are detailed in Table \ref{table:functional_groups}.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Images/IR_Basics.png}
+  \caption{An illustration of a bond with spring constant $k$ between two atoms with masses $m_1$ and $m_2$, along with demonstrations of how different levels of bonding and isotopic effect can alter IR absorption frequencies \cite{berthomieu_fourier_2009}.}
+  \label{fig:ir_bond}
+\end{figure}
+
+\noindent
+Modern devices use a Fourier transform-based (FTIR) interferogram approach \cite{griffiths_fourier_1983}, enabling high signal-to-noise (SNR) ratios to be achieved. FTIR can detect biochemical features including nucleic acids, proteins, lipids, and carbohydrates within biological samples by matching the observed spectra with known forms for different bonding types, functional groups and intermolecular interactions \cite{su_fourier_2020}. Typical absorption groups within biological samples are detailed in Table \ref{table:functional_groups}. Furthermore, we expect FTIR may be a good method for cancer detection, as cancerous growth is often associated with changes in the acidity of tissues, which is known to cause hydrogen-bonding induced changes to FTIR spectral peak positions \cite{wolpert_infrared_2006,torii_modeling_2024,czowski_cancer_2020}. This effect is demonstrated in Figure \ref{fig:ir_differences_ph}.
 
 % Requires: \usepackage{array} \begin{table}[h] \centering
-\begin{table}[h] 
-    \centering 
-    \begin{tabular}{|>{\centering}m{3.3cm}|>{\centering\arraybackslash}m{4cm}|} 
-    \hline \textbf{Wavenumber(cm\textsuperscript{-1})} & \textbf{Assignment} \\ 
-    \hline 3080--2800 &
-    Anti-symmetric and symmetric C--H stretches from proteins and lipids \\ 
-    \hline
-    1745--1725 & Ester carbonyl of lipids \\ \hline 1700--1500 & Amide I and II groups in peptide linkages of proteins \\ 
-    \hline 
-    1270--1080 & Anti-symmetric and symmetric C--O and P--O areas in DNA, RNA and phospholipids \\ 
-    \hline 
-    1200--900 & Carbohydrate vibrations of glucose, fructose and glycogen \\ 
-    \hline
-    \end{tabular} 
-    \caption{\centering Assignments of Various Functional Groups Based on Wavenumber} 
-    \label{table:functional_groups} 
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{@{}lc@{\hspace{1cm}}l@{}}
+    \toprule
+    \textbf{Spectral Position (cm$^{-1}$)} & & \textbf{Assignment} \\ 
+    \midrule
+    1020 & & glycogen \\
+    1087 & & symmetric PO$_2^-$ stretching of nucleic acids \\
+    1167 & & C–OH stretching of proteins \\
+    1236 & & asymmetric PO$_2^-$ stretching of nucleic acids \\
+    1310 & & amide III of proteins \\
+    1395 & & COO$^-$ stretching of proteins and lipids \\
+    1455 & & CH$_3$ bending of proteins and lipids \\
+    1542 & & amide II of proteins \\
+    1645 & & amide I of proteins \\
+    1740 & & C=O stretching of lipids \\
+    \bottomrule
+  \end{tabular}
+  \label{table:functional_groups}
+  \caption{Relevant FTIR spectral assignments within the wavenumber range investigated. From \cite{lasalvia_discrimination_2023, talari_advances_2017}.}
 \end{table}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{Images/IR_Basics.png}
-  \caption{From \cite{berthomieu_fourier_2009}}
-  \label{fig:my-label}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
   \includegraphics[width=0.8\textwidth]{Images/Cystine_IR_pH_dep.png}
-  \caption{From \cite{wolpert_infrared_2006}}
-  \label{fig:my-label}
+  \caption{The FTIR spectra produced by cystine (an amino acid) at differnt pH levels \cite{wolpert_infrared_2006}.}
+  \label{fig:ir_differences_ph}
 \end{figure}
 
 \subsubsection{FTIR Dataset Collection}
 \label{sec:mdethods:data_collection}
-The MINERVA dataset used in this work contains FTIR spectral images of 90 colon cancer tissue samples. These images were produced by collaborators at the University of Exeter using an Agilent 620 FTIR microscope, an Agilent 670 FTIR spectrometer with a Globar light source, and a liquid-nitrogen cooled 128x128 FPA detector \cite{nallala_high-resolution_2016}
+The dataset used in this work contains FTIR spectral images of 90 colon cancer tissue samples originally collected for the MINERVA project \cite{noauthor_minerva_nodate}. These images were produced by collaborators at the University of Exeter using an Agilent 620 FTIR microscope, an Agilent 670 FTIR spectrometer with a Globar light source, and a liquid-nitrogen cooled 128x128 focal plane array detector \cite{nallala_high-resolution_2016}.
 
 \subsection{Cross-Validation Approach}
 \label{sec:methods:data_split}
-FTIR data was produced for 90 samples, of which 31 were classified as normal, 17 as
-hyperplastic, 27 as adenomatous, and 15 as cancerous. Due to the desire to accurately predict performance in four-category prediction tasks, a 4-fold cross-validation approach was used \cite{kohavi_study_2001}. This involved splitting the dataset into four parts using the stratified group K-fold method, which produces splits subject to the constraints of both preserving the proportion of samples (pixels) for each class within each split to the maximum extent possible whilst also enforcing the requirement for non-overlapping groups between splits \cite{t_r_stratified_2023,gunopulos_stratification_2011, szymanski_network_2017}. When training ML models, an approach was adopted where for each set of four folds, two were used for training, one for validation and one for testing. For methods which did not require validation, the validation set was discarded, enabling maximal comparability between methods.
+FTIR data was produced for 90 samples, of which 31 were classified as normal, 17 as hyperplastic, 27 as adenomatous, and 15 as cancerous. Due to the desire to accurately predict performance in four-category prediction tasks, a 4-fold cross-validation approach was adopted \cite{kohavi_study_2001}. This involved splitting the dataset into four parts using the stratified group K-fold method, which produces splits subject to the constraints of both preserving the proportion of samples (pixels) for each class within each split to the maximum extent possible whilst also enforcing the requirement for non-overlapping groups (images) between splits \cite{t_r_stratified_2023,gunopulos_stratification_2011, szymanski_network_2017}. When training ML models on spectral data, an approach was adopted where for each set of four folds, two were used for training, one for validation and one for testing. For methods which did not require validation, the validation set was discarded, enabling maximal comparability between methods.
 
 \subsection{Machine Learning (ML)}
 \subsubsection{Principal Component Analysis (PCA)}
 \label{sec:methods:pca}
-PCA \cite{wold_principal_nodate} is a dimensionality reduction technique which aims to project high-dimensional data into a new, more meaningful basis by aiming to re-express the data through a linear combination of these new basis vectors. This linearity allows us to pose the problem through linear algebra, where we wish to find a linear transformation $\boldsymbol{P}$ which maps the original recorded dataset $\bf X$ to a new representation of that dataset $\boldsymbol{Y}$ such that:
+PCA \cite{wold_principal_nodate} is a dimensionality reduction technique which aims to project high-dimensional data into a new, more meaningful basis by re-expressing the data through a linear combination of these new basis vectors. This linearity allows us to pose the problem through linear algebra, where we wish to find a linear transformation $\boldsymbol{P}$ which maps the original recorded dataset $\bf X$ to a new representation of that dataset $\boldsymbol{Y}$ such that:
 \begin{equation}
     \boldsymbol{Y} = \boldsymbol{P} \cdot \boldsymbol{X}.
 \end{equation}
@@ -62,6 +70,7 @@ The rows of $\boldsymbol{P}$ then form a new set of orthonormal basis vectors. T
 which itself gives the degree of linear relationship between different variables. The eigenvalues of $\boldsymbol{C}$ therefore correspond to the variance of $\boldsymbol{X}$ along the associated eigenvector \cite{shlens_tutorial_2014}. Throughout this work, PCA is used to reduce inputs to 25 dimensions.
 
 \subsubsection{Linear Discriminant Analysis (LDA)}
+\label{sec:methods:lda}
 LDA \cite{fisher_use_1936} is a classification technique which aims to maximise the separability of classifications for given input data (e.g. IR spectra) by maximising between-class variance and minimising within-class variance \cite{tharwat_linear_2017}. This is achieved by assuming data corresponding to a specific class $k$ is normally distributed about a mean value $\mu_k$, and that all classes have equal covariance matrices $\boldsymbol{\Sigma}_k=\boldsymbol{\Sigma}$. The first assumption requires there to be a point $x^*$ which is equally likely to belong to two classes. If we take $x^*$ as the decision boundary, we can then minimise the classification error, which in the binary classification case with classes $\mathcal C_1$ and $\mathcal C_2$ is given by:
 \begin{equation}
    \mathbb{P}(\text{error})= \mathbb{P}(x>x^*, x\in \mathcal C_1) + \mathbb{P}(x<x^*, x\in \mathcal C_2).
@@ -94,6 +103,7 @@ where $\mathbb{I}$ is the indicator function \cite{ghojogh_linear_2019}. As we a
 
 
 \subsubsection{Extreme Gradient Boosting (XGBoost or XGB)}
+\label{sec:methods:xgboost}
 XGBoost generates an ensemble of regression T-trees (trees with T leaves) - producing $K$ additive functions $f_k$, which combined, learn to map inputs to continuous values
 \begin{equation}
     \hat y_i = \sum_{k=1}^K f_k(\boldsymbol{x}_i),
@@ -266,10 +276,112 @@ Furthermore, we use single-sample monte carlo estimation \cite{} to find the exp
 \end{equation}
 Hence, we can optimise such a VAE by minimising the negative ELBO:
 \begin{equation}
-    \mathcal L(\boldsymbol{x}) = -\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu)+\frac{1}{2}\left[1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right],
+    \mathcal L(\boldsymbol{x}) = -\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu)+\beta \frac{1}{2}\left[1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right],
 \end{equation}
-which is adopted as the unsupervised VAE loss function throughout this work. When using a semi-supervised VAE approach, we follow the M2 approach described by Kingma et. al. \cite{}, so modify this loss function to include a classification term by adding a cross-entropy loss \cite{} assessing the difference between predicted and true class probabilities. These predicted class probabilities are given by softmax over the output from a two-layer ($64\rightarrow128\rightarrow4$ node) fully-connected layer at the end of the VAE encoder, prior to $\mu$ and $\sigma$ projection. These implementations of these ELBOs and the reparameterisation trick can be found in \ref{sec:code:ELBOs} and \ref{sec:code:reparam} respectively. The VAE architectures used in this work are summarised in Table \ref{tab:VAE_architectures}, and their full implementations can be found in \ref{appendix:code:VAEs}.
+which is adopted as the unsupervised VAE loss function throughout this work, where $\beta$ is a tunable parameter \cite{beta-vae}. When using a semi-supervised VAE approach, we follow the M2 approach described by Kingma et. al. \cite{}, so modify this loss function to include a classification term by adding a cross-entropy loss \cite{} assessing the difference between predicted and true class probabilities. These predicted class probabilities are given by softmax over the output from a two-layer ($64\rightarrow128\rightarrow4$ node) fully-connected layer at the end of the VAE encoder, prior to $\mu$ and $\sigma$ projection. These implementations of these ELBOs and the reparameterisation trick can be found in \ref{sec:code:ELBOs} and \ref{sec:code:reparam} respectively. The VAE architectures used in this work are summarised in Table \ref{tab:VAE_architectures}, and their full implementations can be found in \ref{appendix:code:VAEs}. As each VAE is already implicitly using a model trained on the training set for each split, the VAE itself is trained on the LIME explanations of the validation set.
 
+\begin{sidewaystable}[htbp]
+\centering
+\caption{Architectures of the three semi-supervised VAE methods studied. BN = BatchNorm1d, C1D($ic$, $oc$, $k$, $s$) = Conv1d(input channels = $ic$, output channels = $oc$, kernel = $k$, stride = $s$),  
+FC = fully-connected (bias on), TE(D)($d$, $nh$, $f$, $dr$, $nl$)= TransformerEncoder(Decoder)(model dim = $d$, num heads = $nh$, feed-forward dimension = $f$, dropout = $dr$, num layers = $nl$).}
+\label{tab:ssvae_arch}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{
+    >{\centering}p{3cm} % ← centred first column p{5.5cm} p{3.0cm}
+    p{5.8cm}  p{3.0cm}  p{4.4cm} p{5.8cm}}
+\toprule
+\textbf{Model} & \textbf{Feature extractor} 
+& \textbf{Classifier head} & \textbf{Latent \& posterior path} 
+& \textbf{Decoder} \\ \midrule
+%
+Convolutional - Perceptron (CP) &
+BN(\emph{input dim}) $\rightarrow$ \newline
+$\bigl[$C1D(1,1,3,2); BN; ReLU$\bigr]={\text{seq}_1}$, \newline
+$\bigl[$C1D(1,1,300,50); BN; ReLU$\bigr]={\text{seq}_2}$; \newline
+Concat$[x_{\text{raw}},\text{seq}_1,\text{seq}_2]\rightarrow$ \newline
+FC(\emph{flat len}$\rightarrow64$); \newline 
+ReLU &
+FC($64\rightarrow 128$); \newline
+ReLU $\rightarrow$ \newline
+FC($128\rightarrow4$) &
+Concat$([h,y])\rightarrow$; \newline 
+FC($68\rightarrow 4) = \mu$, \newline
+FC($68\rightarrow 4) = \log\sigma^{2}\rightarrow$ \newline
+$z=\mu+\epsilon\sigma,\ \epsilon\!\sim\!\mathcal N(0,1)$ &
+BN($4+4$)$\rightarrow$ \newline
+FC($4+4\rightarrow$ \emph{input dim}) = dec; \newline
+$\tanh(\text{dec}) \times m + c$ \newline
+Learned scalars $m$ and $c$ \\[4pt]
+%
+Convolutional - Transformer (CT) &
+\emph{Same as above} &
+\emph{Same as above} &
+\emph{Same as above} &
+[FC($4+4 \rightarrow 64$) = proj, \newline
+Rand(\emph{input dim}, 64) = query, \newline
+causality] $\rightarrow$ \newline
+TD(64, 4, 256, 0, 3) $\rightarrow$ \newline
+FC($64\rightarrow 1)$ = dec; \newline
+$\tanh(\text{dec}) \times m$ \newline
+Learned scalar $m$ \\[4pt]
+%
+Transformer - Transformer (DT) &
+BN(\emph{input dim}) $\rightarrow$\newline 
+[C1D(1,1,3,2); BN; ReLU]$=\text{seq}_1$, \newline
+[C1D(1,1,300,50); BN; ReLU]$=\text{seq}_2$; \newline
+Concat$([\text{seq}_1,\text{seq}_2])\rightarrow$ \newline
+Token project FC(1, 4) \newline 
++ Sinusoidal PE $\rightarrow$ \newline
+TE(4, 4, 64, 0.1, 3); \newline
+AdaptiveAvgPool $\rightarrow$ vector $\rightarrow$\newline
+FC($4\rightarrow 64$);\newline
+ReLU&
+\emph{Same as above} &
+\emph{Same as above} &
+\emph{Same as above} \\
+\bottomrule
+\end{tabular}
+\end{sidewaystable}
 
+\subsubsection{CRIME with Linear Classification}
+\label{sec:crime_linear}
+Once the CRIME method has been used to cluster the LIME explanations into contexts, the mean FTIR spectrum associated with the LIME explanations in each context can be found. This work then uses these mean spectra, along with the mean LIME weights for each context to produce an explainable linear classification model. This is achieved by first classifying each context according to the most common classification (normal, hyperplastic, adenoma, or cancer) of the spectra which are placed into the context when training the VAE on the validation set. We then compute a LIME-importance-weighted cosine similarity between each mean cluster spectrum and a test spectrum. The method used to calculate this similarity was initially developed by Zaki et. al. to calculate the similarity of their clustered spectra to known indicator spectra \cite{zaki_explainable_2024}. For each clustered spectrum, $\boldsymbol{\mu}$, with weights $\boldsymbol{w}$, we scale both to a range $[-1,1]$ according to the minimum and maximum values within each vector, giving scaled vectors $\hat{\boldsymbol{\mu}}$ and $\hat{\boldsymbol{w}}$. We then do the same for a test spectrum $\boldsymbol{t}\rightarrow \hat{\boldsymbol{t}}$. The cosine similarity is then calculated as:
+\begin{equation}
+    \text{sim}=\frac{\hat{\boldsymbol{t}}^T (\hat{\boldsymbol{\mu}} \cdot \hat{\boldsymbol{w}})}{|\hat{\boldsymbol{t}}|^2 |\hat{\boldsymbol{\mu}} \cdot \hat{\boldsymbol{w}}|^2}.
+\end{equation}
+Each test set spectrum is then classified according to the context with which is achieves the highest similarity score. The respective context classification is then used to map the test spectra to a physical classification (normal, hyperplastic, adenoma or cancer). Due to the low number of independent samples, it is not possible to further divide the dataset to find a reliable validation set for this method, so sensible VAE parameters are selected based on their performance classifying the validation set before performing a final run to evaluate performance on the test set.
 
 \subsection{Evaluation Metrics}
+The dataset used in this work is highly imbalanced, so a very high accuracy can be achieved by simply predicting the most common class. To avoid this, I calculated performance metrics relative to each "true" classification, $k$, using the following confusion matrix $(\mathrm{CM})$ (see Figure \ref{fig:confusion_matrix}) conventions:
+\begin{align}
+\text{TP}_k &= \mathrm{CM}_{kk}, &
+\text{FN}_k &= \sum_j \mathrm{CM}_{kj} - \text{TP}_k, \\
+\text{FP}_k &= \sum_i \mathrm{CM}_{ik} - \text{TP}_k, &
+\text{TN}_k &= \sum_{i,j} \mathrm{CM}_{ij} - \bigl(\text{TP}_k+\text{FN}_k+\text{FP}_k\bigr).
+\end{align}
+
+\noindent From these counts we then define:
+\begin{align}
+\text{Sensitivity}_k &= \frac{\text{TP}_k}{\text{TP}_k+\text{FN}_k}, &
+\text{Specificity}_k &= \frac{\text{TN}_k}{\text{TN}_k+\text{FP}_k}, \\[4pt]
+\text{Accuracy}_k   &= \frac{\text{TP}_k+\text{TN}_k}
+                            {\text{TP}_k+\text{TN}_k+\text{FP}_k+\text{FN}_k}, &
+\text{FPR}_k        &= \frac{\text{FP}_k}{\text{FP}_k+\text{TN}_k}.
+\end{align}
+
+\noindent Finally, to produce a metric which fairly measures performance despite dataset imbalance, we define the weighted overall accuracy as: 
+\begin{align}
+\text{Weighted Overall Accuracy} &= \frac{\sum_{k=0}^{K} w_k \cdot \text{Accuracy}_k}{\sum_{k=0}^{K} w_k}, \\ \text{where} \quad w_k &= \frac{\text{True number of samples in class } k}{\text{Total number of samples}}.
+\label{eq:overall_accuracy}
+\end{align}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{Images/confusion_breakdown_coloured.pdf}
+    \caption{A confusion matrix showing the contributions to true positive (TP), false negative (FN), false positive (FP) and true negative (TN) counts for a sample "truly" belonging to class 2.}
+    \label{fig:confusion_matrix}
+\end{figure}
+
+\subsubsection{Binary Classification Methodology}
+\label{sec:methods:binary}
+Due to the high computational cost in training the SCNN networks, it was decided that binary classification performance results throughout this work would be calculated using four-class classification predictions. For this, we categorise cancer, hyperplastic and adenomatous predictions as non-cancerous and cancerous predictions are unchanged. 

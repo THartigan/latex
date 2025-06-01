@@ -173,390 +173,390 @@ def reparameterise(mu, logvar, eps_scale=1):
     return mu + eps * std
 \end{minted}
 
-\subsection{Convolutional Encoder - Fully Connected Decoder VAE}
-\begin{minted}{python3}
-class ConvExtractor(nn.Module):
-    def __init__(self, input_dim, hidden_dim, lime_only=False):
-        super().__init__()
-        self.lime_only = lime_only
-        self.relu = nn.ReLU(inplace=True)
-        # normalize raw input
-        self.bn_input = nn.BatchNorm1d(input_dim)
-        # conv tokenizers: output channels=1, so batchnorm on channel dim=1
-        self.conv1 = nn.Conv1d(1, 1, kernel_size=3, stride=2)
-        self.bn1   = nn.BatchNorm1d(1)
-        self.conv7 = nn.Conv1d(1, 1, kernel_size=300, stride=50)
-        self.bn7   = nn.BatchNorm1d(1)
-        # compute sequence lengths
-        seq1 = (input_dim - 3)//2 + 1
-        seq7 = (input_dim - 300)//50 + 1
-        # total flattened length: raw + conv outputs
-        flat_len = input_dim + seq1 + seq7
-        # project to hidden_dim
-        self.fc_hidden = nn.Linear(flat_len, hidden_dim)
+% \subsection{Convolutional Encoder - Fully Connected Decoder VAE}
+% \begin{minted}{python3}
+% class ConvExtractor(nn.Module):
+%     def __init__(self, input_dim, hidden_dim, lime_only=False):
+%         super().__init__()
+%         self.lime_only = lime_only
+%         self.relu = nn.ReLU(inplace=True)
+%         # normalize raw input
+%         self.bn_input = nn.BatchNorm1d(input_dim)
+%         # conv tokenizers: output channels=1, so batchnorm on channel dim=1
+%         self.conv1 = nn.Conv1d(1, 1, kernel_size=3, stride=2)
+%         self.bn1   = nn.BatchNorm1d(1)
+%         self.conv7 = nn.Conv1d(1, 1, kernel_size=300, stride=50)
+%         self.bn7   = nn.BatchNorm1d(1)
+%         # compute sequence lengths
+%         seq1 = (input_dim - 3)//2 + 1
+%         seq7 = (input_dim - 300)//50 + 1
+%         # total flattened length: raw + conv outputs
+%         flat_len = input_dim + seq1 + seq7
+%         # project to hidden_dim
+%         self.fc_hidden = nn.Linear(flat_len, hidden_dim)
 
-    def forward(self, x: torch.Tensor):
-        # x: (batch, input_dim)
-        x = self.bn_input(x)             # normalize features
-        x = x.unsqueeze(1)               # → (batch,1,input_dim)
-        # conv tokenizers
-        x1 = self.relu(self.bn1(self.conv1(x)))  # → (batch,1,seq1)
-        x7 = self.relu(self.bn7(self.conv7(x)))  # → (batch,1,seq7)
-        # flatten
-        x_raw   = x.squeeze(1)                   # → (batch,input_dim)
-        x1_flat = x1.view(x1.size(0), -1)        # → (batch,seq1)
-        x7_flat = x7.view(x7.size(0), -1)        # → (batch,seq7)
-        feat    = torch.cat([x_raw, x1_flat, x7_flat], dim=1)  # → (batch,flat_len)
-        # hidden representation
-        hidden  = self.relu(self.fc_hidden(feat))
-        return hidden
+%     def forward(self, x: torch.Tensor):
+%         # x: (batch, input_dim)
+%         x = self.bn_input(x)             # normalize features
+%         x = x.unsqueeze(1)               # → (batch,1,input_dim)
+%         # conv tokenizers
+%         x1 = self.relu(self.bn1(self.conv1(x)))  # → (batch,1,seq1)
+%         x7 = self.relu(self.bn7(self.conv7(x)))  # → (batch,1,seq7)
+%         # flatten
+%         x_raw   = x.squeeze(1)                   # → (batch,input_dim)
+%         x1_flat = x1.view(x1.size(0), -1)        # → (batch,seq1)
+%         x7_flat = x7.view(x7.size(0), -1)        # → (batch,seq7)
+%         feat    = torch.cat([x_raw, x1_flat, x7_flat], dim=1)  # → (batch,flat_len)
+%         # hidden representation
+%         hidden  = self.relu(self.fc_hidden(feat))
+%         return hidden
 
-# -- Semi-Supervised Convolutional VAE --
-class SemiSupervisedVAECP(nn.Module):
-    name = "SemiSupervisedVAECP"
-    def __init__(self,
-                 input_dim:  int,
-                 hidden_dim: int,
-                 latent_dim: int,
-                 eps_scale:  float = 1.0,
-                 lime_only:  bool = False):
-        super().__init__()
-        self.eps_scale = eps_scale
-        # 1) feature extractor
-        self.extractor = ConvExtractor(input_dim, hidden_dim, lime_only=lime_only)
-        # 2) classifier head: hidden → logits for 4 classes
-        self.classifier_head = nn.Sequential(
-            nn.Linear(hidden_dim, 128),
-            nn.ReLU(inplace=True),
-            nn.Linear(128, 4)
-        )
-        # 3) posterior parameters conditioned on (hidden + one-hot y)
-        self.fc_mu     = nn.Linear(hidden_dim + 4, latent_dim)
-        self.fc_logvar = nn.Linear(hidden_dim + 4, latent_dim)
-        # 4) decoder: reconstruct x from (z + one-hot y)
-        self.decoder = nn.Sequential(
-            nn.BatchNorm1d(latent_dim + 4),
-            nn.Linear(latent_dim + 4, input_dim)
-        )
-        # learned scale & shift + nonlinearity
-        self.scale = nn.Parameter(torch.ones(1))
-        self.shift = nn.Parameter(torch.zeros(1))
-        self.tanh  = nn.Tanh()
+% # -- Semi-Supervised Convolutional VAE --
+% class SemiSupervisedVAECP(nn.Module):
+%     name = "SemiSupervisedVAECP"
+%     def __init__(self,
+%                  input_dim:  int,
+%                  hidden_dim: int,
+%                  latent_dim: int,
+%                  eps_scale:  float = 1.0,
+%                  lime_only:  bool = False):
+%         super().__init__()
+%         self.eps_scale = eps_scale
+%         # 1) feature extractor
+%         self.extractor = ConvExtractor(input_dim, hidden_dim, lime_only=lime_only)
+%         # 2) classifier head: hidden → logits for 4 classes
+%         self.classifier_head = nn.Sequential(
+%             nn.Linear(hidden_dim, 128),
+%             nn.ReLU(inplace=True),
+%             nn.Linear(128, 4)
+%         )
+%         # 3) posterior parameters conditioned on (hidden + one-hot y)
+%         self.fc_mu     = nn.Linear(hidden_dim + 4, latent_dim)
+%         self.fc_logvar = nn.Linear(hidden_dim + 4, latent_dim)
+%         # 4) decoder: reconstruct x from (z + one-hot y)
+%         self.decoder = nn.Sequential(
+%             nn.BatchNorm1d(latent_dim + 4),
+%             nn.Linear(latent_dim + 4, input_dim)
+%         )
+%         # learned scale & shift + nonlinearity
+%         self.scale = nn.Parameter(torch.ones(1))
+%         self.shift = nn.Parameter(torch.zeros(1))
+%         self.tanh  = nn.Tanh()
 
-    def infer(self, x, y_true_onehot=None):
-        # extract features & predict class
-        hidden   = self.extractor(x)
-        logits_y = self.classifier_head(hidden)
-        q_y      = torch.softmax(logits_y, dim=-1)
-        # use supervised labels if provided
-        y_enc    = y_true_onehot if y_true_onehot is not None else q_y
-        # condition posterior on class
-        hid_y    = torch.cat([hidden, y_enc], dim=1)
-        mu       = self.fc_mu(hid_y)
-        logvar   = self.fc_logvar(hid_y)
-        return logits_y, q_y, mu, logvar, hidden
+%     def infer(self, x, y_true_onehot=None):
+%         # extract features & predict class
+%         hidden   = self.extractor(x)
+%         logits_y = self.classifier_head(hidden)
+%         q_y      = torch.softmax(logits_y, dim=-1)
+%         # use supervised labels if provided
+%         y_enc    = y_true_onehot if y_true_onehot is not None else q_y
+%         # condition posterior on class
+%         hid_y    = torch.cat([hidden, y_enc], dim=1)
+%         mu       = self.fc_mu(hid_y)
+%         logvar   = self.fc_logvar(hid_y)
+%         return logits_y, q_y, mu, logvar, hidden
 
-    def forward(self, x, y=None):
-        # y: (batch,) integer labels
-        y_onehot    = None
-        if y is not None:
-            y_onehot = F.one_hot(y, num_classes=4).float()
-        logits_y, q_y, mu, logvar, hidden = self.infer(x, y_onehot)
-        # reparameterisation trick
-        std  = torch.exp(0.5 * logvar)
-        eps  = torch.randn_like(std) * self.eps_scale
-        z    = mu + eps * std
-        # decoder input: z + class encoding
-        y_dec = y_onehot if y_onehot is not None else q_y
-        dec_in = torch.cat([z, y_dec], dim=1)
-        rec    = self.tanh(self.decoder(dec_in)) * self.scale + self.shift
-        return rec, logits_y, mu, logvar
+%     def forward(self, x, y=None):
+%         # y: (batch,) integer labels
+%         y_onehot    = None
+%         if y is not None:
+%             y_onehot = F.one_hot(y, num_classes=4).float()
+%         logits_y, q_y, mu, logvar, hidden = self.infer(x, y_onehot)
+%         # reparameterisation trick
+%         std  = torch.exp(0.5 * logvar)
+%         eps  = torch.randn_like(std) * self.eps_scale
+%         z    = mu + eps * std
+%         # decoder input: z + class encoding
+%         y_dec = y_onehot if y_onehot is not None else q_y
+%         dec_in = torch.cat([z, y_dec], dim=1)
+%         rec    = self.tanh(self.decoder(dec_in)) * self.scale + self.shift
+%         return rec, logits_y, mu, logvar
 
-    def predict(self, x):
-        # return posterior parameters
-        with torch.no_grad():
-            logits_y, q_y, mu, logvar, _ = self.infer(x)
-        return mu, logvar, q_y
-\end{minted}
+%     def predict(self, x):
+%         # return posterior parameters
+%         with torch.no_grad():
+%             logits_y, q_y, mu, logvar, _ = self.infer(x)
+%         return mu, logvar, q_y
+% \end{minted}
 
-\subsection{Convolutional Encoder - Transformer Decoder VAE}
-\begin{minted}{python3}
-class ConvExtractor(nn.Module):
-    def __init__(self, input_dim, hidden_dim, latent_dim, lime_only=False):
-        super().__init__()
-        self.lime_only = lime_only
-        self.relu = nn.ReLU(inplace=True)
-        self.bn_input = nn.BatchNorm1d(input_dim)
-        num_abstract_dims = 1
-        self.input_conv_1 = nn.Conv1d(1, num_abstract_dims, kernel_size=3, stride=2, padding=0)
-        self.bn_conv1 = nn.BatchNorm1d(1201)
-        self.input_conv_7 = nn.Conv1d(1, num_abstract_dims, kernel_size=300, stride=50, padding=0)
-        self.bn_conv7 = nn.BatchNorm1d(43)
-        flattened_length = 3647 #input_dim + num_abstract_dims * ((input_dim - 2) + (input_dim - 299)) #+ (input_dim - 3) + (input_dim - 4) + (input_dim - 5) + (input_dim - 23) + (input_dim - 299))
-        self.fc_hidden = nn.Linear(flattened_length, hidden_dim)
+% \subsection{Convolutional Encoder - Transformer Decoder VAE}
+% \begin{minted}{python3}
+% class ConvExtractor(nn.Module):
+%     def __init__(self, input_dim, hidden_dim, latent_dim, lime_only=False):
+%         super().__init__()
+%         self.lime_only = lime_only
+%         self.relu = nn.ReLU(inplace=True)
+%         self.bn_input = nn.BatchNorm1d(input_dim)
+%         num_abstract_dims = 1
+%         self.input_conv_1 = nn.Conv1d(1, num_abstract_dims, kernel_size=3, stride=2, padding=0)
+%         self.bn_conv1 = nn.BatchNorm1d(1201)
+%         self.input_conv_7 = nn.Conv1d(1, num_abstract_dims, kernel_size=300, stride=50, padding=0)
+%         self.bn_conv7 = nn.BatchNorm1d(43)
+%         flattened_length = 3647 #input_dim + num_abstract_dims * ((input_dim - 2) + (input_dim - 299)) #+ (input_dim - 3) + (input_dim - 4) + (input_dim - 5) + (input_dim - 23) + (input_dim - 299))
+%         self.fc_hidden = nn.Linear(flattened_length, hidden_dim)
 
-        # self.bn_fc = nn.BatchNorm1d(hidden_dim)
+%         # self.bn_fc = nn.BatchNorm1d(hidden_dim)
 
-    def forward(self, x):
+%     def forward(self, x):
         
-        # print("A")
-        x = self.bn_input(x)
-        x = x.unsqueeze(1)
-        # print("B")
-        x1 = self.input_conv_1(x)
-        x7 = self.input_conv_7(x)
-        x1 = x1.view(x1.size(0), -1)
-        x7 = x7.view(x7.size(0), -1)
-        # print("C")
-        x1 = self.bn_conv1(self.relu(x1))
-        x7 = self.bn_conv7(self.relu(x7))
+%         # print("A")
+%         x = self.bn_input(x)
+%         x = x.unsqueeze(1)
+%         # print("B")
+%         x1 = self.input_conv_1(x)
+%         x7 = self.input_conv_7(x)
+%         x1 = x1.view(x1.size(0), -1)
+%         x7 = x7.view(x7.size(0), -1)
+%         # print("C")
+%         x1 = self.bn_conv1(self.relu(x1))
+%         x7 = self.bn_conv7(self.relu(x7))
 
-        x_convs = torch.concat([x1, x7], dim=1) #x2, x3, x4, x5, x6,
-        x = torch.concat([x.squeeze(1), x_convs], dim=1)
-        hidden = self.fc_hidden(x)
-        hidden = self.relu(hidden)
-        # print("D")
-        # print(x.shape)
-        # print(x)
-        # mu = torch.tanh(self.fc_mu(hidden))+self.fc_mu(hidden)
-        # logvar = torch.tanh(self.fc_logvar(hidden))+self.fc_logvar(hidden)
-        # print("f")
-        # print(f"mu {mu}")
-        # print(f"logvar {logvar}")
-        return hidden
+%         x_convs = torch.concat([x1, x7], dim=1) #x2, x3, x4, x5, x6,
+%         x = torch.concat([x.squeeze(1), x_convs], dim=1)
+%         hidden = self.fc_hidden(x)
+%         hidden = self.relu(hidden)
+%         # print("D")
+%         # print(x.shape)
+%         # print(x)
+%         # mu = torch.tanh(self.fc_mu(hidden))+self.fc_mu(hidden)
+%         # logvar = torch.tanh(self.fc_logvar(hidden))+self.fc_logvar(hidden)
+%         # print("f")
+%         # print(f"mu {mu}")
+%         # print(f"logvar {logvar}")
+%         return hidden
     
-class TransformerDecoder(nn.Module):
-    def __init__(self, latent_dim, d_model, n_heads, n_layers, out_len):
-        super().__init__()
+% class TransformerDecoder(nn.Module):
+%     def __init__(self, latent_dim, d_model, n_heads, n_layers, out_len):
+%         super().__init__()
         
-        self.latent_proj = nn.Linear(latent_dim, d_model)
+%         self.latent_proj = nn.Linear(latent_dim, d_model)
 
-        # 2) Create learnable query embeddings – one per output position
-        self.query = nn.Parameter(torch.randn(out_len, d_model))
+%         # 2) Create learnable query embeddings – one per output position
+%         self.query = nn.Parameter(torch.randn(out_len, d_model))
 
-        # 3) Standard Transformer‑decoder stack (causal self‑attn + cross‑attn)
-        layer = nn.TransformerDecoderLayer(d_model, n_heads, dim_feedforward=4*d_model,
-                                           batch_first=True)
-        self.decoder = nn.TransformerDecoder(layer, num_layers=n_layers)
+%         # 3) Standard Transformer‑decoder stack (causal self‑attn + cross‑attn)
+%         layer = nn.TransformerDecoderLayer(d_model, n_heads, dim_feedforward=4*d_model,
+%                                            batch_first=True)
+%         self.decoder = nn.TransformerDecoder(layer, num_layers=n_layers)
 
-        # 4) Final 1×1 convolution (shared across positions)
-        self.readout = nn.Linear(d_model, 1)
-        self.tanh = nn.Tanh()
-        self.scale = nn.Parameter(torch.ones(1)*4.5)
+%         # 4) Final 1×1 convolution (shared across positions)
+%         self.readout = nn.Linear(d_model, 1)
+%         self.tanh = nn.Tanh()
+%         self.scale = nn.Parameter(torch.ones(1)*4.5)
 
-        mask = torch.triu(torch.ones(out_len, out_len, dtype=torch.bool), 1)
-        self.register_buffer("causal_mask", mask)   # moves with .to(device)
+%         mask = torch.triu(torch.ones(out_len, out_len, dtype=torch.bool), 1)
+%         self.register_buffer("causal_mask", mask)   # moves with .to(device)
 
-    def forward(self, z):
+%     def forward(self, z):
         
-        mem   = self.latent_proj(z).unsqueeze(1)      # (B, 1, d_model)
-        query = self.query.unsqueeze(0).expand(z.size(0), -1, -1)  # (B, L, d_model)
+%         mem   = self.latent_proj(z).unsqueeze(1)      # (B, 1, d_model)
+%         query = self.query.unsqueeze(0).expand(z.size(0), -1, -1)  # (B, L, d_model)
 
-        h = self.decoder(query, mem, tgt_mask=self.causal_mask)
-        return self.tanh(self.readout(h).squeeze(-1))*self.scale
+%         h = self.decoder(query, mem, tgt_mask=self.causal_mask)
+%         return self.tanh(self.readout(h).squeeze(-1))*self.scale
 
-class SemiSupervisedVAE(nn.Module):
-    name = "CTSemiSupervisedVAE"
-    def __init__(self, input_dim, hidden_dim, latent_dim, d_model, n_heads, n_layers, eps_scale=1, lime_only=False):
-        super().__init__()
-        self.eps_scale = eps_scale
-        self.extractor = ConvExtractor(input_dim, hidden_dim, latent_dim, lime_only=lime_only)
-        self.classifier_head = nn.Sequential(
-            nn.Linear(hidden_dim, 128),
-            nn.ReLU(),
-            nn.Linear(128, 4)
-        )
-        self.fc_mu = nn.Linear(hidden_dim + 4, latent_dim)
-        self.fc_logvar = nn.Linear(hidden_dim + 4, latent_dim)
-        self.decoder = TransformerDecoder(latent_dim + 4, d_model, n_heads, n_layers, input_dim)
+% class SemiSupervisedVAE(nn.Module):
+%     name = "CTSemiSupervisedVAE"
+%     def __init__(self, input_dim, hidden_dim, latent_dim, d_model, n_heads, n_layers, eps_scale=1, lime_only=False):
+%         super().__init__()
+%         self.eps_scale = eps_scale
+%         self.extractor = ConvExtractor(input_dim, hidden_dim, latent_dim, lime_only=lime_only)
+%         self.classifier_head = nn.Sequential(
+%             nn.Linear(hidden_dim, 128),
+%             nn.ReLU(),
+%             nn.Linear(128, 4)
+%         )
+%         self.fc_mu = nn.Linear(hidden_dim + 4, latent_dim)
+%         self.fc_logvar = nn.Linear(hidden_dim + 4, latent_dim)
+%         self.decoder = TransformerDecoder(latent_dim + 4, d_model, n_heads, n_layers, input_dim)
 
-    def infer(self, x, y_true_onehot=None):
-        hidden = self.extractor(x)
-        logits_y = self.classifier_head(hidden)
-        q_y = torch.softmax(logits_y, dim=-1)
-        # Then if supervised, we use the true labels, otherwise use q_y
-        y_encoded = y_true_onehot if y_true_onehot is not None else q_y
-        hidden_and_y = torch.concat([hidden, y_encoded], dim=1)
-        mu = self.fc_mu(hidden_and_y)
-        logvar = self.fc_logvar(hidden_and_y)
-        return logits_y, q_y, mu, logvar, hidden
+%     def infer(self, x, y_true_onehot=None):
+%         hidden = self.extractor(x)
+%         logits_y = self.classifier_head(hidden)
+%         q_y = torch.softmax(logits_y, dim=-1)
+%         # Then if supervised, we use the true labels, otherwise use q_y
+%         y_encoded = y_true_onehot if y_true_onehot is not None else q_y
+%         hidden_and_y = torch.concat([hidden, y_encoded], dim=1)
+%         mu = self.fc_mu(hidden_and_y)
+%         logvar = self.fc_logvar(hidden_and_y)
+%         return logits_y, q_y, mu, logvar, hidden
     
-    def forward(self, x, y=None):
+%     def forward(self, x, y=None):
         
-        y_onehot = None
-        if y is not None:
-            y_onehot = torch.nn.functional.one_hot(y, num_classes=4).float()
-        logits_y, q_y, mu, logvar, hidden = self.infer(x, y_onehot)
-        reparam = reparameterise(mu, logvar, eps_scale=self.eps_scale)
-        # If not given labelled data, we use the predicted labels
-        y_decoded = y_onehot if y_onehot is not None else q_y
-        decoder_input = torch.concat([reparam, y_decoded], dim=1)
-        reconstructed_x = self.decoder(decoder_input)
-        return reconstructed_x, logits_y, mu, logvar
+%         y_onehot = None
+%         if y is not None:
+%             y_onehot = torch.nn.functional.one_hot(y, num_classes=4).float()
+%         logits_y, q_y, mu, logvar, hidden = self.infer(x, y_onehot)
+%         reparam = reparameterise(mu, logvar, eps_scale=self.eps_scale)
+%         # If not given labelled data, we use the predicted labels
+%         y_decoded = y_onehot if y_onehot is not None else q_y
+%         decoder_input = torch.concat([reparam, y_decoded], dim=1)
+%         reconstructed_x = self.decoder(decoder_input)
+%         return reconstructed_x, logits_y, mu, logvar
     
-    def predict(self, x):
-        reconstructed_x, logits_y, mu, logvar = self.forward(x)
-        return mu, logvar
-\end{minted}
+%     def predict(self, x):
+%         reconstructed_x, logits_y, mu, logvar = self.forward(x)
+%         return mu, logvar
+% \end{minted}
 
-\subsection{Transformer Encoder - Transformer Decoder VAE}
-\begin{minted}{python3}
-class PositionalEncoding(nn.Module):
-    def __init__(self, d_model, max_len, dropout=0.1):
-        super().__init__()
-        pe = torch.zeros(max_len, d_model)
-        pos = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
-        div = torch.exp(torch.arange(0, d_model, 2).float() * -(math.log(10000.0)/d_model))
-        pe[:, 0::2] = torch.sin(pos * div)
-        pe[:, 1::2] = torch.cos(pos * div)
-        self.register_buffer('pe', pe)
-        self.dropout = nn.Dropout(dropout)
+% \subsection{Transformer Encoder - Transformer Decoder VAE}
+% \begin{minted}{python3}
+% class PositionalEncoding(nn.Module):
+%     def __init__(self, d_model, max_len, dropout=0.1):
+%         super().__init__()
+%         pe = torch.zeros(max_len, d_model)
+%         pos = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
+%         div = torch.exp(torch.arange(0, d_model, 2).float() * -(math.log(10000.0)/d_model))
+%         pe[:, 0::2] = torch.sin(pos * div)
+%         pe[:, 1::2] = torch.cos(pos * div)
+%         self.register_buffer('pe', pe)
+%         self.dropout = nn.Dropout(dropout)
 
-    def forward(self, x):
-        # x: (seq_len, batch, d_model)
-        x = x + self.pe[:x.size(0)].unsqueeze(1)
-        return self.dropout(x)
+%     def forward(self, x):
+%         # x: (seq_len, batch, d_model)
+%         x = x + self.pe[:x.size(0)].unsqueeze(1)
+%         return self.dropout(x)
 
 
-class TransformerExtractor(nn.Module):
-    def __init__(self,
-                 input_dim:   int,
-                 hidden_dim:  int,
-                 latent_dim:  int,
-                 lime_only:   bool = False,
-                 num_heads:   int  = 4,
-                 num_layers:  int  = 3,
-                 dropout:     float= 0.1):
-        super().__init__()
-        self.lime_only = lime_only
-
-        
-        self.bn_input = nn.BatchNorm1d(input_dim)
+% class TransformerExtractor(nn.Module):
+%     def __init__(self,
+%                  input_dim:   int,
+%                  hidden_dim:  int,
+%                  latent_dim:  int,
+%                  lime_only:   bool = False,
+%                  num_heads:   int  = 4,
+%                  num_layers:  int  = 3,
+%                  dropout:     float= 0.1):
+%         super().__init__()
+%         self.lime_only = lime_only
 
         
-        self.conv1 = nn.Conv1d(1, 1, kernel_size=3,  stride=2)
-        self.bn1   = nn.BatchNorm1d(1)
-        self.conv7 = nn.Conv1d(1, 1, kernel_size=300, stride=50)
-        self.bn7   = nn.BatchNorm1d(1)
+%         self.bn_input = nn.BatchNorm1d(input_dim)
 
-        # compute how many tokens each produces
-        self.seq1 = (input_dim - 3)//2 + 1
-        self.seq7 = (input_dim - 300)//50 + 1
-        self.seq  = self.seq1 + self.seq7
+        
+%         self.conv1 = nn.Conv1d(1, 1, kernel_size=3,  stride=2)
+%         self.bn1   = nn.BatchNorm1d(1)
+%         self.conv7 = nn.Conv1d(1, 1, kernel_size=300, stride=50)
+%         self.bn7   = nn.BatchNorm1d(1)
+
+%         # compute how many tokens each produces
+%         self.seq1 = (input_dim - 3)//2 + 1
+%         self.seq7 = (input_dim - 300)//50 + 1
+%         self.seq  = self.seq1 + self.seq7
 
        
-        self.token_proj = nn.Linear(1, latent_dim)
+%         self.token_proj = nn.Linear(1, latent_dim)
 
         
-        self.pos_enc = PositionalEncoding(latent_dim, max_len=self.seq, dropout=dropout)
-        layer = nn.TransformerEncoderLayer(
-            d_model=latent_dim,
-            nhead=num_heads,
-            dim_feedforward=hidden_dim,
-            dropout=dropout,
-            activation='relu'
-        )
-        self.transformer = nn.TransformerEncoder(layer, num_layers=num_layers)
+%         self.pos_enc = PositionalEncoding(latent_dim, max_len=self.seq, dropout=dropout)
+%         layer = nn.TransformerEncoderLayer(
+%             d_model=latent_dim,
+%             nhead=num_heads,
+%             dim_feedforward=hidden_dim,
+%             dropout=dropout,
+%             activation='relu'
+%         )
+%         self.transformer = nn.TransformerEncoder(layer, num_layers=num_layers)
 
-        # 5) pool back to a single vector and project to hidden_dim
-        self.pool    = nn.AdaptiveAvgPool1d(1)
-        self.post_fc = nn.Linear(latent_dim, hidden_dim)
-        self.relu    = nn.ReLU(inplace=True)
+%         # 5) pool back to a single vector and project to hidden_dim
+%         self.pool    = nn.AdaptiveAvgPool1d(1)
+%         self.post_fc = nn.Linear(latent_dim, hidden_dim)
+%         self.relu    = nn.ReLU(inplace=True)
 
-    def forward(self, x: torch.Tensor):
-        # x: (batch, input_dim)
-        x = self.bn_input(x)           
-        x = x.unsqueeze(1)             
+%     def forward(self, x: torch.Tensor):
+%         # x: (batch, input_dim)
+%         x = self.bn_input(x)           
+%         x = x.unsqueeze(1)             
 
-        # conv tokenizers
-        x1 = F.relu(self.bn1(self.conv1(x)))  
-        x7 = F.relu(self.bn7(self.conv7(x)))  
+%         # conv tokenizers
+%         x1 = F.relu(self.bn1(self.conv1(x)))  
+%         x7 = F.relu(self.bn7(self.conv7(x)))  
 
-        # make (seq, batch, 1)
-        tok = torch.cat([x1, x7], dim=2)       
-        tok = tok.permute(2,0,1)              
-        # embed + attend
-        emb = self.token_proj(tok)             
-        emb = self.pos_enc(emb)
-        out = self.transformer(emb)            
+%         # make (seq, batch, 1)
+%         tok = torch.cat([x1, x7], dim=2)       
+%         tok = tok.permute(2,0,1)              
+%         # embed + attend
+%         emb = self.token_proj(tok)             
+%         emb = self.pos_enc(emb)
+%         out = self.transformer(emb)            
 
-        # pool & project to hidden_dim
-        out = out.permute(1,2,0)               
-        pooled = self.pool(out).squeeze(-1)   
-        hidden = self.relu(self.post_fc(pooled)) 
+%         # pool & project to hidden_dim
+%         out = out.permute(1,2,0)               
+%         pooled = self.pool(out).squeeze(-1)   
+%         hidden = self.relu(self.post_fc(pooled)) 
 
-        return hidden
+%         return hidden
 
-class TransformerDecoder(nn.Module):
-    def __init__(self, latent_dim, d_model, n_heads, n_layers, out_len):
-        super().__init__()
+% class TransformerDecoder(nn.Module):
+%     def __init__(self, latent_dim, d_model, n_heads, n_layers, out_len):
+%         super().__init__()
         
-        self.latent_proj = nn.Linear(latent_dim, d_model)
-
-        
-        self.query = nn.Parameter(torch.randn(out_len, d_model))
+%         self.latent_proj = nn.Linear(latent_dim, d_model)
 
         
-        layer = nn.TransformerDecoderLayer(d_model, n_heads, dim_feedforward=4*d_model,
-                                           batch_first=True)
-        self.decoder = nn.TransformerDecoder(layer, num_layers=n_layers)
+%         self.query = nn.Parameter(torch.randn(out_len, d_model))
 
         
-        self.readout = nn.Linear(d_model, 1)
-        self.tanh = nn.Tanh()
-        self.scale = nn.Parameter(torch.ones(1)*4.5)
+%         layer = nn.TransformerDecoderLayer(d_model, n_heads, dim_feedforward=4*d_model,
+%                                            batch_first=True)
+%         self.decoder = nn.TransformerDecoder(layer, num_layers=n_layers)
 
-        mask = torch.triu(torch.ones(out_len, out_len, dtype=torch.bool), 1)
-        self.register_buffer("causal_mask", mask)   # moves with .to(device)
-
-    def forward(self, z):
         
-        mem   = self.latent_proj(z).unsqueeze(1)      # (B, 1, d_model)
-        query = self.query.unsqueeze(0).expand(z.size(0), -1, -1)  # (B, L, d_model)
+%         self.readout = nn.Linear(d_model, 1)
+%         self.tanh = nn.Tanh()
+%         self.scale = nn.Parameter(torch.ones(1)*4.5)
 
-        h = self.decoder(query, mem, tgt_mask=self.causal_mask)
-        return self.tanh(self.readout(h).squeeze(-1))*self.scale
+%         mask = torch.triu(torch.ones(out_len, out_len, dtype=torch.bool), 1)
+%         self.register_buffer("causal_mask", mask)   # moves with .to(device)
 
-class SemiSupervisedVAET(nn.Module):
-    name = "DTSemiSupervisedVAE"
-    def __init__(self, input_dim, hidden_dim, latent_dim, d_model, n_heads, n_layers, eps_scale=1, lime_only=False):
-        super().__init__()
-        self.eps_scale = eps_scale
-        self.extractor = TransformerExtractor(input_dim, hidden_dim, latent_dim, lime_only=lime_only)
-        self.classifier_head = nn.Sequential(
-            nn.Linear(hidden_dim, 128),
-            nn.ReLU(),
-            nn.Linear(128, 4)
-        )
-        self.fc_mu = nn.Linear(hidden_dim + 4, latent_dim)
-        self.fc_logvar = nn.Linear(hidden_dim + 4, latent_dim)
-        self.decoder = TransformerDecoder(latent_dim + 4, d_model, n_heads, n_layers, input_dim)
+%     def forward(self, z):
+        
+%         mem   = self.latent_proj(z).unsqueeze(1)      # (B, 1, d_model)
+%         query = self.query.unsqueeze(0).expand(z.size(0), -1, -1)  # (B, L, d_model)
 
-    def infer(self, x, y_true_onehot=None):
-        hidden = self.extractor(x)
-        logits_y = self.classifier_head(hidden)
-        q_y = torch.softmax(logits_y, dim=-1)
-        # Then if supervised, we use the true labels, otherwise use q_y
-        y_encoded = y_true_onehot if y_true_onehot is not None else q_y
-        hidden_and_y = torch.concat([hidden, y_encoded], dim=1)
-        mu = self.fc_mu(hidden_and_y)
-        logvar = self.fc_logvar(hidden_and_y)
-        return logits_y, q_y, mu, logvar, hidden
+%         h = self.decoder(query, mem, tgt_mask=self.causal_mask)
+%         return self.tanh(self.readout(h).squeeze(-1))*self.scale
+
+% class SemiSupervisedVAET(nn.Module):
+%     name = "DTSemiSupervisedVAE"
+%     def __init__(self, input_dim, hidden_dim, latent_dim, d_model, n_heads, n_layers, eps_scale=1, lime_only=False):
+%         super().__init__()
+%         self.eps_scale = eps_scale
+%         self.extractor = TransformerExtractor(input_dim, hidden_dim, latent_dim, lime_only=lime_only)
+%         self.classifier_head = nn.Sequential(
+%             nn.Linear(hidden_dim, 128),
+%             nn.ReLU(),
+%             nn.Linear(128, 4)
+%         )
+%         self.fc_mu = nn.Linear(hidden_dim + 4, latent_dim)
+%         self.fc_logvar = nn.Linear(hidden_dim + 4, latent_dim)
+%         self.decoder = TransformerDecoder(latent_dim + 4, d_model, n_heads, n_layers, input_dim)
+
+%     def infer(self, x, y_true_onehot=None):
+%         hidden = self.extractor(x)
+%         logits_y = self.classifier_head(hidden)
+%         q_y = torch.softmax(logits_y, dim=-1)
+%         # Then if supervised, we use the true labels, otherwise use q_y
+%         y_encoded = y_true_onehot if y_true_onehot is not None else q_y
+%         hidden_and_y = torch.concat([hidden, y_encoded], dim=1)
+%         mu = self.fc_mu(hidden_and_y)
+%         logvar = self.fc_logvar(hidden_and_y)
+%         return logits_y, q_y, mu, logvar, hidden
     
-    def forward(self, x, y=None):
+%     def forward(self, x, y=None):
         
-        y_onehot = None
-        if y is not None:
-            y_onehot = torch.nn.functional.one_hot(y, num_classes=4).float()
-        logits_y, q_y, mu, logvar, hidden = self.infer(x, y_onehot)
-        reparam = reparameterise(mu, logvar, eps_scale=self.eps_scale)
-        # If not given labelled data, we use the predicted labels
-        y_decoded = y_onehot if y_onehot is not None else q_y
-        decoder_input = torch.concat([reparam, y_decoded], dim=1)
-        reconstructed_x = self.decoder(decoder_input)
-        return reconstructed_x, logits_y, mu, logvar
+%         y_onehot = None
+%         if y is not None:
+%             y_onehot = torch.nn.functional.one_hot(y, num_classes=4).float()
+%         logits_y, q_y, mu, logvar, hidden = self.infer(x, y_onehot)
+%         reparam = reparameterise(mu, logvar, eps_scale=self.eps_scale)
+%         # If not given labelled data, we use the predicted labels
+%         y_decoded = y_onehot if y_onehot is not None else q_y
+%         decoder_input = torch.concat([reparam, y_decoded], dim=1)
+%         reconstructed_x = self.decoder(decoder_input)
+%         return reconstructed_x, logits_y, mu, logvar
     
-    def predict(self, x):
-        reconstructed_x, logits_y, mu, logvar = self.forward(x)
-        return mu, logvar
-\end{minted}
+%     def predict(self, x):
+%         reconstructed_x, logits_y, mu, logvar = self.forward(x)
+%         return mu, logvar
+% \end{minted}

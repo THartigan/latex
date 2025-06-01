@@ -1,4 +1,4 @@
-\begin{thebibliography}{58}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -87,13 +87,6 @@ Kar-Yan Su and Wai-Leng Lee.
 \newblock ISSN 2072-6694.
 \newblock \doi{10.3390/cancers12010115}.
 
-\bibitem[Griffiths(1983)]{griffiths_fourier_1983}
-Peter~R. Griffiths.
-\newblock Fourier {{Transform Infrared Spectrometry}}.
-\newblock \emph{Science}, 222\penalty0 (4621):\penalty0 297--302, October 1983.
-\newblock ISSN 0036-8075, 1095-9203.
-\newblock \doi{10.1126/science.6623077}.
-
 \bibitem[Berthomieu and Hienerwadel(2009)]{berthomieu_fourier_2009}
 Catherine Berthomieu and Rainer Hienerwadel.
 \newblock Fourier transform infrared ({{FTIR}}) spectroscopy.
@@ -101,12 +94,47 @@ Catherine Berthomieu and Rainer Hienerwadel.
 \newblock ISSN 0166-8595, 1573-5079.
 \newblock \doi{10.1007/s11120-009-9439-x}.
 
+\bibitem[Griffiths(1983)]{griffiths_fourier_1983}
+Peter~R. Griffiths.
+\newblock Fourier {{Transform Infrared Spectrometry}}.
+\newblock \emph{Science}, 222\penalty0 (4621):\penalty0 297--302, October 1983.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.6623077}.
+
 \bibitem[Wolpert and Hellwig(2006)]{wolpert_infrared_2006}
 Martina Wolpert and Petra Hellwig.
 \newblock Infrared spectra and molar absorption coefficients of the 20 alpha amino acids in aqueous solutions in the spectral range from 1800 to 500cm-1.
 \newblock \emph{Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy}, 64\penalty0 (4):\penalty0 987--1001, July 2006.
 \newblock ISSN 13861425.
 \newblock \doi{10.1016/j.saa.2005.08.025}.
+
+\bibitem[Torii and Akazawa(2024)]{torii_modeling_2024}
+Hajime Torii and Tomoka Akazawa.
+\newblock Modeling of the {{Hydrogen Bond-Induced Frequency Shifts}} of the {{HOH}} and {{HOD Bending Modes}} of {{Water}}.
+\newblock \emph{The Journal of Physical Chemistry. A}, 128\penalty0 (26):\penalty0 5146--5157, July 2024.
+\newblock ISSN 1520-5215.
+\newblock \doi{10.1021/acs.jpca.4c02881}.
+
+\bibitem[Czowski et~al.(2020)Czowski, {Romero-Moreno}, Trull, and White]{czowski_cancer_2020}
+Brandon~J. Czowski, Ricardo {Romero-Moreno}, Keelan~J. Trull, and Katharine~A. White.
+\newblock Cancer and {{pH Dynamics}}: {{Transcriptional Regulation}}, {{Proteostasis}}, and the {{Need}} for {{New Molecular Tools}}.
+\newblock \emph{Cancers}, 12\penalty0 (10):\penalty0 2760, September 2020.
+\newblock ISSN 2072-6694.
+\newblock \doi{10.3390/cancers12102760}.
+
+\bibitem[Lasalvia et~al.(2023)Lasalvia, Gallo, Capozzi, and Perna]{lasalvia_discrimination_2023}
+Maria Lasalvia, Crescenzio Gallo, Vito Capozzi, and Giuseppe Perna.
+\newblock Discrimination of {{Healthy}} and {{Cancerous Colon Cells Based}} on {{FTIR Spectroscopy}} and {{Machine Learning Algorithms}}.
+\newblock \emph{Applied Sciences}, 13\penalty0 (18):\penalty0 10325, January 2023.
+\newblock ISSN 2076-3417.
+\newblock \doi{10.3390/app131810325}.
+
+\bibitem[Talari et~al.(2017)Talari, ~, ~, ~, and {and Rehman}]{talari_advances_2017}
+Abdullah Chandra~Sekhar Talari, Martinez ~, Marcela A.~Garcia, Movasaghi ~, Zanyar, Rehman ~, Shazza, and Ihtesham~Ur {and Rehman}.
+\newblock Advances in {{Fourier}} transform infrared ({{FTIR}}) spectroscopy of biological tissues.
+\newblock \emph{Applied Spectroscopy Reviews}, 52\penalty0 (5):\penalty0 456--506, May 2017.
+\newblock ISSN 0570-4928.
+\newblock \doi{10.1080/05704928.2016.1230863}.
 
 \bibitem[Nallala et~al.(2016)Nallala, Lloyd, Shepherd, and Stone]{nallala_high-resolution_2016}
 Jayakrupakar Nallala, Gavin~Rhys Lloyd, Neil Shepherd, and Nick Stone.
