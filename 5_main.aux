@@ -137,6 +137,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The SCNN architecture implemented in this work. 1D convolutional layers are represented by C1D(input channels, output channels, kernel size, stride) and fully connected layers are denoted by FC.}}{14}{figure.9}\protected@file@percent }
 \newlabel{fig:scnn_arch}{{9}{14}{The SCNN architecture implemented in this work. 1D convolutional layers are represented by C1D(input channels, output channels, kernel size, stride) and fully connected layers are denoted by FC}{figure.9}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{14}{subsubsection.2.6.2}\protected@file@percent }
+\newlabel{sec:methods:crime}{{2.6.2}{14}{Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{subsubsection.2.6.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces A demonstration of how LIME constructs a local linear classification model, applying greater weighting to nearby perturbations than distant ones as indicated by dot / cross sizes. From \cite  {ribeiro_why_2016}.}}{15}{figure.10}\protected@file@percent }
 \newlabel{fig:lime_illustration}{{10}{15}{A demonstration of how LIME constructs a local linear classification model, applying greater weighting to nearby perturbations than distant ones as indicated by dot / cross sizes. From \cite {ribeiro_why_2016}}{figure.10}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces An example of the LIME weights produced for a single sample. The upper portion shows the original spectrum and the lower portion shows the relative importance of each feature for classification. Note how the weightings can be negative, indicating the feature acts against positive classification.}}{15}{figure.11}\protected@file@percent }
@@ -194,29 +195,30 @@
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Summed confusion matrix (rows = true class, columns = predicted class).}}{25}{table.5}\protected@file@percent }
 \newlabel{tab:confusion_SCNN_4class}{{5}{25}{Summed confusion matrix (rows = true class, columns = predicted class)}{table.5}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}LIME Explanations}{25}{subsubsection.3.4.1}\protected@file@percent }
+\newlabel{sec:lime_explanations}{{3.4.1}{25}{LIME Explanations}{subsubsection.3.4.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces SCNN classification predictions for the same samples when each is used in the training set (a-d) and when each is used in the test set (i-iv).}}{26}{figure.18}\protected@file@percent }
 \newlabel{fig:categorisation_train_test}{{18}{26}{SCNN classification predictions for the same samples when each is used in the training set (a-d) and when each is used in the test set (i-iv)}{figure.18}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces The confidence of the SCNN model in its classification predictions for each sample considered in Figures \ref {fig:IR_and_HE_categories} and \ref {fig:categorisation_train_test}.}}{27}{figure.19}\protected@file@percent }
 \newlabel{fig:uncertainty}{{19}{27}{The confidence of the SCNN model in its classification predictions for each sample considered in Figures \ref {fig:IR_and_HE_categories} and \ref {fig:categorisation_train_test}}{figure.19}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces LIME analysis results showing the average LIME importance associated with each wavenumber feature.}}{28}{figure.20}\protected@file@percent }
 \newlabel{fig:lime_weights_classes}{{20}{28}{LIME analysis results showing the average LIME importance associated with each wavenumber feature}{figure.20}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}CRIME Explanations}{28}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}CRIME}{28}{subsubsection.3.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}VAE Methods}{28}{subsubsection.3.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}VAE Method}{28}{subsubsection.3.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.4}M-VAE Method}{28}{subsubsection.3.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}CRIME Predictions}{28}{subsection.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{28}{section.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Caption}}{29}{figure.21}\protected@file@percent }
-\newlabel{fig:my-label}{{21}{29}{Caption}{figure.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Caption}}{30}{figure.22}\protected@file@percent }
-\newlabel{fig:my-label}{{22}{30}{Caption}{figure.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Caption}}{31}{figure.23}\protected@file@percent }
-\newlabel{fig:my-label}{{23}{31}{Caption}{figure.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Caption}}{32}{figure.24}\protected@file@percent }
-\newlabel{fig:my-label}{{24}{32}{Caption}{figure.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}CRIME Analysis}{28}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}CRIME Predictions}{28}{subsubsection.3.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Section a) shows the latent space representation of the LIME explanations generated using the CP VAE. Each colour denotes a different context designated by K-means clustering. Section b) shows the training label associated with each explanation projected into latent space.}}{29}{figure.21}\protected@file@percent }
+\newlabel{fig:latent_space}{{21}{29}{Section a) shows the latent space representation of the LIME explanations generated using the CP VAE. Each colour denotes a different context designated by K-means clustering. Section b) shows the training label associated with each explanation projected into latent space}{figure.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces The number of explanations grouped into each context with associated training labels and SCNN predictions a) normal, b) hyperplastic, c) adenomatous and d) cancerous.}}{29}{figure.22}\protected@file@percent }
+\newlabel{fig:crime_groupings}{{22}{29}{The number of explanations grouped into each context with associated training labels and SCNN predictions a) normal, b) hyperplastic, c) adenomatous and d) cancerous}{figure.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces CRIME context average spectra and LIME weightings demonstrating the ability of the CRIME method to }}{30}{figure.23}\protected@file@percent }
+\newlabel{fig:crime_lime_plots}{{23}{30}{CRIME context average spectra and LIME weightings demonstrating the ability of the CRIME method to}{figure.23}{}}
+\citation{}
+\citation{}
+\citation{}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Application to Physics}{31}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{31}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces LCRIME four-class classification performance (mean $\pm $ std) across folds with $K=100$ clustering.}}{32}{figure.24}\protected@file@percent }
+\newlabel{fig:quad_context}{{24}{32}{LCRIME four-class classification performance (mean $\pm $ std) across folds with $K=100$ clustering}{figure.24}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Caption}}{33}{figure.25}\protected@file@percent }
-\newlabel{fig:my-label}{{25}{33}{Caption}{figure.25}{}}
+\newlabel{fig:bin_context}{{25}{33}{Caption}{figure.25}{}}
 \bibstyle{unsrtnat}
 \bibdata{TROPHY.bib}
 \bibcite{bray_global_2024}{{1}{2024}{{Bray et~al.}}{{Bray, Laversanne, Sung, Ferlay, Siegel, Soerjomataram, and Jemal}}}

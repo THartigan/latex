@@ -232,6 +232,7 @@ An example of the LIME weightings this process produces is shown in Figure \ref{
 \end{figure}
 
 \subsubsection{Context Representative Interpretable Model-Agnostic Explanations (CRIME)}
+\label{sec:methods:crime}
 The CRIME method \cite{zaki_explainable_2024} aims to expand on the LIME method by finding contexts which have similar classification explanations. This is achieved by passing the LIME results through a variational eutoencoder (VAE) \cite{} to learn a low-dimensional latent space representation of the explanations. This latent space is then clustered using $K$-means clustering \cite{} to produce $K$ clusters, each of which can be investigated. In their original paper, Zaki et. al. \cite{zaki_explainable_2024} used a VAE similar to that described in §\ref{sec:vae_zaki}, and were able to form six contexts from surface enhanced Raman (SER) urine spectra, of which three were found to be associated with serotonin. Here, I expand on this work by investigating the use of different VAE architectures as described in §\ref{sec:methods:vae}, and by using the clusters themselves perform explainable linear classification.
 
 \subsubsection{Variational Autoencoders (VAE)}

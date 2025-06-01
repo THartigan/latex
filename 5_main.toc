@@ -32,13 +32,10 @@
 \contentsline {subsection}{\numberline {3.3}A Scanning Convolutional Neural Network Approach}{21}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}SCNN Performance Investigation}{24}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}LIME Explanations}{25}{subsubsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.5}CRIME Explanations}{28}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}CRIME}{28}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}VAE Methods}{28}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}VAE Method}{28}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}M-VAE Method}{28}{subsubsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.6}CRIME Predictions}{28}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Conclusions}{28}{section.4}%
+\contentsline {subsection}{\numberline {3.5}CRIME Analysis}{28}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}CRIME Predictions}{28}{subsubsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.6}Application to Physics}{31}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Conclusions}{31}{section.4}%
 \contentsline {section}{\numberline {A}Activation Functions}{38}{appendix.A}%
 \contentsline {section}{\numberline {B}Traditional ML Classification Performance With 10-Fold Cross-Validation}{38}{appendix.B}%
 \contentsline {section}{\numberline {C}Relevant Code}{38}{appendix.C}%

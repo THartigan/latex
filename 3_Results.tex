@@ -306,6 +306,7 @@ To complement this analysis, I also investigated the confidence the model has in
 \end{figure}
 
 \subsubsection{LIME Explanations}
+\label{sec:lime_explanations}
 LIME analysis was also conducted on a subset of the SCNN validation set predictions - 5000 pixels per classification type (grouped by their training label). This allowed for the generation of importance weightings for each wavenumber and prediction classification. These can be seen in Figure \ref{fig:lime_weights_classes}. These results indicate that the region from $1000$-$1200$ cm$^{-1}$ is particularly relevant for all classifications, and that the region from $1460$-$1560$ cm$^{-1}$ is much less important. This could be used to help guide the development of next generation imaging methods such as those being developed as part of the TROPHY project \cite{}.
 
 \begin{figure}[htbp]
@@ -315,45 +316,52 @@ LIME analysis was also conducted on a subset of the SCNN validation set predicti
     \label{fig:lime_weights_classes}
 \end{figure}
 
-\subsection{CRIME Explanations}
+\subsection{CRIME Analysis}
+The LIME explanations found in the previous section enable the generation of explanations for any individual prediction. However, they do not provide a good understanding of how the model work as a whole. to address this, the CRIME method described in \ref{sec:method:crime} was applied using the $20,000$ pixel explanations generated for §\ref{sec:lime_explanations}. For this, each VAE network was trained on the validation set pixels. Throughout this training, the $\alpha$ and $\beta$ hyperparameters were tuned such as to generate distinct clusterings in latent space. The used were $\alpha=1000$, $\beta=0.1$ for the CP and DT VAEs, and $\alpha=1000$, $\beta=1\times10^{-3}$ for the CT VAE. The contexts were then formed by K-means clustering with $K=100$ in all cases. An example the latent space representation and the associated contexts for $K=20$ produced by the unsupervised CP VAE are shown in Figure \ref{fig:latent_space}. This demonstrates how the LIME explanations can be used to effectively separate tissue classifications in latent space.\\
 
-\subsubsection{CRIME}
+\noindent
+To quantify this separability, I calculated the SCNN ensemble prediction associated with each explanation. For each context, I then counted the number of these predictions associated with each tissue classification. The same was done using the training label associated with each explanation. In the $K=100$ case applied to the latent space representation found in Figure \ref{fig:latent_space}.b, this generated the histograms shown in Figure \ref{fig:crime_groupings}. A careful analysis of these histograms shows that the cancer dominated contexts are associated with very few non-cancer predictions, and the same is also true for all of the dominant peaks in the other classifications. I therefore hypothesise that this method has found some independent mappings from explanations into tissue classifications. To investigate this further, I classified each context according to the majority SCNN ensemble classification associated with the explanations within that context. By then finding the average spectra and LIME weightings associated with each context, I was then able to form multiple explained spectra for each classification. Figure \ref{fig:crime_lime_plots} shows a few examples of these explained context spectra for the same setup as in Figures \ref{fig:crime_groupings} and \ref{fig:latent_space}. Here, we see that although the average spectra for all contexts are similar, the LIME weightings are visibly different, indicating that the model is using different spectral features to make predictions in each context. Further work could therefore be done to investigate the biological and physical significance of these context importance weightings - a task which is feasible, unlike trying to interpret the LIME weightings for each explanation individually.
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=1\textwidth]{Images/crime_umap.png}
-  \caption{Caption}
-  \label{fig:my-label}
+  \includegraphics[width=1\textwidth]{Images/crime_umap_h.png}
+  \caption{Section a) shows the latent space representation of the LIME explanations generated using the CP VAE. Each colour denotes a different context designated by K-means clustering. Section b) shows the training label associated with each explanation projected into latent space.}
+  \label{fig:latent_space}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=1\textwidth]{Images/crime_groupings_by_category_100.png}
-  \caption{Caption}
-  \label{fig:my-label}
+  \includegraphics[width=0.8\textwidth]{Images/crime_groupings_by_category_100.png}
+  \caption{The number of explanations grouped into each context with associated training labels and SCNN predictions a) normal, b) hyperplastic, c) adenomatous and d) cancerous.}
+  \label{fig:crime_groupings}
 \end{figure}
 
 \begin{figure}[htbp] 
     \centering 
     \includegraphics[width=1\textwidth]{Images/crime_lime_plots.png} 
-    \caption{Caption}
-\label{fig:my-label} \end{figure}
+    \caption{CRIME context average spectra and LIME weightings demonstrating the ability of the CRIME method to }
+    \label{fig:crime_lime_plots} 
+\end{figure}
+
+\subsubsection{CRIME Predictions}
+The CRIME linear prediction method (LCRIME) described in §\ref{sec:crime_linear} was then employed using the majority classified context spectra and weightings. It was noted, however, that although the CRIME method with an unsupervised CP VAE is able to separate cancer and hyperplastic tissues well, many contexts have multiple similarly-frequent classifications present. To improve this, the M2 semi-supervised versions of the VAEs described in Table \ref{tab:ssvae_arch} were also implemented to encourage the latent space to be more separable. The resulting four-class and binary classification prediction performance metrics achieved by each VAE model are described in full in Tables \ref{tab:quad_results_full_context} and \ref{tab:binary_results_full_context} respectively. Of these, the best metrics for comparison are shown graphically in Figures \ref{fig:quad_context} and \ref{fig:bin_context} for four-class and binary classification tasks respectively. These results show that the LCRIME method generally performs worse than all other methods tested at training-label prediction. The best LCRIME models (CP-0.2 and CT-0.2) are, however, able to reconstruct the model four-class classification predictions better than the MSE and cosine similarity classification are able to reproduce the training labels. LCRIME also achieves a similar performance to the PCA$\to$LDA method by this metric. LCRIME is, however, always out-performed by the PCA$\to$XGB, XGB and ensemble SCNN methods. Despite this, LCRIME still offers advantages because it is intrinsically interpretable and the method by which it makes prediction is easy to explain to patients and clinicians.\\ 
+
+\noindent
+Future works could investigate the use of the LCRIME method on less-noisy datasets, or could try to perform more thorough hyperparameter searching by folding the dataset differently.
 
 \begin{figure}
     \centering 
-    \includegraphics[width=1\textwidth]{Images/quad_class3_metrics_figure_v6.pdf} 
-    \caption{Caption}
-    \label{fig:my-label}
+    \includegraphics[width=1\textwidth]{Images/quad_class3_metrics_fig_updated4.pdf} 
+    \caption{LCRIME four-class classification performance (mean $\pm$ std) across folds with $K=100$ clustering.}
+    \label{fig:quad_context}
 \end{figure}
 
 \begin{figure}
     \centering 
-    \includegraphics[width=1\textwidth]{Images/binary_metrics_figure_v5.pdf} 
+    \includegraphics[width=1\textwidth]{Images/binary_metrics_fig_updated4.pdf} 
     \caption{Caption}
-    \label{fig:my-label}
+    \label{fig:bin_context}
 \end{figure}
 
-\subsubsection{VAE Methods}
-\subsubsection{VAE Method}
-\subsubsection{M-VAE Method}
-
-\subsection{CRIME Predictions}
+\subsection{Application to Physics}
+The use of machine learning and deep learning methods are becoming increasingly common in physics. Similar approaches to the VAE method adopted here have been used to analyse collisions in particle physics \cite{}, astrophysical systems \cite{} and to detect gravitational waves \cite{}. Increasing the interpretability of these methods is therefore important for translating new-found results into real physical insights.
