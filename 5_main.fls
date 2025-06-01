@@ -333,6 +333,11 @@ INPUT ./Images/Confidence.png
 INPUT ./Images/Confidence.png
 INPUT ./Images/Confidence.png
 INPUT ./Images/Confidence.png
+INPUT ./Images/lime_contributions_plot.png
+INPUT ./Images/lime_contributions_plot.png
+INPUT ./Images/lime_contributions_plot.png
+INPUT ./Images/lime_contributions_plot.png
+INPUT ./Images/lime_contributions_plot.png
 INPUT ./Images/crime_umap.png
 INPUT ./Images/crime_umap.png
 INPUT ./Images/crime_umap.png
@@ -363,11 +368,6 @@ INPUT ./5_Conclusions.tex
 INPUT ./5_Conclusions.tex
 INPUT ./5_Conclusions.tex
 INPUT 5_Conclusions.tex
-INPUT ./2_Methods.tex
-INPUT ./2_Methods.tex
-INPUT ./2_Methods.tex
-INPUT ./2_Methods.tex
-INPUT 2_Methods.tex
 INPUT ./5_main.bbl
 INPUT ./5_main.bbl
 INPUT 5_main.bbl

@@ -1,6 +1,105 @@
-\section{Full Context Classification Results}
+\section{Full Classification Results}
+The full results for performance in four-class and binary classification tasks are presented below. Tables \ref{tab:quad_results_full} and \ref{tab:binary_results_full} show the results when using traditional ML methods and when using the ensemble SCNN method developed in this work. Tables \ref{tab:quad_results_full_context} and \ref{tab:quad_results_full_context} show the results when using difference VAE architectures to generate context-based classification models. All results are generated using four-fold cross-validation as described in §\ref{sec:methods:data_split}. Within these latter two tables, the method denotes which VAE was used to produce the context-based classification model. CP denotes a convolutional encoder and MLP decoder; CT denotes a convolutional encoder and transformer decoder; and DT denotes a transformer encoder and transformer decoder. The value after the two following digits denotes the supervision level; 0.2 $\implies$ 20\% supervision. The comparison column denotes which outputs are compared. For example Context-Model compares the Context classification predictions to the SCNN Model predictions and Context-Label compares the context classification predictions to the original dataset labels. In each case, we assume the latter metric is truthful. The SCNN Model-Label predictions are included in the final row of both tables for comparison.
 
-The full results for binary and four-class classification tasks using context explained spectra as described in \ref{sec:methods:context_matching} are presented below. Within both tables, the method denotes which VAE was used to produce the context-based classification model - CP denotes a convolutional encoder and MLP decoder; CT denotes a convolutional encoder and transformer decoder; and DT denotes a transformer encoder and transformer decoder. The value after the two characters denotes the supervision level; 0.2 $\implies$ 20\% supervision. The comparison column denotes which outputs are compared. For example Context-Model compares the Context classification predictions to the SCNN Model predictions and Context-Label compares the context classification predictions to the original dataset labels. The SCNN Model-Label predictions are included in the final row of both tables for comparison.
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llcccc}
+\toprule
+Method & Metric & Normal & Hyperplastic & Adenoma & Cancer \\
+\midrule
+MSE & Sensitivity         & $0.238\pm0.032$ & $0.396\pm0.138$ & $0.310\pm0.056$ & $0.829\pm0.114$ \\
+    & Specificity         & $0.853\pm0.040$ & $0.823\pm0.098$ & $0.812\pm0.088$ & $0.703\pm0.067$ \\
+    & Accuracy            & $0.733\pm0.030$ & $0.755\pm0.073$ & $0.562\pm0.047$ & $0.722\pm0.068$ \\
+    & False Positive Rate & $0.147\pm0.040$ & $0.177\pm0.098$ & $0.188\pm0.088$ & $0.297\pm0.067$ \\
+    & OWA & \multicolumn{4}{c}{$0.443\pm0.062$} \\
+\midrule
+Cosine Similarity & Sensitivity         & $0.238\pm0.032$ & $0.396\pm0.138$ & $0.310\pm0.056$ & $0.829\pm0.114$ \\
+                  & Specificity         & $0.853\pm0.040$ & $0.823\pm0.098$ & $0.812\pm0.088$ & $0.703\pm0.067$ \\
+                  & Accuracy            & $0.733\pm0.030$ & $0.755\pm0.073$ & $0.562\pm0.047$ & $0.722\pm0.068$ \\
+                  & False Positive Rate & $0.147\pm0.040$ & $0.177\pm0.098$ & $0.188\pm0.088$ & $0.297\pm0.067$ \\
+                  & OWA & \multicolumn{4}{c}{$0.443\pm0.062$} \\
+\midrule
+PCA $\to$ LDA & Sensitivity         & $0.430\pm0.043$ & $0.230\pm0.099$ & $0.800\pm0.075$ & $0.440\pm0.294$ \\
+              & Specificity         & $0.890\pm0.062$ & $0.950\pm0.041$ & $0.550\pm0.174$ & $0.930\pm0.042$ \\
+              & Accuracy            & $0.800\pm0.052$ & $0.830\pm0.044$ & $0.670\pm0.090$ & $0.860\pm0.071$ \\
+              & False Positive Rate & $0.110\pm0.062$ & $0.050\pm0.041$ & $0.450\pm0.174$ & $0.070\pm0.042$ \\
+              & OWA & \multicolumn{4}{c}{$0.476\pm0.079$} \\
+\midrule
+PCA $\to$ XGB & Sensitivity         & $0.470\pm0.096$ & $0.350\pm0.090$ & $0.770\pm0.051$ & $0.590\pm0.075$ \\
+              & Specificity         & $0.880\pm0.030$ & $0.900\pm0.047$ & $0.710\pm0.094$ & $0.940\pm0.054$ \\
+              & Accuracy            & $0.800\pm0.028$ & $0.810\pm0.034$ & $0.740\pm0.066$ & $0.880\pm0.050$ \\
+              & False Positive Rate & $0.120\pm0.030$ & $0.100\pm0.047$ & $0.290\pm0.094$ & $0.060\pm0.054$ \\
+              & OWA & \multicolumn{4}{c}{$0.544\pm0.053$} \\
+\midrule
+XGBoost       & Sensitivity         & $0.50\pm0.093$  & $0.38\pm0.115$  & $0.78\pm0.048$  & $0.61\pm0.079$  \\
+              & Specificity         & $0.89\pm0.025$  & $0.91\pm0.031$  & $0.71\pm0.089$  & $0.94\pm0.048$  \\
+              & Accuracy            & $0.81\pm0.022$  & $0.83\pm0.009$  & $0.75\pm0.064$  & $0.89\pm0.048$  \\
+              & False Positive Rate & $0.11\pm0.025$  & $0.09\pm0.031$  & $0.29\pm0.089$  & $0.06\pm0.048$  \\
+              & OWA & \multicolumn{4}{c}{$0.568\pm0.058$} \\
+\midrule
+Ensemble SCNN & Sensitivity         & $0.707\pm0.102$ & $0.556\pm0.068$ & $0.325\pm0.054$ & $0.761\pm0.069$ \\
+              & Specificity         & $0.778\pm0.082$ & $0.868\pm0.084$ & $0.887\pm0.080$ & $0.903\pm0.062$ \\
+              & Accuracy            & $0.765\pm0.058$ & $0.714\pm0.025$ & $0.796\pm0.072$ & $0.882\pm0.060$ \\
+              & False Positive Rate & $0.222\pm0.082$ & $0.132\pm0.084$ & $0.113\pm0.080$ & $0.098\pm0.062$ \\
+              & OWA & \multicolumn{4}{c}{$0.587\pm0.037$} \\
+\bottomrule
+\end{tabular}
+\caption{Four-class classification performance (mean $\pm$ std) across folds for MSE, Cosine Similarity, PCA$\to$LDA, PCA$\to$XGBoost, XGBoost, and SCNN methods. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures. OWA = Overall Weighted Accuracy.}
+\label{table:quad_results_full}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llcc}
+\toprule
+Method & Metric & Non‐Cancer & Cancer \\
+\midrule
+\multirow{5}{*}{MSE} 
+       & Sensitivity           & $0.703\pm0.067$     & $0.829\pm0.114$    \\
+       & Specificity           & $0.829\pm0.114$     & $0.703\pm0.067$    \\
+       & Accuracy              & $0.722\pm0.068$     & $0.722\pm0.068$    \\
+       & False Positive Rate   & $0.171\pm0.114$     & $0.297\pm0.067$    \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.766\pm0.080$} \\
+\midrule
+\multirow{5}{*}{Cosine Similarity} 
+       & Sensitivity           & $0.703\pm0.067$     & $0.829\pm0.114$    \\
+       & Specificity           & $0.829\pm0.114$     & $0.703\pm0.067$    \\
+       & Accuracy              & $0.722\pm0.068$     & $0.722\pm0.068$    \\
+       & False Positive Rate   & $0.171\pm0.114$     & $0.297\pm0.067$    \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.766\pm0.080$} \\
+\midrule
+\multirow{5}{*}{PCA $\rightarrow$ LDA} 
+       & Sensitivity           & $0.93\pm0.042$      & $0.44\pm0.294$     \\
+       & Specificity           & $0.44\pm0.294$      & $0.93\pm0.042$     \\
+       & Accuracy              & $0.86\pm0.071$      & $0.86\pm0.071$     \\
+       & False Positive Rate   & $0.56\pm0.294$      & $0.07\pm0.042$     \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.687\pm0.162$} \\
+\midrule
+\multirow{5}{*}{PCA $\rightarrow$ XGB} 
+       & Sensitivity           & $0.93\pm0.055$      & $0.60\pm0.075$     \\
+       & Specificity           & $0.60\pm0.075$      & $0.93\pm0.055$     \\
+       & Accuracy              & $0.89\pm0.049$      & $0.89\pm0.049$     \\
+       & False Positive Rate   & $0.40\pm0.075$      & $0.07\pm0.055$     \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.769\pm0.049$} \\
+\midrule
+\multirow{5}{*}{XGB} 
+       & Sensitivity           & $0.94\pm0.047$      & $0.61\pm0.084$     \\
+       & Specificity           & $0.61\pm0.084$      & $0.94\pm0.047$     \\
+       & Accuracy              & $0.89\pm0.049$      & $0.89\pm0.049$     \\
+       & False Positive Rate   & $0.39\pm0.084$      & $0.06\pm0.047$     \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.773\pm0.060$} \\
+\midrule
+\multirow{5}{*}{Ensemble SCNN} 
+       & Sensitivity           & $0.903\pm0.062$     & $0.761\pm0.069$    \\
+       & Specificity           & $0.761\pm0.069$     & $0.903\pm0.062$    \\
+       & Accuracy              & $0.882\pm0.060$     & $0.882\pm0.060$    \\
+       & False Positive Rate   & $0.239\pm0.069$     & $0.098\pm0.062$    \\
+       & Overall Weighted Accuracy & \multicolumn{2}{c}{$0.832\pm0.059$} \\
+\bottomrule
+\end{tabular}
+\caption{Binary classification performance (mean $\pm$ std) across folds for MSE, Cosine Similarity, PCA$\rightarrow$LDA, PCA$\rightarrow$XGB, XGB, and SCNN methods. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures.}
+\label{table:binary_results_full}
+\end{table}
 
 
 % \begin{table}[ht]
@@ -113,126 +212,6 @@ The full results for binary and four-class classification tasks using context ex
 % \end{table}
 % \renewcommand{\arraystretch}{0.85}
 
-\begin{table}[ht]
-  \centering
-  \scriptsize
-%   \renewcommand{\arraystretch}{0.85}
-  \begin{tabular}{l|llcc}
-    \toprule
-    Method & Comparison & Metric & Non‐cancer & Cancer \\
-    \midrule
-% ---------- CP-0.0 ----------
-\multirow{10}{*}{CP-0.0}
-  & \multirow{5}{*}{Context-Model}
-      & Sensitivity            & 0.911 $\pm$ 0.040 & 0.433 $\pm$ 0.187 \\
-  &   & Specificity            & 0.433 $\pm$ 0.187 & 0.911 $\pm$ 0.040 \\
-  &   & Accuracy               & 0.819 $\pm$ 0.041 & 0.819 $\pm$ 0.041 \\
-  &   & False Positive Rate    & 0.567 $\pm$ 0.187 & 0.089 $\pm$ 0.040 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.672 $\pm$ 0.076} \\ \cmidrule{2-5}
-  & \multirow{5}{*}{Context-Label}
-      & Sensitivity            & 0.877 $\pm$ 0.061 & 0.345 $\pm$ 0.202 \\
-  &   & Specificity            & 0.345 $\pm$ 0.202 & 0.877 $\pm$ 0.061 \\
-  &   & Accuracy               & 0.800 $\pm$ 0.046 & 0.800 $\pm$ 0.046 \\
-  &   & False Positive Rate    & 0.655 $\pm$ 0.202 & 0.123 $\pm$ 0.061 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.611 $\pm$ 0.090} \\ \midrule
-% ---------- CP-0.2 ----------
-\multirow{10}{*}{CP-0.2}
-  & \multirow{5}{*}{Context-Model}
-      & Sensitivity            & 0.895 $\pm$ 0.046 & 0.521 $\pm$ 0.131 \\
-  &   & Specificity            & 0.521 $\pm$ 0.131 & 0.895 $\pm$ 0.046 \\
-  &   & Accuracy               & 0.820 $\pm$ 0.053 & 0.820 $\pm$ 0.053 \\
-  &   & False Positive Rate    & 0.479 $\pm$ 0.131 & 0.105 $\pm$ 0.046 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.708 $\pm$ 0.055} \\ \cmidrule{2-5}
-  & \multirow{5}{*}{Context-Label}
-      & Sensitivity            & 0.865 $\pm$ 0.058 & 0.452 $\pm$ 0.248 \\
-  &   & Specificity            & 0.452 $\pm$ 0.248 & 0.865 $\pm$ 0.058 \\
-  &   & Accuracy               & 0.804 $\pm$ 0.063 & 0.804 $\pm$ 0.063 \\
-  &   & False Positive Rate    & 0.548 $\pm$ 0.248 & 0.136 $\pm$ 0.058 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.658 $\pm$ 0.130} \\ \midrule
-% ---------- CT-0.0 ----------
-\multirow{10}{*}{CT-0.0}
-  & \multirow{5}{*}{Context-Model}
-      & Sensitivity            & 0.916 $\pm$ 0.074 & 0.375 $\pm$ 0.090 \\
-  &   & Specificity            & 0.375 $\pm$ 0.090 & 0.916 $\pm$ 0.074 \\
-  &   & Accuracy               & 0.817 $\pm$ 0.079 & 0.817 $\pm$ 0.079 \\
-  &   & False Positive Rate    & 0.626 $\pm$ 0.090 & 0.084 $\pm$ 0.074 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.645 $\pm$ 0.053} \\ \cmidrule{2-5}
-  & \multirow{5}{*}{Context-Label}
-      & Sensitivity            & 0.886 $\pm$ 0.094 & 0.286 $\pm$ 0.075 \\
-  &   & Specificity            & 0.286 $\pm$ 0.075 & 0.886 $\pm$ 0.094 \\
-  &   & Accuracy               & 0.798 $\pm$ 0.086 & 0.798 $\pm$ 0.086 \\
-  &   & False Positive Rate    & 0.714 $\pm$ 0.075 & 0.114 $\pm$ 0.094 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.586 $\pm$ 0.074} \\ \midrule
-% ---------- CT-0.2 ----------
-\multirow{10}{*}{CT-0.2}
-  & \multirow{5}{*}{Context-Model}
-      & Sensitivity            & 0.898 $\pm$ 0.052 & 0.544 $\pm$ 0.207 \\
-  &   & Specificity            & 0.544 $\pm$ 0.207 & 0.898 $\pm$ 0.052 \\
-  &   & Accuracy               & 0.841 $\pm$ 0.021 & 0.841 $\pm$ 0.021 \\
-  &   & False Positive Rate    & 0.456 $\pm$ 0.207 & 0.102 $\pm$ 0.052 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.721 $\pm$ 0.077} \\ \cmidrule{2-5}
-  & \multirow{5}{*}{Context-Label}
-      & Sensitivity            & 0.857 $\pm$ 0.089 & 0.496 $\pm$ 0.221 \\
-  &   & Specificity            & 0.496 $\pm$ 0.221 & 0.857 $\pm$ 0.089 \\
-  &   & Accuracy               & 0.804 $\pm$ 0.056 & 0.804 $\pm$ 0.056 \\
-  &   & False Positive Rate    & 0.504 $\pm$ 0.221 & 0.144 $\pm$ 0.089 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.676 $\pm$ 0.082} \\ \midrule
-% ---------- CT – single Model-Label block ----------
-
-% ---------- DT-0.0 ----------
-\multirow{10}{*}{DT-0.0}
-  & \multirow{5}{*}{Context-Model}
-      & Sensitivity            & 0.839 $\pm$ 0.092 & 0.638 $\pm$ 0.267 \\
-  &   & Specificity            & 0.638 $\pm$ 0.267 & 0.839 $\pm$ 0.092 \\
-  &   & Accuracy               & 0.815 $\pm$ 0.042 & 0.815 $\pm$ 0.042 \\
-  &   & False Positive Rate    & 0.362 $\pm$ 0.267 & 0.162 $\pm$ 0.092 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.738 $\pm$ 0.095} \\ \cmidrule{2-5}
-  & \multirow{5}{*}{Context-Label}
-      & Sensitivity            & 0.793 $\pm$ 0.134 & 0.585 $\pm$ 0.284 \\
-  &   & Specificity            & 0.585 $\pm$ 0.284 & 0.793 $\pm$ 0.134 \\
-  &   & Accuracy               & 0.762 $\pm$ 0.096 & 0.762 $\pm$ 0.096 \\
-  &   & False Positive Rate    & 0.415 $\pm$ 0.284 & 0.207 $\pm$ 0.135 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.689 $\pm$ 0.115} \\ \midrule
-% ---------- DT-0.2 ----------
-\multirow{10}{*}{DT-0.2}
-  & \multirow{5}{*}{Context-Model}
-      & Sensitivity            & 0.847 $\pm$ 0.088 & 0.648 $\pm$ 0.300 \\
-  &   & Specificity            & 0.648 $\pm$ 0.300 & 0.847 $\pm$ 0.088 \\
-  &   & Accuracy               & 0.823 $\pm$ 0.035 & 0.823 $\pm$ 0.035 \\
-  &   & False Positive Rate    & 0.352 $\pm$ 0.300 & 0.154 $\pm$ 0.088 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.747 $\pm$ 0.109} \\ \cmidrule{2-5}
-  & \multirow{5}{*}{Context-Label}
-      & Sensitivity            & 0.802 $\pm$ 0.127 & 0.602 $\pm$ 0.334 \\
-  &   & Specificity            & 0.602 $\pm$ 0.334 & 0.802 $\pm$ 0.127 \\
-  &   & Accuracy               & 0.772 $\pm$ 0.086 & 0.772 $\pm$ 0.086 \\
-  &   & False Positive Rate    & 0.504 $\pm$ 0.334 & 0.144 $\pm$ 0.089 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.677 $\pm$ 0.082} \\ \midrule
-% ---------- DT – single Model-Label block ----------
-\multirow{5}{*}{\textbf{SCNN}}
-  & \multirow{5}{*}{Model-Label}
-      & Sensitivity            & 0.903 $\pm$ 0.062 & 0.761 $\pm$ 0.069 \\
-  &   & Specificity            & 0.761 $\pm$ 0.069 & 0.903 $\pm$ 0.062 \\
-  &   & Accuracy               & 0.882 $\pm$ 0.060 & 0.882 $\pm$ 0.060 \\
-  &   & False Positive Rate    & 0.239 $\pm$ 0.069 & 0.098 $\pm$ 0.062 \\
-  &   & \textbf{Overall Weighted Acc.}
-                                & \multicolumn{2}{c}{0.832 $\pm$ 0.059} \\ 
-    \bottomrule
-  \end{tabular}
-  \caption{Binary classification results produced by four-fold cross-validation.}
-  \label{tab:binary_results_full}
-\end{table}
 
 \begin{table}[ht]
   \centering
@@ -352,6 +331,128 @@ The full results for binary and four-class classification tasks using context ex
                                 & \multicolumn{4}{c}{0.587 $\pm$ 0.037} \\
     \bottomrule
   \end{tabular}
-  \caption{Four-class classification results produced by four-fold cross-validation.}
-  \label{tab:quad_results_full}
+  \caption{Four-class classification results produced by four-fold cross-validation and context-based classification models.}
+  \label{tab:quad_results_full_context}
+\end{table}
+
+
+\begin{table}[ht]
+  \centering
+  \scriptsize
+%   \renewcommand{\arraystretch}{0.85}
+  \begin{tabular}{l|llcc}
+    \toprule
+    Method & Comparison & Metric & Non‐cancer & Cancer \\
+    \midrule
+% ---------- CP-0.0 ----------
+\multirow{10}{*}{CP-0.0}
+  & \multirow{5}{*}{Context-Model}
+      & Sensitivity            & 0.911 $\pm$ 0.040 & 0.433 $\pm$ 0.187 \\
+  &   & Specificity            & 0.433 $\pm$ 0.187 & 0.911 $\pm$ 0.040 \\
+  &   & Accuracy               & 0.819 $\pm$ 0.041 & 0.819 $\pm$ 0.041 \\
+  &   & False Positive Rate    & 0.567 $\pm$ 0.187 & 0.089 $\pm$ 0.040 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.672 $\pm$ 0.076} \\ \cmidrule{2-5}
+  & \multirow{5}{*}{Context-Label}
+      & Sensitivity            & 0.877 $\pm$ 0.061 & 0.345 $\pm$ 0.202 \\
+  &   & Specificity            & 0.345 $\pm$ 0.202 & 0.877 $\pm$ 0.061 \\
+  &   & Accuracy               & 0.800 $\pm$ 0.046 & 0.800 $\pm$ 0.046 \\
+  &   & False Positive Rate    & 0.655 $\pm$ 0.202 & 0.123 $\pm$ 0.061 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.611 $\pm$ 0.090} \\ \midrule
+% ---------- CP-0.2 ----------
+\multirow{10}{*}{CP-0.2}
+  & \multirow{5}{*}{Context-Model}
+      & Sensitivity            & 0.895 $\pm$ 0.046 & 0.521 $\pm$ 0.131 \\
+  &   & Specificity            & 0.521 $\pm$ 0.131 & 0.895 $\pm$ 0.046 \\
+  &   & Accuracy               & 0.820 $\pm$ 0.053 & 0.820 $\pm$ 0.053 \\
+  &   & False Positive Rate    & 0.479 $\pm$ 0.131 & 0.105 $\pm$ 0.046 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.708 $\pm$ 0.055} \\ \cmidrule{2-5}
+  & \multirow{5}{*}{Context-Label}
+      & Sensitivity            & 0.865 $\pm$ 0.058 & 0.452 $\pm$ 0.248 \\
+  &   & Specificity            & 0.452 $\pm$ 0.248 & 0.865 $\pm$ 0.058 \\
+  &   & Accuracy               & 0.804 $\pm$ 0.063 & 0.804 $\pm$ 0.063 \\
+  &   & False Positive Rate    & 0.548 $\pm$ 0.248 & 0.136 $\pm$ 0.058 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.658 $\pm$ 0.130} \\ \midrule
+% ---------- CT-0.0 ----------
+\multirow{10}{*}{CT-0.0}
+  & \multirow{5}{*}{Context-Model}
+      & Sensitivity            & 0.916 $\pm$ 0.074 & 0.375 $\pm$ 0.090 \\
+  &   & Specificity            & 0.375 $\pm$ 0.090 & 0.916 $\pm$ 0.074 \\
+  &   & Accuracy               & 0.817 $\pm$ 0.079 & 0.817 $\pm$ 0.079 \\
+  &   & False Positive Rate    & 0.626 $\pm$ 0.090 & 0.084 $\pm$ 0.074 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.645 $\pm$ 0.053} \\ \cmidrule{2-5}
+  & \multirow{5}{*}{Context-Label}
+      & Sensitivity            & 0.886 $\pm$ 0.094 & 0.286 $\pm$ 0.075 \\
+  &   & Specificity            & 0.286 $\pm$ 0.075 & 0.886 $\pm$ 0.094 \\
+  &   & Accuracy               & 0.798 $\pm$ 0.086 & 0.798 $\pm$ 0.086 \\
+  &   & False Positive Rate    & 0.714 $\pm$ 0.075 & 0.114 $\pm$ 0.094 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.586 $\pm$ 0.074} \\ \midrule
+% ---------- CT-0.2 ----------
+\multirow{10}{*}{CT-0.2}
+  & \multirow{5}{*}{Context-Model}
+      & Sensitivity            & 0.898 $\pm$ 0.052 & 0.544 $\pm$ 0.207 \\
+  &   & Specificity            & 0.544 $\pm$ 0.207 & 0.898 $\pm$ 0.052 \\
+  &   & Accuracy               & 0.841 $\pm$ 0.021 & 0.841 $\pm$ 0.021 \\
+  &   & False Positive Rate    & 0.456 $\pm$ 0.207 & 0.102 $\pm$ 0.052 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.721 $\pm$ 0.077} \\ \cmidrule{2-5}
+  & \multirow{5}{*}{Context-Label}
+      & Sensitivity            & 0.857 $\pm$ 0.089 & 0.496 $\pm$ 0.221 \\
+  &   & Specificity            & 0.496 $\pm$ 0.221 & 0.857 $\pm$ 0.089 \\
+  &   & Accuracy               & 0.804 $\pm$ 0.056 & 0.804 $\pm$ 0.056 \\
+  &   & False Positive Rate    & 0.504 $\pm$ 0.221 & 0.144 $\pm$ 0.089 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.676 $\pm$ 0.082} \\ \midrule
+% ---------- CT – single Model-Label block ----------
+
+% ---------- DT-0.0 ----------
+\multirow{10}{*}{DT-0.0}
+  & \multirow{5}{*}{Context-Model}
+      & Sensitivity            & 0.839 $\pm$ 0.092 & 0.638 $\pm$ 0.267 \\
+  &   & Specificity            & 0.638 $\pm$ 0.267 & 0.839 $\pm$ 0.092 \\
+  &   & Accuracy               & 0.815 $\pm$ 0.042 & 0.815 $\pm$ 0.042 \\
+  &   & False Positive Rate    & 0.362 $\pm$ 0.267 & 0.162 $\pm$ 0.092 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.738 $\pm$ 0.095} \\ \cmidrule{2-5}
+  & \multirow{5}{*}{Context-Label}
+      & Sensitivity            & 0.793 $\pm$ 0.134 & 0.585 $\pm$ 0.284 \\
+  &   & Specificity            & 0.585 $\pm$ 0.284 & 0.793 $\pm$ 0.134 \\
+  &   & Accuracy               & 0.762 $\pm$ 0.096 & 0.762 $\pm$ 0.096 \\
+  &   & False Positive Rate    & 0.415 $\pm$ 0.284 & 0.207 $\pm$ 0.135 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.689 $\pm$ 0.115} \\ \midrule
+% ---------- DT-0.2 ----------
+\multirow{10}{*}{DT-0.2}
+  & \multirow{5}{*}{Context-Model}
+      & Sensitivity            & 0.847 $\pm$ 0.088 & 0.648 $\pm$ 0.300 \\
+  &   & Specificity            & 0.648 $\pm$ 0.300 & 0.847 $\pm$ 0.088 \\
+  &   & Accuracy               & 0.823 $\pm$ 0.035 & 0.823 $\pm$ 0.035 \\
+  &   & False Positive Rate    & 0.352 $\pm$ 0.300 & 0.154 $\pm$ 0.088 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.747 $\pm$ 0.109} \\ \cmidrule{2-5}
+  & \multirow{5}{*}{Context-Label}
+      & Sensitivity            & 0.802 $\pm$ 0.127 & 0.602 $\pm$ 0.334 \\
+  &   & Specificity            & 0.602 $\pm$ 0.334 & 0.802 $\pm$ 0.127 \\
+  &   & Accuracy               & 0.772 $\pm$ 0.086 & 0.772 $\pm$ 0.086 \\
+  &   & False Positive Rate    & 0.504 $\pm$ 0.334 & 0.144 $\pm$ 0.089 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.677 $\pm$ 0.082} \\ \midrule
+% ---------- DT – single Model-Label block ----------
+\multirow{5}{*}{\textbf{SCNN}}
+  & \multirow{5}{*}{Model-Label}
+      & Sensitivity            & 0.903 $\pm$ 0.062 & 0.761 $\pm$ 0.069 \\
+  &   & Specificity            & 0.761 $\pm$ 0.069 & 0.903 $\pm$ 0.062 \\
+  &   & Accuracy               & 0.882 $\pm$ 0.060 & 0.882 $\pm$ 0.060 \\
+  &   & False Positive Rate    & 0.239 $\pm$ 0.069 & 0.098 $\pm$ 0.062 \\
+  &   & \textbf{Overall Weighted Acc.}
+                                & \multicolumn{2}{c}{0.832 $\pm$ 0.059} \\ 
+    \bottomrule
+  \end{tabular}
+  \caption{Binary classification results produced by four-fold cross-validation and context-based classification models.}
+  \label{tab:binary_results_full_context}
 \end{table}

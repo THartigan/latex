@@ -61,6 +61,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Cross-Validation Approach}{8}{subsection.2.2}\protected@file@percent }
 \newlabel{sec:methods:data_split}{{2.2}{8}{Cross-Validation Approach}{subsection.2.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Baseline Classification Methods}{8}{subsection.2.3}\protected@file@percent }
+\newlabel{sec:methods:baseline_classification}{{2.3}{8}{Baseline Classification Methods}{subsection.2.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Machine Learning (ML) For Classification}{8}{subsection.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Principal Component Analysis (PCA)}{8}{subsubsection.2.4.1}\protected@file@percent }
 \newlabel{sec:methods:pca}{{2.4.1}{8}{Principal Component Analysis (PCA)}{subsubsection.2.4.1}{}}
@@ -118,6 +119,7 @@
 \citation{}
 \@writefile{toc}{\contentsline {paragraph}{Transformer Layers}{12}{section*.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}A Scale-Adjusting Convolutional Neural Network (SCNN)}{12}{subsubsection.2.5.3}\protected@file@percent }
+\newlabel{sec:methods:scnn}{{2.5.3}{12}{A Scale-Adjusting Convolutional Neural Network (SCNN)}{subsubsection.2.5.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Explainability}{12}{subsection.2.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.1}Local Interpretable Model-Agnostic Explanations (LIME)}{12}{subsubsection.2.6.1}\protected@file@percent }
 \newlabel{eq:explanation}{{20}{12}{Local Interpretable Model-Agnostic Explanations (LIME)}{equation.20}{}}
@@ -178,58 +180,48 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}A Scanning Convolutional Neural Network Approach}{21}{subsection.3.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked.}}{22}{figure.15}\protected@file@percent }
 \newlabel{fig:IR_and_HE_categories}{{15}{22}{Sections a-d show false-colour FTIR images of colon biopsy samples - one per labelling classification. Each of these has non-stroma regions surrounded by red outlines and highlighted with a white accent. Sections i-iv show the corresponding aligned H\&E images. Note that the H\&E images in sections i and iv show folding defects, and information for a small stripe of the image in section ii is missing, so is blanked}{figure.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Tuned hyperparameter ranges used for SCNN model training.}}{23}{table.3}\protected@file@percent }
+\newlabel{tab:scnn_class_hyper_ranges}{{3}{23}{Tuned hyperparameter ranges used for SCNN model training}{table.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Validation set overall weighted accuracy performance of the SCNN models trained on each dataset fold. Ticks are shown at ends of the fist and third quartiles, $Q_1$ and $Q_3$, the median (red) and at either $1.5\times $ the inter-quartile range from $Q_1$ and $Q_3$ or the maximum / minimum recorded value, whichever is closest to the median. The mean values are denoted by orange diamond.}}{23}{figure.16}\protected@file@percent }
 \newlabel{fig:val_fold_boxes}{{16}{23}{Validation set overall weighted accuracy performance of the SCNN models trained on each dataset fold. Ticks are shown at ends of the fist and third quartiles, $Q_1$ and $Q_3$, the median (red) and at either $1.5\times $ the inter-quartile range from $Q_1$ and $Q_3$ or the maximum / minimum recorded value, whichever is closest to the median. The mean values are denoted by orange diamond}{figure.16}{}}
 \citation{}
-\newlabel{tab:voting_ls_comparison}{{3.3}{24}{A Scanning Convolutional Neural Network Approach}{figure.16}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Fold "a" test-set SCNN classification performance with a 55 \% voting threshold and different label-smoothing levels.}}{24}{table.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Fold "a" test-set SCNN classification performance with a 55 \% voting threshold and different label-smoothing levels.}}{24}{table.4}\protected@file@percent }
+\newlabel{tab:label_smooth_tests}{{4}{24}{Fold "a" test-set SCNN classification performance with a 55 \% voting threshold and different label-smoothing levels}{table.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}SCNN Performance Investigation}{24}{subsection.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}LIME Explanations}{24}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{24}{subsection.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}CRIME}{24}{subsubsection.3.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}VAE Methods}{24}{subsubsection.3.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.3}VAE Method}{24}{subsubsection.3.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.4}M-VAE Method}{24}{subsubsection.3.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{24}{subsection.3.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{24}{section.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Combined 4‐class classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\to $LDA, PCA$\to $XGBoost, XGBoost, and SCNN. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures.}}{25}{table.4}\protected@file@percent }
-\newlabel{table:combined_performance}{{4}{25}{Combined 4‐class classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\to $LDA, PCA$\to $XGBoost, XGBoost, and SCNN. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures}{table.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Combined binary classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\rightarrow $LDA, PCA$\rightarrow $XGB, XGB, and SCNN. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures.}}{26}{table.5}\protected@file@percent }
-\newlabel{table:combined_binary_performance}{{5}{26}{Combined binary classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\rightarrow $LDA, PCA$\rightarrow $XGB, XGB, and SCNN. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures}{table.5}{}}
+\citation{}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces The overall weighted accuracy achieved by each ML method, and the SCNN method both for binary and 4-class classification. The SCNN method is seen to perform best in both cases.}}{25}{figure.17}\protected@file@percent }
+\newlabel{fig:combined_accuracy}{{17}{25}{The overall weighted accuracy achieved by each ML method, and the SCNN method both for binary and 4-class classification. The SCNN method is seen to perform best in both cases}{figure.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Summed confusion matrix (rows = true class, columns = predicted class).}}{25}{table.5}\protected@file@percent }
+\newlabel{tab:confusion_SCNN_4class}{{5}{25}{Summed confusion matrix (rows = true class, columns = predicted class)}{table.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}LIME Explanations}{25}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces SCNN classification predictions for the same samples when each is used in the training set (a-d) and when each is used in the test set (i-iv).}}{26}{figure.18}\protected@file@percent }
+\newlabel{fig:categorisation_train_test}{{18}{26}{SCNN classification predictions for the same samples when each is used in the training set (a-d) and when each is used in the test set (i-iv)}{figure.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces The confidence of the SCNN model in its classification predictions for each sample considered in Figures \ref {fig:IR_and_HE_categories} and \ref {fig:categorisation_train_test}.}}{27}{figure.19}\protected@file@percent }
+\newlabel{fig:uncertainty}{{19}{27}{The confidence of the SCNN model in its classification predictions for each sample considered in Figures \ref {fig:IR_and_HE_categories} and \ref {fig:categorisation_train_test}}{figure.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces LIME analysis results showing the average LIME importance associated with each wavenumber feature.}}{28}{figure.20}\protected@file@percent }
+\newlabel{fig:lime_weights_classes}{{20}{28}{LIME analysis results showing the average LIME importance associated with each wavenumber feature}{figure.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}CRIME Explanations}{28}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}CRIME}{28}{subsubsection.3.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}VAE Methods}{28}{subsubsection.3.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}VAE Method}{28}{subsubsection.3.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.4}M-VAE Method}{28}{subsubsection.3.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}CRIME Predictions}{28}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{28}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Caption}}{29}{figure.21}\protected@file@percent }
+\newlabel{fig:my-label}{{21}{29}{Caption}{figure.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Caption}}{30}{figure.22}\protected@file@percent }
+\newlabel{fig:my-label}{{22}{30}{Caption}{figure.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Caption}}{31}{figure.23}\protected@file@percent }
+\newlabel{fig:my-label}{{23}{31}{Caption}{figure.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Caption}}{32}{figure.24}\protected@file@percent }
+\newlabel{fig:my-label}{{24}{32}{Caption}{figure.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Caption}}{33}{figure.25}\protected@file@percent }
+\newlabel{fig:my-label}{{25}{33}{Caption}{figure.25}{}}
 \bibstyle{unsrtnat}
 \bibdata{TROPHY.bib}
 \bibcite{bray_global_2024}{{1}{2024}{{Bray et~al.}}{{Bray, Laversanne, Sung, Ferlay, Siegel, Soerjomataram, and Jemal}}}
 \bibcite{fischer_hematoxylin_2008}{{2}{2008}{{Fischer et~al.}}{{Fischer, Jacobson, Rose, and Zeller}}}
 \bibcite{hollon_near_2020}{{3}{2020}{{Hollon et~al.}}{{Hollon, Pandian, Adapa, Urias, Save, Khalsa, Eichberg, D'Amico, Farooq, Lewis, Petridis, Marie, Shah, Garton, Maher, Heth, McKean, Sullivan, {Hervey-Jumper}, Patil, Thompson, Sagher, McKhann, Komotar, Ivan, Snuderl, Otten, Johnson, Sisti, Bruce, Muraszko, Trautman, Freudiger, Canoll, Lee, {Camelo-Piragua}, and Orringer}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces }}{27}{figure.17}\protected@file@percent }
-\newlabel{fig:scnn_training_validation}{{17}{27}{}{figure.17}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Methods and Results}{27}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Classical ML Methods for Spectral Classification}{27}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}XGBoost}{27}{subsubsection.5.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Spectral Matching}{27}{subsubsection.5.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Deep Learning Methods for Spectral Classification}{27}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}De-noising Methods}{27}{subsubsection.5.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Evaluation Metrics}{27}{subsubsection.5.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Model Architecture}{27}{subsubsection.5.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Model Performance}{27}{subsubsection.5.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Explainability}{27}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Local Interpretable Model-Agnostic Explanations}{27}{subsubsection.5.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Clustering VAE Approaches}{27}{section*.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Logic Explained Networks}{27}{section*.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Caption}}{28}{figure.18}\protected@file@percent }
-\newlabel{fig:my-label}{{18}{28}{Caption}{figure.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Caption}}{29}{figure.19}\protected@file@percent }
-\newlabel{fig:my-label}{{19}{29}{Caption}{figure.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Caption}}{30}{figure.20}\protected@file@percent }
-\newlabel{fig:my-label}{{20}{30}{Caption}{figure.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Caption}}{31}{figure.21}\protected@file@percent }
-\newlabel{fig:my-label}{{21}{31}{Caption}{figure.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Caption}}{32}{figure.22}\protected@file@percent }
-\newlabel{fig:my-label}{{22}{32}{Caption}{figure.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Caption}}{33}{figure.23}\protected@file@percent }
-\newlabel{fig:my-label}{{23}{33}{Caption}{figure.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Caption}}{34}{figure.24}\protected@file@percent }
-\newlabel{fig:my-label}{{24}{34}{Caption}{figure.24}{}}
 \bibcite{novis_interinstitutional_1997}{{4}{1997}{{Novis and Zarbo}}{{}}}
 \bibcite{bai_deep_2023}{{5}{2023}{{Bai et~al.}}{{Bai, Yang, Li, Zhang, Pillar, and Ozcan}}}
 \bibcite{sarri_fast_2019}{{6}{2019}{{Sarri et~al.}}{{Sarri, Canonge, Audier, Simon, Wojak, Caillol, Cador, Marguet, Poizat, Giovannini, and Rigneault}}}
@@ -289,23 +281,27 @@
 \bibcite{yu_three-parameter_2021}{{60}{2021}{{Yu et~al.}}{{Yu, ~, and {and Chen}}}}
 \bibcite{ribeiro_why_2016}{{61}{2016}{{Ribeiro et~al.}}{{Ribeiro, Singh, and Guestrin}}}
 \bibcite{kingma_introduction_nodate}{{62}{}{{Kingma and Welling}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Activation Functions}{39}{section.6}\protected@file@percent }
-\newlabel{appendix:activations}{{6}{39}{Activation Functions}{section.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Comparison of ReLU, Leaky ReLU, and tanh activation functions.}}{39}{figure.25}\protected@file@percent }
-\newlabel{fig:activation_functions}{{25}{39}{Comparison of ReLU, Leaky ReLU, and tanh activation functions}{figure.25}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Traditional ML Classification Performance With 10-Fold Cross-Validation}{39}{section.7}\protected@file@percent }
-\newlabel{appendix:Tiago}{{7}{39}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{section.7}{}}
-\newlabel{tab:model_performance}{{7}{39}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{section.7}{}}
-\newlabel{table:traditional_ml_performance_4_class_Tiago}{{7}{39}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{section.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Performance characteristics (mean $\pm $ SD) for PCA fed LDA, PCA fed XGBoost and raw data into XGBoost methods for four-classification prediction with 10-fold cross-validation as found by Azevedo et. al. (unpublished).}}{39}{table.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {8}Relevant Code}{39}{section.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Scale-Adjusting Convolutional Neural Network}{39}{subsection.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}VAE Loss Functions}{42}{subsection.8.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Reparamaterisaiton Trick}{42}{subsection.8.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {9}Full Context Classification Results}{42}{section.9}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Binary classification results produced by four-fold cross-validation.}}{43}{table.7}\protected@file@percent }
-\newlabel{tab:binary_results_full}{{7}{43}{Binary classification results produced by four-fold cross-validation}{table.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Four-class classification results produced by four-fold cross-validation.}}{44}{table.8}\protected@file@percent }
-\newlabel{tab:quad_results_full}{{8}{44}{Four-class classification results produced by four-fold cross-validation}{table.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Activation Functions}{38}{appendix.A}\protected@file@percent }
+\newlabel{appendix:activations}{{A}{38}{Activation Functions}{appendix.A}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Comparison of ReLU, Leaky ReLU, and tanh activation functions.}}{38}{figure.26}\protected@file@percent }
+\newlabel{fig:activation_functions}{{26}{38}{Comparison of ReLU, Leaky ReLU, and tanh activation functions}{figure.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Traditional ML Classification Performance With 10-Fold Cross-Validation}{38}{appendix.B}\protected@file@percent }
+\newlabel{appendix:Tiago}{{B}{38}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.B}{}}
+\newlabel{tab:model_performance}{{B}{38}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.B}{}}
+\newlabel{table:traditional_ml_performance_4_class_Tiago}{{B}{38}{Traditional ML Classification Performance With 10-Fold Cross-Validation}{appendix.B}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Performance characteristics (mean $\pm $ SD) for PCA fed LDA, PCA fed XGBoost and raw data into XGBoost methods for four-classification prediction with 10-fold cross-validation as found by Azevedo et. al. (unpublished).}}{38}{table.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C}Relevant Code}{38}{appendix.C}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Scale-Adjusting Convolutional Neural Network}{38}{subsection.C.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}VAE Loss Functions}{41}{subsection.C.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Reparamaterisaiton Trick}{41}{subsection.C.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}Full Classification Results}{41}{appendix.D}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Four-class classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\to $LDA, PCA$\to $XGBoost, XGBoost, and SCNN methods. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures. OWA = Overall Weighted Accuracy.}}{42}{table.7}\protected@file@percent }
+\newlabel{table:quad_results_full}{{7}{42}{Four-class classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\to $LDA, PCA$\to $XGBoost, XGBoost, and SCNN methods. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures. OWA = Overall Weighted Accuracy}{table.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Binary classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\rightarrow $LDA, PCA$\rightarrow $XGB, XGB, and SCNN methods. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures.}}{43}{table.8}\protected@file@percent }
+\newlabel{table:binary_results_full}{{8}{43}{Binary classification performance (mean $\pm $ std) across folds for MSE, Cosine Similarity, PCA$\rightarrow $LDA, PCA$\rightarrow $XGB, XGB, and SCNN methods. The MSE and Cosine Similarity rows repeat identical values, as performances were the same to three significant figures}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Four-class classification results produced by four-fold cross-validation and context-based classification models.}}{44}{table.9}\protected@file@percent }
+\newlabel{tab:quad_results_full_context}{{9}{44}{Four-class classification results produced by four-fold cross-validation and context-based classification models}{table.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Binary classification results produced by four-fold cross-validation and context-based classification models.}}{45}{table.10}\protected@file@percent }
+\newlabel{tab:binary_results_full_context}{{10}{45}{Binary classification results produced by four-fold cross-validation and context-based classification models}{table.10}{}}
 \xdef \mintedoldcachechecksum{\detokenize{2C74F9825747FA26C416983DBCCB5DCA:4}}
-\gdef \@abspage@last{44}
+\gdef \@abspage@last{45}

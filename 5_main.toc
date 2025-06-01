@@ -31,31 +31,18 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Traditional Classification Methods}{21}{subsubsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.3}A Scanning Convolutional Neural Network Approach}{21}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}SCNN Performance Investigation}{24}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}LIME Explanations}{24}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}CRIME Explanations}{24}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}CRIME}{24}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}VAE Methods}{24}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}VAE Method}{24}{subsubsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.4}M-VAE Method}{24}{subsubsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.7}CRIME Predictions}{24}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Conclusions}{24}{section.4}%
-\contentsline {section}{\numberline {5}Methods and Results}{27}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Classical ML Methods for Spectral Classification}{27}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}XGBoost}{27}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Spectral Matching}{27}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Deep Learning Methods for Spectral Classification}{27}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}De-noising Methods}{27}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Evaluation Metrics}{27}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Model Architecture}{27}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Model Performance}{27}{subsubsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.3}Explainability}{27}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Local Interpretable Model-Agnostic Explanations}{27}{subsubsection.5.3.1}%
-\contentsline {paragraph}{Clustering VAE Approaches}{27}{section*.5}%
-\contentsline {paragraph}{Logic Explained Networks}{27}{section*.6}%
-\contentsline {section}{\numberline {6}Activation Functions}{39}{section.6}%
-\contentsline {section}{\numberline {7}Traditional ML Classification Performance With 10-Fold Cross-Validation}{39}{section.7}%
-\contentsline {section}{\numberline {8}Relevant Code}{39}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Scale-Adjusting Convolutional Neural Network}{39}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}VAE Loss Functions}{42}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Reparamaterisaiton Trick}{42}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Full Context Classification Results}{42}{section.9}%
+\contentsline {subsubsection}{\numberline {3.4.1}LIME Explanations}{25}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}CRIME Explanations}{28}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}CRIME}{28}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}VAE Methods}{28}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}VAE Method}{28}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}M-VAE Method}{28}{subsubsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.6}CRIME Predictions}{28}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Conclusions}{28}{section.4}%
+\contentsline {section}{\numberline {A}Activation Functions}{38}{appendix.A}%
+\contentsline {section}{\numberline {B}Traditional ML Classification Performance With 10-Fold Cross-Validation}{38}{appendix.B}%
+\contentsline {section}{\numberline {C}Relevant Code}{38}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Scale-Adjusting Convolutional Neural Network}{38}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}VAE Loss Functions}{41}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}Reparamaterisaiton Trick}{41}{subsection.C.3}%
+\contentsline {section}{\numberline {D}Full Classification Results}{41}{appendix.D}%

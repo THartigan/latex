@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex 5_main"] 1748784141.34118 "5_main.aux" "5_main.bbl" "5_main" 1748784151.13623 0
+["bibtex 5_main"] 1748799896.2631 "5_main.aux" "5_main.bbl" "5_main" 1748799942.92206 0
   "./TROPHY.bib" 1748739381.99437 258273 78c89dd6b09232f880e2788c60201614 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "5_main.aux" 1748784150.86586 34973 b18d05523dfc4bb0e51f19acad797df2 "pdflatex"
+  "5_main.aux" 1748799942.63296 35714 3372502b31de86c22e9fa3613763ab37 "pdflatex"
   (generated)
   "5_main.bbl"
   "5_main.blg"
   (rewritten before read)
-["pdflatex"] 1748784141.46774 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748784151.13641 0
-  "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" 1748782491.5903 1323 7ce4cb23f470efd23c6270284ec4d139 ""
+["pdflatex"] 1748799932.27425 "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" "5_main.pdf" "5_main" 1748799942.92224 0
+  "/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex" 1748797652.73306 1324 c5ee893c2b88f9b7b147c1dbfe97e4fd ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -151,15 +151,14 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1747492213 3345732 6d12076f5f56aad4716ba4cefe1a1fa2 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "0_Introduction.tex" 1748706826.81549 6075 928dbf422eea4ed91956225b21f63ace ""
-  "1_Methods.tex" 1748778891.85372 40819 474ac88b8b89c0ddb522484eb8ea759f ""
-  "2_Methods.tex" 1748775512.8331 5066 de3e98ec3a337ad51eeb522d30d1f554 ""
-  "3_Results.tex" 1748784131.26497 25675 e350151d8e50b7d475806ebf4d76c2e6 ""
+  "1_Methods.tex" 1748790107.83567 40888 a3e2f29cfb76d92db39775916e301102 ""
+  "3_Results.tex" 1748799932.14806 25252 74e5fd883e36657e68fb0c01744b696e ""
   "5_Conclusions.tex" 1747502760.34084 21 962245b29278b6028e8e709db79a2139 ""
-  "5_main.aux" 1748784150.86586 34973 b18d05523dfc4bb0e51f19acad797df2 "pdflatex"
-  "5_main.bbl" 1748784141.46481 23337 a718217277254bf2c9823105f0960155 "bibtex 5_main"
-  "5_main.out" 1748784150.86814 10958 df2259a56555f92b37657e5bcadaff1c "pdflatex"
-  "5_main.tex" 1748782491.5903 1323 7ce4cb23f470efd23c6270284ec4d139 ""
-  "5_main.toc" 1748784150.86846 5669 2547d8b04152d23843d9d5c7b6bd6594 "pdflatex"
+  "5_main.aux" 1748799942.63296 35714 3372502b31de86c22e9fa3613763ab37 "pdflatex"
+  "5_main.bbl" 1748799896.36484 23337 a718217277254bf2c9823105f0960155 "bibtex 5_main"
+  "5_main.out" 1748799942.63492 8818 993581afa28c2f0262e523a18978a0d6 "pdflatex"
+  "5_main.tex" 1748797652.73306 1324 c5ee893c2b88f9b7b147c1dbfe97e4fd ""
+  "5_main.toc" 1748799942.63523 4467 8723d7aacdd22ed353d41baa273f9777 "pdflatex"
   "Images/Categorisation_train_test.png" 1747943291 931719 5c5a4f714c4dcc2c5022b8dc07755f73 ""
   "Images/Confidence.png" 1747942403 1456073 31958d98310ffac4771318dc36a4abd8 ""
   "Images/Cystine_IR_pH_dep.png" 1747781622.38141 138908 c0574d8651dd198c80a5b17f28026a75 ""
@@ -181,6 +180,7 @@
   "Images/crime_groupings_by_category_100.png" 1748011842 259608 0d3a0ce62b8e6a2a4f4e00a150aa6455 ""
   "Images/crime_lime_plots.png" 1748009020 958068 097c130272950dcb755a769975c20a5a ""
   "Images/crime_umap.png" 1747950232 1930562 5a4e7fcd99e360ed819df782e6303e27 ""
+  "Images/lime_contributions_plot.png" 1748799190.21183 692599 f830a11f49086e042ae82de0af915758 ""
   "Images/lime_explanation.png" 1747872854.8227 97628 49c6206607b9dc501b21601218d2ba6d ""
   "Images/lime_weights_example.png" 1747948688.08867 684674 9898b64ca08637747fbd9b2922bb5c10 ""
   "Images/quad_class3_metrics_figure_v6.pdf" 1748704844.5906 24166 1b6005870dc6c20fccfa68074a45eeea ""
@@ -192,7 +192,7 @@
   "_minted/xcode.style.minted" 1748651357.95064 5479 4086d434ede5ff047aa9b1f026826aa5 ""
   "appendix_Tiago.tex" 1748462414.93215 1300 f2943b93a3ccf63a6743f2bc6f80e0d3 ""
   "appendix_activations.tex" 1748773227.42734 749 b962fb42f09486c253e718fe055a1959 ""
-  "appendix_all_results.tex" 1748701082.25594 23231 db29f248ec5489fb0c5fcb3246f0693e ""
+  "appendix_all_results.tex" 1748791413.76305 30386 85aa1ca16d898b0c411cb045c198ad5d ""
   "appendix_code.tex" 1748773227.40013 23054 d4a25dd34e35aa0e2124fb416c2f4039 ""
   (generated)
   "5_main.aux"
