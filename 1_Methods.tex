@@ -1,4 +1,4 @@
-\section{Methods}
+\section{Theory and Methods}
 \subsection{FTIR Spectroscopy}
 %Check which of the CHARM methods are actually needed here and potentially don't bother with them all
 
@@ -16,7 +16,7 @@ The requirement for molecules to be polar results in FTIR being particularly sen
 \end{figure}
 
 \noindent
-Modern devices use a Fourier transform-based (FTIR) interferogram approach \cite{griffiths_fourier_1983}, enabling high signal-to-noise (SNR) ratios to be achieved. FTIR can detect biochemical features including nucleic acids, proteins, lipids, and carbohydrates within biological samples by matching the observed spectra with known forms for different bonding types, functional groups and intermolecular interactions \cite{su_fourier_2020}. Typical absorption groups within biological samples are detailed in Table \ref{table:functional_groups}. Furthermore, we expect FTIR may be a good method for cancer detection, as cancerous growth is often associated with changes in the acidity of tissues, which is known to cause hydrogen-bonding induced changes to FTIR spectral peak positions \cite{wolpert_infrared_2006,torii_modeling_2024,czowski_cancer_2020}. This effect is demonstrated in Figure \ref{fig:ir_differences_ph}.
+Modern devices use a Fourier transform-based (FTIR) interferogram approach \cite{griffiths_fourier_1983}, enabling high signal-to-noise (SNR) ratios to be achieved. FTIR can detect biochemical features including nucleic acids, proteins, lipids, and carbohydrates within biological samples by matching the observed spectra with known forms for different bonding types, functional groups and intermolecular interactions \cite{su_fourier_2020}. Typical absorption groups within biological samples are detailed in Table \ref{table:functional_groups}. Furthermore, we expect FTIR to be a good for cancer detection, as cancerous growth is often associated with changes in the acidity of tissues, and changes in acidity are known to cause hydrogen-bonding induced changes to FTIR spectral peak positions \cite{wolpert_infrared_2006,torii_modeling_2024,czowski_cancer_2020}. This effect is demonstrated in Figure \ref{fig:ir_differences_ph}.
 
 % Requires: \usepackage{array} \begin{table}[h] \centering
 \begin{table}[htbp]
@@ -50,13 +50,24 @@ Modern devices use a Fourier transform-based (FTIR) interferogram approach \cite
 
 \subsubsection{FTIR Dataset Collection}
 \label{sec:mdethods:data_collection}
-The dataset used in this work contains FTIR spectral images of 90 colon cancer tissue samples originally collected for the MINERVA project \cite{noauthor_minerva_nodate}. These images were produced by collaborators at the University of Exeter using an Agilent 620 FTIR microscope, an Agilent 670 FTIR spectrometer with a Globar light source, and a liquid-nitrogen cooled 128x128 focal plane array detector \cite{nallala_high-resolution_2016}.
+The dataset used in this work contains FTIR spectral images of 90 colon cancer tissue samples originally collected for the MINERVA project \cite{noauthor_minerva_nodate}. These images were produced by collaborators at the University of Exeter using an Agilent 620 FTIR microscope, an Agilent 670 FTIR spectrometer with a Globar light source, and a liquid-nitrogen cooled 128x128 focal plane array detector \cite{nallala_high-resolution_2016}. % ADD PREPROCESING
 
 \subsection{Cross-Validation Approach}
 \label{sec:methods:data_split}
 FTIR data was produced for 90 samples, of which 31 were classified as normal, 17 as hyperplastic, 27 as adenomatous, and 15 as cancerous. Due to the desire to accurately predict performance in four-category prediction tasks, a 4-fold cross-validation approach was adopted \cite{kohavi_study_2001}. This involved splitting the dataset into four parts using the stratified group K-fold method, which produces splits subject to the constraints of both preserving the proportion of samples (pixels) for each class within each split to the maximum extent possible whilst also enforcing the requirement for non-overlapping groups (images) between splits \cite{t_r_stratified_2023,gunopulos_stratification_2011, szymanski_network_2017}. When training ML models on spectral data, an approach was adopted where for each set of four folds, two were used for training, one for validation and one for testing. For methods which did not require validation, the validation set was discarded, enabling maximal comparability between methods.
 
-\subsection{Machine Learning (ML)}
+\subsection{Baseline Classification Methods}
+The most intuitive approach for classifying spectra according to their severity is to calculate the mean spectrum for each classification within the training set and then to measure which mean spectrum most closely resembles a test spectrum. Similarly to work by Villazon et. al. \cite{villazon_cancer_2025}, this work implements a mean square error (MSE) method, and a cosine similarity method. The mean square error is defined as:
+\begin{equation}
+    \text{MSE}(\vec x,\vec y) = \frac{1}{n} \sum_{i=1}^{n} (x_i - y_i)^2
+\end{equation}
+where $\vec x$ and $\vec y$ are the spectra being compared, and $n$ is the number of wavenumbers (dimensions) in each spectrum. The cosine similarity is also defined as:
+\begin{equation}
+    \text{Cosine Similarity}(\vec x, \vec y) = \frac{\vec x \cdot \vec y}{|\vec x| |\vec y|},
+\end{equation}
+which produces values between $-1$ and $1$ with $-1$ denoting complete orthogonality and $1$ denoting complete similarity between the two spectra. The classification of each test spectrum is then set as that which corresponds to the mean spectrum which minimises the MSE or maximises the cosine similarity.
+
+\subsection{Machine Learning (ML) For Classification}
 \subsubsection{Principal Component Analysis (PCA)}
 \label{sec:methods:pca}
 PCA \cite{wold_principal_nodate} is a dimensionality reduction technique which aims to project high-dimensional data into a new, more meaningful basis by re-expressing the data through a linear combination of these new basis vectors. This linearity allows us to pose the problem through linear algebra, where we wish to find a linear transformation $\boldsymbol{P}$ which maps the original recorded dataset $\bf X$ to a new representation of that dataset $\boldsymbol{Y}$ such that:
@@ -168,7 +179,7 @@ In practice, we also perform layer normalisation after the multi-head attention 
 % Within this work, a scanning convolutional neural network (SCNN) was used to 
 % 1D Convolutional neural networks \cite{} are used throughout this work to best extract spectral peaks. They work by
 % Transformers
-\subsubsection{Scale-Adjusting Convolutional Neural Networks (SCNN)}
+\subsubsection{A Scale-Adjusting Convolutional Neural Network (SCNN)}
 
 In this work, a SCNN similar to that presented by Zaki et. al. \cite{zaki_explainable_2024} is implemented for feature extraction from 801 dimensional FTIR spectra. The model architecture is summarised in Figure \ref{fig:scnn_arch}. Notable features include the use of three scanning convolutional heads to extract information at different spectral scales, which is important for capturing the variable-width peaks in FTIR spectra. Furthermore, the use of $\tanh$ followed by ReLU activation functions reduces the effect of unphysically large convolutional outputs, which could otherwise produce exploding gradients \cite{song_fine-grained_nodate,li_learning_2020,zaki_explainable_2024}. Finally, the last layers in the network learn a three parameter logistic output \cite{yu_three-parameter_2021};
 \begin{equation} %Px = c+(1-c)/(1+torch.exp(-a*(x-b)))

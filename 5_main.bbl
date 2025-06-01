@@ -167,6 +167,13 @@ Piotr Szyma{\'n}ski and Tomasz Kajdanowicz.
 \newblock A {{Network Perspective}} on {{Stratification}} of {{Multi-Label Data}}.
 \newblock In \emph{Proceedings of the {{First International Workshop}} on {{Learning}} with {{Imbalanced Domains}}: {{Theory}} and {{Applications}}}, pages 22--35. PMLR, October 2017.
 
+\bibitem[Villazon et~al.(2025)Villazon, Dela~Cruz, and Shi]{villazon_cancer_2025}
+Jorge Villazon, Nathaniel Dela~Cruz, and Lingyan Shi.
+\newblock Cancer {{Cell Line Classification Using Raman Spectroscopy}} of {{Cancer-Derived Exosomes}} and {{Machine Learning}}.
+\newblock \emph{Analytical Chemistry}, 97\penalty0 (13):\penalty0 7289--7298, March 2025.
+\newblock ISSN 0003-2700.
+\newblock \doi{10.1021/acs.analchem.4c06966}.
+
 \bibitem[Wold and Geladi()]{wold_principal_nodate}
 Svante Wold and KIM ESBENSENand~PAUL Geladi.
 \newblock Principal {{Component Analysis}}.
@@ -362,12 +369,5 @@ Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
 \bibitem[Kingma and Welling()]{kingma_introduction_nodate}
 Diederik~P Kingma and Max Welling.
 \newblock An {{Introduction}} to {{Variational Autoencoders}}.
-
-\bibitem[Villazon et~al.(2025)Villazon, Dela~Cruz, and Shi]{villazon_cancer_2025}
-Jorge Villazon, Nathaniel Dela~Cruz, and Lingyan Shi.
-\newblock Cancer {{Cell Line Classification Using Raman Spectroscopy}} of {{Cancer-Derived Exosomes}} and {{Machine Learning}}.
-\newblock \emph{Analytical Chemistry}, 97\penalty0 (13):\penalty0 7289--7298, March 2025.
-\newblock ISSN 0003-2700.
-\newblock \doi{10.1021/acs.analchem.4c06966}.
 
 \end{thebibliography}
