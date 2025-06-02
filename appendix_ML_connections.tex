@@ -1,0 +1,26 @@
+\section{ML Connection Layers}
+\label{appendix:ML_connections}
+
+There are many ways to connect the layers of a neural network, of which three are used throughout this work; fully connected layers, convolutional layers and transformer layers.
+\paragraph{Fully Connected Layers} \cite{minsky_perceptrons_2017,rosenblatt_principles_nodate} are those where there is a connection from any node in one layer to all nodes in the subsequent layer, with each connection having an associated weight and bias such that the output in a subsequent layer is given by:
+\begin{equation}
+    \boldsymbol{y} = \boldsymbol{W}\boldsymbol{x} + \boldsymbol{b},
+\end{equation}
+where $\boldsymbol{W}$ is a weight matrix and $\boldsymbol{b}$ is a bias vector \cite{rosenblatt_principles_nodate}. By applying many fully connected layers together and sending the output value after each layer through a non-linear activation function, we form a multi-layer perception (MLP) which is able to learn any function \cite{cybenko_approximation_1989,leshno_multilayer_1993,hornik_multilayer_1989}. This fully-connected approach is illustrated in Figure \ref{fig:connection_methods}a. \\
+
+\noindent
+\paragraph{Convolutional Layers} \cite{kiranyaz_1d_2019,lecun_gradient-based_1998,goodfellow_deep_2016} have a set of learnable kernels each of the same size which are slid across an input tensor. At each position along this slide, the kernel is convolved with the respective elements of the input tensor, producing one value in the next layer. Using multiple kernels for this allows for different features to be extracted \cite{dumoulin_guide_2018}. Convolutional layers also have two tunable parameters. Stride determines how many times the kernel should slide over the input tensor between convolution calculations, decreasing the number of calculated values. Padding determines the number of zero-valued layers to surround the input with, which can be used to allow every real data value to be processed by every element of the kernel. The convolutional approach is illustrated in Figure \ref{fig:connection_methods}b. \\
+
+\paragraph{Transformer Layers} first produce three latent space embeddings from input data, normally labelled as the query, $\boldsymbol Q$, key, $\boldsymbol K$ and value $\boldsymbol V$. The query and key are then used to calculate attention weights $\boldsymbol{A}$ according to:
+\begin{equation}
+    \boldsymbol{A} = \text{softmax}\left(\frac{\boldsymbol{Q}\boldsymbol{K}^T}{\sqrt{d_k}}\right),
+\end{equation}
+where $d_k$ is the dimensionality of the key \cite{vaswani_attention_2023}. These attention weights are then use to multiply the value embedding vector to produce intermediate values $\boldsymbol{I}$;
+\begin{equation}
+    \boldsymbol{I} = \boldsymbol{A}\boldsymbol{V}.
+\end{equation}
+This 'scaled dot-product attention' process encodes long-range relationships between components of the input vector. If this process is repeated $h$ times, then we can produce $h$ attention heads and $h$ corresponding intermediate values $I_{0\dots h}$. To then enable the learning of positioning information, these output head values are concatenated and passed through a linear layer to form a vector of the same shape as the input. A positional encoding, normally a scaled $\sin(\text{index}/\text{input vector length})$ function, is then added to this vector to give a positionally encoded attention vector $\boldsymbol{j}$. Finally, to allow for mixing of the different head encodings, this vector is fed through a two-layer fully-connected feed-forward network (FFN) with layer weights $\boldsymbol W_i$ and biases $\boldsymbol{b_i}$. Each layer is operated on by ReLU activations, enabling the learning of arbitrarily complex functions \cite{vaswani_attention_2023}. To retain positional information $\boldsymbol{j}$ is then added to this representation, giving the overall output from the transformer $\boldsymbol{O}$ as;
+\begin{equation}
+    \boldsymbol{O} = \text{FNN}(\boldsymbol{j})= \text{ReLU}(\boldsymbol{W}_1\boldsymbol{j} + \boldsymbol{b}_1)\boldsymbol{W}_2 + \boldsymbol{b}_2 + \boldsymbol{j}.
+\end{equation}
+In practice, we also perform layer normalisation after the multi-head attention and FNN steps. This process is illustrated in Figure \ref{fig:connection_methods}c.

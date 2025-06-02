@@ -3,70 +3,63 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 5_main.aux
 The style file: unsrtnat.bst
 Database file #1: TROPHY.bib
-Warning--I didn't find a database entry for "Trophy"
-Warning--I didn't find a database entry for "Trophy_proposal"
-Warning--I didn't find a database entry for "things"
-Warning--I didn't find a database entry for "crine"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "SGVB_gradient_variational_bayes"
 Warning--I didn't find a database entry for "beta-vae"
 Warning--empty year in noauthor_minerva_nodate
-Warning--empty journal in eic_trophy_nodate
-Warning--empty year in eic_trophy_nodate
-Warning--empty year in eic_trophy_nodate
 Warning--empty journal in kohavi_study_2001
 Warning--empty journal in wold_principal_nodate
 Warning--empty year in wold_principal_nodate
 Warning--empty year in wold_principal_nodate
 Warning--empty journal in rumelhart_learning_1986
-Warning--empty journal in rosenblatt_principles_nodate
-Warning--empty year in rosenblatt_principles_nodate
-Warning--empty year in rosenblatt_principles_nodate
 Warning--empty journal in song_fine-grained_nodate
 Warning--empty year in song_fine-grained_nodate
 Warning--empty year in song_fine-grained_nodate
 Warning--empty journal in kingma_introduction_nodate
 Warning--empty year in kingma_introduction_nodate
 Warning--empty year in kingma_introduction_nodate
-You've used 62 entries,
+Warning--empty journal in rosenblatt_principles_nodate
+Warning--empty year in rosenblatt_principles_nodate
+Warning--empty year in rosenblatt_principles_nodate
+You've used 66 entries,
             2481 wiz_defined-function locations,
-            996 strings with 20342 characters,
-and the built_in function-call counts, 27542 in all, are:
-= -- 2153
-> -- 1905
-< -- 35
-+ -- 704
-- -- 580
-* -- 2474
-:= -- 4577
-add.period$ -- 246
-call.type$ -- 62
-change.case$ -- 122
-chr.to.int$ -- 62
-cite$ -- 81
-duplicate$ -- 1178
-empty$ -- 2220
-format.name$ -- 671
-if$ -- 5687
+            1020 strings with 21692 characters,
+and the built_in function-call counts, 29971 in all, are:
+= -- 2336
+> -- 2117
+< -- 34
++ -- 778
+- -- 646
+* -- 2743
+:= -- 5004
+add.period$ -- 268
+call.type$ -- 66
+change.case$ -- 130
+chr.to.int$ -- 66
+cite$ -- 82
+duplicate$ -- 1255
+empty$ -- 2385
+format.name$ -- 741
+if$ -- 6170
 int.to.chr$ -- 1
-int.to.str$ -- 63
-missing$ -- 50
-newline$ -- 373
-num.names$ -- 189
-pop$ -- 522
+int.to.str$ -- 67
+missing$ -- 54
+newline$ -- 403
+num.names$ -- 201
+pop$ -- 534
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 66
 quote$ -- 0
-skip$ -- 693
+skip$ -- 730
 stack$ -- 0
-substring$ -- 1051
-swap$ -- 224
+substring$ -- 1185
+swap$ -- 237
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 428
-warning$ -- 18
-while$ -- 199
+type$ -- 456
+warning$ -- 15
+while$ -- 215
 width$ -- 0
-write$ -- 903
-(There were 25 warnings)
+write$ -- 977
+(There were 18 warnings)

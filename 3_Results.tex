@@ -347,21 +347,24 @@ To quantify this separability, I calculated the SCNN ensemble prediction associa
 The CRIME linear prediction method (LCRIME) described in §\ref{sec:crime_linear} was then employed using the majority classified context spectra and weightings. It was noted, however, that although the CRIME method with an unsupervised CP VAE is able to separate cancer and hyperplastic tissues well, many contexts have multiple similarly-frequent classifications present. To improve this, the M2 semi-supervised versions of the VAEs described in Table \ref{tab:ssvae_arch} were also implemented to encourage the latent space to be more separable. The resulting four-class and binary classification prediction performance metrics achieved by each VAE model are described in full in Tables \ref{tab:quad_results_full_context} and \ref{tab:binary_results_full_context} respectively. Of these, the best metrics for comparison are shown graphically in Figures \ref{fig:quad_context} and \ref{fig:bin_context} for four-class and binary classification tasks respectively. These results show that the LCRIME method generally performs worse than all other methods tested at training-label prediction. The best LCRIME models (CP-0.2 and CT-0.2) are, however, able to reconstruct the model four-class classification predictions better than the MSE and cosine similarity classification are able to reproduce the training labels. LCRIME also achieves a similar performance to the PCA$\to$LDA method by this metric. LCRIME is, however, always out-performed by the PCA$\to$XGB, XGB and ensemble SCNN methods. Despite this, LCRIME still offers advantages because it is intrinsically interpretable and the method by which it makes prediction is easy to explain to patients and clinicians.\\ 
 
 \noindent
-Future works could investigate the use of the LCRIME method on less-noisy datasets, or could try to perform more thorough hyperparameter searching by folding the dataset differently.
+Future works could investigate the use of the LCRIME method on less-noisy datasets, or could try to perform more thorough hyperparameter searching by folding the dataset differently. It would also be informative to compared the performance of this LCRIME method against a directly learnt linear mapping model.
 
 \begin{figure}
     \centering 
     \includegraphics[width=1\textwidth]{Images/quad_class3_metrics_fig_updated4.pdf} 
-    \caption{LCRIME four-class classification performance (mean $\pm$ std) across folds with $K=100$ clustering.}
+    \caption{LCRIME four-class classification performance (mean $\pm$ std) across folds with $K=100$ clustering. The VAE model used is denoted using the convention outlined in Table \ref{tab:ssvae_arch}, followed by the decimalised value of the supervision level used.}
     \label{fig:quad_context}
 \end{figure}
 
 \begin{figure}
     \centering 
     \includegraphics[width=1\textwidth]{Images/binary_metrics_fig_updated4.pdf} 
-    \caption{Caption}
+    \caption{LCRIME binary classification performance (mean $\pm$ std)
+    across folds with $K=100$ clustering. The VAE model used is denoted using
+    the convention outlined in Table \ref{tab:ssvae_arch}, followed by the
+    decimalised value of the supervision level used.}
     \label{fig:bin_context}
 \end{figure}
 
-\subsection{Application to Physics}
-The use of machine learning and deep learning methods are becoming increasingly common in physics. Similar approaches to the VAE method adopted here have been used to analyse collisions in particle physics \cite{}, astrophysical systems \cite{} and to detect gravitational waves \cite{}. Increasing the interpretability of these methods is therefore important for translating new-found results into real physical insights.
+\subsection{Applicability in Physics}
+The use of machine learning and deep learning methods are becoming increasingly common in physics. Similar approaches to the VAE method adopted here have been used to analyse collisions in particle physics \cite{}, astrophysical systems \cite{}, to detect gravitational waves \cite{}, and within medical physics for ...\cite{}. Increasing the interpretability of these methods such as has been done in this work, is therefore important for translating new-found results into real physical insights.

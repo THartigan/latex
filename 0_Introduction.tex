@@ -7,36 +7,36 @@ Cancer is one of the leading causes of death worldwide with around 20 million ca
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=1\textwidth]{Images/Histology_Summary.png}
-  \caption{From \cite{bai_deep_2023}}
+  \caption{The standard histopatological diagnosis process. From \cite{bai_deep_2023}.}
   \label{fig:hist-summary}
 \end{figure}
 
-New methods are being developed to expedite the cancer diagnosis process by using machine learning in conjunction with a range of imaging technologies including stimulated Raman spectroscopy (SRS) \cite{hollon_near_2020, sarri_fast_2019, kondepudi_foundation_2024, jiang_opensrh_2022}, second harmonic generation microscopy (SHG) \cite{sarri_fast_2019}, and Fourier transform infrared spectroscopy (FTIR) \cite{tomas_detection_2022, berisha_deep_2019}. Within this work, I focus on the application of FTIR spectroscopy to cancer diagnosis within colon cancer samples provided by collaborators at the University of Exeter, which were collected and had FTIR spectral images produced as part of the MINERVA project \cite{noauthor_minerva_nodate}.
+\noindent
+New methods are being developed to exploit machine learning (ML) in conjunction with a range of imaging technologies to expedite cancer diagnosis. The imaging technologies under investigation include stimulated Raman spectroscopy (SRS) \cite{hollon_near_2020, sarri_fast_2019, kondepudi_foundation_2024, jiang_opensrh_2022}, second harmonic generation microscopy (SHG) \cite{sarri_fast_2019}, and Fourier transform infrared spectroscopy (FTIR) \cite{tomas_detection_2022, berisha_deep_2019,tang_advancing_2024,sala_liquid_2022,duckworth_frontline_2023}. Within this work, I focus on the application of FTIR spectroscopy to cancer identification and classification within colon cancer samples provided by collaborators at the University of Exeter \cite{nallala_high-resolution_2016,noauthor_minerva_nodate}.
 
 \subsection{Previous Works}
 % maybe move the Tomas reference to where I am describing the MINERVA data class differences in Background
-Work by Tomas et al. \cite{tomas_detection_2022} utilised attenuated total reflection Fourier transform infrared (ATR-FTIR) spectroscopy and feed-forward full-connected neural networks to classify breast cancer samples into benign and malignant classifications with $96.06\% \pm 7.07 \%$ accuracy, corresponding to the large differences in spectral characteristics between classes as can be seen in figure \ref{fig:breast-tomas-benign-malignant-diff}.
+Previous works using vibrational spectroscopy methods have reported high classification performance for cancer identification. For example, Lasalvia et al. \cite{lasalvia_discrimination_2023} report cancer vs non-cancer classification accuracies from $87\%$ to almost $100\%$ for colorectal cancer samples using ML techniques on FTIR spectra. Furthermore, work by Tiwari et al. \cite{tiwari_colon_2022} has achieved $97\%$ and $80\%$ colon tumour classification accuracy for high/moderate and low-grade tumours respectively using a pre-trained ResNet and convolutional network approach. Tomas et al. \cite{tomas_detection_2022} have used attenuated total reflection FTIR (ATR-FTIR) spectroscopy and feed-forward full-connected neural networks to classify breast cancer samples into benign and malignant classifications with $96.06\% \pm 7.07 \%$ accuracy. They found the different tissue types within breast cancer exhibit large differences in spectral characteristics as can be seen in Figure \ref{fig:breast-tomas-benign-malignant-diff}. Some works \cite{he_accurate_2022} have also explored the use of variational autoencoders (VAEs) in classification tasks. However, their applicability has been limited to de-noising input Raman spectral data. These advances demonstrate the potential for vibrational spectroscopy and machine learning in the field of cancer detection, which I aim to build on in this work.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{Images/breast_tomas_benign_malignant_diff.png}
-  \caption{From \cite{tomas_detection_2022}}
+  \caption{The IR spectral differences identified between malignant and benign tumours in \cite{tomas_detection_2022}.}
   \label{fig:breast-tomas-benign-malignant-diff}
 \end{figure}
 
 
-\subsection{Future Vision}
-The TROPHY project \cite{Trophy} is aiming to develop a new vibrational spectroscopic imaging microscope exploiting photo-thermal infrared (PTIR), FTIR and digital holography microscopy (DMH) to evaluate cell-type topologies, identify mutant cell clusters, and provide biochemical analyses to determine tumour types, grading and staging \cite{Trophy_proposal}. The MINERVA and TROPHY datasets are expected to be similar, so the models and methods developed in this work constitute a basis for future work towards the TROPHY goals. This is particularly apparent given that TROPHY will focus primarily on the same fingerprint $1000$-$1800$ cm$^{-1}$ region of the IR spectrum as MINERVA.
+% The TROPHY project \cite{Trophy} is aiming to develop a new vibrational spectroscopic imaging microscope exploiting photo-thermal infrared (PTIR), FTIR and digital holography microscopy (DMH) to evaluate cell-type topologies, identify mutant cell clusters, and provide biochemical analyses to determine tumour types, grading and staging \cite{Trophy_proposal}. The MINERVA and TROPHY datasets are expected to be similar, so the models and methods developed in this work constitute a basis for future work towards the TROPHY goals. This is particularly apparent given that TROPHY will focus primarily on the same fingerprint $1000$-$1800$ cm$^{-1}$ region of the IR spectrum as MINERVA.
 
-Other works which could benefit from the approaches described here include work on the CHARM project which is also taking place in Cambridge. This project is similar to TORPHY in that they are devleoping a new microscope for cancer diagnosis. CHARM are instead focussing on Raman, SGH and TPEF signals, as these have been shown to have some advantages over FTIR \cite{things}. Currently, data produced by that microscope is very noisy, and also only has intensity information at around 20 wavelengths, limiting the viability of the SCNN method implemented in this work. However, as the microscopy performance improves, it should be possible to apply the same methods as described here. Some work was done throughout this project to remove vignetting effects in the CHARM dataset. However, this was only pursued briefly, so information relating to it is attached in appendix \ref{sec:charm}
+% Other works which could benefit from the approaches described here include work on the CHARM project which is also taking place in Cambridge. This project is similar to TORPHY in that they are devleoping a new microscope for cancer diagnosis. CHARM are instead focussing on Raman, SGH and TPEF signals, as these have been shown to have some advantages over FTIR \cite{things}. Currently, data produced by that microscope is very noisy, and also only has intensity information at around 20 wavelengths, limiting the viability of the SCNN method implemented in this work. However, as the microscopy performance improves, it should be possible to apply the same methods as described here. Some work was done throughout this project to remove vignetting effects in the CHARM dataset. However, this was only pursued briefly, so information relating to it is attached in appendix \ref{sec:charm}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{Images/Trophy_pipeline.png}
-  \caption{From Trophy proposal \cite{eic_trophy_nodate}}
-  \label{fig:my-label}
-\end{figure}
-\subsection{Novelty of This Work}
-This work is focusses on developing a deep learning method for cancer identification from FTIR data which is both explainable and generalisable. This is achieved by first implementing a physically-motivated convolutional neural network, before then utilising a context-representative method to create a latent space from within which different clusters can be identified to elucidate the multiple pathways by which an individual classification such as cancer or non-cancer can be achieved. No other work has been found to use a similar method, although others have used the context-representative method to extract different spectral contributions within urine samples \cite{crine}. This work then further extends this method, by utilising the CRIME predictions of average spectra spectra and weightings describing the importance of each wavelength within those spectra, to then produce a simple weighted cosine similarity model for classification into non-cancer, hyperplastic, adenoma and cancerous classes.
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{Images/Trophy_pipeline.png}
+%   \caption{From Trophy proposal \cite{eic_trophy_nodate}}
+%   \label{fig:my-label}
+% \end{figure}
+\subsection{Novelty of this Work}
+In this work, I present three main contributions. Firstly, weakly-labelled data is used to train a scale-invariant convolutional neural network (SCNN) for the classification of colon cancer samples into four classes: non-cancer, hyperplastic, adenoma and cancerous. Secondly, I apply explainability methods on this model to elucidate the multiple pathways by which these classifications can be achieved. Finally, these explainability results are used to create a simple weighted cosine similarity model for classification into the same four classes. The SCNN and explainability methods are inspired by contributions by Zaki et al. \cite{zaki_explainable_2024}, who used a similar approach to identify  serotonin-dominated VAE latent space regions from the FTIR spectra of urine samples.
 
 %check how many results to include in intro
