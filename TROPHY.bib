@@ -412,6 +412,23 @@
   file = {/Users/thomas/Zotero/storage/GCR4C5NI/Costa - 1996 - PROBABILISTIC INTERPRETATION OF FEEDFORWARD NETWORK OUTPUTS, WITH RELATIONSHIPS TO STATISTICAL PREDI.pdf}
 }
 
+@misc{cui_generalized_2025,
+  title = {Generalized {{Kullback-Leibler Divergence Loss}}},
+  author = {Cui, Jiequan and Zhu, Beier and Xu, Qingshan and Tian, Zhuotao and Qi, Xiaojuan and Yu, Bei and Zhang, Hanwang and Hong, Richang},
+  year = {2025},
+  month = mar,
+  number = {arXiv:2503.08038},
+  eprint = {2503.08038},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2503.08038},
+  urldate = {2025-06-02},
+  abstract = {In this paper, we delve deeper into the Kullback-Leibler (KL) Divergence loss and mathematically prove that it is equivalent to the Decoupled Kullback-Leibler (DKL) Divergence loss that consists of (1) a weighted Mean Square Error (wMSE) loss and (2) a Cross-Entropy loss incorporating soft labels. Thanks to the decoupled structure of DKL loss, we have identified two areas for improvement. Firstly, we address the limitation of KL loss in scenarios like knowledge distillation by breaking its asymmetric optimization property along with a smoother weight function. This modification effectively alleviates convergence challenges in optimization, particularly for classes with high predicted scores in soft labels. Secondly, we introduce class-wise global information into KL/DKL to reduce bias arising from individual samples. With these two enhancements, we derive the Generalized Kullback-Leibler (GKL) Divergence loss and evaluate its effectiveness by conducting experiments on CIFAR-10/100, ImageNet, and vision-language datasets, focusing on adversarial training, and knowledge distillation tasks. Specifically, we achieve new state-of-the-art adversarial robustness on the public leaderboard -- RobustBench and competitive knowledge distillation performance across CIFAR/ImageNet models and CLIP models, demonstrating the substantial practical merits. Our code is available at https://github.com/jiequancui/DKL.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {/Users/thomas/Zotero/storage/SNL2J796/Cui et al. - 2025 - Generalized Kullback-Leibler Divergence Loss.pdf;/Users/thomas/Zotero/storage/4P8IQWAW/2503.html}
+}
+
 @article{cybenko_approximation_1989,
   title = {Approximation by Superpositions of a Sigmoidal Function},
   author = {Cybenko, G.},
@@ -1090,6 +1107,23 @@
   file = {/Users/thomas/Zotero/storage/GMGHCGGX/Kingma and Welling - 2022 - Auto-Encoding Variational Bayes.pdf;/Users/thomas/Zotero/storage/N5BHVJVE/1312.html}
 }
 
+@misc{kingma_auto-encoding_2022-1,
+  title = {Auto-{{Encoding Variational Bayes}}},
+  author = {Kingma, Diederik P. and Welling, Max},
+  year = {2022},
+  month = dec,
+  number = {arXiv:1312.6114},
+  eprint = {1312.6114},
+  primaryclass = {stat},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1312.6114},
+  urldate = {2025-06-02},
+  abstract = {How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions are two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/thomas/Zotero/storage/8YUINE6H/Kingma and Welling - 2022 - Auto-Encoding Variational Bayes.pdf;/Users/thomas/Zotero/storage/TJ2C4SWX/1312.html}
+}
+
 @article{kingma_introduction_2019,
   title = {An {{Introduction}} to {{Variational Autoencoders}}},
   author = {Kingma, Diederik P. and Welling, Max},
@@ -1374,6 +1408,23 @@
   abstract = {We present a new approach for calculating anharmonic corrections to vibrational frequency calculations. The vibrational wavefunction is modelled using translated Hermite functions thus allowing anharmonic effects to be incorporated directly into the wavefunction whilst still retaining the simplicity of the Hermite basis. We combine this new method with an optimised finite-difference grid for computing the necessary third and fourth nuclear derivatives of the energy. We compare our combined approach to existing anharmonic models---vibrational self-consistent field theory (VSCF), vibrational perturbation theory (VPT), and vibrational configuration interaction theory (VCI)---and find that it is more cost effective than these alternatives. This makes our method well-suited to computing anharmonic corrections for frequencies in medium-sized molecules.}
 }
 
+@misc{lundberg_unified_2017,
+  title = {A {{Unified Approach}} to {{Interpreting Model Predictions}}},
+  author = {Lundberg, Scott and Lee, Su-In},
+  year = {2017},
+  month = nov,
+  number = {arXiv:1705.07874},
+  eprint = {1705.07874},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1705.07874},
+  urldate = {2025-06-02},
+  abstract = {Understanding why a model makes a certain prediction can be as crucial as the prediction's accuracy in many applications. However, the highest accuracy for large modern datasets is often achieved by complex models that even experts struggle to interpret, such as ensemble or deep learning models, creating a tension between accuracy and interpretability. In response, various methods have recently been proposed to help users interpret the predictions of complex models, but it is often unclear how these methods are related and when one method is preferable over another. To address this problem, we present a unified framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identification of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties. The new class unifies six existing methods, notable because several recent methods in the class lack the proposed desirable properties. Based on insights from this unification, we present new methods that show improved computational performance and/or better consistency with human intuition than previous approaches.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/thomas/Zotero/storage/NPR6752V/Lundberg and Lee - 2017 - A Unified Approach to Interpreting Model Predictions.pdf;/Users/thomas/Zotero/storage/5IUBTH35/1705.html}
+}
+
 @article{lundervold_overview_2019,
   title = {An Overview of Deep Learning in Medical Imaging Focusing on {{MRI}}},
   author = {Lundervold, Alexander Selvikv{\aa}g and Lundervold, Arvid},
@@ -1545,6 +1596,23 @@
   langid = {english},
   keywords = {cancer marker,FTIR,machine learning algorithms,prostate cancer,Trophy,urine},
   file = {/Users/thomas/Zotero/storage/LPBU28WD/Mitura et al. - 2025 - Urine Analysed by FTIR, Chemometrics and Machine Learning Methods in Determination Spectroscopy Mark.pdf;/Users/thomas/Zotero/storage/EFTUZMYY/jbio.html}
+}
+
+@misc{mohamed_monte_2020,
+  title = {Monte {{Carlo Gradient Estimation}} in {{Machine Learning}}},
+  author = {Mohamed, Shakir and Rosca, Mihaela and Figurnov, Michael and Mnih, Andriy},
+  year = {2020},
+  month = sep,
+  number = {arXiv:1906.10652},
+  eprint = {1906.10652},
+  primaryclass = {stat},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1906.10652},
+  urldate = {2025-06-02},
+  abstract = {This paper is a broad and accessible survey of the methods we have at our disposal for Monte Carlo gradient estimation in machine learning and across the statistical sciences: the problem of computing the gradient of an expectation of a function with respect to parameters defining the distribution that is integrated; the problem of sensitivity analysis. In machine learning research, this gradient problem lies at the core of many learning problems, in supervised, unsupervised and reinforcement learning. We will generally seek to rewrite such gradients in a form that allows for Monte Carlo estimation, allowing them to be easily and efficiently used and analysed. We explore three strategies--the pathwise, score function, and measure-valued gradient estimators--exploring their historical development, derivation, and underlying assumptions. We describe their use in other fields, show how they are related and can be combined, and expand on their possible generalisations. Wherever Monte Carlo gradient estimators have been derived and deployed in the past, important advances have followed. A deeper and more widely-held understanding of this problem will lead to further advances, and it is these advances that we wish to support.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control,Statistics - Machine Learning},
+  file = {/Users/thomas/Zotero/storage/D9KDSZK2/Mohamed et al. - 2020 - Monte Carlo Gradient Estimation in Machine Learning.pdf;/Users/thomas/Zotero/storage/US329QBP/1906.html}
 }
 
 @article{mukherjee_how_nodate,
@@ -2245,6 +2313,23 @@
   file = {/Users/thomas/Zotero/storage/6897WYHL/Shenfield and Howarth - 2020 - A Novel Deep Learning Model for the Detection and Identification of Rolling Element-Bearing Faults.pdf}
 }
 
+@misc{shlens_notes_2014,
+  title = {Notes on {{Kullback-Leibler Divergence}} and {{Likelihood}}},
+  author = {Shlens, Jonathon},
+  year = {2014},
+  month = apr,
+  number = {arXiv:1404.2000},
+  eprint = {1404.2000},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1404.2000},
+  urldate = {2025-06-02},
+  abstract = {The Kullback-Leibler (KL) divergence is a fundamental equation of information theory that quantifies the proximity of two probability distributions. Although difficult to understand by examining the equation, an intuition and understanding of the KL divergence arises from its intimate relationship with likelihood theory. We discuss how KL divergence arises from likelihood theory in an attempt to provide some intuition and reserve a rigorous (but rather simple) derivation for the appendix. Finally, we comment on recent applications of KL divergence in the neural coding literature and highlight its natural application.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Information Theory,Mathematics - Information Theory},
+  file = {/Users/thomas/Zotero/storage/EGVNEDE9/Shlens - 2014 - Notes on Kullback-Leibler Divergence and Likelihood.pdf;/Users/thomas/Zotero/storage/CIYW7N7Q/1404.html}
+}
+
 @misc{shlens_tutorial_2014,
   title = {A {{Tutorial}} on {{Principal Component Analysis}}},
   author = {Shlens, Jonathon},
@@ -2899,6 +2984,20 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning,Trophy},
   file = {/Users/thomas/Zotero/storage/CNTPJMYK/Zhao et al. - 2018 - InfoVAE Information Maximizing Variational Autoencoders.pdf;/Users/thomas/Zotero/storage/GPQDAUF7/1706.html}
+}
+
+@incollection{zhou_ensemble_2009,
+  title = {Ensemble {{Learning}}},
+  booktitle = {Encyclopedia of {{Biometrics}}},
+  author = {Zhou, Zhi-Hua},
+  year = {2009},
+  pages = {270--273},
+  publisher = {Springer, Boston, MA},
+  doi = {10.1007/978-0-387-73003-5_293},
+  urldate = {2025-06-02},
+  abstract = {'Ensemble Learning' published in 'Encyclopedia of Biometrics'},
+  isbn = {978-0-387-73003-5},
+  langid = {english}
 }
 
 @article{zhou_wvale_2022,

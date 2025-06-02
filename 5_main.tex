@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=red]{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 % \usepackage[numbers,sort&compress]{natbib}
 % \setcitestyle{square}
 \usepackage{array}
@@ -16,14 +16,15 @@
 \usepackage{minted}          % syntax highlighting
 
 \usepackage[
-  style=numeric,            % or “authoryear”/“alphabetic”, depending on your taste
-  backend=biber,            % use biber to process the .bib file
-  maxbibnames=3,            % show at most 3 authors in the bibliography
-  minbibnames=1,            % if there’s 4+ authors, show “<3 names> et al.”
-  url=false,                % don’t print URLs
-  isbn=false,               % don’t print ISBNs
-  doi=true,                 % do print DOIs (if present)
-  date=year,                % only print the year (no month/day)
+  style=numeric-comp,
+  sorting=none,
+  backend=biber,
+  maxbibnames=3,
+  minbibnames=1,
+  url=false,
+  isbn=false,
+  doi=true,
+  date=year,
 ]{biblatex}
 
 \addbibresource{TROPHY.bib}
@@ -37,18 +38,31 @@
     style=xcode          % any Pygments style
 }
 
-\title{Deep Learning for Explainable Cancer Identification Spectroscopy}
-\author{Thomas Hartigan}
-\date{2025}
-
+\title{Deep Learning for Explainable Cancer Identification Using FTIR Spectroscopy}
+\author{Supervisor: Professor Pietro Lio \\ Candidate Number: 8254R}
+\date{4982 Words}
 
 \begin{document}
 
 \maketitle
+
+\begin{center}
+    \textbf{Declaration of Originality} \\[1em]
+    \textit{%
+    Except where specific reference is made to the work of others, this work is original
+    and has not been already submitted either wholly or in part to satisfy any degree
+    requirement at this or any other university.
+    }
+\end{center}
+
 \begin{abstract}
     \noindent
-    In this work, I have explored the use of machine learning and explainability methods in the context of colon-cancer tissue health assessment using fourier transform infrared spectroscopy over the spectral range $1000$-$1800$ cm$^{-1}$. For this, I implemented mean squared error (MSE), cosine similarity, principal component analysis (PCA) informed linear discriminant analysis (LDA), PCA informed extreme gradient boosting (XGB), standard XGB and ensemble scale-invariant convolutional neural network (SCNN) methods. Each of these were used for the classification of colon cancer samples as non-cancerous, hyperplastic, adenomatous, or cancerous. The SCNN method was found to be the most effective, achieving a weighted overall accuracy of  $58.7\pm3.7\%$ when performing four-class classification on a four-fold cross-validated test set. When mapped to binary classification, the SCNN also performed best and performed non-cancer vs cancer classification with an overall weighted accuracy of $83.2\pm5.9\%$. The explainability of this model was then explored using the context-representative interpretable model explanation (CRIME) framework. This was capable of extracting multiple contexts to explain each tissue classification. The spectra and weightings associated with these contexts were then used to create a weighted cosine similarity classification model (LCRIME). The best of these LCRIME models for four-class classification utilised a $20\%$ supervised convolutional encoder - transformer decoder variational autoencoder (VAE). This model was capable of reproducing SCNN classification predictions with an overall weighted accuracy of $47.5\pm7.6\%$. For binary classification, the best LCRIME model utilised a $20\%$ supervised transformer encoder-transformer decoder VAE and achieved an overall weighted accuracy of $74.7\pm 10.9\%$ on the same test set.
+    In this work, I have explored the use of machine learning and explainability methods in the context of colon-cancer tissue health assessment using Fourier transform infrared spectroscopy over the spectral range $1000$-$1800$ cm$^{-1}$. For this, I implemented mean squared error (MSE), cosine similarity, principal component analysis (PCA) informed linear discriminant analysis (LDA), PCA informed extreme gradient boosting (XGB), standard XGB and ensemble scale-invariant convolutional neural network (SCNN) methods. Each of these were used for the classification of colon cancer samples as non-cancerous, hyperplastic, adenomatous, or cancerous. The SCNN method was found to be the most effective, achieving an overall weighted accuracy (OWA) of $58.7\pm3.7\%$ when performing four-class classification on a four-fold cross-validated test set. When mapped to binary classification, the SCNN also performed best and performed non-cancer vs cancer classification with an OWA of $83.2\pm5.9\%$. The explainability of this model was then explored using the context-representative interpretable model explanation (CRIME) framework. This was capable of extracting multiple contexts to explain each tissue classification. The spectra and weightings associated with these contexts were then used to create a weighted cosine similarity classification model (LCRIME). The best of these LCRIME models for four-class classification utilised a $20\%$ supervised convolutional encoder - transformer decoder variational autoencoder (VAE). This model was capable of reproducing SCNN classification predictions with an OWA of $47.5\pm7.6\%$. For binary classification, the best LCRIME model utilised a $20\%$ supervised transformer encoder-transformer decoder VAE and achieved an OWA of $74.7\pm 10.9\%$ on the same test set.
 \end{abstract}
+
+\begin{center}
+    All training and test runs be viewed on Weights and Biases at \href{https://wandb.ai/tjh200-university-of-cambridge/projects}{this link}.
+\end{center}
 \newpage
 \tableofcontents
 \newpage
@@ -56,9 +70,10 @@
 \input{0_Introduction}
 \newpage
 \input{1_Methods}
-
+% \newpage
 \input{3_Results}
 % \input{4_Discussion}
+\newpage
 \input{5_Conclusions}
 
 

@@ -9,7 +9,7 @@ Equation (\ref{eq:intractable}), however is normally intractable. To overcome th
 \begin{equation}
     p_\theta(\boldsymbol{x}) = \frac{p_\theta(\boldsymbol {z})p_\theta(\boldsymbol{x} | \boldsymbol{z})}{p_\theta(\boldsymbol{z}|\boldsymbol{x})}=\frac{p_\theta(\boldsymbol{x}, \boldsymbol{z})}{p_\theta(\boldsymbol{z}|\boldsymbol{x})}.
 \end{equation}
-Therefore, we can also approach the problem by attempting to approximate the posterior $p(\boldsymbol{z}|\boldsymbol{x})$ by an amortised variational distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ with parameters $\phi$. By then expanding the Kullback-Leibler (KL) divergence \cite{}: 
+Therefore, we can also approach the problem by attempting to approximate the posterior $p(\boldsymbol{z}|\boldsymbol{x})$ by an amortised variational distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ with parameters $\phi$. By then expanding the Kullback-Leibler (KL) divergence \cite{shlens_notes_2014, cui_generalized_2025}: 
 \begin{equation}
     D_\text{KL}(q|p)=\int q(\boldsymbol{z})\log\left(\frac{q(\boldsymbol{z})}{p(\boldsymbol{z})}\right)d\boldsymbol{z}\ge 0,
     \label{eq:kl_div}
@@ -19,11 +19,11 @@ which measures the information entropy of $q_\phi$ relative to $p_\theta$, we ca
     \log p_\theta(\boldsymbol{x}) &= D_\text{KL}(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z}|\boldsymbol{x}))+\mathbb{E}_{q_{\phi(\boldsymbol{z}|\boldsymbol{x})}}[\log p_\theta(\boldsymbol{z},\boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})] \\
     \implies \log p_\theta(\boldsymbol{x}) & \ge \mathbb{E}_{q_\phi(\boldsymbol{z}|\boldsymbol{x})}\left[\log p_\theta(\boldsymbol{z},\boldsymbol{x}) - \log q_\phi(\boldsymbol {z}|\boldsymbol{x})\right]=\text{ELBO},
 \end{align}
-where the term on the RHS of the inequality is the evidence lower bound (ELBO) \cite{}. The ELBO gives a lower bound on the marginal likelihood, so maximising it also minimises the KL divergence. This maximisation, however is non-trivial because the $\phi$ derivative of the ELBO is intractable and non-estimable. To overcome this, we employ the reparameterisation trick \cite{}, where we deterministically re-express $\boldsymbol{z}$ as:
+where the term on the RHS of the inequality is the evidence lower bound (ELBO) \cite{kingma_auto-encoding_2022}. The ELBO gives a lower bound on the marginal likelihood, so maximising it also minimises the KL divergence. This maximisation, however is non-trivial because the $\phi$ derivative of the ELBO is intractable and non-estimable. To overcome this, we employ the reparameterisation trick \cite{kingma_introduction_2019}, where we deterministically re-express $\boldsymbol{z}$ as:
 \begin{equation}
     \boldsymbol{z} = g(\phi, \boldsymbol{x},\boldsymbol{\epsilon}),
 \end{equation}
-where $\boldsymbol{\epsilon}$ is a random variable generated through a Gaussian distribution with mean $\boldsymbol{0}$ and unit variance \cite{SGVB_gradient_variational_bayes}. Finally, we can estimate the gradient of the negative $-\text{ELBO}=\mathcal L(\boldsymbol{x})$ (to perform gradient descent) as:
+where $\boldsymbol{\epsilon}$ is a random variable generated through a Gaussian distribution with mean $\boldsymbol{0}$ and unit variance \cite{kingma_auto-encoding_2022}. Finally, we can estimate the gradient of the negative $-\text{ELBO}=\mathcal L(\boldsymbol{x})$ (to perform gradient descent) as:
 \begin{align}
     \mathcal L(\boldsymbol{x}) &= -\mathbb{E}_{p(\epsilon)}\left[\log p_\theta(\boldsymbol{z}, \boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})\right]\\
     \implies \nabla_{\theta, \phi}\mathcal L(\boldsymbol{x})&=-\frac{1}{N}\sum_{i=1}^N\nabla_{\theta,\phi}\left[\log p_\theta(\boldsymbol{z}, \boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})\right],
@@ -32,11 +32,11 @@ where $N$ is the number of samples in a batch. This formulation allows us to app
 \begin{equation}
     \text{ELBO} = \mathbb{E}_{p(\epsilon)}\left[\log p_\theta(\boldsymbol{x}|\boldsymbol{z})\right]-D_\text{KL}\left(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z})\right).
 \end{equation}
-If we then assume the prior $p_\theta(\boldsymbol{z})=\mathcal{N}(\boldsymbol{0},\boldsymbol{I})$, and that the distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ is a multivariate Gaussian with mean $\boldsymbol{\mu}$ and variance $\boldsymbol{\sigma}$ where $\boldsymbol{\mu}, \boldsymbol{\sigma}=f(\boldsymbol{x})$, we can rewrite the KL divergence \ref{eq:kl_div} as: 
+If we then assume the prior $p_\theta(\boldsymbol{z})\sim\mathcal{N}(\boldsymbol{0},\boldsymbol{I})$, and that the distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ is a multivariate Gaussian with mean $\boldsymbol{\mu}$ and variance $\boldsymbol{\sigma}$ where $\boldsymbol{\mu}, \boldsymbol{\sigma}=f(\boldsymbol{x})$, we can rewrite the KL divergence (\ref{eq:kl_div}) as: 
 \begin{equation}
     D_\text{KL}(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z}))=-\frac{1}{2} \left(1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right).
 \end{equation}
-Furthermore, we use single-sample monte carlo estimation \cite{} to find the expectation of the log-likelihood term subject to the assumption that $p_\theta(\boldsymbol{x}|\boldsymbol{z})=\mathcal N(\boldsymbol{y}_\mu, 1)$, which reduces to the form:
+Furthermore, we use single-sample monte carlo estimation \cite{mohamed_monte_2020} to find the expectation of the log-likelihood term subject to the assumption that $p_\theta(\boldsymbol{x}|\boldsymbol{z})=\mathcal N(\boldsymbol{y}_\mu, 1)$, which reduces to the form:
 \begin{equation}
     \log p_{\theta}(\boldsymbol{x}|\boldsymbol{z})=-\frac{1}{2}\left(\boldsymbol{x}-\boldsymbol{y}_\mu\right)^2=-\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu).
 \end{equation}
@@ -44,4 +44,4 @@ Hence, we can optimise such a VAE by minimising the negative ELBO:
 \begin{equation}
     \mathcal L(\boldsymbol{x}) = -\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu)+\beta \frac{1}{2}\left[1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right],
 \end{equation}
-which is adopted as the unsupervised VAE loss function throughout this work, where $\beta$ is a tunable parameter \cite{beta-vae}.
+which is adopted as the unsupervised VAE loss function throughout this work, where $\beta$ is a tunable parameter \cite{higgins_beta-vae_2017}.

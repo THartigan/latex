@@ -1,45 +1,45 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Previous Works}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Novelty of this Work}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Theory and Methods}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}FTIR Spectroscopy}{5}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}FTIR Dataset Collection}{6}{subsubsection.2.1.1}%
+\contentsline {section}{\numberline {2}Theory and Methods}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}FTIR Spectroscopy}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}FTIR Dataset Collection}{4}{subsubsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.2}Cross-Validation Approach}{6}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Baseline Classification Methods}{6}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Machine Learning (ML) For Classification}{7}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Neural Networks}{8}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}A Scale-Adjusting Convolutional Neural Network (SCNN)}{8}{subsubsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.6}Explainability}{8}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Local Interpretable Model-Agnostic Explanations (LIME)}{8}{subsubsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{11}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.5}Neural Networks}{7}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}A Scale-Adjusting Convolutional Neural Network (SCNN)}{7}{subsubsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.6}Explainability}{9}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Local Interpretable Model-Agnostic Explanations (LIME)}{9}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Context Representative Interpretable Model-Agnostic Explanations (CRIME)}{10}{subsubsection.2.6.2}%
 \contentsline {subsubsection}{\numberline {2.6.3}Variational Autoencoders (VAE)}{11}{subsubsection.2.6.3}%
-\contentsline {subsubsection}{\numberline {2.6.4}CRIME with Linear Classification}{14}{subsubsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.7}Evaluation Metrics}{14}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}Binary Classification Methodology}{14}{subsubsection.2.7.1}%
-\contentsline {section}{\numberline {3}Results and Discussion}{15}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{15}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Classification Methods}{16}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Traditional Classification Methods}{16}{subsubsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.3}A Scanning Convolutional Neural Network Approach}{16}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}CRIME with Linear Classification}{12}{subsubsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.7}Evaluation Metrics}{12}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Binary Classification Methodology}{12}{subsubsection.2.7.1}%
+\contentsline {section}{\numberline {3}Results and Discussion}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dataset Analysis}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Classification Methods}{15}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Traditional Classification Methods}{15}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}A Scale-Invariant Convolutional Neural Network Approach}{15}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}SCNN Performance Investigation}{18}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}LIME Explanations}{20}{subsubsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.5}CRIME Analysis}{23}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.4.1}LIME Explanations}{19}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}CRIME Analysis}{22}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}CRIME Predictions}{24}{subsubsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.6}Applicability in Physics}{29}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Conclusions}{29}{section.4}%
-\contentsline {section}{\numberline {A}Standard Machine Learning Methods}{30}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Principal Component Analysis (PCA)}{30}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Linear Discriminant Analysis (LDA)}{30}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Extreme Gradient Boosting (XGBoost or XGB)}{32}{subsection.A.3}%
-\contentsline {section}{\numberline {B}ML Connection Layers}{33}{appendix.B}%
-\contentsline {paragraph}{Fully Connected Layers}{33}{section*.2}%
-\contentsline {paragraph}{Convolutional Layers}{33}{section*.3}%
-\contentsline {paragraph}{Transformer Layers}{33}{section*.4}%
-\contentsline {section}{\numberline {C}Variational Autoencoder Derivation}{34}{appendix.C}%
-\contentsline {section}{\numberline {D}Activation Functions}{35}{appendix.D}%
-\contentsline {section}{\numberline {E}Traditional ML Classification Performance With 10-Fold Cross-Validation}{35}{appendix.E}%
-\contentsline {section}{\numberline {F}Relevant Code}{36}{appendix.F}%
-\contentsline {subsection}{\numberline {F.1}Scale-Adjusting Convolutional Neural Network}{36}{subsection.F.1}%
-\contentsline {subsection}{\numberline {F.2}VAE Loss Functions}{38}{subsection.F.2}%
-\contentsline {subsection}{\numberline {F.3}Reparameterisation Trick}{38}{subsection.F.3}%
-\contentsline {section}{\numberline {G}Full Classification Results}{38}{appendix.G}%
+\contentsline {subsection}{\numberline {3.6}Applicability in Physics}{24}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Conclusions}{28}{section.4}%
+\contentsline {section}{\numberline {A}Standard Machine Learning Methods}{34}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Principal Component Analysis (PCA)}{34}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Linear Discriminant Analysis (LDA)}{34}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Extreme Gradient Boosting (XGBoost or XGB)}{36}{subsection.A.3}%
+\contentsline {section}{\numberline {B}ML Connection Layers}{37}{appendix.B}%
+\contentsline {paragraph}{Fully Connected Layers}{37}{section*.3}%
+\contentsline {paragraph}{Convolutional Layers}{37}{section*.4}%
+\contentsline {paragraph}{Transformer Layers}{37}{section*.5}%
+\contentsline {section}{\numberline {C}Variational Autoencoder Derivation}{38}{appendix.C}%
+\contentsline {section}{\numberline {D}Activation Functions}{39}{appendix.D}%
+\contentsline {section}{\numberline {E}Traditional ML Classification Performance With 10-Fold Cross-Validation}{39}{appendix.E}%
+\contentsline {section}{\numberline {F}Relevant Code}{40}{appendix.F}%
+\contentsline {subsection}{\numberline {F.1}Scale-Adjusting Convolutional Neural Network}{40}{subsection.F.1}%
+\contentsline {subsection}{\numberline {F.2}VAE Loss Functions}{42}{subsection.F.2}%
+\contentsline {subsection}{\numberline {F.3}Reparameterisation Trick}{42}{subsection.F.3}%
+\contentsline {section}{\numberline {G}Full Classification Results}{42}{appendix.G}%

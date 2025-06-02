@@ -55,7 +55,7 @@ subject to the regularisation objective
 \begin{equation}
     \mathcal L (\phi)= \sum_i l(\hat y_i, y_i)+\sum_k\Omega(f_k).
 \end{equation}
-Here, $l$ is a differentiable loss between the prediction $\hat y_i$ and target value $y_i$, and $\Omega(f)$ is a complexity penalising regularisation term \cite{chen_xgboost_2016}. We assemble the ensemble of trees iteratively. At each iteration $t$, we add $f_t$ to the prediction at the previous iteration and minimise
+Here, $l$ is a differentiable loss between the prediction $\hat y_i$ and target value $y_i$, and $\Omega(f)$ is a complexity penalising regularisation term \cite{chen_xgboost_2016}. We assemble the ensemble of trees iteratively. At each iteration, $t$, we add $f_t$ to the prediction at the previous iteration and minimise
 \begin{align}
     \mathcal L^{(t)}&=\sum_{i=1}^nl(y_i, \hat y_i^{(t-1)}+f_t(\boldsymbol{x}_i))+\Omega(f_t)\\
     &\approx \sum_{i=1}^n \left[l(y_i, \hat y^{(t-1)})+g_i f_t (\boldsymbol{x}_i)+\frac{1}{2} h_if_t^2(\boldsymbol{x}_i)\right]+\Omega(f_t),

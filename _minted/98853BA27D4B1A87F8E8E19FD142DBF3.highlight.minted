@@ -1,16 +1,19 @@
 \begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{c+c1}{\PYGZsh{} Incorporate the Kullback\PYGZhy{}Leibler loss prevents the divergence of probability distributions}
+\PYG{c+c1}{\PYGZsh{} Incorporate the Kullback\PYGZhy{}Leibler loss to prevent the divergence of probability distributionss}
 \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{kl\PYGZus{}mse\PYGZus{}loss}\PYG{p}{(}\PYG{n}{recon\PYGZus{}x}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{mu}\PYG{p}{,} \PYG{n}{logvar}\PYG{p}{,} \PYG{n}{beta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{:}
     \PYG{n}{mse} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{functional}\PYG{o}{.}\PYG{n}{mse\PYGZus{}loss}\PYG{p}{(}\PYG{n}{recon\PYGZus{}x}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{reduction}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sum}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{o}{/} \PYG{n}{x}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
     \PYG{n}{kl} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{l+m+mi}{1} \PYG{o}{+} \PYG{n}{logvar} \PYG{o}{\PYGZhy{}} \PYG{n}{mu}\PYG{o}{.}\PYG{n}{pow}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{logvar}\PYG{o}{.}\PYG{n}{exp}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)} \PYG{o}{/} \PYG{n}{x}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{o}{*} \PYG{n}{beta}
     \PYG{k}{return} \PYG{n}{mse} \PYG{o}{+} \PYG{n}{kl}\PYG{p}{,} \PYG{n}{mse}\PYG{p}{,} \PYG{n}{kl}
 
+\PYG{c+c1}{\PYGZsh{} The unsupervised ELBO loss function}
 \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{elbo\PYGZus{}supervised}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{x\PYGZus{}rec}\PYG{p}{,} \PYG{n}{mu}\PYG{p}{,} \PYG{n}{logvar}\PYG{p}{,} \PYG{n}{y\PYGZus{}logits}\PYG{p}{,} \PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{beta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{label\PYGZus{}smoothing}\PYG{o}{=}\PYG{l+m+mf}{0.25}\PYG{p}{)}\PYG{p}{:}
     \PYG{n}{mse} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{functional}\PYG{o}{.}\PYG{n}{mse\PYGZus{}loss}\PYG{p}{(}\PYG{n}{x\PYGZus{}rec}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{reduction}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sum}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{o}{/} \PYG{n}{x}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
     \PYG{n}{kl} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{l+m+mi}{1} \PYG{o}{+} \PYG{n}{logvar} \PYG{o}{\PYGZhy{}} \PYG{n}{mu}\PYG{o}{.}\PYG{n}{pow}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{logvar}\PYG{o}{.}\PYG{n}{exp}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)} \PYG{o}{/} \PYG{n}{x}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
-    \PYG{n}{ce} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{functional}\PYG{o}{.}\PYG{n}{cross\PYGZus{}entropy}\PYG{p}{(}\PYG{n}{y\PYGZus{}logits}\PYG{p}{,} \PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{label\PYGZus{}smoothing}\PYG{o}{=}\PYG{n}{label\PYGZus{}smoothing}\PYG{p}{,} \PYG{n}{reduction}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sum}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{o}{/} \PYG{n}{x}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n}{ce} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{functional}\PYG{o}{.}\PYG{n}{cross\PYGZus{}entropy}\PYG{p}{(}\PYG{n}{y\PYGZus{}logits}\PYG{p}{,} \PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{label\PYGZus{}smoothing}\PYG{o}{=}\PYG{n}{label\PYGZus{}smoothing}\PYG{p}{,}
+                                    \PYG{n}{reduction}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sum}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{o}{/} \PYG{n}{x}\PYG{o}{.}\PYG{n}{size}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
     \PYG{k}{return} \PYG{n}{mse} \PYG{o}{+} \PYG{n}{kl}\PYG{o}{*}\PYG{n}{beta}\PYG{p}{,} \PYG{n}{mse}\PYG{p}{,} \PYG{n}{kl}\PYG{p}{,} \PYG{n}{ce}
 
+\PYG{c+c1}{\PYGZsh{} The supervised ELBO loss function}
 \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{elbo\PYGZus{}unsupervised}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{model}\PYG{p}{,} \PYG{n}{n\PYGZus{}classes}\PYG{o}{=}\PYG{l+m+mi}{4}\PYG{p}{,} \PYG{n}{beta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{:}
     \PYG{n}{logits}\PYG{p}{,} \PYG{n}{q\PYGZus{}y}\PYG{p}{,} \PYG{n}{mu}\PYG{p}{,} \PYG{n}{logvar}\PYG{p}{,} \PYG{n}{hidden} \PYG{o}{=} \PYG{n}{model}\PYG{o}{.}\PYG{n}{infer}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
     \PYG{n}{elbo\PYGZus{}y} \PYG{o}{=} \PYG{p}{[}\PYG{p}{]}

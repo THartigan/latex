@@ -172,7 +172,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>nty</bcf:value>
+      <bcf:value>none</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -643,6 +643,7 @@
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">subentrycomp</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
@@ -725,6 +726,7 @@
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">subentrycomp</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
@@ -814,6 +816,7 @@
     <bcf:option datatype="boolean" backendout="1">eprint</bcf:option>
     <bcf:option datatype="boolean" backendout="1">related</bcf:option>
     <bcf:option datatype="boolean" backendout="1">subentry</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">subentrycomp</bcf:option>
     <bcf:option datatype="boolean" backendout="1">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer" backendin="maxcitenames,maxbibnames,maxsortnames">maxnames</bcf:option>
     <bcf:option datatype="integer" backendin="mincitenames,minbibnames,minsortnames">minnames</bcf:option>
@@ -2394,101 +2397,100 @@
     <bcf:citekey order="12" intorder="1">tomas_detection_2022</bcf:citekey>
     <bcf:citekey order="13" intorder="1">he_accurate_2022</bcf:citekey>
     <bcf:citekey order="14" intorder="1">tomas_detection_2022</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">tomas_detection_2022</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">zaki_explainable_2024</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">su_fourier_2020</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">atkins_atkins_2022</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">lin_calculating_2008</bcf:citekey>
-    <bcf:citekey order="19" intorder="2">berthomieu_fourier_2009</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">gong_application_2024</bcf:citekey>
-    <bcf:citekey order="20" intorder="2">veit_predicting_2020</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">zaki_explainable_2024</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">su_fourier_2020</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">atkins_atkins_2022</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">lin_calculating_2008</bcf:citekey>
+    <bcf:citekey order="18" intorder="2">berthomieu_fourier_2009</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">gong_application_2024</bcf:citekey>
+    <bcf:citekey order="19" intorder="2">veit_predicting_2020</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">berthomieu_fourier_2009</bcf:citekey>
     <bcf:citekey order="21" intorder="1">berthomieu_fourier_2009</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">berthomieu_fourier_2009</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">griffiths_fourier_1983</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">su_fourier_2020</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">wolpert_infrared_2006</bcf:citekey>
-    <bcf:citekey order="25" intorder="2">torii_modeling_2024</bcf:citekey>
-    <bcf:citekey order="25" intorder="3">czowski_cancer_2020</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">lasalvia_discrimination_2023</bcf:citekey>
-    <bcf:citekey order="26" intorder="2">talari_advances_2017</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">lasalvia_discrimination_2023</bcf:citekey>
-    <bcf:citekey order="27" intorder="2">talari_advances_2017</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">wolpert_infrared_2006</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">wolpert_infrared_2006</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">noauthor_minerva_nodate</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">nallala_high-resolution_2016</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">nallala_high-resolution_2016</bcf:citekey>
-    <bcf:citekey order="32" intorder="2">mathieson_why_2020</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">kohavi_study_2001</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">t_r_stratified_2023</bcf:citekey>
-    <bcf:citekey order="34" intorder="2">gunopulos_stratification_2011</bcf:citekey>
-    <bcf:citekey order="34" intorder="3">szymanski_network_2017</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">villazon_cancer_2025</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">fisher_use_1936</bcf:citekey>
-    <bcf:citekey order="36" intorder="2">ghojogh_linear_2019</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">chen_xgboost_2016</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">pedregosa_scikit-learn_2011</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">chen_xgboost_2016</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">schmidhuber_deep_2015</bcf:citekey>
-    <bcf:citekey order="40" intorder="2">goodfellow_deep_2016</bcf:citekey>
-    <bcf:citekey order="40" intorder="3">lussier_deep_2020</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">rumelhart_learning_1986</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">ruder_overview_2017</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">goodfellow_deep_2016</bcf:citekey>
-    <bcf:citekey order="43" intorder="2">kukacka_regularization_2017</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">kingma_adam_2017</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">biewald_experiment_2020</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">alzubaidi_review_2021</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">shenfield_novel_2020</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">dumoulin_guide_2018</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">vaswani_attention_2023</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">dosovitskiy_image_2021</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">alzubaidi_review_2021</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">shenfield_novel_2020</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">dumoulin_guide_2018</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">vaswani_attention_2023</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">dosovitskiy_image_2021</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">zaki_explainable_2024</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">song_fine-grained_nodate</bcf:citekey>
-    <bcf:citekey order="57" intorder="2">li_learning_2020</bcf:citekey>
-    <bcf:citekey order="57" intorder="3">zaki_explainable_2024</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">yu_three-parameter_2021</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">griffiths_fourier_1983</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">su_fourier_2020</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">wolpert_infrared_2006</bcf:citekey>
+    <bcf:citekey order="24" intorder="2">torii_modeling_2024</bcf:citekey>
+    <bcf:citekey order="24" intorder="3">czowski_cancer_2020</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">lasalvia_discrimination_2023</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">talari_advances_2017</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">wolpert_infrared_2006</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">noauthor_minerva_nodate</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">nallala_high-resolution_2016</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">nallala_high-resolution_2016</bcf:citekey>
+    <bcf:citekey order="29" intorder="2">mathieson_why_2020</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">kohavi_study_2001</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">t_r_stratified_2023</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">gunopulos_stratification_2011</bcf:citekey>
+    <bcf:citekey order="31" intorder="3">szymanski_network_2017</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">villazon_cancer_2025</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">fisher_use_1936</bcf:citekey>
+    <bcf:citekey order="33" intorder="2">ghojogh_linear_2019</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">chen_xgboost_2016</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">pedregosa_scikit-learn_2011</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">chen_xgboost_2016</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">schmidhuber_deep_2015</bcf:citekey>
+    <bcf:citekey order="37" intorder="2">goodfellow_deep_2016</bcf:citekey>
+    <bcf:citekey order="37" intorder="3">lussier_deep_2020</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">rumelhart_learning_1986</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">ruder_overview_2017</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">goodfellow_deep_2016</bcf:citekey>
+    <bcf:citekey order="40" intorder="2">kukacka_regularization_2017</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">kingma_adam_2017</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">biewald_experiment_2020</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">alzubaidi_review_2021</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">shenfield_novel_2020</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">dumoulin_guide_2018</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">vaswani_attention_2023</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">dosovitskiy_image_2021</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">alzubaidi_review_2021</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">shenfield_novel_2020</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">dumoulin_guide_2018</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">vaswani_attention_2023</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">dosovitskiy_image_2021</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">zaki_explainable_2024</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">song_fine-grained_nodate</bcf:citekey>
+    <bcf:citekey order="54" intorder="2">li_learning_2020</bcf:citekey>
+    <bcf:citekey order="54" intorder="3">zaki_explainable_2024</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">yu_three-parameter_2021</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">ribeiro_why_2016</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">samuels_one-hot_2024</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">shan_targeted_2019</bcf:citekey>
+    <bcf:citekey order="58" intorder="2">ribeiro_why_2016</bcf:citekey>
     <bcf:citekey order="59" intorder="1">ribeiro_why_2016</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">samuels_one-hot_2024</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">shan_targeted_2019</bcf:citekey>
-    <bcf:citekey order="61" intorder="2">ribeiro_why_2016</bcf:citekey>
-    <bcf:citekey order="61" intorder="3">why</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">ribeiro_marcotcrlime_2025</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">ribeiro_why_2016</bcf:citekey>
     <bcf:citekey order="62" intorder="1">ribeiro_why_2016</bcf:citekey>
-    <bcf:citekey order="63" intorder="1">ribeiro_marcotcrlime_2025</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">ribeiro_why_2016</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">ribeiro_why_2016</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">zaki_explainable_2024</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">kingma_auto-encoding_2022</bcf:citekey>
-    <bcf:citekey order="67" intorder="2">kingma_semi-supervised_2014</bcf:citekey>
-    <bcf:citekey order="68" intorder="1">jin_k-means_2011</bcf:citekey>
-    <bcf:citekey order="69" intorder="1">higgins_beta-vae_2017</bcf:citekey>
-    <bcf:citekey order="70" intorder="1">kingma_introduction_nodate</bcf:citekey>
-    <bcf:citekey order="71" intorder="1">kingma_introduction_nodate</bcf:citekey>
-    <bcf:citekey order="72" intorder="1">kingma_semi-supervised_2014</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">kingma_semi-supervised_2014</bcf:citekey>
-    <bcf:citekey order="73" intorder="2">mao_cross-entropy_2023</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">zaki_explainable_2024</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">nallala_high-resolution_2016</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">castagnos_simple_2022</bcf:citekey>
-    <bcf:citekey order="76" intorder="2">polat_class_2025</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">xia_towards_2025</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">noauthor_ultrafast_2022</bcf:citekey>
-    <bcf:citekey order="79" intorder="1">cheng_variational_2023</bcf:citekey>
-    <bcf:citekey order="79" intorder="2">cerri_variational_2019</bcf:citekey>
-    <bcf:citekey order="79" intorder="3">alves_variational_2024</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">andika_accelerating_2025</bcf:citekey>
-    <bcf:citekey order="80" intorder="2">leung_variational_2023</bcf:citekey>
-    <bcf:citekey order="80" intorder="3">gagliano_physics-informed_2023</bcf:citekey>
-    <bcf:citekey order="81" intorder="1">gabbard_bayesian_2022</bcf:citekey>
-    <bcf:citekey order="81" intorder="2">bayley_rapid_2022</bcf:citekey>
-    <bcf:citekey order="81" intorder="3">bayley_robust_2020</bcf:citekey>
-    <bcf:citekey order="81" intorder="4">yamamoto_use_2020</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">lasalvia_discrimination_2023</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">zaki_explainable_2024</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">kingma_auto-encoding_2022</bcf:citekey>
+    <bcf:citekey order="64" intorder="2">kingma_semi-supervised_2014</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">jin_k-means_2011</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">higgins_beta-vae_2017</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">kingma_introduction_nodate</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">kingma_introduction_nodate</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">kingma_semi-supervised_2014</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">kingma_semi-supervised_2014</bcf:citekey>
+    <bcf:citekey order="70" intorder="2">mao_cross-entropy_2023</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">zaki_explainable_2024</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">nallala_high-resolution_2016</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">castagnos_simple_2022</bcf:citekey>
+    <bcf:citekey order="73" intorder="2">polat_class_2025</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">xia_towards_2025</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">noauthor_ultrafast_2022</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">cheng_variational_2023</bcf:citekey>
+    <bcf:citekey order="76" intorder="2">cerri_variational_2019</bcf:citekey>
+    <bcf:citekey order="76" intorder="3">alves_variational_2024</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">andika_accelerating_2025</bcf:citekey>
+    <bcf:citekey order="77" intorder="2">leung_variational_2023</bcf:citekey>
+    <bcf:citekey order="77" intorder="3">gagliano_physics-informed_2023</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">gabbard_bayesian_2022</bcf:citekey>
+    <bcf:citekey order="78" intorder="2">bayley_rapid_2022</bcf:citekey>
+    <bcf:citekey order="78" intorder="3">bayley_robust_2020</bcf:citekey>
+    <bcf:citekey order="78" intorder="4">yamamoto_use_2020</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">lasalvia_discrimination_2023</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">polat_class_2025</bcf:citekey>
+    <bcf:citekey order="80" intorder="2">castagnos_simple_2022</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">zhou_ensemble_2009</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">lundberg_unified_2017</bcf:citekey>
     <bcf:citekey order="83" intorder="1">wold_principal_nodate</bcf:citekey>
     <bcf:citekey order="84" intorder="1">shlens_tutorial_2014</bcf:citekey>
     <bcf:citekey order="85" intorder="1">fisher_use_1936</bcf:citekey>
@@ -2505,56 +2507,40 @@
     <bcf:citekey order="95" intorder="1">chen_xgboost_2016</bcf:citekey>
     <bcf:citekey order="96" intorder="1">bridle_probabilistic_1990</bcf:citekey>
     <bcf:citekey order="97" intorder="1">chen_xgboost_2016</bcf:citekey>
-    <bcf:citekey order="98" intorder="1">chen_xgboost_2016</bcf:citekey>
-    <bcf:citekey order="99" intorder="1">minsky_perceptrons_2017</bcf:citekey>
-    <bcf:citekey order="99" intorder="2">rosenblatt_principles_nodate</bcf:citekey>
-    <bcf:citekey order="100" intorder="1">rosenblatt_principles_nodate</bcf:citekey>
-    <bcf:citekey order="101" intorder="1">cybenko_approximation_1989</bcf:citekey>
-    <bcf:citekey order="101" intorder="2">leshno_multilayer_1993</bcf:citekey>
-    <bcf:citekey order="101" intorder="3">hornik_multilayer_1989</bcf:citekey>
-    <bcf:citekey order="102" intorder="1">kiranyaz_1d_2019</bcf:citekey>
-    <bcf:citekey order="102" intorder="2">lecun_gradient-based_1998</bcf:citekey>
-    <bcf:citekey order="102" intorder="3">goodfellow_deep_2016</bcf:citekey>
-    <bcf:citekey order="103" intorder="1">dumoulin_guide_2018</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">minsky_perceptrons_2017</bcf:citekey>
+    <bcf:citekey order="98" intorder="2">rosenblatt_principles_nodate</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">rosenblatt_principles_nodate</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">cybenko_approximation_1989</bcf:citekey>
+    <bcf:citekey order="100" intorder="2">leshno_multilayer_1993</bcf:citekey>
+    <bcf:citekey order="100" intorder="3">hornik_multilayer_1989</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">kiranyaz_1d_2019</bcf:citekey>
+    <bcf:citekey order="101" intorder="2">lecun_gradient-based_1998</bcf:citekey>
+    <bcf:citekey order="101" intorder="3">goodfellow_deep_2016</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">dumoulin_guide_2018</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">vaswani_attention_2023</bcf:citekey>
     <bcf:citekey order="104" intorder="1">vaswani_attention_2023</bcf:citekey>
-    <bcf:citekey order="105" intorder="1">vaswani_attention_2023</bcf:citekey>
-    <bcf:citekey order="106" intorder="1">SGVB_gradient_variational_bayes</bcf:citekey>
-    <bcf:citekey order="107" intorder="1">beta-vae</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">shlens_notes_2014</bcf:citekey>
+    <bcf:citekey order="105" intorder="2">cui_generalized_2025</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">kingma_auto-encoding_2022</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">kingma_introduction_2019</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">kingma_auto-encoding_2022</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">mohamed_monte_2020</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">higgins_beta-vae_2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="nty">
+  <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    <bcf:sort order="2">
+      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="nty/global//global/global/global"
+                name="none/global//global/global/global"
                 type="entry"
-                sortingtemplatename="nty"
+                sortingtemplatename="none"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"
