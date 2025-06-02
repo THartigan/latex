@@ -1,8 +1,8 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=red]{hyperref}
-\usepackage[numbers,sort&compress]{natbib}
-\setcitestyle{square}
+% \usepackage[numbers,sort&compress]{natbib}
+% \setcitestyle{square}
 \usepackage{array}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -14,6 +14,19 @@
   left=2.5cm, right=2.5cm
 ]{geometry}
 \usepackage{minted}          % syntax highlighting
+
+\usepackage[
+  style=numeric,            % or “authoryear”/“alphabetic”, depending on your taste
+  backend=biber,            % use biber to process the .bib file
+  maxbibnames=3,            % show at most 3 authors in the bibliography
+  minbibnames=1,            % if there’s 4+ authors, show “<3 names> et al.”
+  url=false,                % don’t print URLs
+  isbn=false,               % don’t print ISBNs
+  doi=true,                 % do print DOIs (if present)
+  date=year,                % only print the year (no month/day)
+]{biblatex}
+
+\addbibresource{TROPHY.bib}
 
 % global minted settings
 \setminted{
@@ -34,7 +47,7 @@
 \maketitle
 \begin{abstract}
     \noindent
-    In this work, I have explored the use of machine learning and explainability methods in the context of colon-cancer tissue health assessment using fourier transform infrared spectroscopy over the spectral range $1000$-$1800$ cm$^{-1}$. For this, I implemented mean squared error (MSE), cosine similarity, principal component analysis (PCA) informed linear discriminant analysis (LDA), PCA informed extreme gradient boosting (XGB), standard XGB and ensemble scale-invariant convolutional neural network (SCNN) methods. Each of these were used for the classification of colon cancer samples as non-cancerous, hyperplastic, adenomatous, or cancerous. The SCNN method was found to be the most effective, achieving a weighted overall accuracy of  $58.7\pm3.7\%$ when performing four-class classification on a four-fold cross-validated test set. When mapped to binary classification, the SCNN also performed best and performed non-cancer vs cancer classification with an overall weighted accuracy of $83.2\pm5.9\%$. The explainability of this model was then explored using the context-representative interpretable model explanation (CRIME) framework. This was capable of extracting multiple contexts to explain each tissue classification. The spectra and weightings associated with these contexts were then used to create a weighted cosine similarity classification model (LCRIME). The best of these LCRIME models for four-class classification utilised a $20\%$ supervised convolutional encoder - transformer decoder variational eutoencoder (VAE). This model was capable of reproducing SCNN classification predictions with an overall weighted accuracy of $47.5\pm7.6\%$. For binary classification, the best LCRIME model utilised a $20\%$ supervised transformer encoder-transformer decoder VAE and achieved an overall weighted accuracy of $74.7\pm 10.9\%$ on the same test set.
+    In this work, I have explored the use of machine learning and explainability methods in the context of colon-cancer tissue health assessment using fourier transform infrared spectroscopy over the spectral range $1000$-$1800$ cm$^{-1}$. For this, I implemented mean squared error (MSE), cosine similarity, principal component analysis (PCA) informed linear discriminant analysis (LDA), PCA informed extreme gradient boosting (XGB), standard XGB and ensemble scale-invariant convolutional neural network (SCNN) methods. Each of these were used for the classification of colon cancer samples as non-cancerous, hyperplastic, adenomatous, or cancerous. The SCNN method was found to be the most effective, achieving a weighted overall accuracy of  $58.7\pm3.7\%$ when performing four-class classification on a four-fold cross-validated test set. When mapped to binary classification, the SCNN also performed best and performed non-cancer vs cancer classification with an overall weighted accuracy of $83.2\pm5.9\%$. The explainability of this model was then explored using the context-representative interpretable model explanation (CRIME) framework. This was capable of extracting multiple contexts to explain each tissue classification. The spectra and weightings associated with these contexts were then used to create a weighted cosine similarity classification model (LCRIME). The best of these LCRIME models for four-class classification utilised a $20\%$ supervised convolutional encoder - transformer decoder variational autoencoder (VAE). This model was capable of reproducing SCNN classification predictions with an overall weighted accuracy of $47.5\pm7.6\%$. For binary classification, the best LCRIME model utilised a $20\%$ supervised transformer encoder-transformer decoder VAE and achieved an overall weighted accuracy of $74.7\pm 10.9\%$ on the same test set.
 \end{abstract}
 \newpage
 \tableofcontents
@@ -58,15 +71,23 @@
 % \input{christmas}
 
 \newpage
-\bibliographystyle{unsrtnat}
-\bibliography{TROPHY.bib}
+% \bibliographystyle{unsrtnat}
+
+\printbibliography
 \newpage
 
 
 \appendix
+\input{appendix_traditional_ml.tex}
+\newpage
 \input{appendix_ML_connections.tex}
+\newpage
+\input{appendix_vae.tex}
+\newpage
 \input{appendix_activations.tex}
+
 \input{appendix_Tiago.tex}
+\newpage
 \input{appendix_code.tex}
 \input{appendix_all_results.tex}
 

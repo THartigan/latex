@@ -2,7 +2,7 @@
 \subsection{FTIR Spectroscopy}
 %Check which of the CHARM methods are actually needed here and potentially don't bother with them all
 
-Infrared (IR) spectroscopy works by directing a broadband spectrum with wavenumbers ranging from around $400-4000 \text{ cm}^{-1}$ (for mid-IR spectroscopy) \cite{su_fourier_2020} onto a sample. This coherent spectrum then excites resonant vibrational modes within molecular bonds inside the sample, causing absorption of specific frequencies depending on the composition of the incident sample. This decreases the intensity at the absorbed frequencies relative to the broadband baseline, generating a characteristic spectrum for each vibrational mode. The frequencies at which these vibrations occur are ultimately determined by quantum electron density effects \cite{}. However, they are often well modelled by a simple harmonic oscillator approach \cite{} subject to the requirement that the molecular dipole moment $\mu$ can change \cite{}. For the bond demonstrated in Figure \ref{fig:ir_bond}, we therefore expect IR absorption at frequency:
+Infrared (IR) spectroscopy works by directing a broadband spectrum with wavenumbers ranging from around $400-4000 \text{ cm}^{-1}$ (for mid-IR spectroscopy) \cite{su_fourier_2020} onto a sample. This coherent spectrum then excites resonant vibrational modes within molecular bonds inside the sample, causing absorption of specific frequencies depending on the composition of the incident sample. This decreases the intensity at the absorbed frequencies relative to the broadband baseline, generating a characteristic spectrum for each vibrational mode. The frequencies at which these vibrations occur are ultimately determined by quantum electron density effects \cite{atkins_atkins_2022}. However, they are often well modelled by a simple harmonic oscillator approach \cite{lin_calculating_2008,berthomieu_fourier_2009} subject to the requirement that the molecular dipole moment $\mu$ can change \cite{gong_application_2024,veit_predicting_2020}. For the bond demonstrated in Figure \ref{fig:ir_bond}, we therefore expect IR absorption at frequency:
 \begin{equation}
     \nu = \frac{1}{2\pi c} \sqrt{\frac{k(m_1+m_2)}{m_1 m_2}}.
 \end{equation}
@@ -11,7 +11,7 @@ The requirement for molecules to be polar results in FTIR being particularly sen
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.6\textwidth]{Images/IR_Basics.png}
-  \caption{An illustration of a bond with spring constant $k$ between two atoms with masses $m_1$ and $m_2$, along with demonstrations of how different levels of bonding and isotopic effect can alter IR absorption frequencies \cite{berthomieu_fourier_2009}.}
+  \caption{An illustration of a bond with spring constant $k$ between two atoms with masses $m_1$ and $m_2$, along with demonstrations of how different levels of bonding and isotopic effects can alter IR absorption frequencies. From \cite{berthomieu_fourier_2009}.}
   \label{fig:ir_bond}
 \end{figure}
 
@@ -44,21 +44,21 @@ Modern devices use a Fourier transform-based (FTIR) interferogram approach \cite
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Cystine_IR_pH_dep.png}
-  \caption{The FTIR spectra produced by cystine (an amino acid) at differnt pH levels \cite{wolpert_infrared_2006}.}
+  \caption{The FTIR spectra produced by cystine (an amino acid) at different pH levels \cite{wolpert_infrared_2006}.}
   \label{fig:ir_differences_ph}
 \end{figure}
 
 \subsubsection{FTIR Dataset Collection}
 \label{sec:mdethods:data_collection}
-The dataset used in this work contains FTIR spectral images of 90 colon cancer tissue samples originally collected for the MINERVA project \cite{noauthor_minerva_nodate}. These images were produced by collaborators at the University of Exeter using an Agilent 620 FTIR microscope, an Agilent 670 FTIR spectrometer with a Globar light source, and a liquid-nitrogen cooled 128x128 focal plane array detector \cite{nallala_high-resolution_2016}. % ADD PREPROCESING
+The dataset used in this work contains FTIR spectral images of 90 colon cancer tissue samples originally collected for the MINERVA project \cite{noauthor_minerva_nodate}. These images were produced by collaborators at the University of Exeter using an Agilent 620 FTIR microscope, an Agilent 670 FTIR spectrometer with a Globar light source, and a liquid-nitrogen cooled 128x128 focal plane array detector \cite{nallala_high-resolution_2016}. The spectral images produced by this process were then separated into stroma and non-stroma regions using $K$-means clustering methods and processed to remove paraffin spectral features as explained in \cite{nallala_high-resolution_2016,mathieson_why_2020}. This work mostly focusses on the use of individual pixels within these spectral images for classification tasks. Each pixel contains FTIR absorption intensity data at $801$ wavenumbers from $1000$ cm$^{-1}$ to $1800$ cm$^{-1}$.
 
 \subsection{Cross-Validation Approach}
 \label{sec:methods:data_split}
-FTIR data was produced for 90 samples, of which 31 were classified as normal, 17 as hyperplastic, 27 as adenomatous, and 15 as cancerous. Due to the desire to accurately predict performance in four-category prediction tasks, a 4-fold cross-validation approach was adopted \cite{kohavi_study_2001}. This involved splitting the dataset into four parts using the stratified group K-fold method, which produces splits subject to the constraints of both preserving the proportion of samples (pixels) for each class within each split to the maximum extent possible whilst also enforcing the requirement for non-overlapping groups (images) between splits \cite{t_r_stratified_2023,gunopulos_stratification_2011, szymanski_network_2017}. When training ML models on spectral data, an approach was adopted where for each set of four folds, two were used for training, one for validation and one for testing. For methods which did not require validation, the validation set was discarded, enabling maximal comparability between methods.
+FTIR data was produced for 90 samples, of which 31 were classified as normal, 17 as hyperplastic, 27 as adenomatous, and 15 as cancerous. Due to the desire to accurately predict performance in four-category prediction tasks, a 4-fold cross-validation approach was adopted \cite{kohavi_study_2001}. This involved splitting the dataset into four parts using the stratified group K-fold method, which produces splits subject to the constraints of both preserving the proportion of samples (pixels) for each class within each split to the maximum extent possible whilst also enforcing the requirement for non-overlapping groups (images) between splits \cite{t_r_stratified_2023,gunopulos_stratification_2011, szymanski_network_2017}. When training ML models on spectral data, an approach was adopted where for each set of four folds, two were used for training, one for validation and one for testing. For methods which did not require validation or hyperparameter tuning, the validation set was discarded, enabling maximal comparability between methods.
 
 \subsection{Baseline Classification Methods}
 \label{sec:methods:baseline_classification}
-The most intuitive approach for classifying spectra according to their severity is to calculate the mean spectrum for each classification within the training set and then to measure which mean spectrum most closely resembles a test spectrum. Similarly to work by Villazon et al. \cite{villazon_cancer_2025}, this work implements a mean square error (MSE) method, and a cosine similarity method. The mean square error is defined as:
+The most intuitive approach for classifying spectra according to their severity is to calculate the mean spectrum for each classification within the training set and then to measure which mean spectrum most closely resembles a test spectrum. Similar to work by Villazon et al. \cite{villazon_cancer_2025}, this work implements a mean square error (MSE) method, and a cosine similarity method. The mean square error is defined as:
 \begin{equation}
     \text{MSE}(\vec x,\vec y) = \frac{1}{n} \sum_{i=1}^{n} (x_i - y_i)^2
 \end{equation}
@@ -66,86 +66,19 @@ where $\vec x$ and $\vec y$ are the spectra being compared, and $n$ is the numbe
 \begin{equation}
     \text{Cosine Similarity}(\vec x, \vec y) = \frac{\vec x \cdot \vec y}{|\vec x| |\vec y|},
 \end{equation}
-which produces values between $-1$ and $1$ with $-1$ denoting complete orthogonality and $1$ denoting complete similarity between the two spectra. The classification of each test spectrum is then set as that which corresponds to the mean spectrum which minimises the MSE or maximises the cosine similarity.
+which produces values between $-1$ and $1$, respectively denoting complete orthogonality and similarity between the two spectra. The classification of each test spectrum is then set as that which corresponds to the mean spectrum which minimises the MSE or maximises the cosine similarity.
 
 \subsection{Machine Learning (ML) For Classification}
-\subsubsection{Principal Component Analysis (PCA)}
-\label{sec:methods:pca}
-PCA \cite{wold_principal_nodate} is a dimensionality reduction technique which aims to project high-dimensional data into a new, more meaningful basis by re-expressing the data through a linear combination of these new basis vectors. This linearity allows us to pose the problem through linear algebra, where we wish to find a linear transformation $\boldsymbol{P}$ which maps the original recorded dataset $\bf X$ to a new representation of that dataset $\boldsymbol{Y}$ such that:
-\begin{equation}
-    \boldsymbol{Y} = \boldsymbol{P} \cdot \boldsymbol{X}.
-\end{equation}
-The rows of $\boldsymbol{P}$ then form a new set of orthonormal basis vectors. To find $\bf P$, we assume that axes of interest are those with high variance. These high variance axes can be found by calculating the eigenvectors of the covariance matrix of the dataset: 
-\begin{equation}
-    \boldsymbol{C} = \frac{1}{n} \boldsymbol{X} \boldsymbol{X}^T,
-\end{equation}
-which itself gives the degree of linear relationship between different variables. The eigenvalues of $\boldsymbol{C}$ therefore correspond to the variance of $\boldsymbol{X}$ along the associated eigenvector \cite{shlens_tutorial_2014}. Throughout this work, PCA is used to reduce inputs to 25 dimensions.
-
-\subsubsection{Linear Discriminant Analysis (LDA)}
-\label{sec:methods:lda}
-LDA \cite{fisher_use_1936} is a classification technique which aims to maximise the separability of classifications for given input data (e.g. IR spectra) by maximising between-class variance and minimising within-class variance \cite{tharwat_linear_2017}. This is achieved by assuming data corresponding to a specific class $k$ is normally distributed about a mean value $\mu_k$, and that all classes have equal covariance matrices $\boldsymbol{\Sigma}_k=\boldsymbol{\Sigma}$. The first assumption requires there to be a point $x^*$ which is equally likely to belong to two classes. If we take $x^*$ as the decision boundary, we can then minimise the classification error, which in the binary classification case with classes $\mathcal C_1$ and $\mathcal C_2$ is given by:
-\begin{equation}
-   \mathbb{P}(\text{error})= \mathbb{P}(x>x^*, x\in \mathcal C_1) + \mathbb{P}(x<x^*, x\in \mathcal C_2).
-\end{equation}
-Minimising this error with respect to $x^*$, denoting the probability density within each class as $f_k(x)$ and denoting priors for each class by $\pi_k$ then gives;
-\begin{equation}
-    f_1(x^*)\pi_1 = f_2(x^*)\pi_2.
-\end{equation}
-Now considering multi-class classification and assuming the data follows a multivariate Gaussian distribution of dimension $d$, we have;
-\begin{equation}
-    f_k(\boldsymbol{x})\pi_k=\frac{1}{\sqrt{(2\pi)^{d}|\mathbf{\Sigma}_k|}}\exp\left(-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu}_k)^T\boldsymbol{\Sigma}_k^{-1}(\boldsymbol{x}-\boldsymbol{\mu}_k)\right)\pi_k.
-\end{equation}
-Taking the logarithm of this, discounting constant terms and enforcing the equal covariance assumption gives scaled posterior probabilities for each class $k$ as:
-\begin{equation}
-    \delta_k(\boldsymbol{x}) = \boldsymbol{\mu}_k^T\boldsymbol{\Sigma}^{-1}\boldsymbol{x} - \frac{1}{2}\boldsymbol{\mu}_k^T\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_k + \ln(\pi_k).
-\end{equation}
-The classification $k$ with maximal $\delta_k(\boldsymbol{x})$ is then chosen as the predicted class for $\boldsymbol{x}$ \cite{ghojogh_linear_2019}. In practice, the priors $\pi_k$ are estimated according to the proportion of samples in each class, and the means $\boldsymbol \mu_k$ and covariance matrices $\boldsymbol{\Sigma_k}$ are estimated using maximum likelihood estimation (MLE \cite{haynes_maximum_2013}. In the mean case, this is given by:
-\begin{equation}
-    \boldsymbol{\mu}_k = \frac{1}{n_k}\sum_{i=1}^{n}\boldsymbol{x}_i \mathbb{I}(\mathcal C(\boldsymbol x_i)=k),
-\end{equation}
-where $\mathbb{I}$ is the indicator function \cite{ghojogh_linear_2019}. As we assume the covariance matrices are the same for each class, we take $\boldsymbol \Sigma$ to be the weighted sum of the estimated covariance matrices for each class. This can be considered geometrically \cite{mika_fisher_1999,tharwat_linear_2017} by solving an eigenvalue problem as is shown in Figure \ref{fig:LDA}. New data can then be classified by finding the projected training class mean which minimises the distance to the projection of test data within the eigenvector space.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=1\textwidth]{Images/LDA.png}
-  \caption{A graphical representation of the LDA algorithm. Each class $\omega_k$ is coloured differently. Note the use of Fisher's criterion in the lowest cell which is rewritten in eigen-equation form; $S_W W=\lambda S_B W$. Modified from  \cite{tharwat_linear_2017}.}
-  \label{fig:LDA}
-\end{figure}
-
-
-
-\subsubsection{Extreme Gradient Boosting (XGBoost or XGB)}
-\label{sec:methods:xgboost}
-XGBoost generates an ensemble of regression T-trees (trees with T leaves) - producing $K$ additive functions $f_k$, which combined, learn to map inputs to continuous values
-\begin{equation}
-    \hat y_i = \sum_{k=1}^K f_k(\boldsymbol{x}_i),
-\end{equation}
-subject to the regularisation objective
-\begin{equation}
-    \mathcal L (\phi)= \sum_i l(\hat y_i, y_i)+\sum_k\Omega(f_k).
-\end{equation}
-Here, $l$ is a differentiable loss between the prediction $\hat y_i$ and target value $y_i$, and $\Omega(f)$ is a complexity penalising regulaisation term \cite{chen_xgboost_2016}. We assemble the ensemble of trees iteratively. At each iteration $t$, we add $f_t$ to the prediction at the previous iteration and minimise
-\begin{align}
-    \mathcal L^{(t)}&=\sum_{i=1}^nl(y_i, \hat y_i^{(t-1)}+f_t(\boldsymbol{x}_i))+\Omega(f_t)\\
-    &\approx \sum_{i=1}^n \left[l(y_i, \hat y^{(t-1)})+g_i f_t (\boldsymbol{x}_i)+\frac{1}{2} h_if_t^2(\boldsymbol{x}_i)\right])+\Omega(f_t),
-\end{align}
-where $g_i=\partial_{\hat y^{(t-1)}} l(y_i, \hat y^{(t-1)})$ and $h_i=\partial^2_{\hat y^{(t-1)}}l(y_i, \hat y^{(t-1)})$ are first and second order gradients of the loss function \cite{friedman_additive_2000}. Minimising this loss over a leaf then gives the optimal tree weighting 
-$w_j$ for that leaf. Many further optimisation techniques are used to improve the performance of XGBoost, the details of which can be found in \cite{chen_xgboost_2016}. A final prediction is then made by summing contributions from each tree, as shown in Figure \ref{fig:tree_ensemble}. Note that for $N$-classification tasks, $N$ trees - corresponding to positive and negative classification for each class - are built for each iteration, with softmax \cite{bridle_probabilistic_1990} over the summed outputs from these trees used to selected the best classification.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{Images/tree_ensemble.png}
-  \caption{A tree ensemble model, where final predictions are the sum of those from each tree. From \cite{chen_xgboost_2016}.}
-  \label{fig:tree_ensemble}
-\end{figure}
+\label{sec:methods:trad_ML_methods}
+Throughout this work, I use three standardised machine learning processes for FTIR spectral classification, two of which utilise principal component analysis (PCA) (see \ref{sec:methods:pca}) to reduce input data from 801 to 25 dimension. The methods implemented are PCA with linear discriminant analysis (LDA) \cite{fisher_use_1936,ghojogh_linear_2019}, PCA with extreme gradient boosting (XGBoost or XGB) \cite{chen_xgboost_2016}, and XGBoost applied directly to the 801 dimensional input data. Unless otherwise stated, the hyperparameters used for these methods take their default values as specified in the scikit-learn \cite{pedregosa_scikit-learn_2011} and XGBoost \cite{chen_xgboost_2016} libraries. A theoretical overview of these methods is also included in Appendix \ref{appendix:ML_methods}. \\ 
 
 \subsection{Neural Networks}
-Neutral networks \cite{schmidhuber_deep_2015,goodfellow_deep_2016,lussier_deep_2020} are machine learning algorithms built from layers of connected nodes (neurons) acted on by activation functions (§\ref{appendix:Activations}). The weights and biases associated with each neuron are then learnt by using backpropagation \cite{rumelhart_learning_1986} and gradient descent \cite{ruder_overview_2017} to minimise a loss function. This finds a mapping from inputs to outputs. With suitable model design, regularisation \cite{goodfellow_deep_2016,kukacka_regularization_2017} and training parameter (hyperparameter) selection, these mappings can be tuned to generalise well to unseen data. Throughout this work, networks are trained, validated and tested on independent folds of data as described in §\ref{sec:methods:data_split}, the Adam optimiser \cite{kingma_adam_2017} is used for gradient descent, and hyperparameter tuning is conducted on the validation split using the Weights and Biases tool \cite{biewald_experiment_2020}. A full overview on the different neural network layer types is included in Appendix \ref{appendix:ML_methods}, and a brief overview is included in Figure \ref{fig:connection_methods}.\\
+Neural networks \cite{schmidhuber_deep_2015,goodfellow_deep_2016,lussier_deep_2020} are machine learning algorithms built from layers of connected nodes (neurons) acted on by activation functions (§\ref{appendix:activations}). The weights and biases associated with each neuron are then learnt using backpropagation \cite{rumelhart_learning_1986} and gradient descent \cite{ruder_overview_2017} to minimise a loss function. This finds a mapping from inputs to outputs. With suitable model design, regularisation \cite{goodfellow_deep_2016,kukacka_regularization_2017} and hyperparameter selection, these mappings can be tuned to generalise well to unseen data. Throughout this work, neural networks are trained, validated and tested on independent folds of data as described in §\ref{sec:methods:data_split}, the Adam optimiser \cite{kingma_adam_2017} is used for gradient descent, and hyperparameter tuning is conducted on the validation split using the Weights and Biases tool \cite{biewald_experiment_2020}. A full overview on the different neural network layer types is included in Appendix \ref{appendix:ML_methods}, and a brief overview is included in Figure \ref{fig:connection_methods}.\\
 
 \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{Images/connection_methods.png}
-    \caption{Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite{alzubaidi_review_2021}. b) shows the action of 1D and 2D CNN kernels. From \cite{shenfield_novel_2020} and \cite{dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, both from \cite{vaswani_attention_2023}, and the transformer encoder block, from \cite{dosovitskiy_image_2021}.}
+    \caption{Different methods of connecting layers in a neural network. a) shows multiple fully-connected layers. From \cite{alzubaidi_review_2021}. b) shows the action of 1D and 2D convolutional neural network (CNN) kernels. From \cite{shenfield_novel_2020} and \cite{dumoulin_guide_2018} respectively. c) shows an outline of the scaled dot-product attention and multi-head attention mechanisms, both from \cite{vaswani_attention_2023}, and the transformer encoder block, from \cite{dosovitskiy_image_2021}.}
     \label{fig:connection_methods}
 \end{figure}
 
@@ -172,7 +105,7 @@ where $c$ is a guess parameter, $b$ denotes difficulty and $a$ denotes the discr
 
 \subsection{Explainability}
 \subsubsection{Local Interpretable Model-Agnostic Explanations (LIME)}
-LIME \cite{ribeiro_why_2016} is a model-agnostic explainability technique which works by producing $N$ perturbations around an input vector, $\boldsymbol{x}$ and observing how perturbing different features alters classification probabilities. In this work, a variant of this is employed where each of the $d$ input features (wavelength intensities) are one-hot encoded \cite{} into a vector, $\boldsymbol{x'}$ of length 10, with the encoded value corresponding to the training-set decile in which that feature value lies. Perturbed samples, $\boldsymbol{z'}$, are then generated by considering each feature, either retaining their one-hot encoding with probability $1/2$, or uniformly allocating a new one-hot encoding, also with probability $1/2$. A numeric vector $\boldsymbol{z}$ is then generated by randomly sampling within the deciles associated with each value in $\boldsymbol{z'}$. We then aim to train a local linear model $g\in \mathcal G$ to approximate the behaviour of the original model we wish to explain, $f$, around $\boldsymbol{x}$. Here, $\mathcal G$ is a class of potentially interpretable models. The selected LIME explanation is then given by:
+LIME \cite{ribeiro_why_2016} is a model-agnostic explainability technique which works by producing $N$ perturbations around an input vector, $\boldsymbol{x}$ and observing how perturbing different features alters classification probabilities. In this work, a variant of this is employed where each of the $d$ input features (wavelength intensities) are one-hot encoded \cite{samuels_one-hot_2024} into a vector, $\boldsymbol{x'}$ of length 10, with the encoded value corresponding to the training-set decile in which that feature value lies. Perturbed samples, $\boldsymbol{z'}$, are then generated by considering each feature, either retaining their one-hot encoding with probability $1/2$, or uniformly allocating a new one-hot encoding, also with probability $1/2$. A numeric vector $\boldsymbol{z}$ is then generated by randomly sampling within the deciles associated with each value in $\boldsymbol{z'}$. We then aim to train a local linear model $g\in \mathcal G$ to approximate the behaviour of the original model we wish to explain, $f$, around $\boldsymbol{x}$. Here, $\mathcal G$ is a class of potentially interpretable models. The selected LIME explanation is then given by:
 \begin{equation}
     \xi(x)=\underset{g\in \mathcal G}{\text{argmin}} \left[ \mathcal L(f,g,\pi_x)+\Omega(g)\right],
     \label{eq:explanation}
@@ -181,11 +114,11 @@ where the locality-aware loss $\mathcal L(f,g,\pi_x)$ encodes the faithfulness o
 \begin{equation}
     \mathcal L(f,g,\pi_x)=\sum_{z, z'}\pi_x(z)\left(f(z)-g(z')\right)^2,
 \end{equation}
-where $\pi_x(z)=\exp(-D(x,z)^2/\sigma^2)$ encodes locality through an L2 \cite{} distance function $D$ and $\sigma$ is generally set as the median of all $D$ values. We then solve \ref{eq:explanation} using a ridge regressor over $N$ perturbed samples for each sample to be explained, giving \cite{}: 
+where $\pi_x(z)=\exp(-D(x,z)^2/\sigma^2)$ encodes locality through an $L_2$ \cite{shan_targeted_2019,ribeiro_why_2016, why} distance function $D$ and $\sigma$ is generally set as the median of all $D$ values. We then solve \ref{eq:explanation} using a ridge regressor over $N$ perturbed samples for each sample to be explained, giving \cite{ribeiro_why_2016}: 
 \begin{equation}
     (\boldsymbol{w},\boldsymbol{b}) = \underset{\boldsymbol{w}, \boldsymbol{b}}{\text{argmin}} \sum_{\boldsymbol{z}, \boldsymbol{z'}} \pi_x(\boldsymbol{z})\left[f(\boldsymbol{z})-\left(\boldsymbol{w}^T \boldsymbol{z'}+\boldsymbol{b}\right)\right]^2+\lambda |\boldsymbol{w}|^2_2,
 \end{equation}
-where the weights $\boldsymbol{w}\in\mathbb{R}^{dx10}$ and biases $\boldsymbol{b}\in \mathbb{R}^d$ are those of the linear model $g$ for a single class in a single sample. Calculating the $l_2$ norm of the $10$ weights for each feature then produces relative importance scores for each feature within class $k$, $\boldsymbol s_k$. Finally, the total importance score for each feature is calculated by performing a probability-weighted sum over all classes \cite{}: 
+where the weights $\boldsymbol{w}\in\mathbb{R}^{dx10}$ and biases $\boldsymbol{b}\in \mathbb{R}^d$ are those of the linear model $g$ for a single class in a single sample. Calculating the $L_2$ norm of the $10$ weights for each feature then produces relative importance scores for each feature within class $k$, $\boldsymbol s_k$. Finally, the total importance score for each feature is calculated by performing a probability-weighted sum over all classes \cite{ribeiro_marcotcrlime_2025}: 
 \begin{equation}
     \boldsymbol{s} = \sum_k p_k(\boldsymbol x) \boldsymbol s_k.
 \end{equation}
@@ -207,12 +140,19 @@ An example of the LIME weightings this process produces is shown in Figure \ref{
 
 \subsubsection{Context Representative Interpretable Model-Agnostic Explanations (CRIME)}
 \label{sec:methods:crime}
-The CRIME method \cite{zaki_explainable_2024} aims to expand on the LIME method by finding contexts which have similar classification explanations. This is achieved by passing the LIME results through a variational eutoencoder (VAE) \cite{} to learn a low-dimensional latent space representation of the explanations. This latent space is then clustered using $K$-means clustering \cite{} to produce $K$ clusters, each of which can be investigated. In their original paper, Zaki et al. \cite{zaki_explainable_2024} used a VAE similar to that described in §\ref{sec:vae_zaki}, and were able to form six contexts from surface enhanced Raman (SER) urine spectra, of which three were found to be associated with serotonin. Here, I expand on this work by investigating the use of different VAE architectures as described in §\ref{sec:methods:vae}, and by using the clusters themselves perform explainable linear classification.
+The CRIME method \cite{zaki_explainable_2024} aims to expand on LIME by finding contexts which have similar classification explanations. This is achieved by passing the LIME results through a variational autoencoder (VAE) \cite{kingma_auto-encoding_2022,kingma_semi-supervised_2014} to learn a low-dimensional latent space representation of the explanations. This latent space is then clustered into $K$ contexts using $K$-means clustering \cite{jin_k-means_2011}, each of which can then be investigated further. 
+% In their original paper, Zaki et al. \cite{zaki_explainable_2024} used a VAE similar to the CP VAE described in Table \ref{tab:ssvae_arch}, and were able to form six contexts from surface enhanced Raman (SER) urine spectra, of which three were found to be associated with serotonin. Here, I expand on this work by investigating the use of different VAE architectures as described in §\ref{sec:methods:vae}, and by using the clusters themselves to perform explainable linear classification.
 
 \subsubsection{Variational Autoencoders (VAE)}
 \label{sec:vae}
 
-Attempting to find clusters of the explanations produced by LIME can be viewed as either an unsupervised learning problem - clustering the LIME spectra with no additional information, or as a semi-supervised learning problem, where known training labels can be used to inform clustering. In this work, I implemented both approaches by noting that the semi-supervised approach reduces to the unsupervised approach when the supervision level is zero. This is implemented using a VAE, which attempts to learn a generative model with parameters $\theta$ such as to enable mapping from the data $\boldsymbol{x}$ to a latent representation $\boldsymbol{z}$ and back again - as illustrated in Figure \ref{fig:VAE}. 
+Attempting to find clusters of the explanations produced by LIME can be viewed as either an unsupervised learning problem - clustering the LIME spectra with no additional information, or as a semi-supervised learning problem, where known training labels are used to inform latent space construction. In this work, I implemented both approaches by implementing VAEs, which attempt to learn a generative model with parameters $\theta$ to enable mapping from the data $\boldsymbol{x}$ to a latent representation $\boldsymbol{z}$ and back again - illustrated in Figure \ref{fig:VAE}. A theoretical overview of VAEs is included in Appendix \ref{appendix:VAE_derivation}, and shows that an unsupervised VAE is optimised by minimising the negative evidence lower bound (ELBO):
+\begin{equation}
+    \mathcal L(\boldsymbol{x}) = -\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu)+\beta \frac{1}{2}\left[1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right],
+    \label{eq:elbo}
+\end{equation}
+where $\boldsymbol{y}_\mu$ is the output of the decoder, $\beta$ is a hyperparameter controlling the relative weighting of the reconstruction loss and KL divergence terms \cite{higgins_beta-vae_2017}, and $\boldsymbol{\mu}$ and $\boldsymbol{\sigma}^2$ are the latent space mean and variance projections respectively.
+
 
 \begin{figure}[htbp]
   \centering
@@ -222,51 +162,7 @@ Attempting to find clusters of the explanations produced by LIME can be viewed a
 \end{figure}
 
 \noindent
-An unsupervised VAE must learn a joint distribution $p_\theta(\boldsymbol{x}, \boldsymbol{z})$ such as to maximise the marginal likelihood of the data:
-\begin{align}
-    p_\theta(\boldsymbol{x}) &= \int_{\boldsymbol z} p_\theta(\boldsymbol{x}, \boldsymbol{z})d\boldsymbol{z} \\
-    & = \int_{\boldsymbol z} p_\theta(\boldsymbol{z}) p_\theta(\boldsymbol{x}|\boldsymbol{z})d\boldsymbol{z} \label{eq:intractable}
-\end{align}
-Equation (\ref{eq:intractable}), however is normally intractable. To overcome this, we use Bayes' theorem to rewrite the marginal likelihood as:
-\begin{equation}
-    p_\theta(\boldsymbol{x}) = \frac{p_\theta(\boldsymbol {z})p_\theta(\boldsymbol{x} | \boldsymbol{z})}{p_\theta(\boldsymbol{z}|\boldsymbol{x})}=\frac{p_\theta(\boldsymbol{x}, \boldsymbol{z})}{p_\theta(\boldsymbol{z}|\boldsymbol{x})}.
-\end{equation}
-Therefore, we can also approach the problem by attempting to approximate the posterior $p(\boldsymbol{z}|\boldsymbol{x})$ by an amortised variational distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ with parameters $\phi$. By then expanding the Kullback-Leibler (KL) divergence \cite{}: 
-\begin{equation}
-    D_\text{KL}(q|p)=\int q(\boldsymbol{z})\log\left(\frac{q(\boldsymbol{z})}{p(\boldsymbol{z})}\right)d\boldsymbol{z}\ge 0,
-    \label{eq:kl_div}
-\end{equation}
-which measures the information entropy of $q_\phi$ relative to $p_\theta$, we can write the marginal likelihood as:
-\begin{align}
-    \log p_\theta(\boldsymbol{x}) &= D_\text{KL}(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z}|\boldsymbol{x}))+\mathbb{E}_{q_{\phi(\boldsymbol{z}|\boldsymbol{x})}}[\log p_\theta(\boldsymbol{z},\boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})] \\
-    \implies \log p_\theta(\boldsymbol{x}) & \ge \mathbb{E}_{q_\phi(\boldsymbol{z}|\boldsymbol{x})}\left[\log p_\theta(\boldsymbol{z},\boldsymbol{x}) - \log q_\phi(\boldsymbol {z}|\boldsymbol{x})\right]=\text{ELBO},
-\end{align}
-where the term on the RHS of the inequality is the evidence lower bound (ELBO) \cite{}. The ELBO gives a lower bound on the marginal likelihood, so maximising it also minimises the KL divergence. This maximisation, however is non-trivial because the $\phi$ derivative of the ELBO is intractable and non-estimable. To overcome this, we employ the reparameterisation trick \cite{}, where we deterministically re-express $\boldsymbol{z}$ as:
-\begin{equation}
-    \boldsymbol{z} = g(\phi, \boldsymbol{x},\boldsymbol{\epsilon}),
-\end{equation}
-where $\boldsymbol{\epsilon}$ is a random variable generated through a Gaussian distribution with mean $\boldsymbol{0}$ and unit variance \cite{SGVB_gradient_variational_bayes}. Finally, we can estimate the gradient of the negative $-\text{ELBO}=\mathcal L(\boldsymbol{x})$ (to perform gradient descent) as:
-\begin{align}
-    \mathcal L(\boldsymbol{x}) &= -\mathbb{E}_{p(\epsilon)}\left[\log p_\theta(\boldsymbol{z}, \boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})\right]\\
-    \implies \nabla_{\theta, \phi}\mathcal L(\boldsymbol{x})&=-\frac{1}{N}\sum_{i=1}^N\nabla_{\theta,\phi}\left[\log p_\theta(\boldsymbol{z}, \boldsymbol{x})-\log q_\phi(\boldsymbol{z}|\boldsymbol{x})\right],
-\end{align}
-where $N$ is the number of samples in a batch. This formulation allows us to approximate the posterior by gradient descent. The ELBO can now be expanded to give: 
-\begin{equation}
-    \text{ELBO} = \mathbb{E}_{p(\epsilon)}\left[\log p_\theta(\boldsymbol{x}|\boldsymbol{z})\right]-D_\text{KL}\left(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z})\right).
-\end{equation}
-If we then assume the prior $p_\theta(\boldsymbol{z})=\mathcal{N}(\boldsymbol{0},\boldsymbol{I})$, and that the distribution $q_\phi(\boldsymbol{z}|\boldsymbol{x})$ is a multivariate Gaussian with mean $\boldsymbol{\mu}$ and variance $\boldsymbol{\sigma}$ where $\boldsymbol{\mu}, \boldsymbol{\sigma}=f(\boldsymbol{x})$, we can rewrite the KL divergence \ref{eq:kl_div} as: 
-\begin{equation}
-    D_\text{KL}(q_\phi(\boldsymbol{z}|\boldsymbol{x})|p_\theta(\boldsymbol{z}))=-\frac{1}{2} \left(1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right).
-\end{equation}
-Furthermore, we use single-sample monte carlo estimation \cite{} to find the expectation of the log-likelihood term subject to the assumption that $p_\theta(\boldsymbol{x}|\boldsymbol{z})=\mathcal N(\boldsymbol{y}_\mu, 1)$, which reduces to the form:
-\begin{equation}
-    \log p_{\theta}(\boldsymbol{x}|\boldsymbol{z})=-\frac{1}{2}\left(\boldsymbol{x}-\boldsymbol{y}_\mu\right)^2=-\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu).
-\end{equation}
-Hence, we can optimise such a VAE by minimising the negative ELBO:
-\begin{equation}
-    \mathcal L(\boldsymbol{x}) = -\frac{1}{2}\text{MSE}(\boldsymbol{x}, \boldsymbol{y}_\mu)+\beta \frac{1}{2}\left[1+\log(\boldsymbol{\sigma}^2)-\boldsymbol{\mu}^2-\boldsymbol{\sigma}^2\right],
-\end{equation}
-which is adopted as the unsupervised VAE loss function throughout this work, where $\beta$ is a tunable parameter \cite{beta-vae}. When using a semi-supervised VAE approach, we follow the M2 approach described by Kingma et al. \cite{}, so modify this loss function to include a classification term by adding a cross-entropy loss \cite{} assessing the difference between predicted and true class probabilities. These predicted class probabilities are given by softmax over the output from a two-layer ($64\rightarrow128\rightarrow4$ node) fully-connected layer at the end of the VAE encoder, prior to $\mu$ and $\sigma$ projection. These implementations of these ELBOs and the reparameterisation trick can be found in \ref{sec:code:ELBOs} and \ref{sec:code:reparam} respectively. The VAE architectures used in this work are summarised in Table \ref{tab:VAE_architectures}, and their full implementations can be found in \ref{appendix:code:VAEs}. As each VAE is already implicitly using a model trained on the training set for each split, the VAE itself is trained on the LIME explanations of the validation set.
+ When using a semi-supervised VAE approach, we follow the M2 method described by Kingma et al. \cite{kingma_semi-supervised_2014}, so modify (\ref{eq:elbo}) to include a classification cross-entropy loss \cite{kingma_semi-supervised_2014,mao_cross-entropy_2023} assessing the difference between predicted and true class probabilities. These predicted class probabilities are given by softmax over the output from a two-layer ($64\rightarrow128\rightarrow4$ node) fully-connected layer at the end of the VAE encoder, prior to $\mu$ and $\sigma$ projection. The implementations of these ELBOs and the reparametrisation trick can be found in §\ref{sec:code:ELBOs} and §\ref{sec:code:reparam} respectively. The VAE architectures used in this work are summarised in Table \ref{tab:ssvae_arch}. Furthermore, because each VAE is already implicitly using a model trained on the training set for each split, the VAE itself is trained on the LIME explanations of the validation set.
 
 \begin{sidewaystable}[htbp]
 \centering
@@ -357,9 +253,9 @@ The dataset used in this work is highly imbalanced, so a very high accuracy can 
 \text{FPR}_k        &= \frac{\text{FP}_k}{\text{FP}_k+\text{TN}_k}.
 \end{align}
 
-\noindent Finally, to produce a metric which fairly measures performance despite dataset imbalance, we define the weighted overall accuracy as: 
+\noindent Furthermore, to fairly measure performance despite dataset imbalance, we define the overall weighted accuracy (OWA) as: 
 \begin{align}
-\text{Weighted Overall Accuracy} &= \frac{\sum_{k=0}^{K} w_k \cdot \text{Accuracy}_k}{\sum_{k=0}^{K} w_k}, \\ \text{where} \quad w_k &= \frac{\text{True number of samples in class } k}{\text{Total number of samples}}.
+\text{Overall Weighted Accuracy} &= \frac{\sum_{k=0}^{K} w_k \cdot \text{Accuracy}_k}{\sum_{k=0}^{K} w_k}, \\ \text{where} \quad w_k &= \frac{\text{True number of samples in class } k}{\text{Total number of samples}}.
 \label{eq:overall_accuracy}
 \end{align}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  2 JUN 2025 03:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.17)  2 JUN 2025 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -150,24 +150,18 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip51
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip52
-\bibsep=\skip53
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count282
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen148
 \ar@mcellbox=\box52
 \extrarowheight=\dimen149
 \NC@list=\toks18
-\extratabsurround=\skip54
-\backup@length=\skip55
+\extratabsurround=\skip52
+\backup@length=\skip53
 \ar@cellbox=\box53
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
-\@mathmargin=\skip56
+\@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -182,14 +176,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count283
+\inf@bad=\count282
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count284
-\leftroot@=\count285
+\uproot@=\count283
+\leftroot@=\count284
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count286
-\DOTSCASE@=\count287
+\classnum@=\count285
+\DOTSCASE@=\count286
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -202,20 +196,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count288
+\macc@depth=\count287
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count289
+\c@MaxMatrixCols=\count288
 \dotsspace@=\muskip18
-\c@parentequation=\count290
-\dspbrk@lvl=\count291
+\c@parentequation=\count289
+\dspbrk@lvl=\count290
 \tag@help=\toks20
-\row@=\count292
-\column@=\count293
-\maxfields@=\count294
+\row@=\count291
+\column@=\count292
+\maxfields@=\count293
 \andhelp@=\toks21
 \eqnshift@=\dimen153
 \alignsep@=\dimen154
@@ -224,8 +218,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \totwidth@=\dimen157
 \lineht@=\dimen158
 \@envbody=\toks22
-\multlinegap=\skip57
-\multlinetaggap=\skip58
+\multlinegap=\skip55
+\multlinetaggap=\skip56
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -248,27 +242,27 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen166
 \cmidrulekern=\dimen167
 \defaultaddspace=\dimen168
-\@cmidla=\count295
-\@cmidlb=\count296
+\@cmidla=\count294
+\@cmidlb=\count295
 \@aboverulesep=\dimen169
 \@belowrulesep=\dimen170
-\@thisruleclass=\count297
-\@lastruleclass=\count298
+\@thisruleclass=\count296
+\@lastruleclass=\count297
 \@thisrulewidth=\dimen171
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip59
-\multirow@cntb=\count299
-\multirow@dima=\skip60
+\multirow@colwidth=\skip57
+\multirow@cntb=\count298
+\multirow@dima=\skip58
 \bigstrutjot=\dimen172
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count300
-\rotFPtop=\skip61
-\rotFPbot=\skip62
+\c@r@tfl@t=\count299
+\rotFPtop=\skip59
+\rotFPbot=\skip60
 \rot@float@box=\box56
 \rot@mess@toks=\toks24
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
@@ -276,9 +270,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count301
-\Gm@cntv=\count302
-\c@Gm@tempcnt=\count303
+\Gm@cnth=\count300
+\Gm@cntv=\count301
+\c@Gm@tempcnt=\count302
 \Gm@bindingoffset=\dimen173
 \Gm@wd@mp=\dimen174
 \Gm@odd@mp=\dimen175
@@ -298,58 +292,58 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 Package: fvextra 2025/03/04 v1.12.0 fvextra - extensions and patches for fancyvrb
  (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
-\FV@CodeLineNo=\count304
+\FV@CodeLineNo=\count303
 \FV@InFile=\read2
 \FV@TabBox=\box57
-\c@FancyVerbLine=\count305
-\FV@StepNumber=\count306
+\c@FancyVerbLine=\count304
+\FV@StepNumber=\count305
 \FV@OutFile=\write3
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2025/01/29 line numbers on paragraphs v5.4
-\linenopenalty=\count307
+\linenopenalty=\count306
 \output=\toks26
-\linenoprevgraf=\count308
+\linenoprevgraf=\count307
 \linenumbersep=\dimen181
 \linenumberwidth=\dimen182
-\c@linenumber=\count309
-\c@pagewiselinenumber=\count310
-\c@LN@truepage=\count311
-\c@internallinenumber=\count312
-\c@internallinenumbers=\count313
+\c@linenumber=\count308
+\c@pagewiselinenumber=\count309
+\c@LN@truepage=\count310
+\c@internallinenumber=\count311
+\c@internallinenumbers=\count312
 \quotelinenumbersep=\dimen183
 \bframerule=\dimen184
 \bframesep=\dimen185
 \bframebox=\box58
-\@LN@amsmath@ams@eqpen=\count314
+\@LN@amsmath@ams@eqpen=\count313
 LaTeX Info: Redefining \\ on input line 3187.
 )
-\c@FancyVerbWriteLine=\count315
-\c@FancyVerbBufferLine=\count316
-\c@FV@TrueTabGroupLevel=\count317
-\c@FV@TrueTabCounter=\count318
+\c@FancyVerbWriteLine=\count314
+\c@FancyVerbBufferLine=\count315
+\c@FV@TrueTabGroupLevel=\count316
+\c@FV@TrueTabCounter=\count317
 \FV@TabBox@Group=\box59
 \FV@bgcolorstructbox=\box60
-\FV@TmpLength=\skip63
-\c@FV@HighlightLinesStart=\count319
-\c@FV@HighlightLinesStop=\count320
-\FV@LoopCount=\count321
+\FV@TmpLength=\skip61
+\c@FV@HighlightLinesStart=\count318
+\c@FV@HighlightLinesStop=\count319
+\FV@LoopCount=\count320
 \FV@NCharsBox=\box61
 \FV@BreakIndent=\dimen186
-\FV@BreakIndentNChars=\count322
+\FV@BreakIndentNChars=\count321
 \FV@BreakSymbolSepLeft=\dimen187
-\FV@BreakSymbolSepLeftNChars=\count323
+\FV@BreakSymbolSepLeftNChars=\count322
 \FV@BreakSymbolSepRight=\dimen188
-\FV@BreakSymbolSepRightNChars=\count324
+\FV@BreakSymbolSepRightNChars=\count323
 \FV@BreakSymbolIndentLeft=\dimen189
-\FV@BreakSymbolIndentLeftNChars=\count325
+\FV@BreakSymbolIndentLeftNChars=\count324
 \FV@BreakSymbolIndentRight=\dimen190
-\FV@BreakSymbolIndentRightNChars=\count326
-\c@FancyVerbLineBreakLast=\count327
+\FV@BreakSymbolIndentRightNChars=\count325
+\c@FancyVerbLineBreakLast=\count326
 \FV@LineBox=\box62
 \FV@LineIndentBox=\box63
-\c@FV@BreakBufferDepth=\count328
+\c@FV@BreakBufferDepth=\count327
 \FV@LineWidth=\dimen191
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
 Package: latex2pydata 2025/03/03 v0.5.0 latex2pydata - write data to file in Python literal format
@@ -367,16 +361,244 @@ Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count329
+\c@float@type=\count328
 \float@exts=\toks32
 \float@box=\box64
 \@float@everytoks=\toks33
 \@floatcapt=\box65
 )
-\c@minted@FancyVerbLineTemp=\count330
+\c@minted@FancyVerbLineTemp=\count329
 \@float@every@listing=\toks34
-\c@listing=\count331
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+\c@listing=\count330
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count331
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count332
+\c@listtotal=\count333
+\c@listcount=\count334
+\c@liststart=\count335
+\c@liststop=\count336
+\c@citecount=\count337
+\c@citetotal=\count338
+\c@multicitecount=\count339
+\c@multicitetotal=\count340
+\c@instcount=\count341
+\c@maxnames=\count342
+\c@minnames=\count343
+\c@maxitems=\count344
+\c@minitems=\count345
+\c@citecounter=\count346
+\c@maxcitecounter=\count347
+\c@savedcitecounter=\count348
+\c@uniquelist=\count349
+\c@uniquename=\count350
+\c@refsection=\count351
+\c@refsegment=\count352
+\c@maxextratitle=\count353
+\c@maxextratitleyear=\count354
+\c@maxextraname=\count355
+\c@maxextradate=\count356
+\c@maxextraalpha=\count357
+\c@abbrvpenalty=\count358
+\c@highnamepenalty=\count359
+\c@lownamepenalty=\count360
+\c@maxparens=\count361
+\c@parenlevel=\count362
+\blx@tempcnta=\count363
+\blx@tempcntb=\count364
+\blx@tempcntc=\count365
+\c@blx@maxsection=\count366
+\blx@maxsegment@0=\count367
+\blx@notetype=\count368
+\blx@parenlevel@text=\count369
+\blx@parenlevel@foot=\count370
+\blx@sectionciteorder@0=\count371
+\blx@sectionciteorderinternal@0=\count372
+\blx@entrysetcounter=\count373
+\blx@biblioinstance=\count374
+\labelnumberwidth=\skip62
+\labelalphawidth=\skip63
+\biblabelsep=\skip64
+\bibitemsep=\skip65
+\bibnamesep=\skip66
+\bibinitsep=\skip67
+\bibparsep=\skip68
+\bibhang=\skip69
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language90
+\c@mincomprange=\count375
+\c@maxcomprange=\count376
+\c@mincompwidth=\count377
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count378
+\c@savedafterword=\count379
+\c@annotator=\count380
+\c@savedannotator=\count381
+\c@author=\count382
+\c@savedauthor=\count383
+\c@bookauthor=\count384
+\c@savedbookauthor=\count385
+\c@commentator=\count386
+\c@savedcommentator=\count387
+\c@editor=\count388
+\c@savededitor=\count389
+\c@editora=\count390
+\c@savededitora=\count391
+\c@editorb=\count392
+\c@savededitorb=\count393
+\c@editorc=\count394
+\c@savededitorc=\count395
+\c@foreword=\count396
+\c@savedforeword=\count397
+\c@holder=\count398
+\c@savedholder=\count399
+\c@introduction=\count400
+\c@savedintroduction=\count401
+\c@namea=\count402
+\c@savednamea=\count403
+\c@nameb=\count404
+\c@savednameb=\count405
+\c@namec=\count406
+\c@savednamec=\count407
+\c@translator=\count408
+\c@savedtranslator=\count409
+\c@shortauthor=\count410
+\c@savedshortauthor=\count411
+\c@shorteditor=\count412
+\c@savedshorteditor=\count413
+\c@labelname=\count414
+\c@savedlabelname=\count415
+\c@institution=\count416
+\c@savedinstitution=\count417
+\c@lista=\count418
+\c@savedlista=\count419
+\c@listb=\count420
+\c@savedlistb=\count421
+\c@listc=\count422
+\c@savedlistc=\count423
+\c@listd=\count424
+\c@savedlistd=\count425
+\c@liste=\count426
+\c@savedliste=\count427
+\c@listf=\count428
+\c@savedlistf=\count429
+\c@location=\count430
+\c@savedlocation=\count431
+\c@organization=\count432
+\c@savedorganization=\count433
+\c@origlocation=\count434
+\c@savedoriglocation=\count435
+\c@origpublisher=\count436
+\c@savedorigpublisher=\count437
+\c@publisher=\count438
+\c@savedpublisher=\count439
+\c@language=\count440
+\c@savedlanguage=\count441
+\c@origlanguage=\count442
+\c@savedoriglanguage=\count443
+\c@pageref=\count444
+\c@savedpageref=\count445
+\shorthandwidth=\skip70
+\shortjournalwidth=\skip71
+\shortserieswidth=\skip72
+\shorttitlewidth=\skip73
+\shortauthorwidth=\skip74
+\shorteditorwidth=\skip75
+\locallabelnumberwidth=\skip76
+\locallabelalphawidth=\skip77
+\localshorthandwidth=\skip78
+\localshortjournalwidth=\skip79
+\localshortserieswidth=\skip80
+\localshorttitlewidth=\skip81
+\localshortauthorwidth=\skip82
+\localshorteditorwidth=\skip83
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count446
+\c@textcitetotal=\count447
+\c@textcitemaxnames=\count448
+\c@biburlbigbreakpenalty=\count449
+\c@biburlbreakpenalty=\count450
+\c@biburlnumpenalty=\count451
+\c@biburlucpenalty=\count452
+\c@biburllcpenalty=\count453
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count454
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count455
+\c@bbx:relatedtotal=\count456
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count457
+\l__pdf_internal_box=\box66
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -392,43 +614,43 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count332
-\l__pdf_internal_box=\box66
-) (./5_main.aux)
+)
+\@quotelevel=\count458
+\@quotereset=\count459
+
+No file 5_main.aux.
 \openout1 = `5_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
- (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
+\scratchcounter=\count460
 \scratchdimen=\dimen192
 \scratchbox=\box67
-\nofMPsegments=\count334
-\nofMParguments=\count335
+\nofMPsegments=\count461
+\nofMParguments=\count462
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count336
+\MPscratchCnt=\count463
 \MPscratchDim=\dimen193
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
+\MPnumerator=\count464
+\makeMPintoPDFobject=\count465
 \everyMPtoPDFconversion=\toks36
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -436,10 +658,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 32.
- (./5_main.out) (./5_main.out)
-\@outlinefile=\write4
-\openout4 = `5_main.out'.
+Package hyperref Info: Link coloring ON on input line 45.
+\@outlinefile=\write5
+\openout5 = `5_main.out'.
 
 
 *geometry* driver: auto-detecting
@@ -476,310 +697,746 @@ Package hyperref Info: Link coloring ON on input line 32.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `5_main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+
+
+/Users/thomas/Documents/Uni/Part III/Project/Report/latex/5_main.tex:45: Package biblatex Error: File '5_main.bbl' not created by biblatex.
+
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \begin{document}
+                     ^^M
+This file was apparently not created by biblatex. Rename it or
+move it to a location were TeX will not find it. If this error
+persists, consider redefining \blxauxsuffix.See the biblatex
+manual for details.
+
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./5_main.toc)
-\tf@toc=\write5
-\openout5 = `5_main.toc'.
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file 5_main.toc.
+\tf@toc=\write6
+\openout6 = `5_main.toc'.
 
 
 
 [2] (./0_Introduction.tex
-<Images/Histology_Summary.png, id=231, 1157.32375pt x 255.95625pt>
+
+LaTeX Warning: Citation 'bray_global_2024' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Reference `fig:hist-summary' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'fischer_hematoxylin_2008' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'hollon_near_2020' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'novis_interinstitutional_1997' on page 3 undefined on input line 5.
+
+<Images/Histology_Summary.png, id=24, 1157.32375pt x 255.95625pt>
 File: Images/Histology_Summary.png Graphic file (type png)
 <use Images/Histology_Summary.png>
 Package pdftex.def Info: Images/Histology_Summary.png  used on input line 9.
 (pdftex.def)             Requested size: 472.03123pt x 104.39595pt.
-<Images/breast_tomas_benign_malignant_diff.png, id=247, 542.025pt x 307.1475pt>
+
+LaTeX Warning: Citation 'bai_deep_2023' on page 3 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'hollon_near_2020' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'sarri_fast_2019' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'kondepudi_foundation_2024' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'jiang_opensrh_2022' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'sarri_fast_2019' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'tomas_detection_2022' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'berisha_deep_2019' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'tang_advancing_2024' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'sala_liquid_2022' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'duckworth_frontline_2023' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'nallala_high-resolution_2016' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'noauthor_minerva_nodate' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'lasalvia_discrimination_2023' on page 3 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'tiwari_colon_2022' on page 3 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'tomas_detection_2022' on page 3 undefined on input line 19.
+
+
+LaTeX Warning: Reference `fig:breast-tomas-benign-malignant-diff' on page 3 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'he_accurate_2022' on page 3 undefined on input line 19.
+
+<Images/breast_tomas_benign_malignant_diff.png, id=26, 542.025pt x 307.1475pt>
 File: Images/breast_tomas_benign_malignant_diff.png Graphic file (type png)
 <use Images/breast_tomas_benign_malignant_diff.png>
 Package pdftex.def Info: Images/breast_tomas_benign_malignant_diff.png  used on input line 23.
 (pdftex.def)             Requested size: 377.62642pt x 213.99414pt.
-)
+
+LaTeX Warning: Citation 'tomas_detection_2022' on page 3 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'tomas_detection_2022' on page 3 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'zaki_explainable_2024' on page 3 undefined on input line 40.
+
+
 
 [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.44 \newpage
-              <./Images/Histology_Summary.png>] (./1_Methods.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-<Images/IR_Basics.png, id=277, 598.235pt x 727.71875pt>
-File: Images/IR_Basics.png Graphic file (type png)
-<use Images/IR_Basics.png>
-Package pdftex.def Info: Images/IR_Basics.png  used on input line 13.
-(pdftex.def)             Requested size: 283.22162pt x 344.52628pt.
-<Images/Cystine_IR_pH_dep.png, id=288, 344.28625pt x 275.0275pt>
-File: Images/Cystine_IR_pH_dep.png Graphic file (type png)
-<use Images/Cystine_IR_pH_dep.png>
-Package pdftex.def Info: Images/Cystine_IR_pH_dep.png  used on input line 46.
-(pdftex.def)             Requested size: 377.62642pt x 301.66249pt.
-
+l.41 
+      <./Images/Histology_Summary.png>])
 
 [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.58 
-      <./Images/breast_tomas_benign_malignant_diff.png>]
+l.57 \newpage
+              <./Images/breast_tomas_benign_malignant_diff.png>] (./1_Methods.tex
+
+LaTeX Warning: Citation 'su_fourier_2020' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'atkins_atkins_2022' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'lin_calculating_2008' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'berthomieu_fourier_2009' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'gong_application_2024' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'veit_predicting_2020' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Reference `fig:ir_bond' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Reference `fig:ir_bond' on page 5 undefined on input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+<Images/IR_Basics.png, id=44, 598.235pt x 727.71875pt>
+File: Images/IR_Basics.png Graphic file (type png)
+<use Images/IR_Basics.png>
+Package pdftex.def Info: Images/IR_Basics.png  used on input line 13.
+(pdftex.def)             Requested size: 283.22162pt x 344.52628pt.
+
+LaTeX Warning: Citation 'berthomieu_fourier_2009' on page 5 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'berthomieu_fourier_2009' on page 5 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'griffiths_fourier_1983' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'su_fourier_2020' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Reference `table:functional_groups' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'wolpert_infrared_2006' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'torii_modeling_2024' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'czowski_cancer_2020' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Reference `fig:ir_differences_ph' on page 5 undefined on input line 19.
+
+
 
 [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.58 
-     
+l.20 
+      <./Images/IR_Basics.png>]
+
+LaTeX Warning: Citation 'lasalvia_discrimination_2023' on page 6 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'talari_advances_2017' on page 6 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'lasalvia_discrimination_2023' on page 6 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'talari_advances_2017' on page 6 undefined on input line 41.
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 41--41
+[]\OT1/cmr/m/n/10 Table 1: []Relevant FTIR spec-tral as-sign-ments within the wavenum-ber range in-ves-ti-gated. From
+ []
+
+<Images/Cystine_IR_pH_dep.png, id=57, 344.28625pt x 275.0275pt>
+File: Images/Cystine_IR_pH_dep.png Graphic file (type png)
+<use Images/Cystine_IR_pH_dep.png>
+Package pdftex.def Info: Images/Cystine_IR_pH_dep.png  used on input line 46.
+(pdftex.def)             Requested size: 377.62642pt x 301.66249pt.
+
+LaTeX Warning: Citation 'wolpert_infrared_2006' on page 6 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'wolpert_infrared_2006' on page 6 undefined on input line 47.
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 47--47
+[]\OT1/cmr/m/n/10 Figure 4: []The FTIR spec-tra pro-duced by cys-tine (an amino acid) at dif-fer-ent pH lev-els
+ []
+
+
+LaTeX Warning: Citation 'noauthor_minerva_nodate' on page 6 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'nallala_high-resolution_2016' on page 6 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'nallala_high-resolution_2016' on page 6 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'mathieson_why_2020' on page 6 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'kohavi_study_2001' on page 6 undefined on input line 57.
+
+
+LaTeX Warning: Citation 't_r_stratified_2023' on page 6 undefined on input line 57.
+
+
+LaTeX Warning: Citation 'gunopulos_stratification_2011' on page 6 undefined on input line 57.
+
+
+LaTeX Warning: Citation 'szymanski_network_2017' on page 6 undefined on input line 57.
+
+
+LaTeX Warning: Citation 'villazon_cancer_2025' on page 6 undefined on input line 61.
+
+
+
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.58 
-      <./Images/IR_Basics.png>]
+l.64 \end{equation}
+                   ]
 
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.71 \subsection
-                {Machine Learning (ML) For Classification} <./Images/Cystine_IR_pH_dep.png>]
-<Images/LDA.png, id=340, 480.51862pt x 510.88739pt>
-File: Images/LDA.png Graphic file (type png)
-<use Images/LDA.png>
-Package pdftex.def Info: Images/LDA.png  used on input line 110.
-(pdftex.def)             Requested size: 472.03123pt x 501.87453pt.
+LaTeX Warning: Reference `sec:methods:pca' on page 7 undefined on input line 73.
 
 
-[7]
-
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.122 \end{equation}
-                     <./Images/LDA.png>]
-<Images/tree_ensemble.png, id=377, 1275.76625pt x 609.27625pt>
-File: Images/tree_ensemble.png Graphic file (type png)
-<use Images/tree_ensemble.png>
-Package pdftex.def Info: Images/tree_ensemble.png  used on input line 137.
-(pdftex.def)             Requested size: 377.62642pt x 180.33922pt.
+LaTeX Warning: Citation 'fisher_use_1936' on page 7 undefined on input line 73.
 
 
-LaTeX Warning: Reference `appendix:Activations' on page 9 undefined on input line 143.
+LaTeX Warning: Citation 'ghojogh_linear_2019' on page 7 undefined on input line 73.
 
 
-LaTeX Warning: Reference `appendix:ML_methods' on page 9 undefined on input line 143.
+LaTeX Warning: Citation 'chen_xgboost_2016' on page 7 undefined on input line 73.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+LaTeX Warning: Citation 'pedregosa_scikit-learn_2011' on page 7 undefined on input line 73.
+
+
+LaTeX Warning: Citation 'chen_xgboost_2016' on page 7 undefined on input line 73.
+
+
+LaTeX Warning: Reference `appendix:ML_methods' on page 7 undefined on input line 73.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+LaTeX Warning: Citation 'schmidhuber_deep_2015' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'goodfellow_deep_2016' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'lussier_deep_2020' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Reference `appendix:activations' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'rumelhart_learning_1986' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'ruder_overview_2017' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'goodfellow_deep_2016' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'kukacka_regularization_2017' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Reference `sec:methods:data_split' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'kingma_adam_2017' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'biewald_experiment_2020' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Reference `appendix:ML_methods' on page 7 undefined on input line 76.
+
+
+LaTeX Warning: Reference `fig:connection_methods' on page 7 undefined on input line 76.
+
+
+Overfull \hbox (4.41603pt too wide) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 Neural net-works [[], [], []] are ma-chine learn-
+ []
+
+
+Overfull \hbox (20.62154pt too wide) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 weights and bi-ases as-so-ci-ated with each neu-ron are then learnt us-ing back-prop-a-ga-tion [[]]
+ []
+
+
+Overfull \hbox (17.81981pt too wide) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 to out-puts. With suit-able model de-sign, reg-u-lar-i-sa-tion [[], []]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
 
-[9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.144 
-      {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/tree_ensemble.png>]
-<Images/connection_methods.png, id=412, 432.18417pt x 677.95003pt>
+l.77 
+      <./Images/Cystine_IR_pH_dep.png>]
+<Images/connection_methods.png, id=77, 432.18417pt x 677.95003pt>
 File: Images/connection_methods.png Graphic file (type png)
 <use Images/connection_methods.png>
-Package pdftex.def Info: Images/connection_methods.png  used on input line 147.
+Package pdftex.def Info: Images/connection_methods.png  used on input line 80.
 (pdftex.def)             Requested size: 401.22942pt x 629.42152pt.
 
 
-LaTeX Warning: Float too large for page by 8.76254pt on input line 150.
+LaTeX Warning: Citation 'alzubaidi_review_2021' on page 8 undefined on input line 81.
 
-<Images/SCNN_Final.png, id=429, 984.624pt x 452.673pt>
+
+LaTeX Warning: Citation 'shenfield_novel_2020' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'dumoulin_guide_2018' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'vaswani_attention_2023' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'dosovitskiy_image_2021' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'alzubaidi_review_2021' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'shenfield_novel_2020' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'dumoulin_guide_2018' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'vaswani_attention_2023' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'dosovitskiy_image_2021' on page 8 undefined on input line 81.
+
+
+LaTeX Warning: Float too large for page by 20.76254pt on input line 83.
+
+
+LaTeX Warning: Citation 'zaki_explainable_2024' on page 8 undefined on input line 93.
+
+
+LaTeX Warning: Reference `fig:scnn_arch' on page 8 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'song_fine-grained_nodate' on page 8 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'li_learning_2020' on page 8 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'zaki_explainable_2024' on page 8 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'yu_three-parameter_2021' on page 8 undefined on input line 93.
+
+<Images/SCNN_Final.png, id=78, 984.624pt x 452.673pt>
 File: Images/SCNN_Final.png Graphic file (type png)
 <use Images/SCNN_Final.png>
-Package pdftex.def Info: Images/SCNN_Final.png  used on input line 168.
+Package pdftex.def Info: Images/SCNN_Final.png  used on input line 101.
 (pdftex.def)             Requested size: 472.03123pt x 217.0181pt.
-<Images/lime_explanation.png, id=434, 513.92pt x 317.185pt>
+
+LaTeX Warning: Citation 'ribeiro_why_2016' on page 8 undefined on input line 108.
+
+
+LaTeX Warning: Citation 'samuels_one-hot_2024' on page 8 undefined on input line 108.
+
+
+LaTeX Warning: Reference `fig:lime_illustration' on page 8 undefined on input line 113.
+
+
+LaTeX Warning: Citation 'shan_targeted_2019' on page 8 undefined on input line 117.
+
+
+LaTeX Warning: Citation 'ribeiro_why_2016' on page 8 undefined on input line 117.
+
+
+LaTeX Warning: Citation 'why' on page 8 undefined on input line 117.
+
+
+LaTeX Warning: Reference `eq:explanation' on page 8 undefined on input line 117.
+
+
+LaTeX Warning: Citation 'ribeiro_why_2016' on page 8 undefined on input line 117.
+
+
+
+[8{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.120 \end{equation}
+                     <./Images/connection_methods.png>]
+
+LaTeX Warning: Citation 'ribeiro_marcotcrlime_2025' on page 10 undefined on input line 121.
+
+
+LaTeX Warning: Reference `fig:lime_weights_example' on page 10 undefined on input line 125.
+
+<Images/lime_explanation.png, id=100, 513.92pt x 317.185pt>
 File: Images/lime_explanation.png Graphic file (type png)
 <use Images/lime_explanation.png>
-Package pdftex.def Info: Images/lime_explanation.png  used on input line 196.
+Package pdftex.def Info: Images/lime_explanation.png  used on input line 129.
 (pdftex.def)             Requested size: 283.22162pt x 174.80074pt.
-<Images/lime_weights_example.png, id=437, 877.71915pt x 566.5968pt>
+
+LaTeX Warning: Citation 'ribeiro_why_2016' on page 10 undefined on input line 130.
+
+
+LaTeX Warning: Citation 'ribeiro_why_2016' on page 10 undefined on input line 130.
+
+<Images/lime_weights_example.png, id=101, 877.71915pt x 566.5968pt>
 File: Images/lime_weights_example.png Graphic file (type png)
 <use Images/lime_weights_example.png>
-Package pdftex.def Info: Images/lime_weights_example.png  used on input line 203.
+Package pdftex.def Info: Images/lime_weights_example.png  used on input line 136.
 (pdftex.def)             Requested size: 377.62642pt x 243.7702pt.
 
-LaTeX Warning: Reference `sec:vae_zaki' on page 10 undefined on input line 210.
+LaTeX Warning: Citation 'zaki_explainable_2024' on page 10 undefined on input line 143.
 
 
-LaTeX Warning: Reference `sec:methods:vae' on page 10 undefined on input line 210.
+LaTeX Warning: Citation 'kingma_auto-encoding_2022' on page 10 undefined on input line 143.
+
+
+LaTeX Warning: Citation 'kingma_semi-supervised_2014' on page 10 undefined on input line 143.
+
+
+LaTeX Warning: Citation 'jin_k-means_2011' on page 10 undefined on input line 143.
 
 
 
-[10]
-
-[11
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.211 
-       <./Images/connection_methods.png>]
-
-[12
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.211 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.211 
+l.145 
        <./Images/SCNN_Final.png> <./Images/lime_explanation.png>]
-<Images/VAE_overview.png, id=478, 733.74126pt x 908.39375pt>
+
+LaTeX Warning: Reference `fig:VAE' on page 11 undefined on input line 149.
+
+
+LaTeX Warning: Reference `appendix:VAE_derivation' on page 11 undefined on input line 149.
+
+
+LaTeX Warning: Citation 'higgins_beta-vae_2017' on page 11 undefined on input line 154.
+
+<Images/VAE_overview.png, id=115, 733.74126pt x 908.39375pt>
 File: Images/VAE_overview.png Graphic file (type png)
 <use Images/VAE_overview.png>
-Package pdftex.def Info: Images/VAE_overview.png  used on input line 219.
+Package pdftex.def Info: Images/VAE_overview.png  used on input line 159.
 (pdftex.def)             Requested size: 283.22162pt x 350.64056pt.
 
-
-[13
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.235 \begin{equation}
-                       <./Images/lime_weights_example.png>]
-
-[14
-pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.235 \begin{equation}
-                       <./Images/VAE_overview.png>]
-
-Package natbib Warning: Citation `SGVB_gradient_variational_bayes' on page 15 undefined on input line 248.
+LaTeX Warning: Citation 'kingma_introduction_nodate' on page 11 undefined on input line 160.
 
 
-Package natbib Warning: Citation `beta-vae' on page 15 undefined on input line 269.
+LaTeX Warning: Citation 'kingma_introduction_nodate' on page 11 undefined on input line 160.
 
 
-LaTeX Warning: Reference `sec:code:ELBOs' on page 15 undefined on input line 269.
+LaTeX Warning: Citation 'kingma_semi-supervised_2014' on page 11 undefined on input line 165.
 
 
-LaTeX Warning: Reference `sec:code:reparam' on page 15 undefined on input line 269.
+LaTeX Warning: Reference `eq:elbo' on page 11 undefined on input line 165.
 
 
-LaTeX Warning: Reference `tab:VAE_architectures' on page 15 undefined on input line 269.
+LaTeX Warning: Citation 'kingma_semi-supervised_2014' on page 11 undefined on input line 165.
 
 
-LaTeX Warning: Reference `appendix:code:VAEs' on page 15 undefined on input line 269.
+LaTeX Warning: Citation 'mao_cross-entropy_2023' on page 11 undefined on input line 165.
 
 
-Overfull \hbox (4.8016pt too wide) in paragraph at lines 277--332
+LaTeX Warning: Reference `sec:code:ELBOs' on page 11 undefined on input line 165.
+
+
+LaTeX Warning: Reference `sec:code:reparam' on page 11 undefined on input line 165.
+
+
+LaTeX Warning: Reference `tab:ssvae_arch' on page 11 undefined on input line 165.
+
+
+Overfull \hbox (107.69168pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 When us-ing a semi-supervised VAE ap-proach, we fol-low the M2 method de-scribed by Kingma et al. [[]],
+ []
+
+
+Overfull \hbox (52.78712pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 so mod-ify ([]) to in-clude a clas-si-fi-ca-tion cross-entropy loss [[], []]
+ []
+
+
+Overfull \hbox (4.8016pt too wide) in paragraph at lines 173--228
  [][] 
  []
 
 
+LaTeX Warning: Citation 'zaki_explainable_2024' on page 11 undefined on input line 232.
 
-[15]
 
-[16
+
+[11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.233 \begin{equation}
+                       <./Images/lime_weights_example.png>]
+
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.233 \begin{equation}
+                       <./Images/VAE_overview.png>]
+
+[13
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.337 \begin{equation}
+l.233 \begin{equation}
                       ]
-<Images/confusion_breakdown_coloured.pdf, id=523, 421.88177pt x 425.8811pt>
+
+LaTeX Warning: Reference `fig:confusion_matrix' on page 14 undefined on input line 239.
+
+<Images/confusion_breakdown_coloured.pdf, id=138, 421.88177pt x 425.8811pt>
 File: Images/confusion_breakdown_coloured.pdf Graphic file (type pdf)
 <use Images/confusion_breakdown_coloured.pdf>
-Package pdftex.def Info: Images/confusion_breakdown_coloured.pdf  used on input line 368.
+Package pdftex.def Info: Images/confusion_breakdown_coloured.pdf  used on input line 264.
 (pdftex.def)             Requested size: 283.22162pt x 285.90422pt.
 ) (./3_Results.tex
 
-[17]
+[14]
 
-LaTeX Warning: Reference `sec:methods:data_collection' on page 18 undefined on input line 4.
+LaTeX Warning: Reference `sec:methods:data_collection' on page 15 undefined on input line 4.
+
+
+LaTeX Warning: Citation 'nallala_high-resolution_2016' on page 15 undefined on input line 4.
+
+
+LaTeX Warning: Reference `fig:dataset_differences' on page 15 undefined on input line 4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<Images/Dataset_Class_Differences.png, id=539, 540.94312pt x 405.70734pt>
+
+LaTeX Warning: Reference `fig:IR_and_HE_categories' on page 15 undefined on input line 7.
+
+<Images/Dataset_Class_Differences.png, id=153, 540.94312pt x 405.70734pt>
 File: Images/Dataset_Class_Differences.png Graphic file (type png)
 <use Images/Dataset_Class_Differences.png>
 Package pdftex.def Info: Images/Dataset_Class_Differences.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 354.0211pt.
-<Images/IR_and_HE_categories.png, id=540, 476.43997pt x 727.0362pt>
+<Images/IR_and_HE_categories.png, id=154, 476.43997pt x 727.0362pt>
 File: Images/IR_and_HE_categories.png Graphic file (type png)
 <use Images/IR_and_HE_categories.png>
 Package pdftex.def Info: Images/IR_and_HE_categories.png  used on input line 18.
 (pdftex.def)             Requested size: 401.22942pt x 612.25935pt.
 
 
-[18
-pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.24 \newpage
               <./Images/confusion_breakdown_coloured.pdf>]
 
-LaTeX Warning: Reference `sec:methods:baseline_classificaiton' on page 19 undefined on input line 28.
+LaTeX Warning: Reference `sec:methods:baseline_classificaiton' on page 16 undefined on input line 28.
 
-<Images/best_val_accuracy.png, id=581, 571.47502pt x 426.93503pt>
+
+LaTeX Warning: Reference `sec:methods:xgboost' on page 16 undefined on input line 28.
+
+
+LaTeX Warning: Reference `table:quad_results_full' on page 16 undefined on input line 28.
+
+
+LaTeX Warning: Reference `table:binary_results_full' on page 16 undefined on input line 28.
+
+
+LaTeX Warning: Reference `sec:methods:scnn' on page 16 undefined on input line 199.
+
+
+LaTeX Warning: Reference `sec:methods:data_split' on page 16 undefined on input line 199.
+
+
+LaTeX Warning: Reference `tab:scnn_class_hyper_ranges' on page 16 undefined on input line 199.
+
+
+LaTeX Warning: Reference `fig:val_fold_boxes' on page 16 undefined on input line 199.
+
+
+LaTeX Warning: Citation 'castagnos_simple_2022' on page 16 undefined on input line 199.
+
+
+LaTeX Warning: Citation 'polat_class_2025' on page 16 undefined on input line 199.
+
+
+
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.217 \end{table}
+                  <./Images/Dataset_Class_Differences.png>]
+
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.217 \end{table}
+                  <./Images/IR_and_HE_categories.png>]
+<Images/best_val_accuracy.png, id=205, 571.47502pt x 426.93503pt>
 File: Images/best_val_accuracy.png Graphic file (type png)
 <use Images/best_val_accuracy.png>
 Package pdftex.def Info: Images/best_val_accuracy.png  used on input line 221.
 (pdftex.def)             Requested size: 472.03123pt x 352.64265pt.
+
+
+LaTeX Warning: Reference `table:quad_results_full' on page 18 undefined on input line 227.
+
+
+LaTeX Warning: Reference `table:binary_results_full' on page 18 undefined on input line 227.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
  []
 
 
+LaTeX Warning: Citation 'xia_towards_2025' on page 18 undefined on input line 230.
 
-[19
-pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.228 
-       <./Images/Dataset_Class_Differences.png>]
 
-[20
-pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.228 
-       <./Images/IR_and_HE_categories.png>]
+LaTeX Warning: Reference `fig:val_fold_boxes' on page 18 undefined on input line 230.
 
-[21
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.228 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.228 
-       <./Images/best_val_accuracy.png>]
-<Images/combined_accuracy.pdf, id=606, 722.7pt x 433.62pt>
+
+LaTeX Warning: Reference `tab:label_smooth_tests' on page 18 undefined on input line 230.
+
+<Images/combined_accuracy.pdf, id=206, 722.7pt x 433.62pt>
 File: Images/combined_accuracy.pdf Graphic file (type pdf)
 <use Images/combined_accuracy.pdf>
 Package pdftex.def Info: Images/combined_accuracy.pdf  used on input line 268.
 (pdftex.def)             Requested size: 377.62642pt x 226.57542pt.
 
+LaTeX Warning: Reference `fig:combined_accuracy' on page 18 undefined on input line 273.
 
-LaTeX Warning: Reference `fig:categorisaiton_train_test' on page 22 undefined on input line 273.
+
+LaTeX Warning: Reference `tab:confusion_SCNN_4class' on page 18 undefined on input line 273.
+
+
+LaTeX Warning: Reference `sec:mdethods:data_collection' on page 18 undefined on input line 273.
+
+
+LaTeX Warning: Reference `fig:categorisaiton_train_test' on page 18 undefined on input line 273.
+
+
+LaTeX Warning: Reference `fig:categorisation_train_test' on page 18 undefined on input line 273.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 273--274
@@ -787,7 +1444,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--274
  []
 
 
-LaTeX Warning: Reference `fig:categorisaiton_train_test' on page 22 undefined on input line 276.
+
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.274 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.274 
+      ]
+
+[19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.274 
+       <./Images/best_val_accuracy.png>]
+
+LaTeX Warning: Reference `fig:IR_and_HE_categories' on page 20 undefined on input line 276.
+
+
+LaTeX Warning: Reference `fig:categorisaiton_train_test' on page 20 undefined on input line 276.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 275--277
@@ -795,24 +1475,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--277
  []
 
 
+LaTeX Warning: Reference `fig:uncertainty' on page 20 undefined on input line 279.
 
-[22
-pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.277 
-      ]
-<Images/Categorisation_train_test.png, id=623, 476.71504pt x 761.21858pt>
+
+LaTeX Warning: Reference `fig:uncertainty' on page 20 undefined on input line 279.
+
+
+LaTeX Warning: Reference `fig:uncertainty' on page 20 undefined on input line 279.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Images/Categorisation_train_test.png, id=221, 476.71504pt x 761.21858pt>
 File: Images/Categorisation_train_test.png Graphic file (type png)
 <use Images/Categorisation_train_test.png>
 Package pdftex.def Info: Images/Categorisation_train_test.png  used on input line 296.
 (pdftex.def)             Requested size: 377.62642pt x 603.01707pt.
-<Images/Confidence.png, id=624, 477.9762pt x 816.57452pt>
+<Images/Confidence.png, id=222, 477.9762pt x 816.57452pt>
 File: Images/Confidence.png Graphic file (type png)
 <use Images/Confidence.png>
 Package pdftex.def Info: Images/Confidence.png  used on input line 303.
 (pdftex.def)             Requested size: 377.62642pt x 645.13666pt.
-<Images/lime_contributions_plot.png, id=630, 722.7pt x 433.62pt>
+
+LaTeX Warning: Reference `fig:IR_and_HE_categories' on page 20 undefined on input line 304.
+
+
+LaTeX Warning: Reference `fig:categorisation_train_test' on page 20 undefined on input line 304.
+
+
+LaTeX Warning: Reference `fig:IR_and_HE_categories' on page 20 undefined on input line 304.
+
+
+LaTeX Warning: Reference `fig:categorisation_train_test' on page 20 undefined on input line 304.
+
+
+LaTeX Warning: Reference `fig:lime_weights_classes' on page 20 undefined on input line 310.
+
+
+LaTeX Warning: Citation 'noauthor_ultrafast_2022' on page 20 undefined on input line 310.
+
+
+
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.311 
+       <./Images/combined_accuracy.pdf>]
+
+[21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.311 
+       <./Images/Categorisation_train_test.png>]
+
+[22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.311 
+       <./Images/Confidence.png>]
+<Images/lime_contributions_plot.png, id=289, 722.7pt x 433.62pt>
 File: Images/lime_contributions_plot.png Graphic file (type png)
 <use Images/lime_contributions_plot.png>
 Package pdftex.def Info: Images/lime_contributions_plot.png  used on input line 314.
@@ -822,217 +1546,477 @@ Package pdftex.def Info: Images/lime_contributions_plot.png  used on input line 
 LaTeX Warning: Reference `sec:method:crime' on page 23 undefined on input line 320.
 
 
+LaTeX Warning: Reference `sec:lime_explanations' on page 23 undefined on input line 320.
+
+
+LaTeX Warning: Reference `fig:latent_space' on page 23 undefined on input line 320.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
 
+LaTeX Warning: Reference `fig:latent_space' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Reference `fig:crime_groupings' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Reference `fig:crime_lime_plots' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Reference `fig:crime_groupings' on page 23 undefined on input line 323.
+
+
+LaTeX Warning: Reference `fig:latent_space' on page 23 undefined on input line 323.
+
+
 
 [23
-pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.321 
-      
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.321 
-       <./Images/combined_accuracy.pdf>]
-
-[24
+l.324 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.321 
-       <./Images/Categorisation_train_test.png>]
-
-[25
-pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.321 
-       <./Images/Confidence.png>]
-<Images/crime_umap_h.png, id=704, 524.13817pt x 250.7769pt>
+l.324 
+       <./Images/lime_contributions_plot.png>]
+<Images/crime_umap_h.png, id=298, 524.13817pt x 250.7769pt>
 File: Images/crime_umap_h.png Graphic file (type png)
 <use Images/crime_umap_h.png>
 Package pdftex.def Info: Images/crime_umap_h.png  used on input line 327.
 (pdftex.def)             Requested size: 472.03123pt x 225.85017pt.
-<Images/crime_groupings_by_category_100.png, id=705, 557.63889pt x 463.50945pt>
+<Images/crime_groupings_by_category_100.png, id=299, 557.63889pt x 463.50945pt>
 File: Images/crime_groupings_by_category_100.png Graphic file (type png)
 <use Images/crime_groupings_by_category_100.png>
 Package pdftex.def Info: Images/crime_groupings_by_category_100.png  used on input line 334.
 (pdftex.def)             Requested size: 377.62642pt x 313.88797pt.
-<Images/crime_lime_plots.png, id=706, 525.21802pt x 632.3625pt>
+<Images/crime_lime_plots.png, id=300, 525.21802pt x 632.3625pt>
 File: Images/crime_lime_plots.png Graphic file (type png)
 <use Images/crime_lime_plots.png>
 Package pdftex.def Info: Images/crime_lime_plots.png  used on input line 341.
 (pdftex.def)             Requested size: 472.03123pt x 568.34908pt.
 
+
+LaTeX Warning: Reference `sec:crime_linear' on page 24 undefined on input line 347.
+
+
+LaTeX Warning: Reference `tab:ssvae_arch' on page 24 undefined on input line 347.
+
+
+LaTeX Warning: Reference `tab:quad_results_full_context' on page 24 undefined on input line 347.
+
+
+LaTeX Warning: Reference `tab:binary_results_full_context' on page 24 undefined on input line 347.
+
+
+LaTeX Warning: Reference `fig:quad_context' on page 24 undefined on input line 347.
+
+
+LaTeX Warning: Reference `fig:bin_context' on page 24 undefined on input line 347.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
+<Images/quad_class3_metrics_fig_updated4.pdf, id=301, 784.44797pt x 733.36246pt>
+File: Images/quad_class3_metrics_fig_updated4.pdf Graphic file (type pdf)
+<use Images/quad_class3_metrics_fig_updated4.pdf>
+Package pdftex.def Info: Images/quad_class3_metrics_fig_updated4.pdf  used on input line 354.
+(pdftex.def)             Requested size: 472.03123pt x 441.28537pt.
+
+LaTeX Warning: Reference `tab:ssvae_arch' on page 24 undefined on input line 355.
 
 
-[26
+LaTeX Warning: Reference `tab:ssvae_arch' on page 24 undefined on input line 355.
+
+<Images/binary_metrics_fig_updated4.pdf, id=302, 776.77869pt x 733.36246pt>
+File: Images/binary_metrics_fig_updated4.pdf Graphic file (type pdf)
+<use Images/binary_metrics_fig_updated4.pdf>
+Package pdftex.def Info: Images/binary_metrics_fig_updated4.pdf  used on input line 361.
+(pdftex.def)             Requested size: 472.03123pt x 445.66074pt.
+
+LaTeX Warning: Reference `tab:ssvae_arch' on page 24 undefined on input line 365.
+
+
+LaTeX Warning: Reference `tab:ssvae_arch' on page 24 undefined on input line 365.
+
+
+LaTeX Warning: Citation 'cheng_variational_2023' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'cerri_variational_2019' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'alves_variational_2024' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'andika_accelerating_2025' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'leung_variational_2023' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'gagliano_physics-informed_2023' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'gabbard_bayesian_2022' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'bayley_rapid_2022' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'bayley_robust_2020' on page 24 undefined on input line 370.
+
+
+LaTeX Warning: Citation 'yamamoto_use_2020' on page 24 undefined on input line 370.
+
+) (./5_Conclusions.tex
+Overfull \hbox (16.44333pt too wide) in paragraph at lines 370--1
+[]\OT1/cmr/m/n/10 ], de-tect grav-i-ta-tional waves [[], [],
+ []
+
+
+
+[24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \section
+            {Conclusions} <./Images/crime_umap_h.png>]
+
+[25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.348 
-       <./Images/lime_contributions_plot.png>]
+l.1 \section
+            {Conclusions} <./Images/crime_groupings_by_category_100.png>]
 
-[27
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.348 
-      
+l.1 \section
+            {Conclusions} <./Images/crime_lime_plots.png>]
+
+[27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.348 
-       <./Images/crime_umap_h.png> <./Images/crime_groupings_by_category_100.png>]
+l.1 \section
+            {Conclusions} <./Images/quad_class3_metrics_fig_updated4.pdf>]
 
 [28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.348 
-       <./Images/crime_lime_plots.png>]
-<Images/quad_class3_metrics_fig_updated4.pdf, id=732, 784.44797pt x 733.36246pt>
-File: Images/quad_class3_metrics_fig_updated4.pdf Graphic file (type pdf)
-<use Images/quad_class3_metrics_fig_updated4.pdf>
-Package pdftex.def Info: Images/quad_class3_metrics_fig_updated4.pdf  used on input line 354.
-(pdftex.def)             Requested size: 472.03123pt x 441.28537pt.
-<Images/binary_metrics_fig_updated4.pdf, id=735, 776.77869pt x 733.36246pt>
-File: Images/binary_metrics_fig_updated4.pdf Graphic file (type pdf)
-<use Images/binary_metrics_fig_updated4.pdf>
-Package pdftex.def Info: Images/binary_metrics_fig_updated4.pdf  used on input line 361.
-(pdftex.def)             Requested size: 472.03123pt x 445.66074pt.
-) (./5_Conclusions.tex
+l.1 \section
+            {Conclusions} <./Images/binary_metrics_fig_updated4.pdf>]
+
+LaTeX Warning: Citation 'lasalvia_discrimination_2023' on page 29 undefined on input line 2.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 5.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 5.
+
+
+LaTeX Warning: Citation '' on page 29 undefined on input line 5.
+
+
+LaTeX Warning: Citation '' on page 29 undefined on input line 5.
+
+
+LaTeX Warning: Citation '' on page 29 undefined on input line 5.
 
 )
 
 [29]
 
-[30
+LaTeX Warning: Empty bibliography on input line 76.
+
+(./appendix_traditional_ml.tex
+
+LaTeX Warning: Citation 'wold_principal_nodate' on page 30 undefined on input line 5.
+
+
+Overfull \hbox (4.51633pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/10 PCA [[]] is a di-men-sion-al-ity re-duc-tion tech-nique which aims to project high-dimensional
+ []
+
+
+LaTeX Warning: Citation 'shlens_tutorial_2014' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'fisher_use_1936' on page 30 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'tharwat_linear_2017' on page 30 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'ghojogh_linear_2019' on page 30 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'haynes_maximum_2013' on page 30 undefined on input line 33.
+
+
+Overfull \hbox (24.933pt too wide) in paragraph at lines 32--34
+\OT1/cmr/m/n/10 and co-vari-ance ma-tri-ces $[]$ are es-ti-mated us-ing max-i-mum like-li-hood es-ti-ma-tion (MLE) [[]].
+ []
+
+
+LaTeX Warning: Citation 'ghojogh_linear_2019' on page 30 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'mika_fisher_1999' on page 30 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'tharwat_linear_2017' on page 30 undefined on input line 37.
+
+
+LaTeX Warning: Reference `fig:LDA' on page 30 undefined on input line 37.
+
+<Images/LDA.png, id=443, 480.51862pt x 510.88739pt>
+File: Images/LDA.png Graphic file (type png)
+<use Images/LDA.png>
+Package pdftex.def Info: Images/LDA.png  used on input line 41.
+(pdftex.def)             Requested size: 472.03123pt x 501.87453pt.
+
+LaTeX Warning: Citation 'tharwat_linear_2017' on page 30 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'tharwat_linear_2017' on page 30 undefined on input line 42.
+
+
+
+[30]
+
+[31
 pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.60 \newpage
-              <./Images/quad_class3_metrics_fig_updated4.pdf>]
+l.53 \end{equation}
+                    <./Images/LDA.png>]
 
-[31
+LaTeX Warning: Citation 'chen_xgboost_2016' on page 32 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'friedman_additive_2000' on page 32 undefined on input line 63.
+
+
+LaTeX Warning: Citation 'chen_xgboost_2016' on page 32 undefined on input line 64.
+
+
+LaTeX Warning: Reference `fig:tree_ensemble' on page 32 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'bridle_probabilistic_1990' on page 32 undefined on input line 64.
+
+<Images/tree_ensemble.png, id=466, 1275.76625pt x 609.27625pt>
+File: Images/tree_ensemble.png Graphic file (type png)
+<use Images/tree_ensemble.png>
+Package pdftex.def Info: Images/tree_ensemble.png  used on input line 68.
+(pdftex.def)             Requested size: 377.62642pt x 180.33922pt.
+
+LaTeX Warning: Citation 'chen_xgboost_2016' on page 32 undefined on input line 69.
+
+
+LaTeX Warning: Citation 'chen_xgboost_2016' on page 32 undefined on input line 69.
+
+)
+
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.60 \newpage
-              <./Images/binary_metrics_fig_updated4.pdf>] (./5_main.bbl
+l.82 \newpage
+              <./Images/tree_ensemble.png>] (./appendix_ML_connections.tex
 
-[32]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 104.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
+LaTeX Warning: Citation 'minsky_perceptrons_2017' on page 33 undefined on input line 5.
 
 
-[33]
+LaTeX Warning: Citation 'rosenblatt_principles_nodate' on page 33 undefined on input line 5.
 
-[34]
 
-[35])
+LaTeX Warning: Citation 'rosenblatt_principles_nodate' on page 33 undefined on input line 9.
 
-[36] (./appendix_ML_connections.tex
+
+LaTeX Warning: Citation 'cybenko_approximation_1989' on page 33 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'leshno_multilayer_1993' on page 33 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'hornik_multilayer_1989' on page 33 undefined on input line 9.
+
+
+LaTeX Warning: Reference `fig:connection_methods' on page 33 undefined on input line 9.
+
+
+Overfull \hbox (19.62721pt too wide) in paragraph at lines 8--10
+\OT1/cmr/m/n/10 tion, we form a multi-layer per-cep-tion (MLP) which is able to learn any func-tion [[],
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
+
+
+LaTeX Warning: Citation 'kiranyaz_1d_2019' on page 33 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'lecun_gradient-based_1998' on page 33 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'goodfellow_deep_2016' on page 33 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'dumoulin_guide_2018' on page 33 undefined on input line 12.
+
+
+LaTeX Warning: Reference `fig:connection_methods' on page 33 undefined on input line 12.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-) (./appendix_activations.tex
 
-[37]
-<Images/activations_visible.pdf, id=921, 387.47574pt x 267.91092pt>
+LaTeX Warning: Citation 'vaswani_attention_2023' on page 33 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'vaswani_attention_2023' on page 33 undefined on input line 22.
+
+
+LaTeX Warning: Reference `fig:connection_methods' on page 33 undefined on input line 26.
+
+)
+
+[33] (./appendix_vae.tex
+
+LaTeX Warning: Reference `eq:intractable' on page 34 undefined on input line 8.
+
+
+LaTeX Warning: Citation '' on page 34 undefined on input line 12.
+
+
+LaTeX Warning: Citation '' on page 34 undefined on input line 22.
+
+
+LaTeX Warning: Citation '' on page 34 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'SGVB_gradient_variational_bayes' on page 34 undefined on input line 26.
+
+
+LaTeX Warning: Reference `eq:kl_div' on page 34 undefined on input line 35.
+
+
+LaTeX Warning: Citation '' on page 34 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'beta-vae' on page 34 undefined on input line 47.
+
+)
+
+[34] (./appendix_activations.tex
+
+LaTeX Warning: Reference `fig:activation_functions' on page 35 undefined on input line 4.
+
+<Images/activations_visible.pdf, id=511, 387.47574pt x 267.91092pt>
 File: Images/activations_visible.pdf Graphic file (type pdf)
 <use Images/activations_visible.pdf>
 Package pdftex.def Info: Images/activations_visible.pdf  used on input line 16.
 (pdftex.def)             Requested size: 283.22162pt x 195.82678pt.
-) (./appendix_Tiago.tex) (./appendix_code.tex
-\pydata@fh@_05B9C9A9EA5561975F8C880219EDE7A6.data.minted=\write6
-\openout6 = `_05B9C9A9EA5561975F8C880219EDE7A6.data.minted'.
+) (./appendix_Tiago.tex)
 
-runsystem(latexminted config  --timestamp 20250602032242 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
-
- (./_05B9C9A9EA5561975F8C880219EDE7A6.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250602032242 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
-
- (./_minted/xcode.style.minted) (./_minted/497480B91507A524F112B98B99A15BA7.highlight.minted
-
-[38
+[35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.5 
-    
+l.90 \newpage
+             
 pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.5 
-     <./Images/activations_visible.pdf>]
+l.90 \newpage
+              <./Images/activations_visible.pdf>] (./appendix_code.tex
+\pydata@fh@_05B9C9A9EA5561975F8C880219EDE7A6.data.minted=\write7
+\openout7 = `_05B9C9A9EA5561975F8C880219EDE7A6.data.minted'.
 
-[39]) (./_minted/285C9D795969DF9C2BD62618FB489D21.highlight.minted
+runsystem(latexminted config  --timestamp 20250602115240 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
 
-[40]) (./_minted/00E573342F378766699780EC9112C8AA.highlight.minted)) (./appendix_all_results.tex
+ (./_05B9C9A9EA5561975F8C880219EDE7A6.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20250602115240 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
 
-LaTeX Warning: Reference `tab:quad_results_full' on page 41 undefined on input line 2.
+ (./_minted/xcode.style.minted) (./_minted/497480B91507A524F112B98B99A15BA7.highlight.minted
+
+[36]
+
+[37]) (./_minted/285C9D795969DF9C2BD62618FB489D21.highlight.minted) (./_minted/CA7712E2E406C8425FFCB54A8F82072B.highlight.minted)) (./appendix_all_results.tex
+
+LaTeX Warning: Reference `tab:quad_results_full' on page 38 undefined on input line 2.
 
 
-LaTeX Warning: Reference `tab:binary_results_full' on page 41 undefined on input line 2.
-
-)
-
-Package natbib Warning: There were undefined citations.
+LaTeX Warning: Reference `tab:binary_results_full' on page 38 undefined on input line 2.
 
 
+LaTeX Warning: Reference `tab:quad_results_full_context' on page 38 undefined on input line 2.
 
-[41]
 
-[42
+LaTeX Warning: Reference `tab:quad_results_full_context' on page 38 undefined on input line 2.
+
+
+LaTeX Warning: Reference `sec:methods:data_split' on page 38 undefined on input line 2.
+
+
+
+[38])
+
+[39
 pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.76 \end{document}
+l.97 \end{document}
                    ]
 
-[43
+[40
 pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.76 \end{document}
+l.97 \end{document}
                    ]
 
-[44
+[41
 pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.76 \end{document}
+l.97 \end{document}
                    ]
 
-[45
+[42
 pdfTeX warning (ext4): destination with the same identifier (name{table.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.76 \end{document}
-                   ] (./5_main.aux)
+l.97 \end{document}
+                   ]
+\openout7 = `_05B9C9A9EA5561975F8C880219EDE7A6.data.minted'.
+
+runsystem(latexminted clean  --timestamp 20250602115240 05B9C9A9EA5561975F8C880219EDE7A6)...executed safely (allowed).
+
+ (./5_main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1041,22 +2025,39 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `5_main.out' has not changed.
-(rerunfilecheck)             Checksum: F0D92887BE5127B6E9C971691E29E5AD;8244.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `5_main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `5_main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  11A0474E6B3B471878990EEBF3756F61;8657.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                5_main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to '5_main.run.xml'.
+\openout1 = `5_main.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 16400 strings out of 473190
- 317783 string characters out of 5715800
- 911698 words of memory out of 5000000
- 39156 multiletter control sequences out of 15000+600000
+ 22963 strings out of 473190
+ 451725 string characters out of 5715800
+ 1440058 words of memory out of 5000000
+ 45745 multiletter control sequences out of 15000+600000
  571850 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,18n,79p,1962b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,18n,81p,1962b,1366s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on 5_main.pdf (45 pages, 20738710 bytes).
+Output written on 5_main.pdf (42 pages, 20702051 bytes).
 PDF statistics:
- 1177 PDF objects out of 1200 (max. 8388607)
- 817 compressed objects within 9 object streams
- 235 named destinations out of 1000 (max. 500000)
- 446 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 757 PDF objects out of 1000 (max. 8388607)
+ 417 compressed objects within 5 object streams
+ 168 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

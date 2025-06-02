@@ -1,4 +1,4 @@
-\begin{thebibliography}{66}
+\begin{thebibliography}{94}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -135,12 +135,39 @@ Kar-Yan Su and Wai-Leng Lee.
 \newblock ISSN 2072-6694.
 \newblock \doi{10.3390/cancers12010115}.
 
+\bibitem[Atkins et~al.(2022)Atkins, Paula, and Keeler]{atkins_atkins_2022}
+Peter Atkins, Julio~De Paula, and James Keeler.
+\newblock \emph{Atkins' {{Physical Chemistry}}}.
+\newblock Oxford University Press, 12 edition, December 2022.
+\newblock ISBN 978-0-19-884781-6 978-0-19-199216-2.
+\newblock \doi{10.1093/hesc/9780198847816.001.0001}.
+
+\bibitem[Lin et~al.(2008)Lin, Gilbert, and Gill]{lin_calculating_2008}
+Ching~Yeh Lin, Andrew Gilbert, and Peter Gill.
+\newblock Calculating molecular vibrational spectra beyond the harmonic approximation.
+\newblock \emph{Theor Chem Acc}, 120:\penalty0 23--35, January 2008.
+\newblock \doi{10.1007/s00214-007-0292-8}.
+
 \bibitem[Berthomieu and Hienerwadel(2009)]{berthomieu_fourier_2009}
 Catherine Berthomieu and Rainer Hienerwadel.
 \newblock Fourier transform infrared ({{FTIR}}) spectroscopy.
 \newblock \emph{Photosynthesis Research}, 101\penalty0 (2-3):\penalty0 157--170, September 2009.
 \newblock ISSN 0166-8595, 1573-5079.
 \newblock \doi{10.1007/s11120-009-9439-x}.
+
+\bibitem[Gong et~al.(2024)Gong, Chen, and Wu]{gong_application_2024}
+Yahui Gong, Xuerong Chen, and Wei Wu.
+\newblock Application of fourier transform infrared ({{FTIR}}) spectroscopy in sample preparation: {{Material}} characterization and mechanism investigation.
+\newblock \emph{Advances in Sample Preparation}, 11:\penalty0 100122, August 2024.
+\newblock ISSN 2772-5820.
+\newblock \doi{10.1016/j.sampre.2024.100122}.
+
+\bibitem[Veit et~al.(2020)Veit, Wilkins, Yang, Jr, and Ceriotti]{veit_predicting_2020}
+Max Veit, David~M. Wilkins, Yang Yang, Robert A.~DiStasio Jr, and Michele Ceriotti.
+\newblock Predicting molecular dipole moments by combining atomic partial charges and atomic dipoles.
+\newblock \emph{The Journal of Chemical Physics}, 153\penalty0 (2):\penalty0 024113, July 2020.
+\newblock ISSN 0021-9606, 1089-7690.
+\newblock \doi{10.1063/5.0009106}.
 
 \bibitem[Griffiths(1983)]{griffiths_fourier_1983}
 Peter~R. Griffiths.
@@ -177,6 +204,13 @@ Abdullah Chandra~Sekhar Talari, Martinez ~, Marcela A.~Garcia, Movasaghi ~, Zany
 \newblock ISSN 0570-4928.
 \newblock \doi{10.1080/05704928.2016.1230863}.
 
+\bibitem[Mathieson and Thomas(2020)]{mathieson_why_2020}
+William Mathieson and Geraldine~A. Thomas.
+\newblock Why {{Formalin-fixed}}, {{Paraffin-embedded Biospecimens Must Be Used}} in {{Genomic Medicine}}: {{An Evidence-based Review}} and {{Conclusion}}.
+\newblock \emph{Journal of Histochemistry and Cytochemistry}, 68\penalty0 (8):\penalty0 543--552, August 2020.
+\newblock ISSN 0022-1554.
+\newblock \doi{10.1369/0022155420945050}.
+
 \bibitem[Kohavi(2001)]{kohavi_study_2001}
 Ron Kohavi.
 \newblock A {{Study}} of {{Cross-Validation}} and {{Bootstrap}} for {{Accuracy Estimation}} and {{Model Selection}}.
@@ -208,14 +242,6 @@ Jorge Villazon, Nathaniel Dela~Cruz, and Lingyan Shi.
 \newblock ISSN 0003-2700.
 \newblock \doi{10.1021/acs.analchem.4c06966}.
 
-\bibitem[Wold and Geladi()]{wold_principal_nodate}
-Svante Wold and KIM ESBENSENand~PAUL Geladi.
-\newblock Principal {{Component Analysis}}.
-
-\bibitem[Shlens(2014)]{shlens_tutorial_2014}
-Jonathon Shlens.
-\newblock A {{Tutorial}} on {{Principal Component Analysis}}, April 2014.
-
 \bibitem[Fisher(1936)]{fisher_use_1936}
 R.~A. Fisher.
 \newblock The {{Use}} of {{Multiple Measurements}} in {{Taxonomic Problems}}.
@@ -223,30 +249,9 @@ R.~A. Fisher.
 \newblock ISSN 2050-1439.
 \newblock \doi{10.1111/j.1469-1809.1936.tb02137.x}.
 
-\bibitem[Tharwat et~al.(2017)Tharwat, Gaber, Ibrahim, and Hassanien]{tharwat_linear_2017}
-Alaa Tharwat, Tarek Gaber, Abdelhameed Ibrahim, and Aboul~Ella Hassanien.
-\newblock Linear discriminant analysis: {{A}} detailed tutorial.
-\newblock \emph{AI Communications}, 30\penalty0 (2):\penalty0 169--190, May 2017.
-\newblock ISSN 0921-7126.
-\newblock \doi{10.3233/AIC-170729}.
-
 \bibitem[Ghojogh and Crowley(2019)]{ghojogh_linear_2019}
 Benyamin Ghojogh and Mark Crowley.
 \newblock Linear and {{Quadratic Discriminant Analysis}}: {{Tutorial}}, June 2019.
-
-\bibitem[Haynes(2013)]{haynes_maximum_2013}
-Winston Haynes.
-\newblock Maximum {{Likelihood Estimation}}.
-\newblock In Werner Dubitzky, Olaf Wolkenhauer, Kwang-Hyun Cho, and Hiroki Yokota, editors, \emph{Encyclopedia of {{Systems Biology}}}, pages 1190--1191. Springer, New York, NY, 2013.
-\newblock ISBN 978-1-4419-9863-7.
-\newblock \doi{10.1007/978-1-4419-9863-7_1235}.
-
-\bibitem[Mika et~al.(1999)Mika, Ratsch, Weston, Scholkopf, and Mullers]{mika_fisher_1999}
-S.~Mika, G.~Ratsch, J.~Weston, B.~Scholkopf, and K.R. Mullers.
-\newblock Fisher discriminant analysis with kernels.
-\newblock In \emph{Neural {{Networks}} for {{Signal Processing IX}}: {{Proceedings}} of the 1999 {{IEEE Signal Processing Society Workshop}} ({{Cat}}. {{No}}.{{98TH8468}})}, pages 41--48, Madison, WI, USA, 1999. IEEE.
-\newblock ISBN 978-0-7803-5673-3.
-\newblock \doi{10.1109/NNSP.1999.788121}.
 
 \bibitem[Chen and Guestrin(2016)]{chen_xgboost_2016}
 Tianqi Chen and Carlos Guestrin.
@@ -254,19 +259,11 @@ Tianqi Chen and Carlos Guestrin.
 \newblock In \emph{Proceedings of the 22nd {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} and {{Data Mining}}}, pages 785--794, August 2016.
 \newblock \doi{10.1145/2939672.2939785}.
 
-\bibitem[Friedman et~al.(2000)Friedman, Hastie, and Tibshirani]{friedman_additive_2000}
-Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
-\newblock Additive logistic regression: A statistical view of boosting ({{With}} discussion and a rejoinder by the authors).
-\newblock \emph{The Annals of Statistics}, 28\penalty0 (2):\penalty0 337--407, April 2000.
-\newblock ISSN 0090-5364, 2168-8966.
-\newblock \doi{10.1214/aos/1016218223}.
-
-\bibitem[Bridle(1990)]{bridle_probabilistic_1990}
-John~S. Bridle.
-\newblock Probabilistic {{Interpretation}} of {{Feedforward Classification Network Outputs}}, with {{Relationships}} to {{Statistical Pattern Recognition}}.
-\newblock In Fran{\c c}oise~Fogelman Souli{\'e} and Jeanny H{\'e}rault, editors, \emph{Neurocomputing}, pages 227--236, Berlin, Heidelberg, 1990. Springer.
-\newblock ISBN 978-3-642-76153-9.
-\newblock \doi{10.1007/978-3-642-76153-9_28}.
+\bibitem[Pedregosa et~al.(2011)Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot, and Duchesnay]{pedregosa_scikit-learn_2011}
+Fabian Pedregosa, Ga{\"e}l Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, Jake Vanderplas, Alexandre Passos, David Cournapeau, Matthieu Brucher, Matthieu Perrot, and {\'E}douard Duchesnay.
+\newblock Scikit-learn: {{Machine Learning}} in {{Python}}.
+\newblock \emph{Journal of Machine Learning Research}, 12\penalty0 (85):\penalty0 2825--2830, 2011.
+\newblock ISSN 1533-7928.
 
 \bibitem[Schmidhuber(2015)]{schmidhuber_deep_2015}
 J{\"u}rgen Schmidhuber.
@@ -353,9 +350,174 @@ Xiaoli Yu, Li~, Shaoting, and Jiahua {and Chen}.
 Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
 \newblock "{{Why Should I Trust You}}?": {{Explaining}} the {{Predictions}} of {{Any Classifier}}, August 2016.
 
+\bibitem[Samuels(2024)]{samuels_one-hot_2024}
+Jamell Samuels.
+\newblock \emph{One-{{Hot Encoding}} and {{Two-Hot Encoding}}: {{An Introduction}}}.
+\newblock January 2024.
+\newblock \doi{10.13140/RG.2.2.21459.76327}.
+
+\bibitem[Shan and van~der Laan(2019)]{shan_targeted_2019}
+George Shan and Mark~J. van~der Laan.
+\newblock Targeted {{Estimation}} of {{L2 Distance Between Densities}} and its {{Application}} to {{Geo-spatial Data}}, May 2019.
+
+\bibitem[Ribeiro(2025)]{ribeiro_marcotcrlime_2025}
+Marco Tulio~Correia Ribeiro.
+\newblock Marcotcr/lime, June 2025.
+
+\bibitem[Kingma and Welling(2022)]{kingma_auto-encoding_2022}
+Diederik~P. Kingma and Max Welling.
+\newblock Auto-{{Encoding Variational Bayes}}, December 2022.
+
+\bibitem[Kingma et~al.(2014)Kingma, Rezende, Mohamed, and Welling]{kingma_semi-supervised_2014}
+Diederik~P. Kingma, Danilo~J. Rezende, Shakir Mohamed, and Max Welling.
+\newblock Semi-{{Supervised Learning}} with {{Deep Generative Models}}, October 2014.
+
+\bibitem[Jin and Han(2011)]{jin_k-means_2011}
+Xin Jin and Jiawei Han.
+\newblock K-{{Means Clustering}}.
+\newblock In \emph{Encyclopedia of {{Machine Learning}}}, pages 563--564. Springer, Boston, MA, 2011.
+\newblock ISBN 978-0-387-30164-8.
+\newblock \doi{10.1007/978-0-387-30164-8_425}.
+
+\bibitem[Higgins et~al.(2017)Higgins, Matthey, Pal, Burgess, Glorot, Botvinick, Mohamed, and Lerchner]{higgins_beta-vae_2017}
+Irina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, and Alexander Lerchner.
+\newblock Beta-{{VAE}}: {{Learning Basic Visual Concepts}} with a {{Constrained Variational Framework}}.
+\newblock In \emph{International {{Conference}} on {{Learning Representations}}}, February 2017.
+
 \bibitem[Kingma and Welling()]{kingma_introduction_nodate}
 Diederik~P Kingma and Max Welling.
 \newblock An {{Introduction}} to {{Variational Autoencoders}}.
+
+\bibitem[Mao et~al.(2023)Mao, Mohri, and Zhong]{mao_cross-entropy_2023}
+Anqi Mao, Mehryar Mohri, and Yutao Zhong.
+\newblock Cross-{{Entropy Loss Functions}}: {{Theoretical Analysis}} and {{Applications}}, June 2023.
+
+\bibitem[Castagnos et~al.(2022)Castagnos, Mihelich, and Dognin]{castagnos_simple_2022}
+Fran{\c c}ois Castagnos, Martin Mihelich, and Charles Dognin.
+\newblock A {{Simple Log-based Loss Function}} for {{Ordinal Text Classification}}.
+\newblock In Nicoletta Calzolari, Chu-Ren Huang, Hansaem Kim, James Pustejovsky, Leo Wanner, Key-Sun Choi, Pum-Mo Ryu, Hsin-Hsi Chen, Lucia Donatelli, Heng Ji, Sadao Kurohashi, Patrizia Paggio, Nianwen Xue, Seokhwan Kim, Younggyun Hahm, Zhong He, Tony~Kyungil Lee, Enrico Santus, Francis Bond, and Seung-Hoon Na, editors, \emph{Proceedings of the 29th {{International Conference}} on {{Computational Linguistics}}}, pages 4604--4609, Gyeongju, Republic of Korea, October 2022. International Committee on Computational Linguistics.
+
+\bibitem[Polat et~al.(2025)Polat, {\c C}a{\u g}lar, and Temizel]{polat_class_2025}
+Gorkem Polat, {\"U}mit~Mert {\c C}a{\u g}lar, and Alptekin Temizel.
+\newblock Class {{Distance Weighted Cross Entropy Loss}} for {{Classification}} of {{Disease Severity}}.
+\newblock \emph{Expert Systems with Applications}, 269:\penalty0 126372, April 2025.
+\newblock ISSN 09574174.
+\newblock \doi{10.1016/j.eswa.2024.126372}.
+
+\bibitem[Xia et~al.(2025)Xia, Laurent, Franchi, and Bouganis]{xia_towards_2025}
+Guoxuan Xia, Olivier Laurent, Gianni Franchi, and Christos-Savvas Bouganis.
+\newblock Towards {{Understanding Why Label Smoothing Degrades Selective Classification}} and {{How}} to {{Fix It}}, February 2025.
+
+\bibitem[noa(2022)]{noauthor_ultrafast_2022}
+{{ulTRafast hOlograPHic FTIR microscopY}}.
+\newblock https://www.trophy-project.eu/, June 2022.
+
+\bibitem[Cheng et~al.(2023)Cheng, Arguin, {Leissner-Martin}, Pilette, and Golling]{cheng_variational_2023}
+Taoli Cheng, Jean-Fran{\c c}ois Arguin, Julien {Leissner-Martin}, Jacinthe Pilette, and Tobias Golling.
+\newblock Variational autoencoders for anomalous jet tagging.
+\newblock \emph{Physical Review D}, 107\penalty0 (1):\penalty0 016002, January 2023.
+\newblock ISSN 2470-0010, 2470-0029.
+\newblock \doi{10.1103/PhysRevD.107.016002}.
+
+\bibitem[Cerri et~al.(2019)Cerri, Nguyen, Pierini, Spiropulu, and Vlimant]{cerri_variational_2019}
+Olmo Cerri, Thong~Q. Nguyen, Maurizio Pierini, Maria Spiropulu, and Jean-Roch Vlimant.
+\newblock Variational autoencoders for new physics mining at the {{Large Hadron Collider}}.
+\newblock \emph{Journal of High Energy Physics}, 2019\penalty0 (5):\penalty0 36, May 2019.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP05(2019)036}.
+
+\bibitem[Alves et~al.(2024)Alves, {da Silva Almeida}, and Mesquita]{alves_variational_2024}
+Alexandre Alves, Eduardo {da Silva Almeida}, and Igor~Neiva Mesquita.
+\newblock Variational autoencoders for regression: Recovering fully leptonic \$\$ b{\textbackslash}overline\{b\}\{\vphantom\}{{W}}\vphantom\{\}{\textasciicircum}\{+\}\{\vphantom\}{{W}}\vphantom\{\}{\textasciicircum}\{-\} \$\$in di-{{Higgs}} searches.
+\newblock \emph{Journal of High Energy Physics}, 2024\penalty0 (5):\penalty0 23, May 2024.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP05(2024)023}.
+
+\bibitem[Andika et~al.(2025)Andika, Schuldt, Suyu, Bag, Ca{\~n}ameras, Melo, Grillo, and Chan]{andika_accelerating_2025}
+Irham~T. Andika, Stefan Schuldt, Sherry~H. Suyu, Satadru Bag, Raoul Ca{\~n}ameras, Alejandra Melo, Claudio Grillo, and James H.~H. Chan.
+\newblock Accelerating lensed quasar discovery and modeling with physics-informed variational autoencoders.
+\newblock \emph{Astronomy \& Astrophysics}, 694:\penalty0 A227, February 2025.
+\newblock ISSN 0004-6361, 1432-0746.
+\newblock \doi{10.1051/0004-6361/202453474}.
+
+\bibitem[Leung et~al.(2023)Leung, Bovy, Mackereth, and Miglio]{leung_variational_2023}
+Henry~W. Leung, Jo~Bovy, J.~Ted Mackereth, and Andrea Miglio.
+\newblock A variational encoder--decoder approach to precise spectroscopic age estimation for large {{Galactic}} surveys.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 522\penalty0 (3), April 2023.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stad1272}.
+
+\bibitem[Gagliano and Villar(2023)]{gagliano_physics-informed_2023}
+Alexander Gagliano and V.~Ashley Villar.
+\newblock A {{Physics-Informed Variational Autoencoder}} for {{Rapid Galaxy Inference}} and {{Anomaly Detection}}, December 2023.
+
+\bibitem[Gabbard et~al.(2022)Gabbard, Messenger, Heng, Tonolini, and {Murray-Smith}]{gabbard_bayesian_2022}
+Hunter Gabbard, Chris Messenger, Ik~Siong Heng, Francesco Tonolini, and Roderick {Murray-Smith}.
+\newblock Bayesian parameter estimation using conditional variational autoencoders for gravitational-wave astronomy.
+\newblock \emph{Nature Physics}, 18\penalty0 (1):\penalty0 112--117, January 2022.
+\newblock ISSN 1745-2473, 1745-2481.
+\newblock \doi{10.1038/s41567-021-01425-7}.
+
+\bibitem[Bayley et~al.(2022)Bayley, Messenger, and Woan]{bayley_rapid_2022}
+Joe Bayley, Chris Messenger, and Graham Woan.
+\newblock Rapid parameter estimation for an all-sky continuous gravitational wave search using conditional variational auto-encoders.
+\newblock \emph{Physical Review D}, 106\penalty0 (8):\penalty0 083022, October 2022.
+\newblock \doi{10.1103/PhysRevD.106.083022}.
+
+\bibitem[Bayley et~al.(2020)Bayley, Messenger, and Woan]{bayley_robust_2020}
+Joseph Bayley, Chris Messenger, and Graham Woan.
+\newblock A robust machine learning algorithm to search for continuous gravitational waves.
+\newblock \emph{Physical Review D}, 102\penalty0 (8):\penalty0 083024, October 2020.
+\newblock ISSN 2470-0010, 2470-0029.
+\newblock \doi{10.1103/PhysRevD.102.083024}.
+
+\bibitem[Yamamoto and Tanaka(2020)]{yamamoto_use_2020}
+Takahiro~S. Yamamoto and Takahiro Tanaka.
+\newblock Use of conditional variational auto encoder to analyze ringdown gravitational waves.
+\newblock February 2020.
+
+\bibitem[Wold and Geladi()]{wold_principal_nodate}
+Svante Wold and KIM ESBENSENand~PAUL Geladi.
+\newblock Principal {{Component Analysis}}.
+
+\bibitem[Shlens(2014)]{shlens_tutorial_2014}
+Jonathon Shlens.
+\newblock A {{Tutorial}} on {{Principal Component Analysis}}, April 2014.
+
+\bibitem[Tharwat et~al.(2017)Tharwat, Gaber, Ibrahim, and Hassanien]{tharwat_linear_2017}
+Alaa Tharwat, Tarek Gaber, Abdelhameed Ibrahim, and Aboul~Ella Hassanien.
+\newblock Linear discriminant analysis: {{A}} detailed tutorial.
+\newblock \emph{AI Communications}, 30\penalty0 (2):\penalty0 169--190, May 2017.
+\newblock ISSN 0921-7126.
+\newblock \doi{10.3233/AIC-170729}.
+
+\bibitem[Haynes(2013)]{haynes_maximum_2013}
+Winston Haynes.
+\newblock Maximum {{Likelihood Estimation}}.
+\newblock In Werner Dubitzky, Olaf Wolkenhauer, Kwang-Hyun Cho, and Hiroki Yokota, editors, \emph{Encyclopedia of {{Systems Biology}}}, pages 1190--1191. Springer, New York, NY, 2013.
+\newblock ISBN 978-1-4419-9863-7.
+\newblock \doi{10.1007/978-1-4419-9863-7_1235}.
+
+\bibitem[Mika et~al.(1999)Mika, Ratsch, Weston, Scholkopf, and Mullers]{mika_fisher_1999}
+S.~Mika, G.~Ratsch, J.~Weston, B.~Scholkopf, and K.R. Mullers.
+\newblock Fisher discriminant analysis with kernels.
+\newblock In \emph{Neural {{Networks}} for {{Signal Processing IX}}: {{Proceedings}} of the 1999 {{IEEE Signal Processing Society Workshop}} ({{Cat}}. {{No}}.{{98TH8468}})}, pages 41--48, Madison, WI, USA, 1999. IEEE.
+\newblock ISBN 978-0-7803-5673-3.
+\newblock \doi{10.1109/NNSP.1999.788121}.
+
+\bibitem[Friedman et~al.(2000)Friedman, Hastie, and Tibshirani]{friedman_additive_2000}
+Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
+\newblock Additive logistic regression: A statistical view of boosting ({{With}} discussion and a rejoinder by the authors).
+\newblock \emph{The Annals of Statistics}, 28\penalty0 (2):\penalty0 337--407, April 2000.
+\newblock ISSN 0090-5364, 2168-8966.
+\newblock \doi{10.1214/aos/1016218223}.
+
+\bibitem[Bridle(1990)]{bridle_probabilistic_1990}
+John~S. Bridle.
+\newblock Probabilistic {{Interpretation}} of {{Feedforward Classification Network Outputs}}, with {{Relationships}} to {{Statistical Pattern Recognition}}.
+\newblock In Fran{\c c}oise~Fogelman Souli{\'e} and Jeanny H{\'e}rault, editors, \emph{Neurocomputing}, pages 227--236, Berlin, Heidelberg, 1990. Springer.
+\newblock ISBN 978-3-642-76153-9.
+\newblock \doi{10.1007/978-3-642-76153-9_28}.
 
 \bibitem[Minsky and Papert(2017)]{minsky_perceptrons_2017}
 Marvin Minsky and Seymour~A. Papert.

@@ -164,12 +164,11 @@ def elbo_unsupervised(x, model, n_classes=4, beta=1):
     return torch.mean(expected + entropy)
 \end{minted}
 
-\subsection{Reparamaterisaiton Trick}
+\subsection{Reparameterisation Trick}
 \begin{minted}{python3}
 def reparameterise(mu, logvar, eps_scale=1):
     std = torch.exp(0.5 * logvar)
     eps = torch.randn_like(std) * eps_scale
-    # eps = torch.ones_like(std)
     return mu + eps * std
 \end{minted}
 

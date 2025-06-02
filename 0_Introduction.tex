@@ -7,7 +7,7 @@ Cancer is one of the leading causes of death worldwide with around 20 million ca
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=1\textwidth]{Images/Histology_Summary.png}
-  \caption{The standard histopatological diagnosis process. From \cite{bai_deep_2023}.}
+  \caption{The standard histopathological diagnosis process. From \cite{bai_deep_2023}.}
   \label{fig:hist-summary}
 \end{figure}
 
@@ -16,12 +16,12 @@ New methods are being developed to exploit machine learning (ML) in conjunction 
 
 \subsection{Previous Works}
 % maybe move the Tomas reference to where I am describing the MINERVA data class differences in Background
-Previous works using vibrational spectroscopy methods have reported high classification performance for cancer identification. For example, Lasalvia et al. \cite{lasalvia_discrimination_2023} report cancer vs non-cancer classification accuracies from $87\%$ to almost $100\%$ for colorectal cancer samples using ML techniques on FTIR spectra. Furthermore, work by Tiwari et al. \cite{tiwari_colon_2022} has achieved $97\%$ and $80\%$ colon tumour classification accuracy for high/moderate and low-grade tumours respectively using a pre-trained ResNet and convolutional network approach. Tomas et al. \cite{tomas_detection_2022} have used attenuated total reflection FTIR (ATR-FTIR) spectroscopy and feed-forward full-connected neural networks to classify breast cancer samples into benign and malignant classifications with $96.06\% \pm 7.07 \%$ accuracy. They found the different tissue types within breast cancer exhibit large differences in spectral characteristics as can be seen in Figure \ref{fig:breast-tomas-benign-malignant-diff}. Some works \cite{he_accurate_2022} have also explored the use of variational autoencoders (VAEs) in classification tasks. However, their applicability has been limited to de-noising input Raman spectral data. These advances demonstrate the potential for vibrational spectroscopy and machine learning in the field of cancer detection, which I aim to build on in this work.
+Previous works using vibrational spectroscopy methods have reported high classification performance for cancer identification. For example, Lasalvia et al. \cite{lasalvia_discrimination_2023} report cancer vs non-cancer classification accuracies from $87\%$ to almost $100\%$ for colorectal cancer samples using ML techniques on FTIR spectra. Furthermore, work by Tiwari et al. \cite{tiwari_colon_2022} has achieved $97\%$ and $80\%$ colon tumour classification accuracy for high/moderate and low-grade tumours respectively using a pre-trained ResNet and convolutional network approach. Tomas et al. \cite{tomas_detection_2022} have used attenuated total reflection FTIR (ATR-FTIR) spectroscopy and feed-forward full-connected neural networks to classify breast cancer samples into benign and malignant classifications with $96.06\% \pm 7.07 \%$ accuracy. They found the different tissue types within breast cancer exhibit large differences in spectral characteristics as can be seen in Figure \ref{fig:breast-tomas-benign-malignant-diff}. Some works \cite{he_accurate_2022} have also explored the use of variational autoencoders (VAEs) in classification tasks. However, their applicability has been limited mostly to de-noising input Raman spectral data. These advances demonstrate the potential for vibrational spectroscopy and machine learning in the field of cancer detection, which I aim to build on in this work.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{Images/breast_tomas_benign_malignant_diff.png}
-  \caption{The IR spectral differences identified between malignant and benign tumours in \cite{tomas_detection_2022}.}
+  \caption{The IR spectral differences identified between malignant and benign tumours found in \cite{tomas_detection_2022}.}
   \label{fig:breast-tomas-benign-malignant-diff}
 \end{figure}
 
@@ -37,6 +37,6 @@ Previous works using vibrational spectroscopy methods have reported high classif
 %   \label{fig:my-label}
 % \end{figure}
 \subsection{Novelty of this Work}
-In this work, I present three main contributions. Firstly, weakly-labelled data is used to train a scale-invariant convolutional neural network (SCNN) for the classification of colon cancer samples into four classes: non-cancer, hyperplastic, adenoma and cancerous. Secondly, I apply explainability methods on this model to elucidate the multiple pathways by which these classifications can be achieved. Finally, these explainability results are used to create a simple weighted cosine similarity model for classification into the same four classes. The SCNN and explainability methods are inspired by contributions by Zaki et al. \cite{zaki_explainable_2024}, who used a similar approach to identify  serotonin-dominated VAE latent space regions from the FTIR spectra of urine samples.
+In this work, I present three main contributions. Firstly, weakly-labelled data is used to train a scale-invariant convolutional neural network (SCNN) for the classification of colon cancer samples into four classes: non-cancer, hyperplastic, adenoma and cancerous. Secondly, I apply explainability methods on this model to elucidate the multiple pathways by which these classifications can be achieved. Finally, these explainability results are used to create a simple weighted cosine similarity model for classification into the same four classes. The SCNN and explainability methods are inspired by contributions by Zaki et al. \cite{zaki_explainable_2024}, who used a similar approach to identify  serotonin-dominated VAE latent space regions from the Raman spectra of urine samples.
 
 %check how many results to include in intro

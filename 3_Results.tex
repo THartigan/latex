@@ -196,7 +196,7 @@ Each of the classification methods described from §\ref{sec:methods:baseline_cl
 
 \subsection{A Scanning Convolutional Neural Network Approach}
 
-The SCNN architecture described in §\ref{sec:methods:scnn} was trained on each dataset fold (§\ref{sec:methods:data_split}) using a weighted cross-entropy loss to predict the 4-class classification of each spectral pixel. Significant regularisation and hyperparameter turning were required to achieve reliable model convergence. For this tuning, random search was employed to identify hyperparameter ranges which consistently produced converging models. These ranges are presented in Table \ref{tab:scnn_class_hyper_ranges}. Random search was then again employed within each of these hyperparameter ranges to produce a set of converged models. Figure \ref{fig:val_fold_boxes} shows the overall weighted accuracies these models achieve on each dataset fold. The difficulty in achieving model convergence is likely due to the incorrect labelling of many pixels in the dataset. It is therefore thought that future works could investigate the use of an ordinal loss function \cite{} to additionally penalise predictions more severe than the true label.
+The SCNN architecture described in §\ref{sec:methods:scnn} was trained on each dataset fold (§\ref{sec:methods:data_split}) using a weighted cross-entropy loss to predict the 4-class classification of each spectral pixel. Significant regularisation and hyperparameter turning were required to achieve reliable model convergence. For this tuning, random search was employed to identify hyperparameter ranges which consistently produced converging models. These ranges are presented in Table \ref{tab:scnn_class_hyper_ranges}. Random search was then again employed within each of these hyperparameter ranges to produce a set of converged models. Figure \ref{fig:val_fold_boxes} shows the OWAs these models achieve on each dataset fold. The difficulty in achieving model convergence is likely due to the incorrect labelling of many pixels in the dataset. It is therefore thought that future works could investigate the use of an ordinal loss function \cite{castagnos_simple_2022,polat_class_2025} to additionally penalise predictions more severe than the true label.
 
 \begin{table}[htbp]
     \centering
@@ -219,15 +219,15 @@ The SCNN architecture described in §\ref{sec:methods:scnn} was trained on each 
 \begin{figure}[htbp] 
     \centering 
     \includegraphics[width=1\textwidth]{Images/best_val_accuracy.png} 
-    \caption{Validation set overall weighted accuracy performance of the SCNN models trained on each dataset fold. Ticks are shown at ends of the fist and third quartiles, $Q_1$ and $Q_3$, the median (red) and at either $1.5\times$ the inter-quartile range from $Q_1$ and $Q_3$ or the maximum / minimum recorded value, whichever is closest to the median. The mean values are denoted by orange diamond.} 
+    \caption{Validation set OWA performance of the SCNN models trained on each dataset fold. Ticks are shown at ends of the fist and third quartiles, $Q_1$ and $Q_3$, the median (red) and at either $1.5\times$ the inter-quartile range from $Q_1$ and $Q_3$ or the maximum / minimum recorded value, whichever is closest to the median. The mean values are denoted by orange diamonds.} 
     \label{fig:val_fold_boxes}
 \end{figure}
 
 \noindent
-Because model convergence was still unstable within this tuned hyperparameter range, it was decided to apply an ensemble approach to the SCNN predictions, where all models trained on the same fold with validation set overall weighted accuracy scores above the median value in the worst performing fold (taken to be $55\%$) were used to make predictions on the test set. These selected models were combined using a voting approach, where the predicted class with the highest number of votes was selected as the final prediction. The performance of this method for four-class and binary classification in the test set is presented in Tables \ref{table:quad_results_full} and \ref{table:binary_results_full} respectively, along with the performance of the traditional machine learning methods described previously.\\
+Because model convergence was still unstable within this tuned hyperparameter range, it was decided to apply an ensemble approach to the SCNN predictions, where all models trained on the same fold with validation set OWA scores above the median value in the worst performing fold (taken to be $55\%$) were used to make predictions on the test set. These selected models were combined using a voting approach, where the predicted class with the highest number of votes was selected as the final prediction. The performance of this method for four-class and binary classification in the test set is presented in Tables \ref{table:quad_results_full} and \ref{table:binary_results_full} respectively, along with the performance of the traditional machine learning methods described previously.\\
 
 \noindent
-It was hypothesised that label smoothing \cite{} could improve model performance by encoding a small amount of uncertainty in the training set labels. Due to the high computational cost of training these full ensemble SCNN models, this was tested only on dataset fold "a" (as labelled in Figure \ref{fig:val_fold_boxes}). The test set performance results of these trials are presented in Table \ref{tab:label_smooth_tests}, and show that increasing label smoothing from $0\%$ to $20\%$ slightly reduces overall weighted accuracy scores. It should be noted, however, that these results cannot be used to inform the SCNN method trialled here because they would introduce test-set information into the model. Label smoothing could therefore also be investigated further by future works.
+It was hypothesised that label smoothing \cite{xia_towards_2025} could improve model performance by encoding a small amount of uncertainty in the training set labels. Due to the high computational cost of training these full ensemble SCNN models, this was tested only on dataset fold "a" (as labelled in Figure \ref{fig:val_fold_boxes}). The test set performance results of these trials are presented in Table \ref{tab:label_smooth_tests}, and show that increasing label smoothing from $0\%$ to $20\%$ slightly reduces OWA scores. It should be noted, however, that these results cannot be used to inform the SCNN method trialled here because they would introduce test-set information into the model. Label smoothing could therefore also be investigated further by future works.
 
 \begin{table}[htbp]
     \centering
@@ -266,7 +266,7 @@ It was hypothesised that label smoothing \cite{} could improve model performance
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{Images/combined_accuracy.pdf}
-    \caption{The overall weighted accuracy achieved by each ML method, and the SCNN method both for binary and 4-class classification. The SCNN method is seen to perform best in both cases.}
+    \caption{The OWA achieved by each ML method, and the SCNN method both for binary and 4-class classification. The SCNN method is seen to perform best in both cases.}
     \label{fig:combined_accuracy}
 \end{figure}
 
@@ -307,7 +307,7 @@ To complement this analysis, I also investigated the confidence the model has in
 
 \subsubsection{LIME Explanations}
 \label{sec:lime_explanations}
-LIME analysis was also conducted on a subset of the SCNN validation set predictions - 5000 pixels per classification type (grouped by their training label). This allowed for the generation of importance weightings for each wavenumber and prediction classification. These can be seen in Figure \ref{fig:lime_weights_classes}. These results indicate that the region from $1000$-$1200$ cm$^{-1}$ is particularly relevant for all classifications, and that the region from $1460$-$1560$ cm$^{-1}$ is much less important. This could be used to help guide the development of next generation imaging methods such as those being developed as part of the TROPHY project \cite{}.
+LIME analysis was also conducted on a subset of the SCNN validation set predictions - 5000 pixels per classification type (grouped by their training label). This allowed for the generation of importance weightings for each wavenumber and prediction classification. These can be seen in Figure \ref{fig:lime_weights_classes}. These results indicate that the region from $1000$-$1200$ cm$^{-1}$ is particularly relevant for all classifications, and that the region from $1460$-$1560$ cm$^{-1}$ is much less important. This could be used to help guide the development of next generation imaging methods such as those being developed as part of the TROPHY project \cite{noauthor_ultrafast_2022}.
 
 \begin{figure}[htbp]
     \centering
@@ -367,4 +367,4 @@ Future works could investigate the use of the LCRIME method on less-noisy datase
 \end{figure}
 
 \subsection{Applicability in Physics}
-The use of machine learning and deep learning methods are becoming increasingly common in physics. Similar approaches to the VAE method adopted here have been used to analyse collisions in particle physics \cite{}, astrophysical systems \cite{}, to detect gravitational waves \cite{}, and within medical physics for ...\cite{}. Increasing the interpretability of these methods such as has been done in this work, is therefore important for translating new-found results into real physical insights.
+The use of machine learning and deep learning methods are becoming increasingly common in physics. Similar approaches to the VAE method adopted here have been used to detect and reconstruct collisions in particle physics \cite{cheng_variational_2023,cerri_variational_2019,alves_variational_2024}, perform discovery and age-prediction tasks in astrophysical contexts \cite{andika_accelerating_2025, leung_variational_2023,gagliano_physics-informed_2023}, detect gravitational waves \cite{gabbard_bayesian_2022,bayley_rapid_2022,bayley_robust_2020,yamamoto_use_2020}, and perform cancer diagnosis and severity classification tasks in medical physics, as demonstrated and exemplified throughout this work. Increasing the interpretability of these methods such as has been done in this work, is therefore important for translating new-found results into real physical insights.
